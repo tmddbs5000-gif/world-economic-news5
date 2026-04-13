@@ -1,34 +1,145 @@
 @layer base, layout, components, utilities;
 
-/* Existing base and layout styles... (omitted for space but preserved) */
-
-@layer layout {
-    /* ... (rest of the layout styles) */
-
-    .partnership-btn {
-        background: var(--accent-color);
-        color: white;
-        border: none;
-        padding: 0.6rem 1.2rem;
-        border-radius: 12px;
-        font-weight: 700;
-        cursor: pointer;
-        transition: all 0.3s ease;
+@layer base {
+    :root {
+        --bg-color: oklch(0.12 0.015 240);
+        --header-bg: oklch(0.12 0.015 240 / 0.85);
+        --card-bg: oklch(0.18 0.02 240 / 0.8);
+        --text-primary: oklch(0.95 0.01 240);
+        --text-secondary: oklch(0.75 0.02 240);
+        --accent-color: oklch(0.75 0.18 145);
+        --accent-glow: oklch(0.75 0.18 145 / 0.3);
+        --input-bg: oklch(0.25 0.02 240);
+        --border-color: oklch(1 0 0 / 0.1);
+        --shadow-deep: 0 20px 40px -15px oklch(0 0 0 / 0.6);
     }
 
-    .partnership-btn:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 5px 15px var(--accent-glow);
+    [data-theme="light"] {
+        --bg-color: oklch(0.98 0.005 240);
+        --header-bg: oklch(0.98 0.005 240 / 0.85);
+        --card-bg: oklch(1 0 0);
+        --text-primary: oklch(0.2 0.02 240);
+        --text-secondary: oklch(0.4 0.02 240);
+        --accent-color: oklch(0.6 0.18 150);
+        --accent-glow: oklch(0.6 0.18 150 / 0.2);
+        --input-bg: oklch(0.93 0.01 240);
+        --border-color: oklch(0 0 0 / 0.08);
+        --shadow-deep: 0 10px 30px -5px oklch(0 0 0 / 0.05);
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+    }
+
+    body {
+        background-color: var(--bg-color);
+        color: var(--text-primary);
+        font-family: 'Inter', system-ui, sans-serif;
+        line-height: 1.6;
+        overflow-x: hidden;
+    }
+
+    .texture-overlay {
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        opacity: 0.03;
+        pointer-events: none;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
     }
 }
 
+@layer layout {
+    .container { width: min(1300px, 92%); margin-inline: auto; }
+
+    header {
+        padding-block: 1.25rem;
+        background: var(--header-bg);
+        backdrop-filter: blur(20px);
+        border-bottom: 1px solid var(--border-color);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .controls { display: flex; align-items: center; gap: 1rem; }
+
+    .partnership-btn.highlight {
+        background: var(--accent-color);
+        color: white;
+        border: none;
+        padding: 0.7rem 1.4rem;
+        border-radius: 14px;
+        font-weight: 800;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        box-shadow: 0 4px 15px var(--accent-glow);
+        animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.03); box-shadow: 0 4px 25px var(--accent-glow); }
+        100% { transform: scale(1); }
+    }
+
+    .divider { width: 1px; height: 30px; background: var(--border-color); margin-inline: 0.5rem; }
+
+    .control-group { display: flex; align-items: center; gap: 0.8rem; }
+
+    .theme-btn {
+        background: var(--input-bg);
+        border: 1px solid var(--border-color);
+        padding: 0.5rem;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 1.1rem;
+    }
+
+    [data-theme="dark"] .sun, [data-theme="light"] .moon { display: none; }
+
+    input[type="date"], select {
+        background: var(--input-bg);
+        color: var(--text-primary);
+        border: 1px solid var(--border-color);
+        padding: 0.5rem 0.8rem;
+        border-radius: 10px;
+        font-size: 0.85rem;
+        outline: none;
+    }
+
+    .logo h1 { font-size: 1.6rem; font-weight: 900; line-height: 1; }
+    .logo span { color: var(--accent-color); }
+    .logo p { font-size: 0.7rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.1em; }
+
+    main { padding-block: 3rem; }
+    .news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 2.5rem; }
+    
+    footer { padding-block: 2.5rem; text-align: center; border-top: 1px solid var(--border-color); color: var(--text-secondary); font-size: 0.85rem; }
+}
+
 @layer components {
+    .loading-state { grid-column: 1 / -1; text-align: center; padding-block: 8rem; color: var(--text-secondary); }
+
     /* Modal Styles */
     .modal-overlay {
         position: fixed;
         inset: 0;
-        background: oklch(0 0 0 / 0.7);
-        backdrop-filter: blur(5px);
+        background: oklch(0 0 0 / 0.8);
+        backdrop-filter: blur(8px);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -38,65 +149,35 @@
         transition: opacity 0.3s ease;
     }
 
-    .modal-overlay.active {
-        opacity: 1;
-        pointer-events: auto;
-    }
+    .modal-overlay.active { opacity: 1; pointer-events: auto; }
 
     .modal-content {
         background: var(--card-bg);
-        width: min(500px, 90%);
+        width: min(550px, 95%);
         padding: 2.5rem;
-        border-radius: 24px;
+        border-radius: 28px;
         border: 1px solid var(--border-color);
         box-shadow: var(--shadow-deep);
-        transform: translateY(20px);
-        transition: transform 0.3s ease;
+        transform: scale(0.9);
+        transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
 
-    .modal-overlay.active .modal-content {
-        transform: translateY(0);
-    }
+    .modal-overlay.active .modal-content { transform: scale(1); }
 
-    .modal-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 2rem;
-    }
+    .modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+    .modal-desc { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 2rem; }
+    .close-btn { background: none; border: none; color: var(--text-primary); font-size: 2rem; cursor: pointer; }
 
-    .close-btn {
-        background: none;
-        border: none;
-        color: var(--text-primary);
-        font-size: 2rem;
-        cursor: pointer;
-    }
-
-    .form-group {
-        margin-bottom: 1.5rem;
-    }
-
-    .form-group label {
-        display: block;
-        margin-bottom: 0.5rem;
-        font-weight: 600;
-        color: var(--text-secondary);
-    }
-
+    .form-group { margin-bottom: 1.5rem; }
+    .form-group label { display: block; margin-bottom: 0.5rem; font-size: 0.85rem; font-weight: 700; color: var(--text-secondary); text-transform: uppercase; }
     .form-group input, .form-group textarea {
         width: 100%;
         background: var(--input-bg);
         border: 1px solid var(--border-color);
         color: var(--text-primary);
-        padding: 0.8rem 1rem;
-        border-radius: 12px;
+        padding: 0.9rem 1.1rem;
+        border-radius: 14px;
         font-size: 1rem;
-        outline: none;
-    }
-
-    .form-group input:focus, .form-group textarea:focus {
-        border-color: var(--accent-color);
     }
 
     .submit-btn {
@@ -104,15 +185,11 @@
         background: var(--accent-color);
         color: white;
         border: none;
-        padding: 1rem;
-        border-radius: 12px;
-        font-weight: 700;
+        padding: 1.1rem;
+        border-radius: 14px;
+        font-weight: 800;
         font-size: 1rem;
         cursor: pointer;
-        transition: all 0.3s ease;
-    }
-
-    .submit-btn:hover {
-        opacity: 0.9;
+        box-shadow: 0 4px 15px var(--accent-glow);
     }
 }

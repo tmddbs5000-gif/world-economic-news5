@@ -6,6 +6,8 @@
     <title>Global EcoNews - Daily Top 5</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+    <!-- Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="texture-overlay"></div>
@@ -18,25 +20,29 @@
             </div>
             
             <nav class="controls">
-                <button id="partnership-btn" class="partnership-btn">Partnership</button>
-                <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark/light mode">
-                    <span class="sun">🌞</span>
-                    <span class="moon">🌙</span>
+                <!-- Highlighted Partnership Button -->
+                <button id="partnership-btn" class="partnership-btn highlight">
+                    🤝 Partnership
                 </button>
-                <div class="date-picker-wrapper">
-                    <label for="date-select">Date:</label>
-                    <input type="date" id="date-select" value="2026-04-13" max="2026-04-13">
-                </div>
-                <div class="language-picker">
-                    <label for="language-select">Language:</label>
-                    <select id="language-select">
-                        <option value="ko" selected>한국어</option>
-                        <option value="en">English</option>
-                        <option value="ja">日本語</option>
-                        <option value="zh">中文</option>
-                        <option value="es">Español</option>
-                        <option value="fr">Français</option>
-                    </select>
+                
+                <div class="divider"></div>
+                
+                <div class="control-group">
+                    <button id="theme-toggle" class="theme-btn" title="Toggle Theme">
+                        <span class="sun">🌞</span>
+                        <span class="moon">🌙</span>
+                    </button>
+                    
+                    <div class="date-picker-wrapper">
+                        <input type="date" id="date-select" value="2026-04-13" max="2026-04-13">
+                    </div>
+                    
+                    <div class="language-picker">
+                        <select id="language-select">
+                            <option value="ko" selected>한국어</option>
+                            <option value="en">English</option>
+                        </select>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -44,37 +50,43 @@
 
     <main class="container">
         <section id="news-container" class="news-grid">
-            <div class="loading-state"><p>Fetching insights...</p></div>
+            <!-- News will appear here immediately -->
+            <div class="loading-state">
+                <p>Loading the latest economic insights...</p>
+            </div>
         </section>
     </main>
 
-    <!-- Partnership Inquiry Modal -->
+    <!-- Formspree Integrated Modal -->
     <div id="partnership-modal" class="modal-overlay">
         <div class="modal-content">
             <div class="modal-header">
-                <h2>Partnership Inquiry</h2>
+                <h2>제휴 문의 (Partnership)</h2>
                 <button id="close-modal" class="close-btn">&times;</button>
             </div>
+            <p class="modal-desc">글로벌 에코뉴스와 함께 성장할 파트너를 찾습니다. 아래 양식을 작성해 주세요.</p>
             <form action="https://formspree.io/f/meevqopj" method="POST">
                 <div class="form-group">
-                    <label for="full-name">Full Name</label>
-                    <input type="text" id="full-name" name="name" placeholder="John Doe" required>
+                    <label>성함/기업명</label>
+                    <input type="text" name="name" placeholder="홍길동" required>
                 </div>
                 <div class="form-group">
-                    <label for="email-address">Email Address</label>
-                    <input type="email" id="email-address" name="_replyto" placeholder="john@example.com" required>
+                    <label>이메일 주소</label>
+                    <input type="email" name="_replyto" placeholder="example@email.com" required>
                 </div>
                 <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" placeholder="How can we collaborate?" required></textarea>
+                    <label>문의 내용</label>
+                    <textarea name="message" rows="4" placeholder="제휴 제안 내용을 입력해 주세요." required></textarea>
                 </div>
-                <button type="submit" class="submit-btn">Send Message</button>
+                <button type="submit" class="submit-btn">문의 보내기</button>
             </form>
         </div>
     </div>
 
     <footer>
-        <div class="container"><p>&copy; 2026 Global EcoNews. All rights reserved.</p></div>
+        <div class="container">
+            <p>&copy; 2026 Global EcoNews. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="main.js" type="module"></script>
