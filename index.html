@@ -18,6 +18,7 @@
             </div>
             
             <nav class="controls">
+                <button id="partnership-btn" class="partnership-btn">Partnership</button>
                 <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark/light mode">
                     <span class="sun">🌞</span>
                     <span class="moon">🌙</span>
@@ -43,16 +44,37 @@
 
     <main class="container">
         <section id="news-container" class="news-grid">
-            <div class="loading-state">
-                <p>Fetching insights...</p>
-            </div>
+            <div class="loading-state"><p>Fetching insights...</p></div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Global EcoNews. All rights reserved.</p>
+    <!-- Partnership Inquiry Modal -->
+    <div id="partnership-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Partnership Inquiry</h2>
+                <button id="close-modal" class="close-btn">&times;</button>
+            </div>
+            <form action="https://formspree.io/f/your_endpoint_id" method="POST">
+                <div class="form-group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" name="name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="email-address">Email Address</label>
+                    <input type="email" id="email-address" name="_replyto" placeholder="john@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="How can we collaborate?" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
         </div>
+    </div>
+
+    <footer>
+        <div class="container"><p>&copy; 2026 Global EcoNews. All rights reserved.</p></div>
     </footer>
 
     <script src="main.js" type="module"></script>
