@@ -2,14 +2,14 @@
 
 @layer base {
     :root {
-        --bg-color: oklch(0.15 0.02 240);
-        --card-bg: oklch(0.2 0.03 240 / 0.7);
+        --bg-color: oklch(0.12 0.015 240);
+        --card-bg: oklch(0.18 0.02 240 / 0.8);
         --text-primary: oklch(0.95 0.01 240);
         --text-secondary: oklch(0.75 0.02 240);
-        --accent-color: oklch(0.7 0.15 150); /* Green accent for growth */
-        --accent-glow: oklch(0.7 0.15 150 / 0.3);
-        --shadow-deep: 0 10px 30px -10px oklch(0 0 0 / 0.5);
-        --font-main: system-ui, -apple-system, sans-serif;
+        --accent-color: oklch(0.75 0.18 145);
+        --accent-glow: oklch(0.75 0.18 145 / 0.3);
+        --shadow-deep: 0 20px 40px -15px oklch(0 0 0 / 0.6);
+        --font-main: 'Inter', system-ui, -apple-system, sans-serif;
     }
 
     * {
@@ -23,7 +23,6 @@
         color: var(--text-primary);
         font-family: var(--font-main);
         line-height: 1.6;
-        overflow-x: hidden;
         min-height: 100vh;
     }
 
@@ -31,26 +30,25 @@
         position: fixed;
         inset: 0;
         z-index: -1;
-        opacity: 0.05;
-        pointer-events: none;
-        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        opacity: 0.03;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
     }
 }
 
 @layer layout {
     .container {
-        width: min(1200px, 90%);
+        width: min(1300px, 92%);
         margin-inline: auto;
     }
 
     header {
-        padding-block: 2rem;
-        border-bottom: 1px solid oklch(1 0 0 / 0.1);
-        backdrop-filter: blur(10px);
+        padding-block: 1.5rem;
+        background: oklch(0.12 0.015 240 / 0.85);
+        backdrop-filter: blur(20px);
+        border-bottom: 1px solid oklch(1 0 0 / 0.08);
         position: sticky;
         top: 0;
-        z-index: 100;
-        background: oklch(0.15 0.02 240 / 0.8);
+        z-index: 1000;
     }
 
     .header-content {
@@ -58,65 +56,75 @@
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        gap: 1rem;
+        gap: 2rem;
+    }
+
+    .controls {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .date-picker-wrapper, .language-picker {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    input[type="date"], select {
+        background: oklch(0.25 0.02 240);
+        color: var(--text-primary);
+        border: 1px solid oklch(1 0 0 / 0.15);
+        padding: 0.6rem 1rem;
+        border-radius: 10px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    input[type="date"]:hover, select:hover {
+        border-color: var(--accent-color);
+        background: oklch(0.28 0.02 240);
+    }
+
+    label {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--text-secondary);
     }
 
     .logo h1 {
-        font-size: 1.5rem;
-        font-weight: 800;
-        letter-spacing: -0.02em;
+        font-size: 1.6rem;
+        font-weight: 900;
+        letter-spacing: -0.03em;
     }
 
     .logo span {
         color: var(--accent-color);
-        text-shadow: 0 0 15px var(--accent-glow);
+        text-shadow: 0 0 20px var(--accent-glow);
     }
 
     .logo p {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
         color: var(--text-secondary);
+        letter-spacing: 0.2em;
         text-transform: uppercase;
-        letter-spacing: 0.1em;
     }
 
-    .language-picker {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-    }
-
-    .language-picker select {
-        background: var(--card-bg);
-        color: var(--text-primary);
-        border: 1px solid oklch(1 0 0 / 0.2);
-        padding: 0.5rem 1rem;
-        border-radius: 8px;
-        cursor: pointer;
-        outline: none;
-        transition: border-color 0.3s ease;
-    }
-
-    .language-picker select:focus {
-        border-color: var(--accent-color);
-    }
-
-    main {
-        padding-block: 3rem;
-    }
+    main { padding-block: 4rem; }
 
     .news-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-        gap: 2rem;
-        container-type: inline-size;
+        grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+        gap: 2.5rem;
     }
 
     footer {
-        padding-block: 2rem;
+        padding-block: 3rem;
         text-align: center;
-        border-top: 1px solid oklch(1 0 0 / 0.1);
+        border-top: 1px solid oklch(1 0 0 / 0.05);
         color: var(--text-secondary);
-        font-size: 0.9rem;
     }
 }
 
@@ -124,44 +132,31 @@
     .loading-state {
         grid-column: 1 / -1;
         text-align: center;
-        padding-block: 5rem;
-        font-style: italic;
+        padding-block: 10rem;
+        font-size: 1.2rem;
         color: var(--text-secondary);
+        animation: pulse 2s infinite ease-in-out;
     }
 
-    /* Web Component Styles (also applied to custom elements) */
+    @keyframes pulse {
+        0%, 100% { opacity: 0.5; }
+        50% { opacity: 1; }
+    }
+
     news-card {
         display: block;
         background: var(--card-bg);
-        border-radius: 16px;
-        padding: 1.5rem;
-        border: 1px solid oklch(1 0 0 / 0.1);
+        border-radius: 24px;
+        padding: 2rem;
+        border: 1px solid oklch(1 0 0 / 0.05);
         box-shadow: var(--shadow-deep);
-        transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), border-color 0.3s ease;
-        cursor: pointer;
+        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         position: relative;
-        overflow: hidden;
     }
 
     news-card:hover {
-        transform: translateY(-8px);
-        border-color: var(--accent-color);
-    }
-
-    news-card::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background: var(--accent-color);
-        transform: scaleX(0);
-        transition: transform 0.3s ease;
-        transform-origin: left;
-    }
-
-    news-card:hover::before {
-        transform: scaleX(1);
+        transform: translateY(-10px) scale(1.02);
+        border-color: oklch(1 0 0 / 0.15);
+        background: oklch(0.2 0.02 240);
     }
 }
