@@ -126,9 +126,21 @@
     .logo p { font-size: 0.7rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.1em; }
 
     main { padding-block: 3rem; }
-    .news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 2.5rem; }
     
-    footer { padding-block: 2.5rem; text-align: center; border-top: 1px solid var(--border-color); color: var(--text-secondary); font-size: 0.85rem; }
+    .ad-container-top {
+        margin-bottom: 3rem;
+        background: var(--card-bg);
+        border: 1px solid var(--border-color);
+        border-radius: 14px;
+        min-height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-secondary);
+        font-size: 0.8rem;
+    }
+
+    .news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 2.5rem; }
 }
 
 @layer components {
@@ -153,9 +165,9 @@
 
     .modal-content {
         background: var(--card-bg);
-        width: min(550px, 95%);
-        padding: 2.5rem;
-        border-radius: 28px;
+        width: min(600px, 95%);
+        padding: 3rem;
+        border-radius: 32px;
         border: 1px solid var(--border-color);
         box-shadow: var(--shadow-deep);
         transform: scale(0.9);
@@ -164,10 +176,80 @@
 
     .modal-overlay.active .modal-content { transform: scale(1); }
 
-    .modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
-    .modal-desc { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 2rem; }
-    .close-btn { background: none; border: none; color: var(--text-primary); font-size: 2rem; cursor: pointer; }
+    .modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; }
+    .modal-header h2 { font-size: 1.8rem; font-weight: 900; }
+    .close-btn { background: none; border: none; color: var(--text-primary); font-size: 2.5rem; cursor: pointer; line-height: 1; }
 
+    .modal-body { max-height: 60vh; overflow-y: auto; padding-right: 1rem; }
+    .modal-body h3 { margin: 1.5rem 0 0.5rem; font-size: 1.1rem; color: var(--text-primary); }
+    .modal-body p { margin-bottom: 1rem; color: var(--text-secondary); font-size: 1rem; }
+    .modal-body a { color: var(--accent-color); text-decoration: none; font-weight: 600; }
+
+    /* Cookie Banner */
+    .cookie-banner {
+        position: fixed;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%) translateY(150%);
+        width: min(900px, 92%);
+        background: var(--header-bg);
+        backdrop-filter: blur(20px);
+        border: 1px solid var(--border-color);
+        border-radius: 20px;
+        padding: 1.5rem 2rem;
+        z-index: 3000;
+        box-shadow: var(--shadow-deep);
+        transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    .cookie-banner.active { transform: translateX(-50%) translateY(0); }
+
+    .cookie-content { display: flex; justify-content: space-between; align-items: center; gap: 2rem; }
+    .cookie-content p { font-size: 0.9rem; color: var(--text-secondary); }
+    .cookie-content button#view-privacy { background: none; border: none; color: var(--accent-color); text-decoration: underline; cursor: pointer; padding: 0; font: inherit; font-weight: 600; }
+
+    .accept-btn {
+        background: var(--text-primary);
+        color: var(--bg-color);
+        border: none;
+        padding: 0.8rem 1.5rem;
+        border-radius: 12px;
+        font-weight: 800;
+        cursor: pointer;
+        white-space: nowrap;
+    }
+
+    /* Professional Footer */
+    footer {
+        padding-block: 5rem 3rem;
+        background: var(--header-bg);
+        border-top: 1px solid var(--border-color);
+        margin-top: 8rem;
+    }
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .footer-info h3 { font-size: 1.5rem; font-weight: 900; margin-bottom: 1rem; }
+    .footer-info p { color: var(--text-secondary); max-width: 300px; }
+
+    .footer-nav h4, .footer-social h4 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-secondary); margin-bottom: 1.5rem; }
+    
+    .footer-nav { display: flex; flex-direction: column; align-items: flex-start; gap: 0.8rem; }
+    .footer-nav button { background: none; border: none; color: var(--text-primary); font-size: 0.95rem; cursor: pointer; font-weight: 500; transition: color 0.2s; }
+    .footer-nav button:hover { color: var(--accent-color); }
+
+    .social-icons { display: flex; gap: 1.5rem; color: var(--text-secondary); font-size: 0.9rem; font-weight: 600; }
+    .social-icons span { cursor: pointer; transition: color 0.2s; }
+    .social-icons span:hover { color: var(--accent-color); }
+
+    .footer-bottom { padding-top: 2rem; border-top: 1px solid var(--border-color); text-align: center; color: var(--text-secondary); font-size: 0.8rem; }
+
+    /* Form Styles */
     .form-group { margin-bottom: 1.5rem; }
     .form-group label { display: block; margin-bottom: 0.5rem; font-size: 0.85rem; font-weight: 700; color: var(--text-secondary); text-transform: uppercase; }
     .form-group input, .form-group textarea {
@@ -178,8 +260,8 @@
         padding: 0.9rem 1.1rem;
         border-radius: 14px;
         font-size: 1rem;
+        outline: none;
     }
-
     .submit-btn {
         width: 100%;
         background: var(--accent-color);
@@ -193,58 +275,16 @@
         box-shadow: 0 4px 15px var(--accent-glow);
     }
 
-    /* Footer */
-    footer {
-        padding: 4rem 0;
-        background: var(--footer-bg, var(--card-bg));
+    /* Comments Section */
+    .comments-section {
+        margin-top: 8rem;
+        padding-top: 4rem;
         border-top: 1px solid var(--border-color);
-        margin-top: 5rem;
     }
+    .section-title { font-size: 1.8rem; font-weight: 900; margin-bottom: 2.5rem; }
+}
 
-    .footer-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-        text-align: center;
-    }
-
-    .footer-links {
-        display: flex;
-        gap: 2rem;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .footer-links button {
-        background: none;
-        border: none;
-        color: var(--text-secondary);
-        font-size: 0.9rem;
-        font-weight: 600;
-        cursor: pointer;
-        transition: color 0.2s;
-    }
-
-    .footer-links button:hover {
-        color: var(--accent-color);
-    }
-
-    footer p {
-        color: var(--text-secondary);
-        font-size: 0.85rem;
-    }
-
-    /* Modal Body Content */
-    .modal-body {
-        max-height: 60vh;
-        overflow-y: auto;
-        color: var(--text-secondary);
-        line-height: 1.6;
-        font-size: 1rem;
-    }
-
-    .modal-body p {
-        margin-bottom: 1.2rem;
-    }
+@media (max-width: 768px) {
+    .footer-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .cookie-content { flex-direction: column; text-align: center; gap: 1rem; }
 }

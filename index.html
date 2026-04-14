@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global EcoNews - Daily Top 5 Economic Insights</title>
-    <meta name="description" content="Get the top 5 global economic news insights daily. Stay updated with curated financial, technology, and sustainability news in multiple languages.">
-    <meta name="keywords" content="economic news, global economy, financial insights, daily news, tech news, sustainability, multi-language news">
+    <title>Global EcoNews - Premium Daily Economic Insights & Analysis</title>
+    <meta name="description" content="Access premium daily insights into the global economy. We curate the top 5 most impactful economic, tech, and sustainability stories to keep you informed.">
+    <meta name="keywords" content="global economy, economic analysis, daily financial news, tech innovation, sustainability trends, monetary policy, market insights">
+    
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="Global EcoNews - Daily Economic Insights">
+    <meta property="og:description" content="Stay ahead with the top 5 global economic stories delivered daily.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://world-economic-news5.pages.dev/">
+    
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
-    <!-- Google Fonts for better typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3649425849578034"
      crossorigin="anonymous"></script>
@@ -21,13 +29,12 @@
         <div class="container header-content">
             <div class="logo">
                 <h1>Global <span>EcoNews</span></h1>
-                <p>Top 5 Economic Insights Daily</p>
+                <p>Daily Intelligence for the Global Economy</p>
             </div>
             
             <nav class="controls">
-                <!-- Highlighted Partnership Button -->
                 <button id="partnership-btn" class="partnership-btn highlight">
-                    🤝 Partnership
+                    🤝 Contact & Partnership
                 </button>
                 
                 <div class="divider"></div>
@@ -54,26 +61,36 @@
     </header>
 
     <main class="container">
+        <!-- Featured Ad Slot Placeholder (AdSense will fill this) -->
+        <div class="ad-container-top">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-3649425849578034"
+                 data-ad-slot="YOUR_AD_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
         <section id="news-container" class="news-grid">
-            <!-- News will appear here immediately -->
+            <!-- News will appear here -->
             <div class="loading-state">
-                <p>Loading the latest economic insights...</p>
+                <p>Curating the latest economic intelligence...</p>
             </div>
         </section>
 
         <!-- Disqus Comments Section -->
         <section class="comments-section">
-            <h3 class="section-title">Comments</h3>
-            <div id="disqus_thread">댓글 시스템을 불러오는 중입니다...</div>
+            <h3 class="section-title">Community Discussion</h3>
+            <div id="disqus_thread">Loading discussion portal...</div>
             <script>
-                /**
-                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
                 var disqus_config = function () {
                     this.page.url = 'https://world-economic-news5.pages.dev/';  
                     this.page.identifier = 'world-economic-news-home'; 
                 };
-                (function() { // DON'T EDIT BELOW THIS LINE
+                (function() {
                     var d = document, s = d.createElement('script');
                     s.src = 'https://world-economic-news5-1.disqus.com/embed.js';
                     s.setAttribute('data-timestamp', +new Date());
@@ -81,86 +98,119 @@
                 })();
             </script>
             <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-            </section>
-            </main>
-    <!-- Formspree Integrated Modal -->
+        </section>
+    </main>
+
+    <!-- Modals -->
     <div id="partnership-modal" class="modal-overlay">
         <div class="modal-content">
             <div class="modal-header">
-                <h2>제휴 문의 (Partnership)</h2>
+                <h2>Contact & Partnership</h2>
                 <button id="close-modal" class="close-btn">&times;</button>
             </div>
-            <p class="modal-desc">글로벌 에코뉴스와 함께 성장할 파트너를 찾습니다. 아래 양식을 작성해 주세요.</p>
+            <p class="modal-desc">Connect with Global EcoNews for partnerships, inquiries, or feedback.</p>
             <form action="https://formspree.io/f/meevqopj" method="POST">
                 <div class="form-group">
-                    <label>성함/기업명</label>
-                    <input type="text" name="name" placeholder="홍길동" required>
+                    <label>Name / Organization</label>
+                    <input type="text" name="name" placeholder="Your Name" required>
                 </div>
                 <div class="form-group">
-                    <label>이메일 주소</label>
-                    <input type="email" name="_replyto" placeholder="example@email.com" required>
+                    <label>Email Address</label>
+                    <input type="email" name="_replyto" placeholder="email@example.com" required>
                 </div>
                 <div class="form-group">
-                    <label>문의 내용</label>
-                    <textarea name="message" rows="4" placeholder="제휴 제안 내용을 입력해 주세요." required></textarea>
+                    <label>Message</label>
+                    <textarea name="message" rows="4" placeholder="How can we help you?" required></textarea>
                 </div>
-                <button type="submit" class="submit-btn">문의 보내기</button>
+                <button type="submit" class="submit-btn">Send Message</button>
             </form>
+        </div>
+    </div>
+
+    <!-- Enhanced About Us Modal -->
+    <div id="about-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>About Global EcoNews Network</h2>
+                <button id="close-about" class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Global EcoNews</strong> is a leading independent digital publication dedicated to providing high-signal, low-noise economic intelligence. In an era of information overload, we focus on the top 5 most critical developments that shape our world every single day.</p>
+                <p>Our team of digital curators and analysts scan global markets, technological breakthroughs, and policy shifts to bring you a concise yet comprehensive summary of the day's events. We believe that better information leads to better decisions.</p>
+                <p>Whether you are a finance professional, a tech enthusiast, or a student of the global economy, Global EcoNews is your daily companion for understanding the complex world we live in.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Professional Privacy Policy Modal -->
+    <div id="privacy-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Privacy & Cookie Policy</h2>
+                <button id="close-privacy" class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h3>1. Information Collection</h3>
+                <p>We do not collect personal data from visitors unless voluntarily submitted through our contact forms. However, we use third-party services like Google AdSense and Disqus to enhance your experience.</p>
+                <h3>2. Google AdSense & Cookies</h3>
+                <p>Google, as a third-party vendor, uses cookies to serve ads on our site. Google's use of the DoubleClick cookie enables it and its partners to serve ads based on your visit to our sites and/or other sites on the Internet.</p>
+                <p>You may opt out of the use of the DoubleClick cookie for interest-based advertising by visiting <a href="https://www.google.com/ads/preferences/" target="_blank">Google Ads Settings</a>.</p>
+                <h3>3. Third-Party Analytics</h3>
+                <p>We may use cookies to analyze site traffic and improve performance. By using this website, you consent to the processing of data about you by third parties in the manner and for the purposes set out above.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Detailed Disclaimer Modal -->
+    <div id="disclaimer-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Legal Disclaimer</h2>
+                <button id="close-disclaimer" class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Not Financial Advice:</strong> The content provided on Global EcoNews is for informational and educational purposes only. It should not be construed as investment, financial, tax, or legal advice.</p>
+                <p><strong>Accuracy of Information:</strong> While we aim for accuracy, all information is provided "as is" without warranty of any kind. Market conditions can change rapidly, and we are not responsible for any losses incurred based on the information provided here.</p>
+                <p><strong>External Links:</strong> Our site may contain links to external websites that are not provided or maintained by us. We do not guarantee the accuracy or completeness of any information on these external sites.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="container cookie-content">
+            <p>We use cookies to improve your experience and analyze traffic. By continuing to use our site, you agree to our <button id="view-privacy">Privacy Policy</button>.</p>
+            <button id="accept-cookies" class="accept-btn">Accept & Close</button>
         </div>
     </div>
 
     <footer>
         <div class="container footer-content">
-            <div class="footer-links">
-                <button id="about-btn">About Us</button>
-                <button id="privacy-btn">Privacy Policy</button>
-                <button id="disclaimer-btn">Disclaimer</button>
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>Global EcoNews</h3>
+                    <p>Your daily pulse on the world's economy.</p>
+                </div>
+                <div class="footer-nav">
+                    <h4>Navigation</h4>
+                    <button id="footer-about-btn">About Network</button>
+                    <button id="footer-privacy-btn">Privacy Policy</button>
+                    <button id="footer-disclaimer-btn">Disclaimer</button>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="social-icons">
+                        <span>Twitter</span>
+                        <span>LinkedIn</span>
+                        <span>RSS</span>
+                    </div>
+                </div>
             </div>
-            <p>&copy; 2026 Global EcoNews. All rights reserved.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Global EcoNews Network. All rights reserved.</p>
+            </div>
         </div>
     </footer>
-
-    <!-- About Us Modal -->
-    <div id="about-modal" class="modal-overlay">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>About Global EcoNews</h2>
-                <button id="close-about" class="close-btn">&times;</button>
-            </div>
-            <div class="modal-body">
-                <p>Global EcoNews delivers curated daily insights into the world's most significant economic developments. Our mission is to provide concise, high-quality, and multi-language news to help professionals and enthusiasts stay ahead in the rapidly changing global economy.</p>
-                <p>We focus on high-impact sectors including monetary policy, technology innovation, sustainability, and global trade.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Privacy Policy Modal -->
-    <div id="privacy-modal" class="modal-overlay">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>Privacy Policy</h2>
-                <button id="close-privacy" class="close-btn">&times;</button>
-            </div>
-            <div class="modal-body">
-                <p>Your privacy is important to us. Global EcoNews does not collect personal identification information from its users unless voluntarily provided via our partnership form. We use industry-standard tools like Google AdSense and Disqus which may use cookies to personalize content and ads.</p>
-                <p>By using our site, you consent to our use of these third-party services.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Disclaimer Modal -->
-    <div id="disclaimer-modal" class="modal-overlay">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>Disclaimer</h2>
-                <button id="close-disclaimer" class="close-btn">&times;</button>
-            </div>
-            <div class="modal-body">
-                <p>The information provided on Global EcoNews is for informational purposes only and does not constitute financial, investment, or legal advice. While we strive for accuracy, we make no guarantees regarding the completeness or reliability of the information presented.</p>
-                <p>Always consult with a qualified professional before making any financial decisions.</p>
-            </div>
-        </div>
-    </div>
 
     <script src="main.js" type="module"></script>
 </body>
