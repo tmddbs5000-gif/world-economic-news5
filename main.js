@@ -390,35 +390,34 @@ async function renderNews() {
 }
 
 // Modal Logic
-function toggleModal(show) {
-    if (show) {
-        partnershipModal.classList.add('active');
-        document.body.style.overflow = 'hidden';
-    } else {
-        partnershipModal.classList.remove('active');
-        document.body.style.overflow = 'auto';
+function setupModal(btnId, modalId, closeId) {
+    const btn = document.getElementById(btnId);
+    const modal = document.getElementById(modalId);
+    const close = document.getElementById(closeId);
+
+    if (btn && modal && close) {
+        btn.onclick = () => {
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        };
+        close.onclick = () => {
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        };
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
     }
 }
 
-// Event Listeners
-themeToggle.onclick = () => {
-    state.theme = state.theme === 'dark' ? 'light' : 'dark';
-    applyTheme();
-};
-
-languageSelect.onchange = (e) => {
-    state.currentLanguage = e.target.value;
-    renderNews();
-};
-
-dateSelect.onchange = (e) => {
-    state.currentDate = e.target.value;
-    renderNews();
-};
-
-partnershipBtn.onclick = () => toggleModal(true);
-closeModal.onclick = () => toggleModal(false);
-window.onclick = (e) => { if (e.target === partnershipModal) toggleModal(false); };
+// Initialize Modals
+setupModal('partnership-btn', 'partnership-modal', 'close-modal');
+setupModal('about-btn', 'about-modal', 'close-about');
+setupModal('privacy-btn', 'privacy-modal', 'close-privacy');
+setupModal('disclaimer-btn', 'disclaimer-modal', 'close-disclaimer');
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {

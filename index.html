@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global EcoNews - Daily Top 5</title>
+    <title>Global EcoNews - Daily Top 5 Economic Insights</title>
+    <meta name="description" content="Get the top 5 global economic news insights daily. Stay updated with curated financial, technology, and sustainability news in multiple languages.">
+    <meta name="keywords" content="economic news, global economy, financial insights, daily news, tech news, sustainability, multi-language news">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
     <!-- Google Fonts for better typography -->
@@ -108,10 +110,57 @@
     </div>
 
     <footer>
-        <div class="container">
+        <div class="container footer-content">
+            <div class="footer-links">
+                <button id="about-btn">About Us</button>
+                <button id="privacy-btn">Privacy Policy</button>
+                <button id="disclaimer-btn">Disclaimer</button>
+            </div>
             <p>&copy; 2026 Global EcoNews. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- About Us Modal -->
+    <div id="about-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>About Global EcoNews</h2>
+                <button id="close-about" class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Global EcoNews delivers curated daily insights into the world's most significant economic developments. Our mission is to provide concise, high-quality, and multi-language news to help professionals and enthusiasts stay ahead in the rapidly changing global economy.</p>
+                <p>We focus on high-impact sectors including monetary policy, technology innovation, sustainability, and global trade.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacy-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Privacy Policy</h2>
+                <button id="close-privacy" class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Your privacy is important to us. Global EcoNews does not collect personal identification information from its users unless voluntarily provided via our partnership form. We use industry-standard tools like Google AdSense and Disqus which may use cookies to personalize content and ads.</p>
+                <p>By using our site, you consent to our use of these third-party services.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Disclaimer Modal -->
+    <div id="disclaimer-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Disclaimer</h2>
+                <button id="close-disclaimer" class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>The information provided on Global EcoNews is for informational purposes only and does not constitute financial, investment, or legal advice. While we strive for accuracy, we make no guarantees regarding the completeness or reliability of the information presented.</p>
+                <p>Always consult with a qualified professional before making any financial decisions.</p>
+            </div>
+        </div>
+    </div>
 
     <script src="main.js" type="module"></script>
 </body>
