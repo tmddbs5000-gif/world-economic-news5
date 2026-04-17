@@ -104,6 +104,22 @@ customElements.define('news-card', NewsCard);
 
 // News Database (Condensed for sample)
 const newsDatabase = {
+    "2026-04-17": {
+        ko: [
+            { category: "거시경제", date: "2026-04-17", title: "글로벌 공급망 회복세 뚜렷, 인플레이션 압력 완화 신호", summary: "최근 발표된 글로벌 물류 지수에 따르면 주요 항만의 적체 현상이 해소되며 공급망이 정상 궤도에 진입하고 있습니다. 이는 원자재 가격 안정화로 이어져 각국 중앙은행의 금리 인하 기대감을 높이고 있습니다. 전문가들은 하반기 글로벌 경기 회복 속도가 예상보다 빠를 것으로 전망하고 있습니다.", readTime: "4분 읽기" },
+            { category: "금융시장", date: "2026-04-17", title: "뉴욕 증시, AI 기술주 강세에 사상 최고치 경신", summary: "실적 발표 시즌을 맞아 주요 빅테크 기업들이 시장 기대치를 상회하는 AI 부문 성과를 내놓으며 증시를 견인하고 있습니다. 특히 엔비디아와 MS 등 AI 인프라 관련주들이 급등하며 나스닥 지수가 사상 최고치를 돌파했습니다. 투자자들은 이제 AI 수익화 단계가 본격화된 것으로 평가하고 있습니다.", readTime: "5분 읽기" },
+            { category: "기술/혁신", date: "2026-04-17", title: "양자 컴퓨터 상용화 임박, 보안 생태계 대전환 예고", summary: "구글과 IBM이 양자 오류 보정 기술에서 획기적인 성과를 거두었다고 발표했습니다. 이는 상용 양자 컴퓨터 등장을 2~3년 앞당길 것으로 보이며, 이에 따라 기존 암호화 체계를 대체할 양자 내성 암호(PQC) 도입이 시급한 과제로 떠오르고 있습니다.", readTime: "5분 읽기" },
+            { category: "에너지", date: "2026-04-17", title: "유럽, 재생 에너지 비중 50% 돌파... 에너지 자립 가속화", summary: "유럽 연합 내 재생 에너지 발전 비중이 사상 처음으로 50%를 넘어섰습니다. 특히 풍력과 태양광의 비중이 급격히 늘어나며 화석 연료 의존도가 빠르게 낮아지고 있습니다. 이는 지정학적 리스크에 따른 에너지 안보 강화 전략이 성과를 거두고 있는 것으로 풀이됩니다.", readTime: "4분 읽기" },
+            { category: "고용/노동", date: "2026-04-17", title: "하이브리드 근무 정착, 도심 오피스 시장의 재편", summary: "팬데믹 이후 하이브리드 근무가 표준으로 자리 잡으면서 도심 대형 오피스 빌딩의 용도 변경이 활발해지고 있습니다. 사무 공간 대신 복합 문화 시설이나 주거 시설로의 전환이 늘어나고 있으며, 이는 도시 구조 자체를 변화시키는 동인이 되고 있습니다.", readTime: "3분 읽기" }
+        ],
+        en: [
+            { category: "Macro", date: "2026-04-17", title: "Global Supply Chain Recovery Signals Easing Inflation", summary: "Global logistics indices show clearing port congestion and a return to normalcy in supply chains. This stabilization is expected to ease raw material prices and fuel hopes for interest rate cuts. Analysts project a faster-than-expected recovery in the second half of the year.", readTime: "4 min read" },
+            { category: "Finance", date: "2026-04-17", title: "Wall Street Hits Record Highs on AI Tech Surge", summary: "Major tech firms are beating earnings expectations with strong AI segment results. NVIDIA and Microsoft have led the Nasdaq to record highs as investors believe the AI monetization phase is now in full swing.", readTime: "5 min read" },
+            { category: "Tech", date: "2026-04-17", title: "Quantum Computing Commercialization Nears Breakthrough", summary: "Google and IBM have reported significant progress in quantum error correction, potentially accelerating commercialization by 2-3 years. This shift highlights the urgent need for Post-Quantum Cryptography (PQC) to replace existing security systems.", readTime: "5 min read" },
+            { category: "Energy", date: "2026-04-17", title: "Europe Surpasses 50% Renewable Energy Share", summary: "Renewable energy has exceeded 50% of the EU's power generation for the first time. Wind and solar growth are rapidly reducing reliance on fossil fuels, marking a major milestone in energy security and independence.", readTime: "4 min read" },
+            { category: "Labor", date: "2026-04-17", title: "Hybrid Work Norms Reshaping Urban Office Markets", summary: "As hybrid work becomes standard, large urban office buildings are being repurposed into mixed-use or residential spaces. This trend is fundamentally altering city structures and the commercial real estate landscape.", readTime: "3 min read" }
+        ]
+    },
     "2026-04-14": {
         ko: [
             { category: "통화정책", date: "2026-04-14", title: "중앙은행, 디지털 화폐(CBDC) 실거래 테스트 단계 진입", summary: "정부가 중앙은행 디지털 화폐(CBDC)의 실생활 결제 테스트를 시작한다고 발표했습니다. 이번 테스트에는 주요 시중 은행과 유통업체들이 참여하며, 기존 화폐 시스템과의 호환성 및 보안성을 집중 점검합니다. 전문가들은 이번 조치가 현금 없는 사회로의 전환을 가속화하고 통화 정책의 효율성을 높일 것으로 기대하고 있습니다.", readTime: "3분 읽기" },
@@ -125,10 +141,25 @@ const newsDatabase = {
 // Generate placeholder news for other dates
 function generatePlaceholderNews(date, lang) {
     const categories = lang === 'ko' ? ["거시경제", "기술/혁신", "에너지", "금융시장", "글로벌 무역"] : ["Macro", "Tech", "Energy", "Finance", "Trade"];
+    const titles_ko = [
+        `[분석] ${date} 글로벌 시장 변동성 확대와 대응 전략`,
+        `[기술] AI 인프라 투자 가속화, 핵심 수혜 분야는?`,
+        `[에너지] 신재생 에너지 전환 가속화와 공급망 리스크`,
+        `[금융] 주요국 금리 결정의 향방과 신흥국 시장 영향`,
+        `[무역] 글로벌 공급망 재편 속 새로운 통상 질서의 출현`
+    ];
+    const titles_en = [
+        `[Analysis] ${date} Global Market Volatility and Strategies`,
+        `[Tech] AI Infrastructure Investment Acceleration`,
+        `[Energy] Renewable Transition and Supply Chain Risks`,
+        `[Finance] Interest Rate Directions and Emerging Markets`,
+        `[Trade] New Trade Order in Global Supply Chain Shift`
+    ];
+
     return Array.from({ length: 5 }, (_, i) => ({
         category: categories[i],
         date: date,
-        title: lang === 'ko' ? `[분석] ${categories[i]} 분야의 핵심 변화와 시장 전망 (${date})` : `[Analysis] Key Changes and Market Outlook in ${categories[i]} (${date})`,
+        title: lang === 'ko' ? titles_ko[i] : titles_en[i],
         summary: lang === 'ko' ? 
             `${date} 일자 심층 경제 보고서입니다. 현재 시장은 글로벌 지정학적 리스크와 주요 국가들의 통화 정책 변화에 민감하게 반응하고 있습니다. 당사의 분석에 따르면, 단기적인 변동성보다는 구조적인 산업 재편과 에너지 전환 이슈가 장기적인 시장의 흐름을 결정할 것으로 보입니다. 특히 신흥 시장의 성장은 투자자들에게 새로운 기회를 제공할 것입니다.` :
             `In-depth economic report for ${date}. The market is reacting sensitively to global geopolitical risks and shifts in monetary policies. Our analysis suggests that structural industrial realignment and energy transition issues will dictate long-term market trends rather than short-term volatility. Growth in emerging markets, in particular, will offer new opportunities for investors.`,
@@ -136,10 +167,24 @@ function generatePlaceholderNews(date, lang) {
     }));
 }
 
+// Function to get current date in KST (UTC+9) with 10 AM update rule
+function getKSTDate() {
+    const now = new Date();
+    const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+    const kst = new Date(utc + (9 * 3600000));
+    
+    if (kst.getHours() < 10) {
+        kst.setDate(kst.getDate() - 1);
+    }
+    return kst.toISOString().split('T')[0];
+}
+
+const initialDate = getKSTDate();
+
 // Application State
 const state = {
     currentLanguage: 'ko',
-    currentDate: '2026-04-14',
+    currentDate: initialDate,
     theme: localStorage.getItem('theme') || 'dark',
     cookiesAccepted: localStorage.getItem('cookiesAccepted') === 'true'
 };
@@ -218,6 +263,11 @@ setupModal('footer-disclaimer-btn', 'disclaimer-modal', 'close-disclaimer');
 
 // Start
 document.addEventListener('DOMContentLoaded', () => {
+    // Set initial date picker values
+    if (dateSelect) {
+        dateSelect.value = state.currentDate;
+        dateSelect.max = state.currentDate;
+    }
     applyTheme();
     renderNews();
 });
