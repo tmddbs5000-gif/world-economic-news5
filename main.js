@@ -120,21 +120,60 @@ customElements.define('news-card', NewsCard);
 
 // News Database
 const newsDatabase = {
-    "2026-04-21": {
+    "2026-04-26": {
         ko: [
-            { category: "예상/전망", date: "2026-04-21", title: "[미래] 글로벌 무역 전쟁 재점화 가능성과 원자재 시장의 대이동", summary: "4월 21일경에는 주요국 간의 새로운 관세 정책 발표가 예상됩니다. 특히 희토류를 포함한 핵심 전략 자원의 수출 제한 조치가 논의될 것으로 보이며, 이는 글로벌 공급망에 다시 한 번 큰 충격을 줄 수 있습니다. 투자자들은 원자재 자립도가 높은 기업들에 주목할 필요가 있습니다.", readTime: "5분 읽기", glossary: { "관세": "수입품에 부과하는 세금", "희토류": "첨단 산업의 필수 비철금속 원소", "공급망 충격": "생산 요소의 공급이 갑자기 차단되는 현상" } },
-            { category: "미래 기술", date: "2026-04-21", title: "[미래] 뇌-컴퓨터 인터페이스(BCI) 상용화 가이드라인 발표 예정", summary: "인간의 뇌와 컴퓨터를 연결하는 BCI 기술의 윤리적 가이드라인이 21일 공식 발표될 예정입니다. 이는 단순 의료 기기를 넘어 일상생활에서의 활용 가능성을 여는 법적 토대가 될 것입니다. 빅테크 기업들의 관련 스타트업 인수가 가속화될 전망입니다.", readTime: "4분 읽기", glossary: { "BCI": "뇌파를 통해 기기를 제어하는 기술", "윤리적 가이드라인": "기술 활용 시 지켜야 할 도덕적 기준", "상용화": "제품이 시장에서 일반 대중에게 판매되는 것" } }
+            { category: "경제 일정", date: "2026-04-26", title: "주간 글로벌 경제 지표 총평 및 차주 전망", summary: "한 주간의 주요 지표들을 정리하고 다음 주 예정된 유럽중앙은행(ECB) 정책 회의에 대비하는 보고서가 발표됩니다. 지난주 고용 지표의 여파가 채권 시장에 미치는 영향을 최종 점검합니다.", readTime: "4분 읽기", glossary: { "ECB": "유럽 국가들의 통화 정책을 결정하는 중앙은행", "채권 시장": "정부나 기업이 발행한 빚 증서(채권)가 거래되는 시장" } }
         ],
         en: [
-            { category: "Outlook", date: "2026-04-21", title: "[Future] Potential Trade War Re-ignition and Commodity Shifts", summary: "Expected announcements on new tariff policies on April 21 may impact global markets. Restrictions on strategic resources like rare earths are likely to be discussed, causing shifts in global supply chains. Investors are advised to watch resource-independent firms.", readTime: "5 min read", glossary: { "Tariff": "Tax imposed on imported goods", "Rare Earths": "Strategic minerals vital for high-tech industries", "Supply Chain Shock": "Sudden disruption in the production process" } }
+            { category: "Calendar", date: "2026-04-26", title: "Weekly Economic Review & ECB Preview", summary: "Summarizing the week's key indicators and preparing for the upcoming European Central Bank (ECB) policy meeting. Final assessment of employment data impact on bond markets.", readTime: "4 min read", glossary: { "ECB": "European Central Bank", "Bond Market": "Market where debt securities are traded" } }
+        ]
+    },
+    "2026-04-25": {
+        ko: [
+            { category: "경제 일정", date: "2026-04-25", title: "미국 개인소비지출(PCE) 가격지수 발표", summary: "연준이 가장 신뢰하는 물가 지표인 PCE 지수가 발표됩니다. 최근 에너지 가격 상승분이 반영되었을지가 관건이며, 이에 따라 향후 금리 인하 속도가 결정될 전망입니다.", readTime: "5분 읽기", glossary: { "PCE": "가계와 비영리 기구가 소비하는 물건과 서비스의 가격 변동을 측정한 지수", "근원 물가": "변동성이 큰 에너지와 식료품을 제외한 물가 지수" } }
+        ],
+        en: [
+            { category: "Calendar", date: "2026-04-25", title: "US Personal Consumption Expenditures (PCE) Release", summary: "The Fed's preferred inflation gauge will be released. Markets will watch if energy price hikes are reflected, influencing the pace of future rate cuts.", readTime: "5 min read", glossary: { "PCE": "A measure of the prices that people living in the US pay for goods and services", "Core Inflation": "Inflation measure that excludes volatile items like food and energy" } }
+        ]
+    },
+    "2026-04-24": {
+        ko: [
+            { category: "경제 일정", date: "2026-04-24", title: "일본은행(BoJ) 금융정책결정회의 결과 발표", summary: "일본의 초저금리 정책 유지 여부와 엔화 약세 대응책이 발표됩니다. 글로벌 자금 흐름의 '캐리 트레이드' 청산 여부를 결정지을 중요한 변곡점입니다.", readTime: "5분 읽기", glossary: { "BoJ": "일본의 중앙은행", "엔 캐리 트레이드": "금리가 낮은 엔화를 빌려 수익률이 높은 다른 나라 자산에 투자하는 것" } }
+        ],
+        en: [
+            { category: "Calendar", date: "2026-04-24", title: "Bank of Japan (BoJ) Policy Decision", summary: "BoJ will announce its stance on ultra-low rates and measures against Yen weakness. A critical turning point for global 'carry trade' liquidations.", readTime: "5 min read", glossary: { "BoJ": "Bank of Japan", "Carry Trade": "Strategy of borrowing in low-interest currencies to invest in higher-return assets" } }
+        ]
+    },
+    "2026-04-23": {
+        ko: [
+            { category: "경제 일정", date: "2026-04-23", title: "한국 1분기 실질 국내총생산(GDP) 속보치 발표", summary: "한국 경제의 성장 엔진인 수출과 내수 소비의 성적표가 공개됩니다. 반도체 수출 회복세가 GDP 수치를 얼마나 견인했을지가 핵심 관전 포인트입니다.", readTime: "4분 읽기", glossary: { "GDP": "한 나라 안에서 일정 기간 생산된 모든 재화와 서비스의 시장 가치", "속보치": "공식 통계가 나오기 전 가장 빠르게 발표하는 잠정 수치" } }
+        ],
+        en: [
+            { category: "Calendar", date: "2026-04-23", title: "South Korea Q1 GDP Advance Estimate", summary: "The report card for Korea's export and domestic consumption will be revealed. The key focus is how much semiconductor recovery boosted the growth figure.", readTime: "4 min read", glossary: { "GDP": "Gross Domestic Product", "Advance Estimate": "Initial quarterly estimate of economic growth" } }
+        ]
+    },
+    "2026-04-22": {
+        ko: [
+            { category: "경제 일정", date: "2026-04-22", title: "미국 기존주택매매 건수 및 부동산 시장 동향", summary: "고금리 상황이 지속되는 가운데 미국 부동산 시장의 냉각 정도를 파악할 수 있는 지표가 발표됩니다. 모기지 금리 변화에 따른 실수요자들의 움직임이 주목됩니다.", readTime: "4분 읽기", glossary: { "모기지 금리": "집을 담보로 돈을 빌릴 때 적용되는 이자율", "기존주택매매": "이미 지어진 집이 팔린 건수를 집계한 통계" } }
+        ],
+        en: [
+            { category: "Calendar", date: "2026-04-22", title: "US Existing Home Sales Data", summary: "Indicator to gauge the cooling of the US real estate market under sustained high interest rates. Watching the impact of mortgage rate shifts on home buyers.", readTime: "4 min read", glossary: { "Mortgage Rate": "Interest rate charged by a lender on a loan for property", "Existing Home Sales": "Economic indicator that measures homes that have already been built and sold" } }
+        ]
+    },
+    "2026-04-21": {
+        ko: [
+            { category: "경제 일정", date: "2026-04-21", title: "글로벌 원자재 가격 동향 및 원유 재고 발표", summary: "국제 유가와 원자재 가격의 변동성이 확대되는 가운데, 미국의 주간 원유 재고 수치가 발표됩니다. 에너지 인플레이션 압력을 예측할 수 있는 중요한 날입니다.", readTime: "5분 읽기", glossary: { "원유 재고": "팔리지 않고 남아 있는 석유의 양", "에너지 인플레이션": "에너지 가격 상승이 물가 전반의 상승을 일으키는 현상" } }
+        ],
+        en: [
+            { category: "Calendar", date: "2026-04-21", title: "Global Commodity Trends & US Crude Oil Inventories", summary: "Weekly crude oil inventory data will be released amid rising volatility in commodity prices. Important for predicting energy-driven inflation pressures.", readTime: "5 min read", glossary: { "Crude Inventories": "Stock of unrefined oil held by producers", "Energy Inflation": "General price increase driven by rising energy costs" } }
         ]
     },
     "2026-04-20": {
         ko: [
-            { category: "예상/전망", date: "2026-04-20", title: "[미래] 디지털 달러(Stablecoin) 법정 통화 지위 확보 논의 가속", summary: "내일(20일)은 중앙은행들이 스테이블코인의 법적 지위에 대해 공동 성명을 발표할 것으로 예상됩니다. 이는 전통 금융 시스템과 가상자산 시장이 본격적으로 통합되는 역사적 전환점이 될 것입니다. 은행권의 디지털 자산 수탁 서비스가 표준화될 가능성이 높습니다.", readTime: "4분 읽기", glossary: { "스테이블코인": "가치가 법정 화폐에 고정된 가상자산", "법정 통화": "국가가 발행하여 강제 통용력을 갖는 돈", "디지털 자산 수탁": "디지털 자산을 대신 보관하고 관리하는 서비스" } }
+            { category: "경제 일정", date: "2026-04-20", title: "중국 대출우대금리(LPR) 결정 및 아시아 증시 개장", summary: "중국 인민은행이 기준금리 역할을 하는 LPR을 발표합니다. 중국의 경기 부양 의지를 확인할 수 있는 지표이며, 아시아 시장 전체의 투자 심리에 큰 영향을 미칠 전망입니다.", readTime: "4분 읽기", glossary: { "LPR": "중국 금융기관들이 기업에 대출해줄 때 기준이 되는 금리", "투자 심리": "투자자들이 시장에 대해 느끼는 낙관이나 비관의 정도" } }
         ],
         en: [
-            { category: "Outlook", date: "2026-04-20", title: "[Future] Digital Dollar and Stablecoin Legal Status Discussion", summary: "Expect a joint statement from central banks on the legal status of stablecoins on April 20. This could mark the historic integration of traditional finance and digital assets.", readTime: "4 min read", glossary: { "Stablecoin": "Cryptocurrency pegged to a fiat currency", "Fiat Currency": "Government-issued legal tender", "Custody Service": "Professional management and storage of assets" } }
+            { category: "Calendar", date: "2026-04-20", title: "China Loan Prime Rate (LPR) Decision", summary: "The People's Bank of China will announce the LPR. This key rate reflects China's economic stimulus intent and will impact sentiment across Asian markets.", readTime: "4 min read", glossary: { "LPR": "Loan Prime Rate, the benchmark for corporate loans in China", "Market Sentiment": "The general prevailing attitude of investors toward the market" } }
         ]
     },
     "2026-04-19": {
