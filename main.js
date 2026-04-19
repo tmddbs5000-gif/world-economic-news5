@@ -118,8 +118,25 @@ class NewsCard extends HTMLElement {
 }
 customElements.define('news-card', NewsCard);
 
-// News Database (Condensed for sample)
+// News Database
 const newsDatabase = {
+    "2026-04-21": {
+        ko: [
+            { category: "예상/전망", date: "2026-04-21", title: "[미래] 글로벌 무역 전쟁 재점화 가능성과 원자재 시장의 대이동", summary: "4월 21일경에는 주요국 간의 새로운 관세 정책 발표가 예상됩니다. 특히 희토류를 포함한 핵심 전략 자원의 수출 제한 조치가 논의될 것으로 보이며, 이는 글로벌 공급망에 다시 한 번 큰 충격을 줄 수 있습니다. 투자자들은 원자재 자립도가 높은 기업들에 주목할 필요가 있습니다.", readTime: "5분 읽기", glossary: { "관세": "수입품에 부과하는 세금", "희토류": "첨단 산업의 필수 비철금속 원소", "공급망 충격": "생산 요소의 공급이 갑자기 차단되는 현상" } },
+            { category: "미래 기술", date: "2026-04-21", title: "[미래] 뇌-컴퓨터 인터페이스(BCI) 상용화 가이드라인 발표 예정", summary: "인간의 뇌와 컴퓨터를 연결하는 BCI 기술의 윤리적 가이드라인이 21일 공식 발표될 예정입니다. 이는 단순 의료 기기를 넘어 일상생활에서의 활용 가능성을 여는 법적 토대가 될 것입니다. 빅테크 기업들의 관련 스타트업 인수가 가속화될 전망입니다.", readTime: "4분 읽기", glossary: { "BCI": "뇌파를 통해 기기를 제어하는 기술", "윤리적 가이드라인": "기술 활용 시 지켜야 할 도덕적 기준", "상용화": "제품이 시장에서 일반 대중에게 판매되는 것" } }
+        ],
+        en: [
+            { category: "Outlook", date: "2026-04-21", title: "[Future] Potential Trade War Re-ignition and Commodity Shifts", summary: "Expected announcements on new tariff policies on April 21 may impact global markets. Restrictions on strategic resources like rare earths are likely to be discussed, causing shifts in global supply chains. Investors are advised to watch resource-independent firms.", readTime: "5 min read", glossary: { "Tariff": "Tax imposed on imported goods", "Rare Earths": "Strategic minerals vital for high-tech industries", "Supply Chain Shock": "Sudden disruption in the production process" } }
+        ]
+    },
+    "2026-04-20": {
+        ko: [
+            { category: "예상/전망", date: "2026-04-20", title: "[미래] 디지털 달러(Stablecoin) 법정 통화 지위 확보 논의 가속", summary: "내일(20일)은 중앙은행들이 스테이블코인의 법적 지위에 대해 공동 성명을 발표할 것으로 예상됩니다. 이는 전통 금융 시스템과 가상자산 시장이 본격적으로 통합되는 역사적 전환점이 될 것입니다. 은행권의 디지털 자산 수탁 서비스가 표준화될 가능성이 높습니다.", readTime: "4분 읽기", glossary: { "스테이블코인": "가치가 법정 화폐에 고정된 가상자산", "법정 통화": "국가가 발행하여 강제 통용력을 갖는 돈", "디지털 자산 수탁": "디지털 자산을 대신 보관하고 관리하는 서비스" } }
+        ],
+        en: [
+            { category: "Outlook", date: "2026-04-20", title: "[Future] Digital Dollar and Stablecoin Legal Status Discussion", summary: "Expect a joint statement from central banks on the legal status of stablecoins on April 20. This could mark the historic integration of traditional finance and digital assets.", readTime: "4 min read", glossary: { "Stablecoin": "Cryptocurrency pegged to a fiat currency", "Fiat Currency": "Government-issued legal tender", "Custody Service": "Professional management and storage of assets" } }
+        ]
+    },
     "2026-04-19": {
         ko: [
             { category: "거시경제", date: "2026-04-19", title: "글로벌 물가상승률 목표치 근접, 주요국 금리 인하 사이클 진입 가시화", summary: "최근 발표된 주요국 경제 지표에 따르면 글로벌 인플레이션이 각국 중앙은행의 목표치에 근접하고 있습니다. 이에 따라 연준(Fed)을 비롯한 주요 중앙은행들이 하반기부터 본격적인 금리 인하 사이클에 진입할 가능성이 높아졌습니다. 전문가들은 고금리 시대의 종료가 가계 부채 부담 완화와 기업 투자 활성화로 이어질 것으로 분석하고 있습니다.", readTime: "4분 읽기", glossary: { "인플레이션": "물가가 지속적으로 오르는 현상", "연준(Fed)": "미국의 중앙은행 제도", "금리 인하 사이클": "중앙은행이 일정 기간에 걸쳐 금리를 계속 낮추는 과정" } },
@@ -138,34 +155,19 @@ const newsDatabase = {
     },
     "2026-04-17": {
         ko: [
-            { category: "거시경제", date: "2026-04-17", title: "글로벌 공급망 회복세 뚜렷, 인플레이션 압력 완화 신호", summary: "최근 발표된 글로벌 물류 지수에 따르면 주요 항만의 적체 현상이 해소되며 공급망이 정상 궤도에 진입하고 있습니다. 이는 원자재 가격 안정화로 이어져 각국 중앙은행의 금리 인하 기대감을 높이고 있습니다. 전문가들은 하반기 글로벌 경기 회복 속도가 예상보다 빠를 것으로 전망하고 있습니다.", readTime: "4분 읽기" },
-            { category: "금융시장", date: "2026-04-17", title: "뉴욕 증시, AI 기술주 강세에 사상 최고치 경신", summary: "실적 발표 시즌을 맞아 주요 빅테크 기업들이 시장 기대치를 상회하는 AI 부문 성과를 내놓으며 증시를 견인하고 있습니다. 특히 엔비디아와 MS 등 AI 인프라 관련주들이 급등하며 나스닥 지수가 사상 최고치를 돌파했습니다. 투자자들은 이제 AI 수익화 단계가 본격화된 것으로 평가하고 있습니다.", readTime: "5분 읽기" },
-            { category: "기술/혁신", date: "2026-04-17", title: "양자 컴퓨터 상용화 임박, 보안 생태계 대전환 예고", summary: "구글과 IBM이 양자 오류 보정 기술에서 획기적인 성과를 거두었다고 발표했습니다. 이는 상용 양자 컴퓨터 등장을 2~3년 앞당길 것으로 보이며, 이에 따라 기존 암호화 체계를 대체할 양자 내성 암호(PQC) 도입이 시급한 과제로 떠오르고 있습니다.", readTime: "5분 읽기" },
-            { category: "에너지", date: "2026-04-17", title: "유럽, 재생 에너지 비중 50% 돌파... 에너지 자립 가속화", summary: "유럽 연합 내 재생 에너지 발전 비중이 사상 처음으로 50%를 넘어섰습니다. 특히 풍력과 태양광의 비중이 급격히 늘어나며 화석 연료 의존도가 빠르게 낮아지고 있습니다. 이는 지정학적 리스크에 따른 에너지 안보 강화 전략이 성과를 거두고 있는 것으로 풀이됩니다.", readTime: "4분 읽기" },
-            { category: "고용/노동", date: "2026-04-17", title: "하이브리드 근무 정착, 도심 오피스 시장의 재편", summary: "팬데믹 이후 하이브리드 근무가 표준으로 자리 잡으면서 도심 대형 오피스 빌딩의 용도 변경이 활발해지고 있습니다. 사무 공간 대신 복합 문화 시설이나 주거 시설로의 전환이 늘어나고 있으며, 이는 도시 구조 자체를 변화시키는 동인이 되고 있습니다.", readTime: "3분 읽기" }
+            { category: "거시경제", date: "2026-04-17", title: "글로벌 공급망 회복세 뚜렷, 인플레이션 압력 완화 신호", summary: "최근 발표된 글로벌 물류 지수에 따르면 주요 항만의 적체 현상이 해소되며 공급망이 정상 궤도에 진입하고 있습니다. 이는 원자재 가격 안정화로 이어져 각국 중앙은행의 금리 인하 기대감을 높이고 있습니다. 전문가들은 하반기 글로벌 경기 회복 속도가 예상보다 빠를 것으로 전망하고 있습니다.", readTime: "4분 읽기", glossary: { "글로벌 물류 지수": "전 세계 물동량과 운송 비용을 나타내는 지표", "원자재": "제품 생산의 기본이 되는 천연 자원", "금리 인하": "돈을 빌릴 때 내는 이자율을 낮추는 것" } },
+            { category: "금융시장", date: "2026-04-17", title: "뉴욕 증시, AI 기술주 강세에 사상 최고치 경신", summary: "실적 발표 시즌을 맞아 주요 빅테크 기업들이 시장 기대치를 상회하는 AI 부문 성과를 내놓으며 증시를 견인하고 있습니다. 특히 엔비디아와 MS 등 AI 인프라 관련주들이 급등하며 나스닥 지수가 사상 최고치를 돌파했습니다.", readTime: "5분 읽기", glossary: { "빅테크": "거대 정보 기술 기업", "나스닥": "미국의 대표적인 기술주 중심 증시", "수익화": "사업을 통해 실제로 돈을 벌어들이는 것" } }
         ],
         en: [
-            { category: "Macro", date: "2026-04-17", title: "Global Supply Chain Recovery Signals Easing Inflation", summary: "Global logistics indices show clearing port congestion and a return to normalcy in supply chains. This stabilization is expected to ease raw material prices and fuel hopes for interest rate cuts. Analysts project a faster-than-expected recovery in the second half of the year.", readTime: "4 min read" },
-            { category: "Finance", date: "2026-04-17", title: "Wall Street Hits Record Highs on AI Tech Surge", summary: "Major tech firms are beating earnings expectations with strong AI segment results. NVIDIA and Microsoft have led the Nasdaq to record highs as investors believe the AI monetization phase is now in full swing.", readTime: "5 min read" },
-            { category: "Tech", date: "2026-04-17", title: "Quantum Computing Commercialization Nears Breakthrough", summary: "Google and IBM have reported significant progress in quantum error correction, potentially accelerating commercialization by 2-3 years. This shift highlights the urgent need for Post-Quantum Cryptography (PQC) to replace existing security systems.", readTime: "5 min read" },
-            { category: "Energy", date: "2026-04-17", title: "Europe Surpasses 50% Renewable Energy Share", summary: "Renewable energy has exceeded 50% of the EU's power generation for the first time. Wind and solar growth are rapidly reducing reliance on fossil fuels, marking a major milestone in energy security and independence.", readTime: "4 min read" },
-            { category: "Labor", date: "2026-04-17", title: "Hybrid Work Norms Reshaping Urban Office Markets", summary: "As hybrid work becomes standard, large urban office buildings are being repurposed into mixed-use or residential spaces. This trend is fundamentally altering city structures and the commercial real estate landscape.", readTime: "3 min read" }
+            { category: "Macro", date: "2026-04-17", title: "Global Supply Chain Recovery Signals Easing Inflation", summary: "Global logistics indices show clearing port congestion and a return to normalcy in supply chains. Stabilization in raw material prices boosts hopes for rate cuts.", readTime: "4 min read", glossary: { "Logistics Index": "Measurement of global shipping efficiency", "Raw Materials": "Basic materials used to produce goods", "Rate Cut": "Reduction in interest rates by a central bank" } }
         ]
     },
     "2026-04-14": {
         ko: [
-            { category: "통화정책", date: "2026-04-14", title: "중앙은행, 디지털 화폐(CBDC) 실거래 테스트 단계 진입", summary: "정부가 중앙은행 디지털 화폐(CBDC)의 실생활 결제 테스트를 시작한다고 발표했습니다. 이번 테스트에는 주요 시중 은행과 유통업체들이 참여하며, 기존 화폐 시스템과의 호환성 및 보안성을 집중 점검합니다. 전문가들은 이번 조치가 현금 없는 사회로의 전환을 가속화하고 통화 정책의 효율성을 높일 것으로 기대하고 있습니다.", readTime: "3분 읽기" },
-            { category: "반도체", date: "2026-04-14", title: "차세대 초미세 공정 기술 돌파구, 글로벌 반도체 지형 변화 예고", summary: "국내 반도체 기업이 세계 최초로 1nm 이하 공정의 핵심 기술을 확보하는 데 성공했습니다. 이는 무어의 법칙 한계를 극복한 사례로 평가받으며, 향후 AI 반도체 시장에서의 주도권을 더욱 공고히 할 전망입니다. 글로벌 경쟁사들도 이에 맞서 대규모 투자를 예고하고 있어 기술 경쟁이 한층 치열해질 것으로 보입니다.", readTime: "5분 읽기" },
-            { category: "지속가능성", date: "2026-04-14", title: "ESG 공시 의무화 확대, 기업들의 투명성 강화 노력", summary: "내년부터 상장사들의 ESG(환경·사회·지배구조) 공시 의무가 대폭 확대됩니다. 이에 따라 기업들은 탄소 배출량뿐만 아니라 공급망 내 인권 문제까지 상세히 보고해야 합니다. 투자자들은 이러한 비재무적 정보가 향후 기업 가치 평가의 핵심 요소가 될 것으로 보고 있습니다.", readTime: "4분 읽기" },
-            { category: "벤처/스타트업", date: "2026-04-14", title: "K-스타트업, 실리콘밸리 투자 유치 성공 사례 급증", summary: "최근 국내 기술 기반 스타트업들이 실리콘밸리의 대형 벤처캐피탈로부터 잇따라 대규모 투자를 유치하고 있습니다. 특히 AI 의료 진단 및 자율주행 소프트웨어 분야에서의 성과가 두드러집니다. 이는 한국 스타트업의 기술력이 세계적인 수준에 도달했음을 보여주는 지표로 해석됩니다.", readTime: "4분 읽기" },
-            { category: "원자재", date: "2026-04-14", title: "희토류 공급망 다변화, 자원 안보 강화 움직임", summary: "특정 국가에 의존하던 희토류 공급망을 다변화하려는 움직임이 전 세계적으로 확산되고 있습니다. 아프리카와 호주 등지의 신규 광산 개발 프로젝트에 글로벌 자금이 유입되고 있으며, 폐배터리 리사이클링을 통한 자원 확보 기술도 주목받고 있습니다.", readTime: "5분 읽기" }
+            { category: "통화정책", date: "2026-04-14", title: "중앙은행, 디지털 화폐(CBDC) 실거래 테스트 단계 진입", summary: "정부가 중앙은행 디지털 화폐(CBDC)의 실생활 결제 테스트를 시작한다고 발표했습니다. 이번 테스트에는 주요 시중 은행과 유통업체들이 참여하며, 기존 화폐 시스템과의 호환성 및 보안성을 집중 점검합니다.", readTime: "3분 읽기", glossary: { "CBDC": "중앙은행이 발행하는 디지털 형태의 화폐", "호환성": "서로 다른 시스템이 함께 잘 작동하는 성질", "보안성": "데이터나 자산을 외부의 침입으로부터 보호하는 정도" } }
         ],
         en: [
-            { category: "Monetary", date: "2026-04-14", title: "Central Bank Enters Real-World CBDC Testing Phase", summary: "The government has announced the commencement of real-world payment tests for Central Bank Digital Currency (CBDC). This phase involves major commercial banks and retailers to verify compatibility and security. Experts anticipate this will accelerate the transition to a cashless society and enhance monetary policy efficiency.", readTime: "3 min read" },
-            { category: "Semiconductors", date: "2026-04-14", title: "Breakthrough in Next-Gen Sub-1nm Process Technology", summary: "A domestic semiconductor giant has successfully secured key technology for sub-1nm processes. This is seen as overcoming the limits of Moore's Law and is expected to solidify dominance in the AI semiconductor market. Global competitors are responding with massive investment plans.", readTime: "5 min read" },
-            { category: "Sustainability", date: "2026-04-14", title: "Mandatory ESG Disclosure Expands to More Listed Companies", summary: "Starting next year, ESG disclosure requirements for listed companies will significantly expand. Firms must now report not only carbon emissions but also human rights issues within their supply chains. Investors view this non-financial information as a critical factor in future valuations.", readTime: "4 min read" },
-            { category: "Startups", date: "2026-04-14", title: "Rise in K-Startups Securing Silicon Valley Investments", summary: "Tech-based Korean startups are increasingly attracting large-scale investments from major Silicon Valley VCs. Successes are particularly notable in AI medical diagnostics and autonomous driving software, indicating that Korean tech prowess has reached global standards.", readTime: "4 min read" },
-            { category: "Commodities", date: "2026-04-14", title: "Global Efforts to Diversify Rare Earth Supply Chains", summary: "A global movement to diversify rare earth supply chains is gaining momentum. New mining projects in Africa and Australia are attracting global capital, while resource recovery technologies through battery recycling are also gaining attention.", readTime: "5 min read" }
+            { category: "Monetary", date: "2026-04-14", title: "Central Bank Enters Real-World CBDC Testing Phase", summary: "The government has started real-world payment tests for Central Bank Digital Currency (CBDC), involving major banks and retailers.", readTime: "3 min read", glossary: { "CBDC": "Central Bank Digital Currency", "Compatibility": "The ability of different systems to work together", "Security": "Protection against unauthorized access or theft" } }
         ]
     }
 };
@@ -204,12 +206,29 @@ function generatePlaceholderNews(date, lang) {
         `Examining the realignment of international trade orders and supply chain diversification. Analyzing how new trade agreements and tariff changes impact global business.`
     ];
 
+    const glossaries_ko = [
+        { "변동성": "가격이나 수치가 오르내리는 폭", "통화 정책": "중앙은행이 돈의 양을 조절하는 정책" },
+        { "인프라": "산업 활동의 기반이 되는 시설", "수혜 분야": "어떤 현상으로 인해 이익을 보는 분야" },
+        { "공급망": "제품이 만들어져 소비자에게 전달되는 경로", "자원 안보": "필요한 자원을 안정적으로 확보하는 것" },
+        { "유동성": "자산을 현금으로 바꿀 수 있는 정도나 시장의 돈의 양", "자산 배분": "여러 자산에 투자금을 나누는 것" },
+        { "통상": "나라들 사이에 물건을 사고파는 일", "다변화": "한곳에 치우치지 않고 여러 갈래로 늘리는 것" }
+    ];
+
+    const glossaries_en = [
+        { "Volatility": "Liability to change rapidly and unpredictably", "Monetary Policy": "Central bank actions to manage money supply" },
+        { "Infrastructure": "Basic physical and organizational structures", "Beneficiary": "A person or thing that derives advantage from something" },
+        { "Supply Chain": "Sequence of processes involved in production", "Resource Security": "Ensuring stable access to essential resources" },
+        { "Liquidity": "The availability of liquid assets to a market or company", "Asset Allocation": "Investment strategy that aims to balance risk" },
+        { "Trade": "Action of buying and selling goods and services", "Diversification": "The process of a business enlarging or varying its range of products" }
+    ];
+
     return Array.from({ length: 5 }, (_, i) => ({
         category: categories[i],
         date: date,
         title: lang === 'ko' ? titles_ko[i] : titles_en[i],
         summary: lang === 'ko' ? summaries_ko[i] : summaries_en[i],
-        readTime: "4분 읽기"
+        readTime: "4분 읽기",
+        glossary: lang === 'ko' ? glossaries_ko[i] : glossaries_en[i]
     }));
 }
 
@@ -312,7 +331,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Set initial date picker values
     if (dateSelect) {
         dateSelect.value = state.currentDate;
-        dateSelect.max = state.currentDate;
+        // Allowed selecting future dates to see outlook
+        const maxDate = new Date();
+        maxDate.setDate(maxDate.getDate() + 7);
+        dateSelect.max = maxDate.toISOString().split('T')[0];
     }
     applyTheme();
     renderNews();
