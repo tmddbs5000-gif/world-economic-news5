@@ -19,6 +19,15 @@ class NewsCard extends HTMLElement {
     render() {
         if (!this._news) return;
         
+        const glossaryHtml = this._news.glossary ? `
+            <div class="glossary">
+                <div class="glossary-title">💡 Key Terms Glossary</div>
+                ${Object.entries(this._news.glossary).map(([term, def]) => `
+                    <div class="glossary-item"><strong>${term}</strong>: ${def}</div>
+                `).join('')}
+            </div>
+        ` : '';
+
         this.shadowRoot.innerHTML = `
             <style>
                 :host {
@@ -58,6 +67,30 @@ class NewsCard extends HTMLElement {
                     margin-bottom: 1.5rem;
                     ${this._expanded ? '' : `display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden;`}
                 }
+                .glossary {
+                    background: var(--input-bg);
+                    border: 1px solid var(--border-color);
+                    padding: 1rem;
+                    border-radius: 12px;
+                    margin-bottom: 1.5rem;
+                    font-size: 0.85rem;
+                }
+                .glossary-title {
+                    font-weight: 700;
+                    color: var(--accent-color);
+                    margin-bottom: 0.5rem;
+                    font-size: 0.75rem;
+                    text-transform: uppercase;
+                    letter-spacing: 0.05em;
+                }
+                .glossary-item {
+                    color: var(--text-secondary);
+                    margin-bottom: 0.3rem;
+                    line-height: 1.4;
+                }
+                .glossary-item strong {
+                    color: var(--text-primary);
+                }
                 .expand-btn {
                     background: var(--input-bg);
                     border: 1px solid var(--border-color);
@@ -90,6 +123,7 @@ class NewsCard extends HTMLElement {
                 </div>
                 <h2>${this._news.title}</h2>
                 <div class="summary">${this._news.summary}</div>
+                ${this._expanded ? glossaryHtml : ''}
                 <button class="expand-btn">${this._expanded ? 'Show Less ↑' : 'Read Full Analysis ↓'}</button>
                 <div class="meta">
                     <span>Source: Global EcoNews Research</span>
@@ -106,18 +140,18 @@ customElements.define('news-card', NewsCard);
 const newsDatabase = {
     "2026-04-19": {
         ko: [
-            { category: "거시경제", date: "2026-04-19", title: "글로벌 물가상승률 목표치 근접, 주요국 금리 인하 사이클 진입 가시화", summary: "최근 발표된 주요국 경제 지표에 따르면 글로벌 인플레이션이 각국 중앙은행의 목표치에 근접하고 있습니다. 이에 따라 연준(Fed)을 비롯한 주요 중앙은행들이 하반기부터 본격적인 금리 인하 사이클에 진입할 가능성이 높아졌습니다. 전문가들은 고금리 시대의 종료가 가계 부채 부담 완화와 기업 투자 활성화로 이어질 것으로 분석하고 있습니다.", readTime: "4분 읽기" },
-            { category: "기술/혁신", date: "2026-04-19", title: "AI 반도체 전력 효율 50% 향상 기술 개발... 데이터센터 에너지난 해결사", summary: "국내 연구팀이 기존 대비 전력 소비량을 절반으로 줄이면서도 연산 속도는 높인 차세대 AI 가속기 설계를 공개했습니다. 이는 최근 생성형 AI 확산으로 인한 데이터센터의 막대한 에너지 소모 문제를 해결할 핵심 기술로 주목받고 있습니다. 상용화가 완료되면 AI 인프라 유지비용을 획기적으로 낮출 수 있을 것으로 기대됩니다.", readTime: "5분 읽기" },
-            { category: "에너지", date: "2026-04-19", title: "그린 수소 생산 단가, 화석 연료 수준 도달... 에너지 전환 '변곡점'", summary: "수전해 기술의 비약적인 발전으로 그린 수소 생산 단가가 천연가스 추출 방식과 경쟁 가능한 수준까지 하락했습니다. 이는 탄소 중립 달성을 위한 수소 경제 이행의 중대한 이정표로 평가됩니다. 특히 대규모 수전해 설비 투자가 확대되고 있어 재생 에너지 기반의 수소 공급망이 더욱 공고해질 전망입니다.", readTime: "4분 읽기" },
-            { category: "금융시장", date: "2026-04-19", title: "가상자산 통합 규제 프레임워크 합의... 시장 투명성 제고 기대", summary: "G20 재무장관 회의에서 글로벌 가상자산 규제 표준에 대한 최종 합의안이 도출되었습니다. 이번 규제안은 투자자 보호와 자금세탁 방지를 골자로 하며, 가상자산 시장의 제도권 편입을 공식화하는 조치입니다. 이를 통해 기관 투자자들의 시장 진입 장벽이 낮아지고 전반적인 시장 투명성이 크게 개선될 것으로 보입니다.", readTime: "5분 읽기" },
-            { category: "글로벌 무역", date: "2026-04-19", title: "포괄적·점진적 환태평양경제동반자협정(CPTPP) 가입국 확대, 새로운 무역 질서", summary: "최근 주요 신흥국들이 CPTPP에 추가 가입하면서 아시아-태평양 지역의 경제 통합이 가속화되고 있습니다. 관세 철폐와 비관세 장벽 완화를 통해 역내 교역량이 연간 15% 이상 증가할 것으로 예측됩니다. 이는 글로벌 공급망 재편 속에서 회원국 간의 경제적 유대를 강화하고 새로운 통상 기회를 창출할 것으로 기대됩니다.", readTime: "4분 읽기" }
+            { category: "거시경제", date: "2026-04-19", title: "글로벌 물가상승률 목표치 근접, 주요국 금리 인하 사이클 진입 가시화", summary: "최근 발표된 주요국 경제 지표에 따르면 글로벌 인플레이션이 각국 중앙은행의 목표치에 근접하고 있습니다. 이에 따라 연준(Fed)을 비롯한 주요 중앙은행들이 하반기부터 본격적인 금리 인하 사이클에 진입할 가능성이 높아졌습니다. 전문가들은 고금리 시대의 종료가 가계 부채 부담 완화와 기업 투자 활성화로 이어질 것으로 분석하고 있습니다.", readTime: "4분 읽기", glossary: { "인플레이션": "물가가 지속적으로 오르는 현상", "연준(Fed)": "미국의 중앙은행 제도", "금리 인하 사이클": "중앙은행이 일정 기간에 걸쳐 금리를 계속 낮추는 과정" } },
+            { category: "기술/혁신", date: "2026-04-19", title: "AI 반도체 전력 효율 50% 향상 기술 개발... 데이터센터 에너지난 해결사", summary: "국내 연구팀이 기존 대비 전력 소비량을 절반으로 줄이면서도 연산 속도는 높인 차세대 AI 가속기 설계를 공개했습니다. 이는 최근 생성형 AI 확산으로 인한 데이터센터의 막대한 에너지 소모 문제를 해결할 핵심 기술로 주목받고 있습니다. 상용화가 완료되면 AI 인프라 유지비용을 획기적으로 낮출 수 있을 것으로 기대됩니다.", readTime: "5분 읽기", glossary: { "AI 가속기": "인공지능 연산을 빠르게 처리하기 위해 설계된 특수 반도체", "생성형 AI": "데이터를 학습해 새로운 콘텐츠를 만들어내는 인공지능", "데이터센터": "수많은 서버와 데이터를 보관하고 관리하는 시설" } },
+            { category: "에너지", date: "2026-04-19", title: "그린 수소 생산 단가, 화석 연료 수준 도달... 에너지 전환 '변곡점'", summary: "수전해 기술의 비약적인 발전으로 그린 수소 생산 단가가 천연가스 추출 방식과 경쟁 가능한 수준까지 하락했습니다. 이는 탄소 중립 달성을 위한 수소 경제 이행의 중대한 이정표로 평가됩니다. 특히 대규모 수전해 설비 투자가 확대되고 있어 재생 에너지 기반의 수소 공급망이 더욱 공고해질 전망입니다.", readTime: "4분 읽기", glossary: { "그린 수소": "탄소 배출 없이 재생 에너지로 만든 수소", "수전해 기술": "전기로 물을 분해해 수소를 얻는 기술", "탄소 중립": "이산화탄소 배출량과 흡수량을 같게 하여 실질적 배출을 0으로 만드는 것" } },
+            { category: "금융시장", date: "2026-04-19", title: "가상자산 통합 규제 프레임워크 합의... 시장 투명성 제고 기대", summary: "G20 재무장관 회의에서 글로벌 가상자산 규제 표준에 대한 최종 합의안이 도출되었습니다. 이번 규제안은 투자자 보호와 자금세탁 방지를 골자로 하며, 가상자산 시장의 제도권 편입을 공식화하는 조치입니다. 이를 통해 기관 투자자들의 시장 진입 장벽이 낮아지고 전반적인 시장 투명성이 크게 개선될 것으로 보입니다.", readTime: "5분 읽기", glossary: { "가상자산": "블록체인 기술을 이용한 전자적 가치 증표(코인 등)", "제도권 편입": "법과 규제 안에서 정식으로 인정받는 것", "자금세탁 방지": "불법 자금을 정당한 돈으로 바꾸는 것을 막는 활동" } },
+            { category: "글로벌 무역", date: "2026-04-19", title: "포괄적·점진적 환태평양경제동반자협정(CPTPP) 가입국 확대, 새로운 무역 질서", summary: "최근 주요 신흥국들이 CPTPP에 추가 가입하면서 아시아-태평양 지역의 경제 통합이 가속화되고 있습니다. 관세 철폐와 비관세 장벽 완화를 통해 역내 교역량이 연간 15% 이상 증가할 것으로 예측됩니다. 이는 글로벌 공급망 재편 속에서 회원국 간의 경제적 유대를 강화하고 새로운 통상 기회를 창출할 것으로 기대됩니다.", readTime: "4분 읽기", glossary: { "CPTPP": "아시아-태평양 11개국이 참여하는 자유무역협정", "관세": "수입품에 부과하는 세금", "공급망 재편": "생산 및 유통 경로를 효율성이나 안보를 위해 다시 짜는 것" } }
         ],
         en: [
-            { category: "Macro", date: "2026-04-19", title: "Global Inflation Nears Targets, Paving Way for Interest Rate Cuts", summary: "Recent economic data indicate that global inflation is converging towards central bank targets. This shift increases the likelihood of a coordinated rate-cutting cycle starting in the second half of the year. Experts suggest this will ease household debt burdens and stimulate corporate investment after years of high rates.", readTime: "4 min read" },
-            { category: "Tech", date: "2026-04-19", title: "Breakthrough in AI Chip Efficiency Cuts Power Consumption by 50%", summary: "A research team has unveiled a next-generation AI accelerator design that halves energy usage while maintaining high processing speeds. This technology addresses the critical energy shortage facing data centers due to the generative AI boom, potentially slashing infrastructure maintenance costs significantly.", readTime: "5 min read" },
-            { category: "Energy", date: "2026-04-19", title: "Green Hydrogen Production Costs Reach Parity with Fossil Fuels", summary: "Advances in electrolysis technology have brought the cost of green hydrogen down to levels competitive with natural gas-derived methods. This marks a major turning point for the transition to a hydrogen economy. Increased investment in large-scale facilities is expected to solidify renewable-based supply chains.", readTime: "4 min read" },
-            { category: "Finance", date: "2026-04-19", title: "G20 Agrees on Global Digital Asset Regulatory Framework", summary: "Finance ministers have reached a final agreement on standardizing global crypto regulations. Focused on investor protection and anti-money laundering, this framework formalizes the entry of digital assets into the mainstream financial system, likely lowering barriers for institutional investors.", readTime: "5 min read" },
-            { category: "Trade", date: "2026-04-19", title: "CPTPP Expansion Accelerates Regional Economic Integration", summary: "The addition of major emerging economies to the CPTPP is set to boost regional trade volumes by an estimated 15% annually. By removing tariffs and non-tariff barriers, the expansion strengthens economic ties among members and creates new opportunities amid global supply chain realignments.", readTime: "4 min read" }
+            { category: "Macro", date: "2026-04-19", title: "Global Inflation Nears Targets, Paving Way for Interest Rate Cuts", summary: "Recent economic data indicate that global inflation is converging towards central bank targets. This shift increases the likelihood of a coordinated rate-cutting cycle starting in the second half of the year. Experts suggest this will ease household debt burdens and stimulate corporate investment after years of high rates.", readTime: "4 min read", glossary: { "Inflation": "A general increase in prices and fall in the purchasing value of money", "Fed": "The Federal Reserve, the central bank of the United States", "Rate Cut Cycle": "A period where a central bank repeatedly lowers interest rates" } },
+            { category: "Tech", date: "2026-04-19", title: "Breakthrough in AI Chip Efficiency Cuts Power Consumption by 50%", summary: "A research team has unveiled a next-generation AI accelerator design that halves energy usage while maintaining high processing speeds. This technology addresses the critical energy shortage facing data centers due to the generative AI boom, potentially slashing infrastructure maintenance costs significantly.", readTime: "5 min read", glossary: { "AI Accelerator": "A specialized hardware designed to accelerate AI applications", "Generative AI": "AI that can create new content like text, images, or audio", "Data Center": "A large group of networked computer servers used for the storage of data" } },
+            { category: "Energy", date: "2026-04-19", title: "Green Hydrogen Production Costs Reach Parity with Fossil Fuels", summary: "Advances in electrolysis technology have brought the cost of green hydrogen down to levels competitive with natural gas-derived methods. This marks a major turning point for the transition to a hydrogen economy. Increased investment in large-scale facilities is expected to solidify renewable-based supply chains.", readTime: "4 min read", glossary: { "Green Hydrogen": "Hydrogen produced by using renewable energy to split water", "Electrolysis": "The process of using electricity to split water into hydrogen and oxygen", "Net Zero": "Achieving a balance between the greenhouse gases put into the atmosphere and those taken out" } },
+            { category: "Finance", date: "2026-04-19", title: "G20 Agrees on Global Digital Asset Regulatory Framework", summary: "Finance ministers have reached a final agreement on standardizing global crypto regulations. Focused on investor protection and anti-money laundering, this framework formalizes the entry of digital assets into the mainstream financial system, likely lowering barriers for institutional investors.", readTime: "5 min read", glossary: { "Digital Asset": "An asset that exists only in digital form, such as cryptocurrency", "Mainstream": "Integration into the dominant or established financial system", "Anti-money laundering": "Laws or regulations designed to stop the practice of generating income through illegal actions" } },
+            { category: "Trade", date: "2026-04-19", title: "CPTPP Expansion Accelerates Regional Economic Integration", summary: "The addition of major emerging economies to the CPTPP is set to boost regional trade volumes by an estimated 15% annually. By removing tariffs and non-tariff barriers, the expansion strengthens economic ties among members and creates new opportunities amid global supply chain realignments.", readTime: "4 min read", glossary: { "CPTPP": "Comprehensive and Progressive Agreement for Trans-Pacific Partnership", "Tariff": "A tax on imported or exported goods", "Supply Chain": "The sequence of processes involved in the production and distribution of a commodity" } }
         ]
     },
     "2026-04-17": {
