@@ -3,16 +3,10 @@ class NewsCard extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({ mode: 'open' });
-        this._expanded = false;
     }
 
     set data(news) {
         this._news = news;
-        this.render();
-    }
-
-    toggleExpand() {
-        this._expanded = !this._expanded;
         this.render();
     }
 
@@ -47,7 +41,7 @@ class NewsCard extends HTMLElement {
                     display: flex;
                     flex-direction: column;
                 }
-                .card-header { display: flex; justify-content: space-between; margin-bottom: 1rem; }
+                .card-header { display: flex; justify-content: space-between; margin-bottom: 1.2rem; }
                 .category {
                     background: var(--accent-color);
                     color: white;
@@ -59,52 +53,42 @@ class NewsCard extends HTMLElement {
                     letter-spacing: 0.05em;
                 }
                 .date { font-size: 0.8rem; color: var(--text-secondary); font-weight: 500; }
-                h2 { font-size: 1.4rem; margin-bottom: 1.2rem; line-height: 1.35; color: var(--text-primary); font-weight: 800; }
+                h2 { font-size: 1.45rem; margin-bottom: 1.5rem; line-height: 1.35; color: var(--text-primary); font-weight: 800; }
                 .summary {
                     font-size: 1.05rem;
                     color: var(--text-secondary);
-                    line-height: 1.75;
-                    margin-bottom: 1.5rem;
-                    ${this._expanded ? '' : `display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden;`}
+                    line-height: 1.8;
+                    margin-bottom: 2rem;
+                    white-space: pre-line;
                 }
                 .glossary {
                     background: var(--input-bg);
                     border: 1px solid var(--border-color);
-                    padding: 1rem;
-                    border-radius: 12px;
-                    margin-bottom: 1.5rem;
+                    padding: 1.2rem;
+                    border-radius: 16px;
+                    margin-top: auto;
                     font-size: 0.85rem;
                 }
                 .glossary-title {
                     font-weight: 700;
                     color: var(--accent-color);
-                    margin-bottom: 0.5rem;
+                    margin-bottom: 0.8rem;
                     font-size: 0.75rem;
                     text-transform: uppercase;
                     letter-spacing: 0.05em;
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
                 }
                 .glossary-item {
                     color: var(--text-secondary);
-                    margin-bottom: 0.3rem;
-                    line-height: 1.4;
+                    margin-bottom: 0.5rem;
+                    line-height: 1.5;
                 }
+                .glossary-item:last-child { margin-bottom: 0; }
                 .glossary-item strong {
                     color: var(--text-primary);
                 }
-                .expand-btn {
-                    background: var(--input-bg);
-                    border: 1px solid var(--border-color);
-                    color: var(--text-primary);
-                    padding: 0.6rem 1.2rem;
-                    border-radius: 12px;
-                    font-size: 0.85rem;
-                    font-weight: 700;
-                    cursor: pointer;
-                    margin-top: auto;
-                    align-self: flex-start;
-                    transition: all 0.2s;
-                }
-                .expand-btn:hover { background: var(--border-color); transform: translateY(-2px); }
                 .meta {
                     margin-top: 2rem;
                     padding-top: 1.2rem;
@@ -123,15 +107,13 @@ class NewsCard extends HTMLElement {
                 </div>
                 <h2>${this._news.title}</h2>
                 <div class="summary">${this._news.summary}</div>
-                ${this._expanded ? glossaryHtml : ''}
-                <button class="expand-btn">${this._expanded ? 'Show Less ↑' : 'Read Full Analysis ↓'}</button>
+                ${glossaryHtml}
                 <div class="meta">
                     <span>Source: Global EcoNews Research</span>
                     <span>${this._news.readTime}</span>
                 </div>
             </div>
         `;
-        this.shadowRoot.querySelector('.expand-btn').onclick = () => this.toggleExpand();
     }
 }
 customElements.define('news-card', NewsCard);
