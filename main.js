@@ -315,14 +315,18 @@ async function renderNews() {
     let dayData = newsDatabase[state.currentDate];
     let data = dayData ? (dayData[state.currentLanguage] || dayData['en'] || []) : [];
     
-    const today = getKSTDate();
-    // If it's today or in the past, and we don't have enough news, augment with placeholders.
-    // This ensures that pre-scheduled major events and daily news are shown together (up to 5 items).
-    if (state.currentDate <= today && data.length < 5) {
+    // Real KST Date for comparison (without the 10 AM rule)
+    const now = new Date();
+    const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+    const realKST = new Date(utc + (9 * 3600000)).toISOString().split('T')[0];
+
+    // If selected date is today or earlier, and data is insufficient (<5 items), augment with news.
+    // This allows schedules and daily news to be displayed together.
+    if (state.currentDate <= realKST && data.length < 5) {
         const placeholders = generatePlaceholderNews(state.currentDate, state.currentLanguage);
         data = [...data, ...placeholders].slice(0, 5);
     } else if (data.length === 0) {
-        // Fallback for dates with no database entry
+        // Only happens for dates with no database entry at all
         data = generatePlaceholderNews(state.currentDate, state.currentLanguage);
     }
 
