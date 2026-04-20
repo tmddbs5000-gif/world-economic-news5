@@ -313,7 +313,18 @@ async function renderNews() {
     await new Promise(r => setTimeout(r, 600));
     
     let dayData = newsDatabase[state.currentDate];
-    let data = dayData ? (dayData[state.currentLanguage] || dayData['en'] || []) : generatePlaceholderNews(state.currentDate, state.currentLanguage);
+    let data = dayData ? (dayData[state.currentLanguage] || dayData['en'] || []) : [];
+    
+    const today = getKSTDate();
+    // If it's today or in the past, and we don't have enough news, augment with placeholders.
+    // This ensures that pre-scheduled major events and daily news are shown together (up to 5 items).
+    if (state.currentDate <= today && data.length < 5) {
+        const placeholders = generatePlaceholderNews(state.currentDate, state.currentLanguage);
+        data = [...data, ...placeholders].slice(0, 5);
+    } else if (data.length === 0) {
+        // Fallback for dates with no database entry
+        data = generatePlaceholderNews(state.currentDate, state.currentLanguage);
+    }
 
     if (data.length === 0) {
         newsContainer.innerHTML = '<div class="loading-state"><p>No data available for the selected date.</p></div>';
