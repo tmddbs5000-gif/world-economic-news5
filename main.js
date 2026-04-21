@@ -162,10 +162,18 @@ const newsDatabase = {
     },
     "2026-04-21": {
         ko: [
-            { category: "경제 일정", date: "2026-04-21", title: "글로벌 원자재 가격 동향 및 원유 재고 발표", summary: "국제 유가와 원자재 가격의 변동성이 확대되는 가운데, 미국의 주간 원유 재고 수치가 발표됩니다. 에너지 인플레이션 압력을 예측할 수 있는 중요한 날입니다.", readTime: "5분 읽기", glossary: { "원유 재고": "팔리지 않고 남아 있는 석유의 양", "에너지 인플레이션": "에너지 가격 상승이 물가 전반의 상승을 일으키는 현상" } }
+            { category: "거시경제", date: "2026-04-21", title: "연준-ECB 통화정책 탈동조화 심화... 글로벌 자금 흐름의 대전환", summary: "미국의 견조한 고용과 끈적한 물가로 인해 연준의 금리 인하 시점이 하반기로 늦춰지는 반면, 유럽중앙은행(ECB)은 경기 부양을 위해 선제적 금리 인하를 단행할 가능성이 높아졌습니다. 이러한 양대 중앙은행의 정책 차이는 달러화 강세를 유도하며 글로벌 환율 시장에 큰 변동성을 예고하고 있습니다.", readTime: "5분 읽기", glossary: { "탈동조화(Divergence)": "서로 다른 방향으로 움직이는 현상", "금리 인하": "경제 활성화를 위해 중앙은행이 이자율을 낮추는 것" } },
+            { category: "금융시장", date: "2026-04-21", title: "AI 반도체 수요 폭발, 엔비디아 시총 4조 달러 돌파 눈앞", summary: "차세대 AI 가속기 'B300' 시리즈의 주문이 몰리며 엔비디아의 주가가 사상 최고치를 경신했습니다. 전문가들은 데이터센터 인프라 투자가 여전히 초기 단계에 머물러 있다고 분석하며, AI 기술주 중심의 강세장이 당분간 지속될 것으로 내다봤습니다. 이는 나스닥 지수의 견조한 상승세를 뒷받침하고 있습니다.", readTime: "4분 읽기", glossary: { "시가총액": "상장 주식 수에 주가를 곱한 기업의 전체 가치", "나스닥(NASDAQ)": "미국의 기술주 중심 주식 시장" } },
+            { category: "글로벌 무역", date: "2026-04-21", title: "글로벌 전기차 무역 전쟁 격화... 미-중 관세 장벽 '역대 최고'", summary: "미국 정부가 중국산 전기차에 대한 관세를 100%로 인상한 데 이어, 반도체 및 핵심 광물에 대해서도 추가 제재안을 발표했습니다. 이에 중국은 보복 관세와 수출 제한 카드를 검토하며 맞대응에 나섰습니다. 양국의 무역 갈등은 글로벌 공급망 재편을 가속화하며 자동차 산업 전반에 원가 상승 압박으로 작용하고 있습니다.", readTime: "5분 읽기", glossary: { "관세(Tariff)": "수입품에 부과되는 세금", "공급망 재편": "안보와 효율을 위해 생산 및 유통 경로를 다시 짜는 것" } },
+            { category: "에너지", date: "2026-04-21", title: "미국 원유 재고 예상 밖 감소... 중동 긴장 재고조에 유가 95달러 돌파", summary: "미국의 주간 원유 재고가 시장 예상치보다 크게 감소한 것으로 나타났습니다. 여기에 호르무즈 해협의 지정학적 불안감이 더해지며 국제 유가는 배럴당 95달러 선을 위협하고 있습니다. 유가 상승은 하락세를 보이던 전 세계 물가 지표에 다시 인플레이션 압박을 가할 수 있어 시장의 우려가 커지고 있습니다.", readTime: "4분 읽기", glossary: { "원유 재고": "팔리지 않고 남아 있는 석유의 양", "지정학적 불안": "특정 지역의 정치적 갈등이 경제에 미치는 위협" } },
+            { category: "거시경제", date: "2026-04-21", title: "중국 '사상 최대' 부동산 부양책 발표... 시장 신뢰 회복의 신호탄인가", summary: "중국 당국이 미분양 주택 매입을 위한 대규모 자금 투입과 대출 규제 완화를 골자로 한 '역대급' 부동산 살리기 대책을 내놓았습니다. 장기간 침체된 부동산 시장이 이번 조치로 바닥을 다질 수 있을지에 전 세계의 이목이 쏠리고 있습니다. 이는 아시아 증시 전반에 긍정적인 심리를 확산시키는 요인으로 작용했습니다.", readTime: "4분 읽기", glossary: { "부동산 부양책": "침체된 부동산 시장을 활성화하기 위한 정부 정책", "미분양": "팔리지 않고 남은 아파트나 건물" } }
         ],
         en: [
-            { category: "Calendar", date: "2026-04-21", title: "Global Commodity Trends & US Crude Oil Inventories", summary: "Weekly crude oil inventory data will be released amid rising volatility in commodity prices. Important for predicting energy-driven inflation pressures.", readTime: "5 min read", glossary: { "Crude Inventories": "Stock of unrefined oil held by producers", "Energy Inflation": "General price increase driven by rising energy costs" } }
+            { category: "Macro", date: "2026-04-21", title: "Fed-ECB Policy Divergence Deepens... Shifting Global Capital Flows", summary: "Strong US labor data pushes Fed rate cut expectations to late 2024, while the ECB signals earlier cuts to support Eurozone growth. This divergence is strengthening the Dollar and increasing volatility in global currency markets.", readTime: "5 min read", glossary: { "Divergence": "The process of moving in different directions", "Rate Cut": "A reduction in interest rates by a central bank" } },
+            { category: "Finance", date: "2026-04-21", title: "AI Chip Boom: Nvidia Market Cap Nears $4 Trillion Mark", summary: "Surge in orders for next-gen AI accelerators has propelled Nvidia to record highs. Analysts believe data center infrastructure investment is still in its early stages, suggesting the AI-led bull market will continue to drive the Nasdaq.", readTime: "4 min read", glossary: { "Market Cap": "Total value of a company's shares of stock", "NASDAQ": "US stock exchange focused on tech stocks" } },
+            { category: "Trade", date: "2026-04-21", title: "Global EV Trade War Escalates: US-China Tariffs Hit Record Highs", summary: "The US has hiked tariffs on Chinese EVs to 100%, with additional sanctions on chips and critical minerals. China is considering retaliatory measures, accelerating global supply chain realignments and increasing costs for the automotive industry.", readTime: "5 min read", glossary: { "Tariff": "A tax imposed by a government on imported goods", "Supply Chain Realignment": "Redesigning production routes for security and efficiency" } },
+            { category: "Energy", date: "2026-04-21", title: "US Crude Inventories Fall Sharply; Oil Prices Surge Past $95", summary: "US weekly crude inventories dropped more than expected. Combined with heightened tensions in the Strait of Hormuz, Brent crude is nearing $95/barrel, threatening to reignite global inflationary pressures.", readTime: "4 min read", glossary: { "Crude Inventories": "Unrefined oil held in storage", "Geopolitical Tension": "Political instability in a region affecting global markets" } },
+            { category: "Macro", date: "2026-04-21", title: "China Unveils Massive Property Rescue Package to Restore Confidence", summary: "Chinese authorities announced an unprecedented support plan to buy unsold housing and ease mortgage rules. Markets are watching if this 'historic' move can stabilize the property sector and boost Asian indices.", readTime: "4 min read", glossary: { "Rescue Package": "A program to provide financial aid to a failing sector", "Mortgage": "A loan used to purchase or maintain real estate" } }
         ]
     },
     "2026-04-20": {
@@ -279,16 +287,26 @@ function generatePlaceholderNews(date, lang) {
     }));
 }
 
-// Function to get current date in KST (UTC+9) with 10 AM update rule
+// Function to get effective date in KST (UTC+9) with 10 AM update rule
 function getKSTDate() {
+    // Get current time in KST
     const now = new Date();
+    const kstOffset = 9 * 60; // KST is UTC+9
     const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
-    const kst = new Date(utc + (9 * 3600000));
+    const kstDate = new Date(utc + (kstOffset * 60000));
     
-    if (kst.getHours() < 10) {
-        kst.setDate(kst.getDate() - 1);
+    const hours = kstDate.getHours();
+    
+    // If before 10 AM, show previous day's news as the primary content
+    if (hours < 10) {
+        kstDate.setDate(kstDate.getDate() - 1);
     }
-    return kst.toISOString().split('T')[0];
+    
+    const year = kstDate.getFullYear();
+    const month = String(kstDate.getMonth() + 1).padStart(2, '0');
+    const day = String(kstDate.getDate()).padStart(2, '0');
+    
+    return `${year}-${month}-${day}`;
 }
 
 const initialDate = getKSTDate();
@@ -317,24 +335,24 @@ function applyTheme() {
 }
 
 async function renderNews() {
+    if (!newsContainer) return;
     newsContainer.innerHTML = '<div class="loading-state"><p>Accessing premium intelligence database...</p></div>';
     await new Promise(r => setTimeout(r, 600));
     
     let dayData = newsDatabase[state.currentDate];
     let data = dayData ? (dayData[state.currentLanguage] || dayData['en'] || []) : [];
     
-    // Real KST Date for comparison (without the 10 AM rule)
+    // Determine real KST today for placeholder logic
     const now = new Date();
     const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
-    const realKST = new Date(utc + (9 * 3600000)).toISOString().split('T')[0];
+    const realKST = new Date(utc + (9 * 3600000));
+    const realKSTString = realKST.toISOString().split('T')[0];
 
-    // If selected date is today or earlier, and data is insufficient (<5 items), augment with news.
-    // This allows schedules and daily news to be displayed together.
-    if (state.currentDate <= realKST && data.length < 5) {
+    // If selected date is today or earlier, and we need more news items
+    if (state.currentDate <= realKSTString && data.length < 5) {
         const placeholders = generatePlaceholderNews(state.currentDate, state.currentLanguage);
         data = [...data, ...placeholders].slice(0, 5);
     } else if (data.length === 0) {
-        // Only happens for dates with no database entry at all
         data = generatePlaceholderNews(state.currentDate, state.currentLanguage);
     }
 
@@ -365,21 +383,22 @@ function setupModal(btnId, modalId, closeId) {
 }
 
 // Event Listeners
-themeToggle.onclick = () => { state.theme = state.theme === 'dark' ? 'light' : 'dark'; applyTheme(); };
-languageSelect.onchange = (e) => { state.currentLanguage = e.target.value; renderNews(); };
-dateSelect.onchange = (e) => { state.currentDate = e.target.value; renderNews(); };
+if (themeToggle) themeToggle.onclick = () => { state.theme = state.theme === 'dark' ? 'light' : 'dark'; applyTheme(); };
+if (languageSelect) languageSelect.onchange = (e) => { state.currentLanguage = e.target.value; renderNews(); };
+if (dateSelect) dateSelect.onchange = (e) => { state.currentDate = e.target.value; renderNews(); };
 
 // Cookie Banner Logic
-if (!state.cookiesAccepted) {
+if (!state.cookiesAccepted && cookieBanner) {
     setTimeout(() => cookieBanner.classList.add('active'), 1000);
 }
-acceptCookiesBtn.onclick = () => {
+if (acceptCookiesBtn) acceptCookiesBtn.onclick = () => {
     state.cookiesAccepted = true;
     localStorage.setItem('cookiesAccepted', 'true');
     cookieBanner.classList.remove('active');
 };
-viewPrivacyBtn.onclick = () => {
-    document.getElementById('privacy-modal').classList.add('active');
+if (viewPrivacyBtn) viewPrivacyBtn.onclick = () => {
+    const privacyModal = document.getElementById('privacy-modal');
+    if (privacyModal) privacyModal.classList.add('active');
 };
 
 // Initialize All Modals
@@ -390,10 +409,11 @@ setupModal('footer-disclaimer-btn', 'disclaimer-modal', 'close-disclaimer');
 
 // Start
 document.addEventListener('DOMContentLoaded', () => {
-    // Set initial date picker values
+    // Re-verify the initial date on load
+    state.currentDate = getKSTDate();
+    
     if (dateSelect) {
         dateSelect.value = state.currentDate;
-        // Allowed selecting future dates to see outlook
         const maxDate = new Date();
         maxDate.setDate(maxDate.getDate() + 7);
         dateSelect.max = maxDate.toISOString().split('T')[0];
