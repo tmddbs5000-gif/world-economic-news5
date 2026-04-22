@@ -13,16 +13,16 @@ class NewsCard extends HTMLElement {
     render() {
         if (!this._news) return;
         
-        const glossaryHtml = this._news.glossary ? \`
+        const glossaryHtml = this._news.glossary ? `
             <div class="glossary">
                 <div class="glossary-title">💡 Key Terms Glossary</div>
-                \${Object.entries(this._news.glossary).map(([term, def]) => \`
-                    <div class="glossary-item"><strong>\${term}</strong>: \${def}</div>
-                \`).join('')}
+                ${Object.entries(this._news.glossary).map(([term, def]) => `
+                    <div class="glossary-item"><strong>${term}</strong>: ${def}</div>
+                `).join('')}
             </div>
-        \` : '';
+        ` : '';
 
-        this.shadowRoot.innerHTML = \`
+        this.shadowRoot.innerHTML = `
             <style>
                 :host {
                     display: block;
@@ -102,18 +102,18 @@ class NewsCard extends HTMLElement {
             </style>
             <div class="card">
                 <div class="card-header">
-                    <span class="category">\${this._news.category}</span>
-                    <span class="date">\${this._news.date}</span>
+                    <span class="category">${this._news.category}</span>
+                    <span class="date">${this._news.date}</span>
                 </div>
-                <h2>\${this._news.title}</h2>
-                <div class="summary">\${this._news.summary}</div>
-                \${glossaryHtml}
+                <h2>${this._news.title}</h2>
+                <div class="summary">${this._news.summary}</div>
+                ${glossaryHtml}
                 <div class="meta">
                     <span>Source: Global EcoNews Research</span>
-                    <span>\${this._news.readTime}</span>
+                    <span>${this._news.readTime}</span>
                 </div>
             </div>
-        \`;
+        `;
     }
 }
 customElements.define('news-card', NewsCard);
@@ -125,8 +125,8 @@ let newsDatabaseCache = null;
 const categoryMap = {
     ko: {
         "Macro": "거시경제",
-        "Tech": "기술/혁신",
-        "Energy": "에너지",
+        "Tech": "기술/산업",
+        "Energy": "에너지/ESG",
         "Finance": "금융시장",
         "Trade": "글로벌 무역",
         "Calendar": "경제 일정",
@@ -134,14 +134,14 @@ const categoryMap = {
     },
     en: {
         "거시경제": "Macro",
+        "기술/산업": "Tech",
         "기술/혁신": "Tech",
         "에너지": "Energy",
+        "에너지/ESG": "Energy",
         "금융시장": "Finance",
         "글로벌 무역": "Trade",
         "경제 일정": "Calendar",
-        "통화정책": "Monetary",
-        "기술/산업": "Tech",
-        "에너지/ESG": "Energy"
+        "통화정책": "Monetary"
     }
 };
 
@@ -149,34 +149,34 @@ const categoryMap = {
 function generatePlaceholderNews(date, lang) {
     const categories = lang === 'ko' ? ["거시경제", "기술/혁신", "에너지", "금융시장", "글로벌 무역"] : ["Macro", "Tech", "Energy", "Finance", "Trade"];
     const titles_ko = [
-        \`[분석] \${date} 글로벌 시장 변동성 확대와 대응 전략\`,
-        \`[기술] AI 인프라 투자 가속화, 핵심 수혜 분야는?\`,
-        \`[에너지] 신재생 에너지 전환 가속화와 공급망 리스크\`,
-        \`[금융] 주요국 금리 결정의 향방과 신흥국 시장 영향\`,
-        \`[무역] 글로벌 공급망 재편 속 새로운 통상 질서의 출현\`
+        `[분석] ${date} 글로벌 시장 변동성 확대와 대응 전략`,
+        `[기술] AI 인프라 투자 가속화, 핵심 수혜 분야는?`,
+        `[에너지] 신재생 에너지 전환 가속화와 공급망 리스크`,
+        `[금융] 주요국 금리 결정의 향방과 신흥국 시장 영향`,
+        `[무역] 글로벌 공급망 재편 속 새로운 통상 질서의 출현`
     ];
     const titles_en = [
-        \`[Analysis] \${date} Global Market Volatility and Strategies\`,
-        \`[Tech] AI Infrastructure Investment Acceleration\`,
-        \`[Energy] Renewable Transition and Supply Chain Risks\`,
-        \`[Finance] Interest Rate Directions and Emerging Markets\`,
-        \`[Trade] New Trade Order in Global Supply Chain Shift\`
+        `[Analysis] ${date} Global Market Volatility and Strategies`,
+        `[Tech] AI Infrastructure Investment Acceleration`,
+        `[Energy] Renewable Transition and Supply Chain Risks`,
+        `[Finance] Interest Rate Directions and Emerging Markets`,
+        `[Trade] New Trade Order in Global Supply Chain Shift`
     ];
 
     const summaries_ko = [
-        \`\${date} 일자 거시경제 분석입니다. 현재 글로벌 시장은 주요국들의 통화 정책 변화와 지정학적 리스크에 민감하게 반응하고 있습니다. 단기적인 변동성 대응이 필요한 시점입니다.\`,
-        \`인공지능(AI) 기술이 산업 전반에 미치는 영향력을 분석합니다. 특히 인프라 투자 확대가 관련 섹터의 성장을 견인하고 있으며, 이는 장기적인 생산성 향상으로 이어질 전망입니다.\`,
-        \`에너지 전환과 관련된 공급망 이슈를 점검합니다. 재생 에너지 비중 확대에 따른 원자재 확보 경쟁이 치열해지고 있으며, 자원 안보가 국가 경쟁력의 핵심으로 떠오르고 있습니다.\`,
-        \`글로벌 금융 시장의 유동성 변화와 금리 추이를 분석합니다. 신흥국 시장으로의 자금 유입 여부와 자산 배분 전략에 대한 심층적인 통찰을 제공합니다.\`,
-        \`국제 통상 질서의 재편과 공급망 다변화 전략을 다룹니다. 새로운 무역 협정 체결과 관세 정책 변화가 기업들의 글로벌 비즈니스에 미치는 영향을 분석합니다.\`
+        `${date} 일자 거시경제 분석입니다. 현재 글로벌 시장은 주요국들의 통화 정책 변화와 지정학적 리스크에 민감하게 반응하고 있습니다. 단기적인 변동성 대응이 필요한 시점입니다.`,
+        `인공지능(AI) 기술이 산업 전반에 미치는 영향력을 분석합니다. 특히 인프라 투자 확대가 관련 섹터의 성장을 견인하고 있으며, 이는 장기적인 생산성 향상으로 이어질 전망입니다.`,
+        `에너지 전환과 관련된 공급망 이슈를 점검합니다. 재생 에너지 비중 확대에 따른 원자재 확보 경쟁이 치열해지고 있으며, 자원 안보가 국가 경쟁력의 핵심으로 떠오르고 있습니다.`,
+        `글로벌 금융 시장의 유동성 변화와 금리 추이를 분석합니다. 신흥국 시장으로의 자금 유입 여부와 자산 배분 전략에 대한 심층적인 통찰을 제공합니다.`,
+        `국제 통상 질서의 재편과 공급망 다변화 전략을 다룹니다. 새로운 무역 협정 체결과 관세 정책 변화가 기업들의 글로벌 비즈니스에 미치는 영향을 분석합니다.`
     ];
 
     const summaries_en = [
-        \`Macroeconomic analysis for \${date}. The global market is reacting to shifts in monetary policies and geopolitical risks. Strategic response to short-term volatility is recommended.\`,
-        \`Analyzing the impact of AI technology across industries. Expansion in infrastructure investment is driving sector growth, promising long-term productivity gains.\`,
-        \`Reviewing supply chain issues in the energy transition. Competition for raw materials is intensifying as renewable energy shares grow, making resource security a top priority.\`,
-        \`Analyzing liquidity changes and interest rate trends in global financial markets. Providing insights into capital flows to emerging markets and asset allocation.\`,
-        \`Examining the realignment of international trade orders and supply chain diversification. Analyzing how new trade agreements and tariff changes impact global business.\`
+        `Macroeconomic analysis for ${date}. The global market is reacting to shifts in monetary policies and geopolitical risks. Strategic response to short-term volatility is recommended.`,
+        `Analyzing the impact of AI technology across industries. Expansion in infrastructure investment is driving sector growth, promising long-term productivity gains.`,
+        `Reviewing supply chain issues in the energy transition. Competition for raw materials is intensifying as renewable energy shares grow, making resource security a top priority.`,
+        `Analyzing liquidity changes and interest rate trends in global financial markets. Providing insights into capital flows to emerging markets and asset allocation.`,
+        `Examining the realignment of international trade orders and supply chain diversification. Analyzing how new trade agreements and tariff changes impact global business.`
     ];
 
     const glossaries_ko = [
@@ -215,7 +215,7 @@ function getKSTDate() {
     const year = kstDate.getFullYear();
     const month = String(kstDate.getMonth() + 1).padStart(2, '0');
     const day = String(kstDate.getDate()).padStart(2, '0');
-    return \`\${year}-\${month}-\${day}\`;
+    return `${year}-${month}-${day}`;
 }
 
 const initialDate = getKSTDate();
@@ -245,7 +245,7 @@ function applyTheme() {
 async function fetchNewsData() {
     if (newsDatabaseCache) return newsDatabaseCache;
     try {
-        const response = await fetch('news-data.json');
+        const response = await fetch(`news-data.json?v=${new Date().getTime()}`);
         newsDatabaseCache = await response.json();
         return newsDatabaseCache;
     } catch (error) {
