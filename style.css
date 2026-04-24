@@ -319,9 +319,67 @@
         border-top: 1px solid var(--border-color);
     }
     .section-title { font-size: 1.8rem; font-weight: 900; margin-bottom: 2.5rem; }
+    /* Static Page Styles */
+    .page-content { padding-block: 4rem 8rem; }
+    .static-section { max-width: 800px; margin-inline: auto; }
+    .content-box {
+        background: var(--card-bg);
+        border: 1px solid var(--border-color);
+        padding: 3.5rem;
+        border-radius: 32px;
+        box-shadow: var(--shadow-deep);
+    }
+    .content-box h3 { margin: 2.5rem 0 1rem; font-size: 1.4rem; color: var(--text-primary); }
+    .content-box p { margin-bottom: 1.5rem; color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; }
+    .content-box ul { margin-bottom: 1.5rem; padding-left: 1.5rem; color: var(--text-secondary); }
+    .content-box li { margin-bottom: 0.8rem; }
+    .content-box strong { color: var(--text-primary); }
+    .content-box a { color: var(--accent-color); text-decoration: underline; font-weight: 600; }
+
+    .footer-links { margin-top: 1rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+    .footer-links a { color: var(--text-secondary); text-decoration: none; font-weight: 500; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--accent-color); }
+
+    /* Home Hero/Introduction */
+    .home-intro {
+        margin-bottom: 5rem;
+        padding: 4rem;
+        background: linear-gradient(135deg, var(--card-bg), var(--bg-color));
+        border: 1px solid var(--border-color);
+        border-radius: 40px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+    .home-intro::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+        z-index: 0;
+        pointer-events: none;
+    }
+    .intro-content { position: relative; z-index: 1; max-width: 800px; margin-inline: auto; }
+    .home-intro h2 { font-size: 2.5rem; font-weight: 900; margin-bottom: 1.5rem; letter-spacing: -0.02em; }
+    .home-intro p { font-size: 1.2rem; color: var(--text-secondary); line-height: 1.6; }
+
+    /* Static News Fallback */
+    .static-news-preview {
+        padding: 2rem;
+        background: var(--input-bg);
+        border-radius: 20px;
+        margin-bottom: 3rem;
+        border: 1px dashed var(--border-color);
+    }
 }
 
 @media (max-width: 768px) {
     .footer-grid { grid-template-columns: 1fr; gap: 3rem; }
     .cookie-content { flex-direction: column; text-align: center; gap: 1rem; }
+    .content-box { padding: 2rem; }
+    .home-intro { padding: 2rem; }
+    .home-intro h2 { font-size: 1.8rem; }
 }

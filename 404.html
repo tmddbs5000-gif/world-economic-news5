@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Global EcoNews</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+</head>
+<body style="display: flex; align-items: center; justify-content: center; min-height: 100vh;">
+    <div class="container" style="text-align: center;">
+        <h1 style="font-size: 5rem; color: var(--accent-color);">404</h1>
+        <h2 style="margin-bottom: 2rem;">Market Intelligence Not Found</h2>
+        <p style="color: var(--text-secondary); margin-bottom: 3rem;">The page you are looking for doesn't exist or has been moved.</p>
+        <a href="/" class="partnership-btn highlight" style="display: inline-block; text-decoration: none;">Return to Homepage</a>
+    </div>
+    <script>
+        const theme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', theme);
+    </script>
+</body>
+</html>

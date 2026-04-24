@@ -332,15 +332,8 @@ if (acceptCookiesBtn) acceptCookiesBtn.onclick = () => {
     localStorage.setItem('cookiesAccepted', 'true');
     cookieBanner.classList.remove('active');
 };
-if (viewPrivacyBtn) viewPrivacyBtn.onclick = () => {
-    const privacyModal = document.getElementById('privacy-modal');
-    if (privacyModal) privacyModal.classList.add('active');
-};
 
 setupModal('partnership-btn', 'partnership-modal', 'close-modal');
-setupModal('footer-about-btn', 'about-modal', 'close-about');
-setupModal('footer-privacy-btn', 'privacy-modal', 'close-privacy');
-setupModal('footer-disclaimer-btn', 'disclaimer-modal', 'close-disclaimer');
 
 document.addEventListener('DOMContentLoaded', () => {
     state.currentDate = getKSTDate();
