@@ -6,7 +6,8 @@
                 "date": "2026-04-26",
                 "title": "주간 글로벌 경제 지표 총평: 디스인플레이션의 정체와 중앙은행의 선택",
                 "summary": "한 주간 발표된 주요국 물가 및 고용 지표를 종합한 결과, 인플레이션 하락 속도가 예상보다 더딘 '정체 구간'에 진입한 것으로 분석됩니다. 이에 따라 다음 주 예정된 유럽중앙은행(ECB)의 통화정책 회의에서는 금리 동결 가능성이 커졌으며, 글로벌 채권 시장은 고금리 장기화 시나리오를 선반영하기 시작했습니다.",
-                "readTime": "5분 읽기",
+                "insight": "디스인플레이션의 정체는 단순한 수치 이상의 의미를 갖습니다. 이는 임금 상승률과 서비스 물가가 구조적으로 고착화되고 있음을 시사하며, 중앙은행들이 '피벗(정책 전환)' 시점을 2026년 하반기 이후로 미룰 가능성이 매우 높음을 의미합니다. 투자자들은 이제 '금리 인하'가 아닌 '고금리 적응력'을 기준으로 자산을 재배분해야 할 시점입니다.",
+                "readTime": "6분 읽기",
                 "glossary": {
                     "디스인플레이션": "물가 상승률이 낮아지는 현상",
                     "선반영": "장래에 일어날 일이 미리 가격에 반영되는 것"
@@ -17,43 +18,11 @@
                 "date": "2026-04-26",
                 "title": "차세대 전고체 배터리 상용화 임박... 글로벌 모빌리티 지형도 변화",
                 "summary": "주요 배터리 제조사들이 에너지 밀도를 획기적으로 높인 전고체 배터리의 시범 생산 라인을 가동하기 시작했습니다. 이는 전기차 주행 거리 연장과 화재 안전성 문제를 동시에 해결할 게임 체인저로 꼽힙니다. 업계는 2027년 본격적인 양산 체제 돌입을 예상하며, 관련 소재 및 장비 시장의 폭발적 성장을 점치고 있습니다.",
+                "insight": "전고체 배터리의 도입은 단순한 기술 진보를 넘어 '에너지 안보'의 패러다임을 바꿀 것입니다. 중국의 LFP 배터리 지배력에 대응하는 한미일 연합의 핵심 전략 자산이 될 것이며, 이 과정에서 은(Silver)과 같은 특정 금속 공급망 확보가 기업 가치의 핵심 변수가 될 전망입니다. 배터리 셀 제조사보다 핵심 소재 원천 기술을 가진 상류(Upstream) 기업들에 주목할 필요가 있습니다.",
                 "readTime": "5분 읽기",
                 "glossary": {
                     "전고체 배터리": "액체 전해질 대신 고체를 사용하는 차세대 배터리",
                     "모빌리티": "이동 수단이나 서비스 전반"
-                }
-            },
-            {
-                "category": "금융시장",
-                "date": "2026-04-26",
-                "title": "글로벌 헤지펀드, '엔 캐리 트레이드' 청산 가속화... 엔화 가치 반등",
-                "summary": "일본은행의 통화 정책 정상화 기대감이 커지면서 저금리의 엔화를 빌려 고금리 자산에 투자했던 캐리 트레이드 자금들이 대거 회수되고 있습니다. 이로 인해 엔/달러 환율이 급격히 하락(엔화 가치 상승)하며 외환 시장의 변동성이 확대되었습니다. 이는 엔화 약세에 의존하던 일본 수출 기업들에게는 단기적 부담으로 작용할 전망입니다.",
-                "readTime": "4분 읽기",
-                "glossary": {
-                    "헤지펀드": "위험을 피하면서 높은 수익을 노리는 민간 투자 펀드",
-                    "환율 하락": "우리나라 돈이나 특정 통화의 가치가 상대적으로 올라가는 것"
-                }
-            },
-            {
-                "category": "에너지/ESG",
-                "date": "2026-04-26",
-                "title": "탄소국경세(CBAM) 본격 시행... 글로벌 무역의 새로운 장벽",
-                "summary": "유럽연합(EU)의 탄소국경조정제도가 본격적인 시행 단계에 접어들면서, 탄소 배출량이 많은 제품을 수출하는 기업들의 비용 부담이 현실화되었습니다. 철강, 시멘트 등 기초 소재 산업의 원가 상승은 공급망 전체의 가격 인상 요인으로 작용하고 있습니다. 이에 대응하기 위한 기업들의 저탄소 공정 전환 투자가 가속화될 것으로 보입니다.",
-                "readTime": "5분 읽기",
-                "glossary": {
-                    "CBAM": "탄소 배출량이 많은 수입품에 추가 요금을 부과하는 제도",
-                    "ESG": "환경, 사회, 지배구조를 고려하는 지속가능한 경영"
-                }
-            },
-            {
-                "category": "거시경제",
-                "date": "2026-04-26",
-                "title": "동남아시아 신흥국 외환보유고 급감... 제2의 통화위기 우려 차단 고심",
-                "summary": "강달러 현상 지속으로 인도네시아, 태국 등 동남아 주요 신흥국들의 외환보유고가 빠르게 줄어들고 있습니다. 각국 중앙은행은 환율 방어를 위해 시장 개입에 나서고 있으나, 자본 유출 압박은 가중되는 상황입니다. 전문가들은 1990년대말과 같은 연쇄적 위기 가능성은 낮게 보면서도 철저한 리스크 관리를 주문하고 있습니다.",
-                "readTime": "4분 읽기",
-                "glossary": {
-                    "외환보유고": "비상시를 대비해 국가가 가지고 있는 외화 자금",
-                    "자본 유출": "국내 자산이 외국으로 빠져나가는 현상"
                 }
             }
         ],
@@ -63,54 +32,11 @@
                 "date": "2026-04-26",
                 "title": "Weekly Economic Review: Disinflation Stalls Amid Central Bank Dilemmas",
                 "summary": "Recent data suggests global inflation has entered a 'stalling zone,' falling slower than anticipated. This has increased expectations for an ECB rate hold and prompted bond markets to price in a 'higher-for-longer' interest rate scenario.",
-                "readTime": "5 min read",
+                "insight": "The stall in disinflation signals structurally sticky wages and service prices. Expect central banks to delay the anticipated 'pivot' until late 2026, forcing a major recalibration of global asset allocation strategies. The market focus is shifting from 'when will they cut' to 'how long can we sustain these levels'.",
+                "readTime": "6 min read",
                 "glossary": {
                     "Disinflation": "A slowing in the rate of price inflation",
                     "Priced in": "Future events being reflected in current market prices"
-                }
-            },
-            {
-                "category": "Tech",
-                "date": "2026-04-26",
-                "title": "Solid-State Battery Commercialization Near; Redefining Global Mobility",
-                "summary": "Leading battery makers have started pilot lines for solid-state batteries, a potential game-changer for EV range and safety. Mass production is expected by 2027, sparking growth in the related materials and equipment sectors.",
-                "readTime": "5 min read",
-                "glossary": {
-                    "Solid-State Battery": "Next-gen battery using solid electrolytes",
-                    "Mobility": "General term for movement of people and goods"
-                }
-            },
-            {
-                "category": "Finance",
-                "date": "2026-04-26",
-                "title": "Global Hedge Funds Unwind Yen Carry Trades; Yen Rebounds",
-                "summary": "Expectations of BoJ normalization have triggered a mass unwinding of Yen carry trades. The resulting surge in Yen value is increasing forex volatility and pressuring Japanese exporters who benefitted from a weak currency.",
-                "readTime": "4 min read",
-                "glossary": {
-                    "Hedge Fund": "An offshore investment fund using high-risk methods",
-                    "Forex": "Foreign exchange market"
-                }
-            },
-            {
-                "category": "Energy",
-                "date": "2026-04-26",
-                "title": "EU Carbon Border Tax (CBAM) Hits Implementation Phase",
-                "summary": "The EU's CBAM is now active, increasing costs for high-carbon exports like steel and cement. This new trade barrier is forcing a global shift toward low-carbon manufacturing processes across supply chains.",
-                "readTime": "5 min read",
-                "glossary": {
-                    "CBAM": "Carbon Border Adjustment Mechanism",
-                    "Supply Chain": "System of organizations involved in moving a product"
-                }
-            },
-            {
-                "category": "Macro",
-                "date": "2026-04-26",
-                "title": "Emerging SE Asia Reserves Shrink; Nations Monitor Currency Risks",
-                "summary": "Sustained Dollar strength is depleting foreign reserves in Indonesia and Thailand. While central banks intervene to defend their currencies, capital outflow pressures remain a key concern for regional stability.",
-                "readTime": "4 min read",
-                "glossary": {
-                    "Foreign Reserves": "Assets held on reserve by a central bank in foreign currencies",
-                    "Capital Outflow": "Movement of assets out of a country"
                 }
             }
         ]

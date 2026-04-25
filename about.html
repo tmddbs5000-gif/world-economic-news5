@@ -15,35 +15,40 @@
                 <a href="/" style="text-decoration: none; color: inherit;">
                     <h1>Global <span>EcoNews</span></h1>
                 </a>
-                <p>Daily Intelligence for the Global Economy</p>
+                <p data-t="tagline">Premium Economic Intelligence</p>
             </div>
             <nav class="controls">
-                <a href="/" class="partnership-btn">Back to News</a>
+                <select id="language-select" class="lang-select">
+                    <option value="ko">KR</option>
+                    <option value="en">EN</option>
+                </select>
+                <a href="/" class="partnership-btn" data-t="back-to-news">Back to News</a>
             </nav>
         </div>
     </header>
 
     <main class="container page-content">
         <section class="static-section">
-            <h2 class="section-title">About Global EcoNews Network</h2>
+            <h2 class="section-title" data-t="about-title">About Global EcoNews Network</h2>
             <div class="content-box">
-                <p><strong>Global EcoNews</strong> is a premier digital publication providing high-signal economic intelligence to a global audience. We specialize in distilling complex global market shifts, technological disruptions, and policy changes into actionable daily insights.</p>
-                
-                <h3>Our Mission</h3>
-                <p>Our mission is to empower decision-makers, professionals, and curious minds with concise, accurate, and deeply researched economic news. We believe that in an age of information overload, clarity is the ultimate competitive advantage.</p>
+                <p><strong data-t="tagline">Premium Economic Intelligence</strong></p>
+                <p data-t="about-p1">Global EcoNews provides highly curated, deep-dive analysis into the most critical economic events shaping our world. From central bank policies to technological breakthroughs, we deliver clarity in an age of noise.</p>
 
-                <h3>Editorial Process</h3>
-                <p>Each day, our editorial team analyzes hundreds of data points from across the globe, including:</p>
+                <h3 data-t="about-mission-title">Our Mission</h3>
+                <p data-t="about-mission-desc">Our mission is to empower decision-makers, professionals, and curious minds with concise, accurate, and deeply researched economic news. We believe that in an age of information overload, clarity is the ultimate competitive advantage.</p>
+
+                <h3 data-t="about-editorial-title">Editorial Process</h3>
+                <p data-t="about-editorial-desc">Each day, our editorial team analyzes hundreds of data points from across the globe, including:</p>
                 <ul>
-                    <li>Central bank announcements (Fed, ECB, BoJ)</li>
-                    <li>Global supply chain disruptions and trade agreements</li>
-                    <li>Emerging technology impacts on traditional industries</li>
-                    <li>ESG and sustainability initiatives</li>
+                    <li data-t="about-editorial-item1">Central bank announcements (Fed, ECB, BoJ)</li>
+                    <li data-t="about-editorial-item2">Global supply chain disruptions and trade agreements</li>
+                    <li data-t="about-editorial-item3">Emerging technology impacts on traditional industries</li>
+                    <li data-t="about-editorial-item4">ESG and sustainability initiatives</li>
                 </ul>
-                <p>We select only the top 5 most impactful stories to ensure our readers stay informed without being overwhelmed.</p>
+                <p data-t="about-editorial-p">We select only the top 5 most impactful stories to ensure our readers stay informed without being overwhelmed.</p>
 
-                <h3>Our Commitment</h3>
-                <p>We are committed to editorial independence and factual integrity. Our content is curated by a global team of experts who understand the nuances of the modern economic landscape.</p>
+                <h3 data-t="about-commitment-title">Our Commitment</h3>
+                <p data-t="about-commitment-desc">We are committed to editorial independence and factual integrity. Our content is curated by a global team of experts who understand the nuances of the modern economic landscape.</p>
             </div>
         </section>
     </main>
@@ -51,21 +56,17 @@
     <footer>
         <div class="container footer-content">
             <div class="footer-bottom">
-                <p>&copy; 2026 Global EcoNews Network. All rights reserved.</p>
+                <p data-t="footer-rights">&copy; 2026 Global EcoNews Network. All rights reserved.</p>
                 <div class="footer-links">
-                    <a href="/">Home</a> | 
-                    <a href="/about.html">About</a> | 
-                    <a href="/privacy.html">Privacy Policy</a> | 
-                    <a href="/disclaimer.html">Disclaimer</a>
+                    <a href="/" data-t="footer-about">Home</a> |
+                    <a href="/about.html" data-t="footer-about">About</a> |
+                    <a href="/privacy.html" data-t="footer-compliance">Privacy Policy</a> |
+                    <a href="/disclaimer.html" data-t="footer-disclaimer">Disclaimer</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script>
-        // Apply theme from localStorage
-        const theme = localStorage.getItem('theme') || 'dark';
-        document.documentElement.setAttribute('data-theme', theme);
-    </script>
+    <script src="main.js" type="module"></script>
 </body>
 </html>
