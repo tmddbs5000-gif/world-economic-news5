@@ -509,6 +509,34 @@ body::before {
     align-items: center;
 }
 
+/* Methodology Section */
+.methodology-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.method-card {
+    padding: 2.5rem;
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+}
+
+.method-card h4 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.method-card p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+
 /* Briefs Grid */
 .briefs-grid {
     display: grid;
