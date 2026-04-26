@@ -62,12 +62,23 @@
         <div class="sub-header">
             <div class="container flex-between">
                 <div class="date-display" id="current-date-text">Friday, April 24, 2026</div>
-                <div class="category-filters" id="category-filters">
-                    <button class="filter-btn active" data-category="all">Latest</button>
-                    <button class="filter-btn" data-category="Macro">Macro</button>
-                    <button class="filter-btn" data-category="Tech">Technology</button>
-                    <button class="filter-btn" data-category="Finance">Markets</button>
-                    <button class="filter-btn" data-category="Energy">Sustainability</button>
+                <div class="market-pulse" id="market-pulse">
+                    <div class="pulse-item">
+                        <span class="label">Fed Target</span>
+                        <span class="value">2.1%</span>
+                    </div>
+                    <div class="pulse-item">
+                        <span class="label">UST 10Y</span>
+                        <span class="value">4.25%</span>
+                    </div>
+                    <div class="pulse-item">
+                        <span class="label">VIX Index</span>
+                        <span class="value">14.2</span>
+                    </div>
+                    <div class="pulse-item">
+                        <span class="label">Brent Crude</span>
+                        <span class="value">$94.50</span>
+                    </div>
                 </div>
                 <div class="calendar-wrapper">
                     <input type="date" id="date-select">
@@ -77,7 +88,7 @@
     </header>
 
     <main class="container">
-        <!-- Featured Editorial Section (High Value Content for AdSense) -->
+        <!-- Featured Editorial Section -->
         <section class="editorial-hero">
             <div class="hero-main">
                 <div class="badge" data-t="hero-badge">Editor's Choice</div>
@@ -143,10 +154,21 @@
         </div>
 
         <div class="main-layout">
-            <section id="news-container" class="news-feed">
-                <!-- Dynamic news will be injected here -->
-                <div class="loading-spinner" data-t="analyzing">Analyzing market data...</div>
-            </section>
+            <div class="content-feed">
+                <section class="feed-section">
+                    <h2 class="section-heading" data-t="latest-briefs-title">Daily Top 5 Intelligence Brief</h2>
+                    <div id="briefs-container" class="briefs-grid">
+                        <!-- Top 5 briefs will be injected here -->
+                    </div>
+                </section>
+
+                <section class="feed-section">
+                    <h2 class="section-heading" data-t="deep-dive-title">Sector Deep-Dive Analysis</h2>
+                    <div id="news-container" class="news-feed">
+                        <!-- Detailed news will be injected here -->
+                    </div>
+                </section>
+            </div>
             
             <aside class="side-panel">
                 <div class="side-card">

@@ -65,10 +65,11 @@ function updateStaticContent() {
 }
 
 async function renderNews() {
-    const container = document.getElementById('news-container');
-    if (!container) return;
+    const briefsContainer = document.getElementById('briefs-container');
+    const newsContainer = document.getElementById('news-container');
+    if (!briefsContainer || !newsContainer) return;
     
-    container.innerHTML = `<div class="loading-spinner">${translations[state.lang]['analyzing']}</div>`;
+    newsContainer.innerHTML = `<div class="loading-spinner">${translations[state.lang]['analyzing']}</div>`;
     
     const db = await fetchNews();
     let data = (db[state.date] && db[state.date][state.lang]) || [];
@@ -85,32 +86,52 @@ async function renderNews() {
         ];
     }
 
-    if (state.category !== 'all') {
-        data = data.filter(item => {
-            const cat = item.category;
-            return cat === state.category || (categoryMap[state.lang] && categoryMap[state.lang][state.category] === cat);
-        });
-    }
+    // Sort or slice to top 5
+    const top5 = data.slice(0, 5);
 
-    container.innerHTML = '';
+    // 1. Render Briefs (Top 5)
+    briefsContainer.innerHTML = '';
+    top5.forEach((news, index) => {
+        const briefItem = document.createElement('div');
+        briefItem.className = 'brief-card';
+        briefItem.innerHTML = `
+            <div class="brief-rank">${index + 1}</div>
+            <div class="brief-content">
+                <span class="brief-cat">${news.category}</span>
+                <h3>${news.title}</h3>
+            </div>
+        `;
+        briefsContainer.appendChild(briefItem);
+    });
+
+    // 2. Render Detailed Analysis
+    newsContainer.innerHTML = '';
     data.forEach(news => {
         const article = document.createElement('article');
-        article.className = 'article-item';
+        article.className = 'article-item detailed';
         article.innerHTML = `
             <div class="article-meta">
                 <span class="article-cat">${news.category}</span>
                 <span class="article-date">${news.date}</span>
+                <span class="read-time">${news.readTime || '4 min read'}</span>
             </div>
             <div class="article-body">
                 <h2>${news.title}</h2>
                 <p class="article-summary">${news.summary}</p>
                 <div class="article-insight">
-                    <span class="insight-tag">STRATEGIC INSIGHT:</span>
+                    <span class="insight-tag" data-t="strategic-insight">${translations[state.lang]['strategic-insight']}:</span>
                     ${news.insight || createInsight(news)}
                 </div>
+                ${news.glossary ? `
+                    <div class="article-glossary">
+                        ${Object.entries(news.glossary).map(([term, desc]) => `
+                            <p><strong>${term}:</strong> ${desc}</p>
+                        `).join('')}
+                    </div>
+                ` : ''}
             </div>
         `;
-        container.appendChild(article);
+        newsContainer.appendChild(article);
     });
 }
 
@@ -133,15 +154,6 @@ document.getElementById('date-select')?.addEventListener('change', (e) => {
     renderNews();
 });
 
-document.querySelectorAll('.filter-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        state.category = btn.dataset.category;
-        renderNews();
-    });
-});
-
 // Modal
 const modal = document.getElementById('partnership-modal');
 document.getElementById('partnership-btn')?.addEventListener('click', () => modal.classList.add('active'));
@@ -154,13 +166,10 @@ async function updateFearGreedIndex() {
     
     if (!needle) return;
 
-    // For a real production app, we would fetch from an API
-    // Mock value based on current date for stability
     const today = new Date();
     const seed = today.getFullYear() + today.getMonth() + today.getDate();
-    const value = Math.floor((Math.sin(seed) * 50) + 50); // Generates a consistent value for the day (0-100)
+    const value = Math.floor((Math.sin(seed) * 50) + 50); 
     
-    // Convert 0-100 to -90 to +90 degrees for the gauge
     const degree = (value * 1.8) - 90;
     needle.style.transform = `rotate(${degree}deg)`;
     
