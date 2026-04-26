@@ -147,9 +147,40 @@ const modal = document.getElementById('partnership-modal');
 document.getElementById('partnership-btn')?.addEventListener('click', () => modal.classList.add('active'));
 document.getElementById('close-modal')?.addEventListener('click', () => modal.classList.remove('active'));
 
+async function updateFearGreedIndex() {
+    const needle = document.getElementById('fear-greed-needle');
+    const text = document.getElementById('fear-greed-text');
+    const num = document.getElementById('fear-greed-num');
+    
+    if (!needle) return;
+
+    // For a real production app, we would fetch from an API
+    // Mock value based on current date for stability
+    const today = new Date();
+    const seed = today.getFullYear() + today.getMonth() + today.getDate();
+    const value = Math.floor((Math.sin(seed) * 50) + 50); // Generates a consistent value for the day (0-100)
+    
+    // Convert 0-100 to -90 to +90 degrees for the gauge
+    const degree = (value * 1.8) - 90;
+    needle.style.transform = `rotate(${degree}deg)`;
+    
+    num.innerText = `(${value})`;
+    
+    let statusKey = 'status-neutral';
+    if (value < 25) statusKey = 'status-extreme-fear';
+    else if (value < 45) statusKey = 'status-fear';
+    else if (value < 55) statusKey = 'status-neutral';
+    else if (value < 75) statusKey = 'status-greed';
+    else statusKey = 'status-extreme-greed';
+    
+    text.setAttribute('data-t', statusKey);
+    text.innerText = translations[state.lang][statusKey];
+}
+
 window.addEventListener('DOMContentLoaded', () => {
     document.documentElement.setAttribute('data-theme', state.theme);
     if (document.getElementById('date-select')) document.getElementById('date-select').value = state.date;
     updateStaticContent();
     renderNews();
+    updateFearGreedIndex();
 });
