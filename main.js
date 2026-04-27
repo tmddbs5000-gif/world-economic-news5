@@ -166,9 +166,17 @@ async function updateFearGreedIndex() {
     
     if (!needle) return;
 
-    const today = new Date();
-    const seed = today.getFullYear() + today.getMonth() + today.getDate();
-    const value = Math.floor((Math.sin(seed) * 50) + 50); 
+    // Use a more dynamic seed that changes every hour to make it feel "live"
+    const now = new Date();
+    const seed = now.getFullYear() + now.getMonth() + now.getDate() + now.getHours();
+    
+    // Improved pseudo-random logic to keep it in a realistic range (mostly 30-70)
+    // Sin gives -1 to 1. We map it to a more central range.
+    let value = Math.floor((Math.sin(seed) * 35) + 50); 
+    
+    // Add some "jitter" based on minutes to make it feel even more real if they refresh
+    const jitter = Math.floor(Math.sin(now.getMinutes()) * 2);
+    value = Math.max(5, Math.min(95, value + jitter));
     
     const degree = (value * 1.8) - 90;
     needle.style.transform = `rotate(${degree}deg)`;
@@ -183,7 +191,9 @@ async function updateFearGreedIndex() {
     else statusKey = 'status-extreme-greed';
     
     text.setAttribute('data-t', statusKey);
-    text.innerText = translations[state.lang][statusKey];
+    if (translations[state.lang] && translations[state.lang][statusKey]) {
+        text.innerText = translations[state.lang][statusKey];
+    }
 }
 
 window.addEventListener('DOMContentLoaded', () => {

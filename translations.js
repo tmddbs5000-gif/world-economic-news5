@@ -48,7 +48,7 @@ export const translations = {
         "sources-reuters": "로이터 (Reuters)",
         "sources-hankyung": "한경 글로벌 마켓",
         "back-to-news": "뉴스로 돌아가기",
-        "fear-greed-title": "공포 및 탐욕 지수",
+        "fear-greed-title": "CNN 공포 및 탐욕 지수 (시장 심리)",
         "fear-greed-status": "현재 시장 심리:",
         "status-extreme-fear": "극심한 공포",
         "status-fear": "공포",
@@ -170,6 +170,13 @@ export const translations = {
         "disclaimer-h3": "3. Errors and Omissions Disclaimer",
         "disclaimer-desc3": "While we have made every attempt to ensure that the information contained in this site has been obtained from reliable sources, Global EcoNews is not responsible for any errors or omissions, or for the results obtained from the use of this information.",
         "disclaimer-h4": "4. \"Use at Your Own Risk\" Disclaimer",
-        "disclaimer-desc4": "All information in the site is provided \"as is\", with no guarantee of completeness, accuracy, timeliness or of the results obtained from the use of this information, and without warranty of any kind, express or implied."
+        "disclaimer-desc4": "All information in the site is provided \"as is\", with no guarantee of completeness, accuracy, timeliness or of the results obtained from the use of this information, and without warranty of any kind, express or implied.",
+        "fear-greed-title": "CNN Fear & Greed Index (Market Sentiment)",
+        "fear-greed-status": "Market Sentiment:",
+        "status-extreme-fear": "Extreme Fear",
+        "status-fear": "Fear",
+        "status-neutral": "Neutral",
+        "status-greed": "Greed",
+        "status-extreme-greed": "Extreme Greed"
     }
 };
