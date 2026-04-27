@@ -74,7 +74,17 @@ async function renderNews() {
     const db = await fetchNews();
     let data = (db[state.date] && db[state.date][state.lang]) || [];
     
-    // Simple mock if no data
+    // Fallback: If no data for selected date, find the most recent date with data
+    if (data.length === 0) {
+        const availableDates = Object.keys(db).sort().reverse();
+        if (availableDates.length > 0) {
+            const fallbackDate = availableDates[0];
+            data = db[fallbackDate][state.lang] || [];
+            console.log(`No data for ${state.date}, falling back to ${fallbackDate}`);
+        }
+    }
+    
+    // Simple mock if still no data
     if (data.length === 0) {
         data = [
             {
