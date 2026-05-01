@@ -74,29 +74,37 @@ async function renderNews() {
     const db = await fetchNews();
     let data = (db[state.date] && db[state.date][state.lang]) || [];
     
-    // Fallback: If no data for selected date, find the most recent date with data
-    if (data.length === 0) {
+    // Fallback/Supplement logic to ensure exactly 5 items
+    // If current date has fewer than 5 items, try to fill from other dates
+    if (data.length < 5) {
         const availableDates = Object.keys(db).sort().reverse();
-        if (availableDates.length > 0) {
-            const fallbackDate = availableDates[0];
-            data = db[fallbackDate][state.lang] || [];
-            console.log(`No data for ${state.date}, falling back to ${fallbackDate}`);
+        for (const d of availableDates) {
+            // We can pull from any date to reach the 5 items target
+            const extra = db[d][state.lang] || [];
+            for (const item of extra) {
+                // Avoid adding the exact same article if it's already there
+                if (!data.some(existing => existing.title === item.title)) {
+                    data.push(item);
+                }
+                if (data.length >= 5) break;
+            }
+            if (data.length >= 5) break;
         }
     }
     
-    // Simple mock if still no data
-    if (data.length === 0) {
-        data = [
-            {
-                category: state.lang === 'ko' ? "거시경제" : "Macro",
-                title: state.lang === 'ko' ? `[단독] ${state.date} 글로벌 금융 시장 구조적 재편 가속화` : `[Breaking] ${state.date} Acceleration of Global Financial Restructuring`,
-                summary: state.lang === 'ko' ? "지정학적 리스크와 통화 정책의 변화가 맞물리며 새로운 시장 질서가 형성되고 있습니다. 심층 분석 리포트를 확인하세요." : "Geopolitical risks and shifts in monetary policy are merging to form a new market order. Check the in-depth analysis report.",
-                date: state.date
-            }
-        ];
+    // If still less than 5 after checking all dates, add placeholders
+    while (data.length < 5) {
+        const placeholderNum = data.length + 1;
+        data.push({
+            category: state.lang === 'ko' ? "거시경제" : "Macro",
+            title: state.lang === 'ko' ? `[단독] ${state.date} 글로벌 금융 시장 심층 분석 (${placeholderNum})` : `[Analysis] ${state.date} Global Financial Market Report (${placeholderNum})`,
+            summary: state.lang === 'ko' ? "지정학적 리스크와 통화 정책의 변화가 맞물리며 새로운 시장 질서가 형성되고 있습니다. 현재 분석가가 데이터를 정제 중입니다." : "Geopolitical risks and shifts in monetary policy are merging to form a new market order. Analysts are currently refining the data.",
+            date: state.date,
+            insight: state.lang === 'ko' ? "현재 시장의 불확실성이 크므로 분산 투자 관점에서 접근이 필요합니다." : "High market uncertainty requires a diversified investment approach."
+        });
     }
 
-    // Sort or slice to top 5
+    // Strictly take only the top 5
     const top5 = data.slice(0, 5);
 
     // 1. Render Briefs (Top 5)
@@ -114,9 +122,9 @@ async function renderNews() {
         briefsContainer.appendChild(briefItem);
     });
 
-    // 2. Render Detailed Analysis
+    // 2. Render Detailed Analysis (Strictly Top 5)
     newsContainer.innerHTML = '';
-    data.forEach(news => {
+    top5.forEach(news => {
         const article = document.createElement('article');
         article.className = 'article-item detailed';
         article.innerHTML = `

@@ -177,6 +177,9 @@ export const translations = {
         "status-fear": "Fear",
         "status-neutral": "Neutral",
         "status-greed": "Greed",
-        "status-extreme-greed": "Extreme Greed"
+        "status-extreme-greed": "Extreme Greed",
+        "latest-briefs-title": "Daily Top 5 Intelligence Brief",
+        "deep-dive-title": "Sector Deep-Dive Analysis",
+        "strategic-insight": "Strategic Insight"
     }
 };
