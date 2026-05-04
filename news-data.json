@@ -1,4 +1,76 @@
 {
+    "2026-05-04": {
+        "ko": [
+            {
+                "category": "거시경제",
+                "date": "2026-05-04",
+                "title": "글로벌 공급망 재편과 인플레이션의 새로운 국면",
+                "summary": "주요국들이 공급망 내재화를 가속화함에 따라 글로벌 물가 구조가 근본적으로 변화하고 있습니다. 단순한 비용 상승을 넘어 구조적 인플레이션 요인으로 작용할 가능성이 제기되었습니다.",
+                "insight": "공급망의 지역화는 효율성보다 안정성을 우선시하는 선택입니다. 이는 장기적으로 저물가 시대의 종언을 의미할 수 있으며, 기업들은 재고 관리와 조달 전략을 완전히 재검토해야 합니다.",
+                "readTime": "5분 읽기",
+                "glossary": {
+                    "내재화": "외부에 의존하던 것을 내부에서 해결하는 것",
+                    "인플레이션": "물가가 지속적으로 오르는 현상"
+                }
+            },
+            {
+                "category": "기술/산업",
+                "date": "2026-05-04",
+                "title": "AI 반도체 시장의 지각변동: 맞춤형 칩(ASIC) 시대의 개막",
+                "summary": "범용 GPU 중심에서 특정 서비스에 최적화된 맞춤형 AI 반도체(ASIC)로 시장의 중심이 이동하고 있습니다. 주요 빅테크 기업들이 자체 칩 설계를 강화하며 반도체 산업의 생태계가 재편되고 있습니다.",
+                "insight": "ASIC의 확산은 반도체 설계 역량이 서비스 기업의 핵심 경쟁력이 됨을 의미합니다. 이는 기존 파운드리 업체들에게는 기회이자 도전이며, 투자자들은 설계 소프트웨어 및 IP 라이선스 기업들의 성장성에 주목해야 합니다.",
+                "readTime": "6분 읽기",
+                "glossary": {
+                    "ASIC": "특정 용도용 집적 회로",
+                    "파운드리": "반도체 위탁 생산 서비스"
+                }
+            }
+        ],
+        "en": [
+            {
+                "category": "Macro",
+                "date": "2026-05-04",
+                "title": "Global Supply Chain Realignment and the New Phase of Inflation",
+                "summary": "As major economies accelerate the localization of supply chains, the global price structure is undergoing a fundamental shift. This may act as a structural inflationary factor beyond simple cost increases.",
+                "insight": "Localization prioritizes resilience over efficiency. This could signal the end of the low-inflation era, requiring companies to completely overhaul their inventory and procurement strategies.",
+                "readTime": "5 min read",
+                "glossary": {
+                    "Localization": "Moving production or sourcing closer to home",
+                    "Inflation": "A sustained increase in the general price level"
+                }
+            }
+        ]
+    },
+    "2026-05-03": {
+        "ko": [
+            {
+                "category": "금융시장",
+                "date": "2026-05-03",
+                "title": "가상자산 시장의 제도화 가속: 주요국 규제 프레임워크 확정",
+                "summary": "주요 경제권에서 가상자산에 대한 법적 지위와 규제 가이드라인이 명확해지면서 기관 투자자들의 진입 장벽이 낮아지고 있습니다. 이는 가상자산이 주류 금융 자산으로 편입되는 중요한 전환점이 될 전망입니다.",
+                "insight": "규제 명확성은 단기적으로는 제약일 수 있으나, 장기적으로는 시장의 신뢰도를 높여 거대 자본 유입의 마중물이 될 것입니다. 이제는 투기적 접근보다는 실질적인 유틸리티와 금융 시스템과의 융합 가능성을 평가해야 합니다.",
+                "readTime": "5분 읽기",
+                "glossary": {
+                    "제도화": "어떤 현상이 공식적인 체계 속으로 들어오는 것",
+                    "유틸리티": "실제적인 쓰임새나 효용"
+                }
+            }
+        ],
+        "en": [
+            {
+                "category": "Finance",
+                "date": "2026-05-03",
+                "title": "Acceleration of Crypto Institutionalization: Regulatory Frameworks Finalized",
+                "summary": "Clearer legal status and regulatory guidelines for virtual assets in major economies are lowering barriers for institutional investors. This marks a significant turning point for crypto as a mainstream financial asset.",
+                "insight": "Regulatory clarity increases market trust and facilitates large-scale capital entry. The focus is shifting from speculative trading to actual utility and integration with traditional financial systems.",
+                "readTime": "5 min read",
+                "glossary": {
+                    "Institutionalization": "The process of becoming part of an established system",
+                    "Utility": "The state of being useful, profitable, or beneficial"
+                }
+            }
+        ]
+    },
     "2026-04-26": {
         "ko": [
             {
@@ -572,7 +644,7 @@
                 "readTime": "5 min read",
                 "glossary": {
                     "Divergence": "The process of moving in different directions",
-                    "Rate Cut": "A reduction in interest rates by a central bank"
+                    "Rate Cut": "A reduction in interest rates by a bank"
                 }
             },
             {

@@ -44,6 +44,18 @@ function createInsight(news) {
     return insights[state.lang];
 }
 
+function updateHeaderDate() {
+    const dateTextEl = document.getElementById('current-date-text');
+    if (!dateTextEl) return;
+    
+    const [year, month, day] = state.date.split('-').map(Number);
+    const dateObj = new Date(year, month - 1, day);
+    
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const locale = state.lang === 'ko' ? 'ko-KR' : 'en-US';
+    dateTextEl.innerText = dateObj.toLocaleDateString(locale, options);
+}
+
 function updateStaticContent() {
     document.querySelectorAll('[data-t]').forEach(el => {
         const key = el.getAttribute('data-t');
@@ -62,6 +74,9 @@ function updateStaticContent() {
     // Update language select if exists
     const langSelect = document.getElementById('language-select');
     if (langSelect) langSelect.value = state.lang;
+
+    // Update header date display
+    updateHeaderDate();
 }
 
 async function renderNews() {
@@ -71,6 +86,9 @@ async function renderNews() {
     
     newsContainer.innerHTML = `<div class="loading-spinner">${translations[state.lang]['analyzing']}</div>`;
     
+    // Update header date whenever we render news (since date might have changed)
+    updateHeaderDate();
+
     const db = await fetchNews();
     let data = (db[state.date] && db[state.date][state.lang]) || [];
     
@@ -80,7 +98,7 @@ async function renderNews() {
         const availableDates = Object.keys(db).sort().reverse();
         for (const d of availableDates) {
             // We can pull from any date to reach the 5 items target
-            const extra = db[d][state.lang] || [];
+            const extra = db[d] ? db[d][state.lang] || [] : [];
             for (const item of extra) {
                 // Avoid adding the exact same article if it's already there
                 if (!data.some(existing => existing.title === item.title)) {
