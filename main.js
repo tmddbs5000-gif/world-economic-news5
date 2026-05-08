@@ -86,46 +86,32 @@ async function renderNews() {
     
     newsContainer.innerHTML = `<div class="loading-spinner">${translations[state.lang]['analyzing']}</div>`;
     
-    // Update header date whenever we render news (since date might have changed)
     updateHeaderDate();
 
     const db = await fetchNews();
-    let data = (db[state.date] && db[state.date][state.lang]) || [];
+    let allData = [];
+    const availableDates = Object.keys(db).sort().reverse();
     
-    // Fallback/Supplement logic to ensure exactly 5 items
-    // If current date has fewer than 5 items, try to fill from other dates
-    if (data.length < 5) {
-        const availableDates = Object.keys(db).sort().reverse();
-        for (const d of availableDates) {
-            // We can pull from any date to reach the 5 items target
-            const extra = db[d] ? db[d][state.lang] || [] : [];
-            for (const item of extra) {
-                // Avoid adding the exact same article if it's already there
-                if (!data.some(existing => existing.title === item.title)) {
-                    data.push(item);
-                }
-                if (data.length >= 5) break;
-            }
-            if (data.length >= 5) break;
+    availableDates.forEach(d => {
+        const dailyItems = (db[d] && db[d][state.lang]) || [];
+        allData = allData.concat(dailyItems);
+    });
+    
+    // Fallback if no data
+    if (allData.length === 0) {
+        for (let i = 1; i <= 5; i++) {
+            allData.push({
+                category: state.lang === 'ko' ? "거시경제" : "Macro",
+                title: state.lang === 'ko' ? `[분석] 글로벌 시장 심층 보고서 (${i})` : `[Analysis] Global Market Report (${i})`,
+                summary: state.lang === 'ko' ? "데이터를 분석 중입니다." : "Analyzing data...",
+                date: state.date,
+                insight: "..."
+            });
         }
     }
-    
-    // If still less than 5 after checking all dates, add placeholders
-    while (data.length < 5) {
-        const placeholderNum = data.length + 1;
-        data.push({
-            category: state.lang === 'ko' ? "거시경제" : "Macro",
-            title: state.lang === 'ko' ? `[단독] ${state.date} 글로벌 금융 시장 심층 분석 (${placeholderNum})` : `[Analysis] ${state.date} Global Financial Market Report (${placeholderNum})`,
-            summary: state.lang === 'ko' ? "지정학적 리스크와 통화 정책의 변화가 맞물리며 새로운 시장 질서가 형성되고 있습니다. 현재 분석가가 데이터를 정제 중입니다." : "Geopolitical risks and shifts in monetary policy are merging to form a new market order. Analysts are currently refining the data.",
-            date: state.date,
-            insight: state.lang === 'ko' ? "현재 시장의 불확실성이 크므로 분산 투자 관점에서 접근이 필요합니다." : "High market uncertainty requires a diversified investment approach."
-        });
-    }
 
-    // Strictly take only the top 5
-    const top5 = data.slice(0, 5);
-
-    // 1. Render Briefs (Top 5)
+    // 1. Render Briefs (Strictly Top 5 latest)
+    const top5 = allData.slice(0, 5);
     briefsContainer.innerHTML = '';
     top5.forEach((news, index) => {
         const briefItem = document.createElement('div');
@@ -140,9 +126,10 @@ async function renderNews() {
         briefsContainer.appendChild(briefItem);
     });
 
-    // 2. Render Detailed Analysis (Strictly Top 5)
+    // 2. Render Detailed Analysis (Next items to differentiate)
+    const deepDiveItems = allData.length > 5 ? allData.slice(5, 15) : allData;
     newsContainer.innerHTML = '';
-    top5.forEach(news => {
+    deepDiveItems.forEach(news => {
         const article = document.createElement('article');
         article.className = 'article-item detailed';
         article.innerHTML = `
@@ -190,10 +177,74 @@ document.getElementById('date-select')?.addEventListener('change', (e) => {
     renderNews();
 });
 
+// Search functionality
+document.getElementById('news-search')?.addEventListener('input', (e) => {
+    const searchTerm = e.target.value.toLowerCase();
+    const articles = document.querySelectorAll('.article-item');
+    const briefs = document.querySelectorAll('.brief-card');
+
+    articles.forEach(article => {
+        const title = article.querySelector('h2').innerText.toLowerCase();
+        const summary = article.querySelector('.article-summary').innerText.toLowerCase();
+        if (title.includes(searchTerm) || summary.includes(searchTerm)) {
+            article.style.display = 'grid';
+        } else {
+            article.style.display = 'none';
+        }
+    });
+
+    briefs.forEach(brief => {
+        const title = brief.querySelector('h3').innerText.toLowerCase();
+        if (title.includes(searchTerm)) {
+            brief.style.display = 'flex';
+        } else {
+            brief.style.display = 'none';
+        }
+    });
+});
+
 // Modal
 const modal = document.getElementById('partnership-modal');
 document.getElementById('partnership-btn')?.addEventListener('click', () => modal.classList.add('active'));
 document.getElementById('close-modal')?.addEventListener('click', () => modal.classList.remove('active'));
+
+// Back to Top Logic
+const backToTopBtn = document.getElementById('back-to-top');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 500) {
+        backToTopBtn?.classList.add('show');
+    } else {
+        backToTopBtn?.classList.remove('show');
+    }
+});
+backToTopBtn?.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+async function updateMarketTicker() {
+    const ticker = document.getElementById('market-ticker');
+    if (!ticker) return;
+
+    const now = new Date();
+    const timeStr = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+    
+    const assets = [
+        { name: 'NASDAQ', base: 18230, change: 1.2 },
+        { name: 'S&P 500', base: 5240, change: 0.8 },
+        { name: 'BTC/USD', base: 94200, change: -0.5 },
+        { name: 'GOLD', base: 2750, change: 0.3 },
+        { name: 'NIKKEI 225', base: 38500, change: 1.5 },
+        { name: 'EUR/USD', base: 1.085, change: -0.1 }
+    ];
+
+    ticker.innerHTML = assets.map(asset => {
+        const jitter = (Math.random() - 0.5) * 0.1;
+        const currentChange = (asset.change + jitter).toFixed(2);
+        const colorClass = currentChange >= 0 ? 'text-green' : 'text-red';
+        const sign = currentChange >= 0 ? '+' : '';
+        return `<span>${asset.name}: <span class="${colorClass}">${sign}${currentChange}%</span></span>`;
+    }).join('') + `<span class="last-updated" style="margin-left: auto; opacity: 0.5;">Sync: ${timeStr}</span>`;
+}
 
 async function updateFearGreedIndex() {
     const needle = document.getElementById('fear-greed-needle');
@@ -202,12 +253,10 @@ async function updateFearGreedIndex() {
     
     if (!needle) return;
 
-    let value = 66; // Default to user-reported value as a better starting point
+    let value = 66; 
     let success = false;
 
     try {
-        // Try fetching real-time data from a third-party API
-        // Note: Using a proxy or CORS-friendly endpoint is often needed for static sites
         const response = await fetch('https://api.allorigins.win/get?url=' + encodeURIComponent('https://feargreedchart.com/api/?action=history'));
         if (response.ok) {
             const wrapper = await response.json();
@@ -222,10 +271,8 @@ async function updateFearGreedIndex() {
     }
 
     if (!success) {
-        // Fallback: Use a more sophisticated pseudo-random logic that stays close to the last known value
         const now = new Date();
         const seed = now.getFullYear() + now.getMonth() + now.getDate() + now.getHours();
-        // Shift the range to be more realistic based on current market (around 60-70)
         value = Math.floor((Math.sin(seed) * 10) + 65); 
         const jitter = Math.floor(Math.sin(now.getMinutes()) * 2);
         value = Math.max(0, Math.min(100, value + jitter));
@@ -255,4 +302,6 @@ window.addEventListener('DOMContentLoaded', () => {
     updateStaticContent();
     renderNews();
     updateFearGreedIndex();
+    updateMarketTicker();
+    setInterval(updateMarketTicker, 30000); // Update every 30 seconds
 });

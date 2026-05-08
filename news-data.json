@@ -1,4 +1,46 @@
 {
+    "2026-05-08": {
+        "ko": [
+            {
+                "category": "거시경제",
+                "date": "2026-05-08",
+                "title": "연준, 인플레이션 안정세 확인... 하반기 금리 인하 기대감 고조",
+                "summary": "최신 경제 지표들이 인플레이션 목표치인 2%에 근접하고 있음을 보여주면서, 시장에서는 연준의 통화 정책 전환(피벗)이 머지 않았다는 낙관론이 확산되고 있습니다.",
+                "insight": "연준의 신중한 태도는 여전하지만, 지표상의 뚜렷한 개선은 자산 시장에 긍정적인 모멘텀을 제공하고 있습니다. 성장주와 기술주 중심의 포트폴리오 재편을 고려할 시점입니다.",
+                "readTime": "5분 읽기",
+                "glossary": {
+                    "피벗": "중앙은행의 통화 정책 방향 전환",
+                    "모멘텀": "주가 상승이나 하락의 추진력"
+                }
+            },
+            {
+                "category": "기술/산업",
+                "date": "2026-05-08",
+                "title": "차세대 양자 보안 칩 상용화... 글로벌 금융 시스템의 대전환",
+                "summary": "해킹이 불가능한 것으로 알려진 양자 보안 기술이 탑재된 금융 거래 칩이 본격적으로 상용화되었습니다. 이는 디지털 금융의 신뢰도를 획기적으로 높일 게임 체인저가 될 전망입니다.",
+                "insight": "사이버 보안은 이제 단순한 방어를 넘어 금융 기관의 핵심 경쟁력이 되었습니다. 양자 내성 암호 기술을 선점한 기업들의 가치가 재평가될 것입니다.",
+                "readTime": "6분 읽기",
+                "glossary": {
+                    "양자 보안": "양자 역학의 원리를 이용한 보안 기술",
+                    "상용화": "실제로 널리 쓰이게 됨"
+                }
+            }
+        ],
+        "en": [
+            {
+                "category": "Macro",
+                "date": "2026-05-08",
+                "title": "Fed Confirms Inflation Stability; Rate Cut Hopes Surge for H2",
+                "summary": "Recent economic data shows inflation nearing the 2% target, fueling optimism that a Fed policy pivot is imminent. Markets are pricing in potential cuts starting in the third quarter.",
+                "insight": "While the Fed remains cautious, clear progress in data provides positive momentum for asset markets. It's time to consider rebalancing portfolios toward growth and tech.",
+                "readTime": "5 min read",
+                "glossary": {
+                    "Pivot": "A significant shift in central bank policy direction",
+                    "H2": "Second half of the year"
+                }
+            }
+        ]
+    },
     "2026-05-04": {
         "ko": [
             {

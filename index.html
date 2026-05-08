@@ -33,6 +33,8 @@
                     <span>S&P 500: +0.8%</span>
                     <span>BTC/USD: $94,200</span>
                     <span>GOLD: $2,750</span>
+                    <span>NIKKEI 225: +1.5%</span>
+                    <span>EUR/USD: 1.085</span>
                 </div>
             </div>
         </div>
@@ -51,6 +53,10 @@
                 </div>
                 <div class="divider"></div>
                 <div class="nav-controls">
+                    <div class="search-wrapper">
+                        <input type="text" id="news-search" placeholder="Search intelligence..." data-t="search-placeholder">
+                        <span class="search-icon">🔍</span>
+                    </div>
                     <button id="theme-toggle" class="icon-btn">🌓</button>
                     <select id="language-select" class="lang-select">
                         <option value="ko">KR</option>
@@ -169,6 +175,9 @@
                         <div class="method-card">
                             <h4 data-t="method-1-title">Data-First Research</h4>
                             <p data-t="method-1-desc">We aggregate over 500 financial data points daily, from G7 central bank minute meetings to emerging market bond yields.</p>
+                            <div class="source-logos">
+                                <span>IMF</span> <span>OECD</span> <span>FED</span> <span>ECB</span> <span>WB</span>
+                            </div>
                         </div>
                         <div class="method-card">
                             <h4 data-t="method-2-title">Structural Analysis</h4>
@@ -178,7 +187,10 @@
                 </section>
 
                 <section class="feed-section">
-                    <h2 class="section-heading" data-t="deep-dive-title">Sector Deep-Dive Analysis</h2>
+                    <h2 class="section-heading">
+                        <span data-t="deep-dive-title">Sector Deep-Dive Analysis</span>
+                        <a href="#" class="archive-link" data-t="view-archive">View Archive</a>
+                    </h2>
                     <div id="news-container" class="news-feed">
                         <!-- Detailed news will be injected here -->
                     </div>
@@ -269,7 +281,7 @@
                 <div class="footer-links">
                     <h4 data-t="footer-pub">Publication</h4>
                     <a href="/about.html" data-t="footer-about">About Us</a>
-                    <a href="/privacy.html" data-t="footer-compliance">Compliance</a>
+                    <a href="/privacy.html" data-t="nav-compliance">Compliance</a>
                     <a href="/disclaimer.html" data-t="footer-disclaimer">Disclaimer</a>
                 </div>
                 <div class="footer-social">
@@ -284,6 +296,8 @@
             </div>
         </div>
     </footer>
+
+    <button id="back-to-top" title="Back to Top">↑</button>
 
     <script src="main.js" type="module"></script>
 </body>
