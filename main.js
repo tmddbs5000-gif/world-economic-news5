@@ -223,12 +223,13 @@ backToTopBtn?.addEventListener('click', () => {
 
 async function updateMarketTicker() {
     const ticker = document.getElementById('market-ticker');
+    const liveIndicator = document.querySelector('.live-indicator');
     if (!ticker) return;
 
     const now = new Date();
     const timeStr = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
     
-    const assets = [
+    let assets = [
         { name: 'NASDAQ', base: 18230, change: 1.2 },
         { name: 'S&P 500', base: 5240, change: 0.8 },
         { name: 'BTC/USD', base: 94200, change: -0.5 },
@@ -237,13 +238,41 @@ async function updateMarketTicker() {
         { name: 'EUR/USD', base: 1.085, change: -0.1 }
     ];
 
+    let isRealTime = false;
+
+    // Try to fetch BTC from CoinCap (Keyless)
+    try {
+        const btcRes = await fetch('https://api.coincap.io/v2/assets/bitcoin');
+        if (btcRes.ok) {
+            const btcData = await btcRes.json();
+            const btcAsset = assets.find(a => a.name === 'BTC/USD');
+            if (btcAsset) {
+                btcAsset.base = parseFloat(btcData.data.priceUsd);
+                btcAsset.change = parseFloat(btcData.data.changePercent24Hr);
+                isRealTime = true;
+            }
+        }
+    } catch (e) { console.warn("BTC fetch failed"); }
+
+    // Update UI
+    const syncKey = isRealTime ? 'market-data-sync' : 'market-data-snapshot';
+    const syncLabel = (translations[state.lang] && translations[state.lang][syncKey]) || (isRealTime ? 'Sync:' : 'Snapshot:');
+
     ticker.innerHTML = assets.map(asset => {
-        const jitter = (Math.random() - 0.5) * 0.1;
+        const jitter = isRealTime ? 0 : (Math.random() - 0.5) * 0.1;
         const currentChange = (asset.change + jitter).toFixed(2);
         const colorClass = currentChange >= 0 ? 'text-green' : 'text-red';
         const sign = currentChange >= 0 ? '+' : '';
-        return `<span>${asset.name}: <span class="${colorClass}">${sign}${currentChange}%</span></span>`;
-    }).join('') + `<span class="last-updated" style="margin-left: auto; opacity: 0.5;">Sync: ${timeStr}</span>`;
+        
+        const priceDisplay = asset.name === 'BTC/USD' ? `$${Math.round(asset.base).toLocaleString()}` : '';
+        const displayValue = priceDisplay ? `${priceDisplay} (${sign}${currentChange}%)` : `${sign}${currentChange}%`;
+
+        return `<span>${asset.name}: <span class="${colorClass}">${displayValue}</span></span>`;
+    }).join('') + `<span class="last-updated" style="margin-left: auto; opacity: 0.5; font-size: 0.65rem;">${syncLabel} ${timeStr}</span>`;
+
+    if (liveIndicator) {
+        liveIndicator.innerText = isRealTime ? 'LIVE' : 'MARKET';
+    }
 }
 
 async function updateFearGreedIndex() {

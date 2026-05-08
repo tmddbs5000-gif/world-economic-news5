@@ -59,6 +59,8 @@ export const translations = {
         "deep-dive-title": "섹터별 심층 분석 리포트",
         "view-archive": "아카이브 보기",
         "strategic-insight": "전략적 통찰",
+        "market-data-sync": "시장 데이터 동기화:",
+        "market-data-snapshot": "시장 데이터 스냅샷:",
         "search-placeholder": "인텔리전스 검색...",
         "about-title": "Global EcoNews Network 정보",
         "about-mission-title": "우리의 미션",
@@ -182,6 +184,9 @@ export const translations = {
         "status-extreme-greed": "Extreme Greed",
         "latest-briefs-title": "Daily Top 5 Intelligence Brief",
         "deep-dive-title": "Sector Deep-Dive Analysis",
-        "strategic-insight": "Strategic Insight"
+        "strategic-insight": "Strategic Insight",
+        "market-data-sync": "Market Data Sync:",
+        "market-data-snapshot": "Market Data Snapshot:",
+        "search-placeholder": "Search intelligence...",
     }
 };
