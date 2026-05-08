@@ -24,6 +24,42 @@
                     "양자 보안": "양자 역학의 원리를 이용한 보안 기술",
                     "상용화": "실제로 널리 쓰이게 됨"
                 }
+            },
+            {
+                "category": "반도체",
+                "date": "2026-05-08",
+                "title": "글로벌 반도체 공급망 재편: 2nm 공정 경쟁의 서막",
+                "summary": "주요 파운드리 업체들이 2nm 초미세 공정 양산 계획을 구체화하며 차세대 반도체 패권 다툼이 치열해지고 있습니다. 이는 AI 가속기 및 고성능 컴퓨팅 시장의 지형을 바꿀 중대한 분점이 될 것입니다.",
+                "insight": "미세 공정의 한계를 극복하기 위한 패키징 기술과 신소재 도입이 가속화될 것입니다. 장비 및 소재 공급망 내 핵심 기술을 보유한 기업들의 전략적 중요성이 어느 때보다 높습니다.",
+                "readTime": "7분 읽기",
+                "glossary": {
+                    "파운드리": "반도체 위탁 생산",
+                    "패키징": "제조된 반도체를 보호하고 연결하는 공정"
+                }
+            },
+            {
+                "category": "인공지능",
+                "date": "2026-05-08",
+                "title": "생성형 AI의 진화: 기업용 맞춤형 LLM 도입 확산",
+                "summary": "범용 모델에서 벗어나 기업의 내부 데이터를 학습시킨 보안이 강화된 맞춤형 거대언어모델(LLM) 도입이 전 산업군으로 확산되고 있습니다. 이는 실질적인 생산성 향상으로 이어지는 단계에 진입했음을 시사합니다.",
+                "insight": "데이터 주권과 보안이 AI 도입의 핵심 과제가 되면서, 온프레미스 AI 및 하이브리드 클라우드 솔루션 시장의 폭발적 성장이 예상됩니다.",
+                "readTime": "5분 읽기",
+                "glossary": {
+                    "LLM": "거대언어모델",
+                    "온프레미스": "자체적으로 보유한 서버에 소프트웨어를 설치하여 운영하는 방식"
+                }
+            },
+            {
+                "category": "에너지/ESG",
+                "date": "2026-05-08",
+                "title": "해상 풍력 발전의 경제성 임계점 도달... 화석 연료 대체 가속",
+                "summary": "기술 혁신과 규모의 경제 달성으로 해상 풍력 발전 단가가 크게 하락하며 화석 연료와의 가격 경쟁력을 확보했습니다. 이는 글로벌 에너지 믹스의 대대적인 변화를 예고합니다.",
+                "insight": "에너지 저장 장치(ESS)와 지능형 전력망(Smart Grid) 기술의 결합이 필수적입니다. 관련 인프라 투자 사이클의 본격적인 시작에 주목해야 합니다.",
+                "readTime": "6분 읽기",
+                "glossary": {
+                    "에너지 믹스": "다양한 에너지원을 활용하는 비율",
+                    "ESS": "에너지 저장 시스템"
+                }
             }
         ],
         "en": [
@@ -37,6 +73,42 @@
                 "glossary": {
                     "Pivot": "A significant shift in central bank policy direction",
                     "H2": "Second half of the year"
+                }
+            },
+            {
+                "category": "Semiconductors",
+                "date": "2026-05-08",
+                "title": "Semiconductor War: The Race to 2nm Mass Production Begins",
+                "summary": "Top foundries are unveiling detailed plans for 2nm process nodes, intensifying the battle for next-gen semiconductor supremacy. This will reshape the landscape for AI accelerators and high-performance computing.",
+                "insight": "Advanced packaging and new materials will be key to overcoming physical limits. Strategic importance of equipment and material suppliers with core IP is at an all-time high.",
+                "readTime": "7 min read",
+                "glossary": {
+                    "Foundry": "Semiconductor manufacturing specialized in producing chips for others",
+                    "Packaging": "The process of encasing semiconductors to protect them and provide connections"
+                }
+            },
+            {
+                "category": "AI",
+                "date": "2026-05-08",
+                "title": "Evolution of Generative AI: Rise of Specialized Corporate LLMs",
+                "summary": "The shift from general-purpose models to secure, customized Large Language Models (LLMs) trained on proprietary data is accelerating across industries. This marks a transition toward tangible productivity gains.",
+                "insight": "As data sovereignty and security become paramount, explosive growth in on-premise AI and hybrid cloud solutions is expected.",
+                "readTime": "5 min read",
+                "glossary": {
+                    "LLM": "Large Language Model",
+                    "On-premise": "Installed and run on computers on the premises of the organization"
+                }
+            },
+            {
+                "category": "Energy/ESG",
+                "date": "2026-05-08",
+                "title": "Offshore Wind Reaches Economic Tipping Point",
+                "summary": "Plunging costs of offshore wind power due to technological innovation and economies of scale have achieved price parity with fossil fuels, signaling a major shift in the global energy mix.",
+                "insight": "Integration with Energy Storage Systems (ESS) and Smart Grid technology is essential. Focus on the beginning of a massive infrastructure investment cycle.",
+                "readTime": "6 min read",
+                "glossary": {
+                    "Energy Mix": "The combination of different primary energy sources used to meet energy needs",
+                    "ESS": "Energy Storage System"
                 }
             }
         ]

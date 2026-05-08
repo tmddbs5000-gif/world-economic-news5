@@ -634,6 +634,43 @@ body::before {
     margin-bottom: 4rem;
 }
 
+/* Trending Sectors Grid */
+.sectors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.sector-card {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    padding: 2.5rem 1.5rem;
+    border-radius: 20px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.sector-card:hover {
+    background: var(--surface-hover);
+    border-color: var(--accent-color);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-sm);
+}
+
+.sector-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.sector-card h4 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    letter-spacing: -0.01em;
+}
+
 .brief-card {
     background: var(--surface-color);
     border: 1px solid var(--border-color);

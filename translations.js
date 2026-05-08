@@ -61,6 +61,11 @@ export const translations = {
         "strategic-insight": "전략적 통찰",
         "market-data-sync": "시장 데이터 동기화:",
         "market-data-snapshot": "시장 데이터 스냅샷:",
+        "sectors-title": "주요 경제 트렌드 섹터",
+        "sector-semi": "반도체",
+        "sector-ai": "인공지능(AI)",
+        "sector-macro": "거시경제",
+        "sector-energy": "에너지 & ESG",
         "search-placeholder": "인텔리전스 검색...",
         "about-title": "Global EcoNews Network 정보",
         "about-mission-title": "우리의 미션",
@@ -187,6 +192,11 @@ export const translations = {
         "strategic-insight": "Strategic Insight",
         "market-data-sync": "Market Data Sync:",
         "market-data-snapshot": "Market Data Snapshot:",
+        "sectors-title": "Trending Intelligence Sectors",
+        "sector-semi": "Semiconductors",
+        "sector-ai": "Artificial Intelligence",
+        "sector-macro": "Macro Economy",
+        "sector-energy": "Energy & ESG",
         "search-placeholder": "Search intelligence...",
     }
 };
