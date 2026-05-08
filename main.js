@@ -82,31 +82,45 @@ function updateStaticContent() {
 async function renderNews() {
     const briefsContainer = document.getElementById('briefs-container');
     const newsContainer = document.getElementById('news-container');
+    const dateSelect = document.getElementById('date-select');
     if (!briefsContainer || !newsContainer) return;
     
     newsContainer.innerHTML = `<div class="loading-spinner">${translations[state.lang]['analyzing']}</div>`;
     
-    updateHeaderDate();
-
     const db = await fetchNews();
     
-    // Get data for the specific selected date
-    let displayData = (db[state.date] && db[state.date][state.lang]) || [];
+    // 1. Determine which date to display (Fallback logic)
+    const availableDates = Object.keys(db).sort().reverse();
+    let displayDate = state.date;
     
-    // Fallback if no data for the selected date
+    // If selected date has no data, find the latest available date that is <= selected date
+    if (!db[displayDate] || !db[displayDate][state.lang] || db[displayDate][state.lang].length === 0) {
+        const fallbackDate = availableDates.find(d => d <= displayDate) || availableDates[0];
+        if (fallbackDate && fallbackDate !== displayDate) {
+            displayDate = fallbackDate;
+            state.date = fallbackDate; // Sync state to the fallback date
+            if (dateSelect) dateSelect.value = fallbackDate; // Update calendar UI
+        }
+    }
+    
+    updateHeaderDate();
+
+    let displayData = (db[displayDate] && db[displayDate][state.lang]) || [];
+    
+    // Fallback if absolutely no data in DB
     if (displayData.length === 0) {
         for (let i = 1; i <= 5; i++) {
             displayData.push({
                 category: state.lang === 'ko' ? "거시경제" : "Macro",
                 title: state.lang === 'ko' ? `[분석] 글로벌 시장 심층 보고서 (${i})` : `[Analysis] Global Market Report (${i})`,
-                summary: state.lang === 'ko' ? `${state.date} 일자 데이터를 분석 중입니다.` : `Analyzing data for ${state.date}...`,
+                summary: state.lang === 'ko' ? `데이터를 분석 중입니다.` : `Analyzing data...`,
                 date: state.date,
                 insight: "..."
             });
         }
     }
 
-    // 1. Render Briefs (Top items for the date)
+    // 2. Render Briefs
     const briefs = displayData.slice(0, 5);
     briefsContainer.innerHTML = '';
     briefs.forEach((news, index) => {
@@ -122,7 +136,7 @@ async function renderNews() {
         briefsContainer.appendChild(briefItem);
     });
 
-    // 2. Render Detailed Analysis (All items for the date)
+    // 3. Render Detailed Analysis
     newsContainer.innerHTML = '';
     displayData.forEach(news => {
         const article = document.createElement('article');

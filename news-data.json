@@ -61,68 +61,6 @@
                     "토큰 증권(STO)": "블록체인 기술을 활용하여 증권을 디지털화한 것"
                 }
             }
-        ],
-        "en": [
-            {
-                "category": "Macro",
-                "date": "2026-05-08",
-                "title": "Fed Signals Rate Cut Path as Inflation Stabilizes Near 2% Target",
-                "summary": "The Federal Reserve's latest report indicates that core inflation has declined for three consecutive months, nearing the long-term goal of 2%. Chairman Jerome Powell recently highlighted that the disinflationary trend is becoming more solid, leaving the door open for the much-anticipated policy pivot. Analysts expect the first rate cut to occur as early as September, which would serve as a major catalyst for stimulating consumer and investment sentiment suppressed by high rates. This shift is anticipated to lower mortgage lending rates, effectively increasing household disposable income. Global bond markets have already begun pricing in this scenario, with 10-year Treasury yields stabilizing downward. This trend is a key driver supporting a continued rally in tech and growth stocks, according to financial intelligence experts.",
-                "insight": "The Fed's dovish turn signals a 'new spring' for asset markets. We suggest increasing exposure to large-cap tech and renewable energy sectors, which benefit most from lower rates.",
-                "readTime": "6 min read",
-                "glossary": {
-                    "Pivot": "A significant shift in central bank policy from tightening to loosening",
-                    "Disinflation": "A slowdown in the rate of price inflation"
-                }
-            },
-            {
-                "category": "Semiconductors",
-                "date": "2026-05-08",
-                "title": "Semiconductor War: Race to 2nm Mass Production Reaches Peak",
-                "summary": "TSMC and Samsung Electronics, the giants of the semiconductor foundry market, have confirmed mass production plans for their 2nm nodes in late 2026. This 2nm process is expected to offer 30% higher power efficiency and 20% smaller chip size compared to 3nm, marking a massive leap for AI accelerators and on-device AI hardware. With Japan's Rapidus also entering the fray with full government support, a fierce three-way race between Korea, Taiwan, and Japan has emerged. This race for sub-2nm nodes is creating enormous order backlogs for equipment suppliers like ASML, which holds a monopoly on EUV lithography systems. Over the next five years, equipment and material firms within the supply chain are forecasted to see significant earnings growth. Investors should look beyond individual manufacturers and focus on small-to-medium enterprises that provide essential technology for the supply chain.",
-                "insight": "The winner of the sub-2nm race will dictate the AI industry's trajectory for the next decade. Keep a close watch on equipment firms with core IP.",
-                "readTime": "7 min read",
-                "glossary": {
-                    "Foundry": "A company that manufactures chips for other semiconductor companies",
-                    "EUV Lithography": "An advanced technology using extreme ultraviolet light to print microscopic circuits"
-                }
-            },
-            {
-                "category": "AI",
-                "date": "2026-05-08",
-                "title": "Generative AI Evolution: 'Vertical LLMs' Drive Corporate Productivity",
-                "summary": "Moving beyond general-purpose text generation, 'Vertical LLMs' optimized for specific industries are being widely adopted by corporations. In fields requiring high expertise—such as finance, law, and medicine—customized AI models combined with proprietary data are improving work efficiency by over 40%. The demand for on-premise AI deployments has surged as companies prioritize data sovereignty and security, leading to a boom in the hybrid cloud market. Global Big Tech firms are shifting their strategy from general model competition to developing B2B solutions that generate tangible revenue. This is fundamentally changing the software industry's business model from simple SaaS to result-oriented AI agent services. These shifts are expected to accelerate the automation of repetitive tasks, signaling a major structural realignment in the white-collar labor market.",
-                "insight": "AI is evolving from a mere tool to a co-worker. Expect sustained earnings growth for leaders in enterprise AI solutions and cloud infrastructure providers.",
-                "readTime": "6 min read",
-                "glossary": {
-                    "Vertical LLM": "A large language model specialized with data from a specific industry",
-                    "On-premise": "Software installed and run on the organization's own physical servers"
-                }
-            },
-            {
-                "category": "Energy/ESG",
-                "date": "2026-05-08",
-                "title": "Global Energy Transition: Offshore Wind Hits Economic Golden Cross",
-                "summary": "The Levelized Cost of Energy (LCOE) for offshore wind power has finally dipped below that of fossil fuels, reaching an 'economic golden cross' driven by innovation and economies of scale. Nordic countries like the UK and Denmark are already replacing over 40% of their national grid with wind power, while massive tenders are being launched in the US and Asian markets. The commercialization of floating offshore wind technology has expanded energy territories into deeper waters previously thought unreachable. This transition is accompanied by an explosive increase in demand for critical minerals like copper and lithium, making supply chain security a matter of national importance. With carbon credit prices rising, the profitability of renewable energy firms is expected to trend upward long-term, proving that ESG investment is now a practical profit-generating model rather than just a trend.",
-                "insight": "The transition to clean energy is irreversible. Focus on manufacturers of offshore structures and power grid infrastructure providers.",
-                "readTime": "8 min read",
-                "glossary": {
-                    "LCOE": "The average total cost of building and operating a power-generating asset",
-                    "Carbon Credits": "Permits that allow the owner to emit a certain amount of carbon dioxide"
-                }
-            },
-            {
-                "category": "Finance",
-                "date": "2026-05-08",
-                "title": "Year One of Digital Asset Institutionalization: Inflows and Trust",
-                "summary": "With major economies finalizing legal frameworks and expanding spot ETF approvals, digital assets have transitioned from speculative vehicles to legitimate institutional financial assets. News of global pension funds and sovereign wealth funds allocating 3-5% of their portfolios to Bitcoin and other digital assets is reducing market volatility and driving a steady upward trend. Stablecoins have proven their utility in cross-border payments, emerging as a game-changer for improving the inefficiencies of legacy financial systems. Furthermore, the launch of the Security Token Offering (STO) market is digitizing illiquid real-world assets like real estate and fine art, expanding opportunities for individual investors. While institutionalization may increase regulatory costs in the short term, it creates a transparent environment for large-scale capital, providing the momentum to grow the digital asset market by tens of fold.",
-                "insight": "Digital assets are now a staple of mainstream portfolios. Watch the growth of exchange infrastructure and payment solution providers benefiting from this shift.",
-                "readTime": "6 min read",
-                "glossary": {
-                    "Spot ETF": "An exchange-traded fund that directly holds and tracks the price of a physical asset",
-                    "STO": "Digital representation of a security using blockchain technology"
-                }
-            }
         ]
     },
     "2026-05-07": {
@@ -131,26 +69,52 @@
                 "category": "기술/산업",
                 "date": "2026-05-07",
                 "title": "글로벌 공급망 재편의 새로운 핵: 인도 반도체 생태계의 부상",
-                "summary": "인도 정부의 파격적인 인센티브 정책에 힘입어 글로벌 반도체 기업들이 인도 내 대규모 팹(Fab) 건설을 가속화하고 있습니다. 이는 미-중 갈등 속에서 공급망 리스크를 분산하려는 전략적 움직임으로, 인도는 풍부한 소프트웨어 인력과 거대한 내수 시장을 바탕으로 세계적인 생산 기지로 거듭나고 있습니다. 특히 마이크론, 타타 그룹 등의 투자가 실질적인 성과를 내기 시작하면서 인도의 제조 역량에 대한 재평가가 이루어지고 있으며, 이는 아시아 경제 지형도에 중대한 변화를 예고합니다. 장기적으로 인도는 반도체 후공정뿐만 아니라 설계 및 전공정 분야에서도 경쟁력을 확보할 것으로 보이며, 이는 글로벌 부품 소재 기업들에게 새로운 기회이자 도전이 될 전망입니다.",
+                "summary": "인도 정부의 파격적인 인센티브 정책에 힘입어 글로벌 반도체 기업들이 인도 내 대규모 팹(Fab) 건설을 가속화하고 있습니다. 이는 미-중 갈등 속에서 공급망 리스크를 분산하려는 전략적 움직임으로, 인도는 풍부한 소프트웨어 인력과 거대한 내수 시장을 바탕으로 세계적인 생산 기지로 거듭나고 있습니다. 특히 마이크론, 타타 그룹 등의 투자가 실질적인 성과를 내기 시작하면서 인도의 제조 역량에 대한 재평가가 이루어지고 있으며, 이는 아시아 경제 지형도에 중대한 변화를 예고합니다. 또한 인도는 단순히 저임금 노동력에 의존하는 것을 넘어, 자국 내 반도체 설계 및 IP(지식재산권) 생태계를 강화하여 고부가가치 산업으로의 전환을 꾀하고 있습니다. 이러한 인도의 '반도체 굴기'는 한국과 대만이 주도하던 기존 시장 질서에 균열을 일으키며, 글로벌 기업들에게는 생산 기지 다변화를 위한 필수적인 선택지로 자리매김하고 있습니다.",
                 "insight": "인도는 더 이상 '잠재력'의 나라가 아닌 '실재'하는 위협이자 기회입니다. 인도 시장에 진출한 소재 기업들의 수혜 여부를 면밀히 검토하십시오.",
                 "readTime": "6분 읽기",
                 "glossary": {
                     "팹(Fab)": "반도체 제조 공장",
                     "인센티브": "어떤 행위를 장려하기 위해 제공되는 경제적 보상"
                 }
-            }
-        ],
-        "en": [
+            },
             {
-                "category": "Tech",
+                "category": "거시경제",
                 "date": "2026-05-07",
-                "title": "India's Semiconductor Ecosystem Emerges as Global Supply Chain Hub",
-                "summary": "Bolstered by unprecedented government incentives, global semiconductor firms are accelerating the construction of large-scale Fabs in India. This strategic move aims to diversify supply chain risks amidst US-China tensions. Leveraging its vast software talent pool and enormous domestic market, India is transforming into a global manufacturing powerhouse. As investments from Micron and the Tata Group begin to yield results, the world is reassessing India's manufacturing capabilities. This shift promises to significantly alter the Asian economic landscape. Long-term, India is expected to gain competitiveness not just in backend testing but also in design and front-end processes, presenting both new opportunities and challenges for global material and component suppliers.",
-                "insight": "India is no longer just a land of 'potential' but a tangible opportunity. Analyze the benefits for material suppliers expanding into the Indian market.",
-                "readTime": "6 min read",
+                "title": "유로존 경기 침체 탈출 신호... 서비스업 중심의 완만한 회복세",
+                "summary": "최근 발표된 유로존의 구매관리자지수(PMI)가 예상치를 상회하며 경기 회복에 대한 기대감을 높이고 있습니다. 특히 독일과 프랑스의 서비스업 경기가 살아나면서 가계 소비가 점진적으로 회복되는 양상을 보이고 있습니다. 이는 에너지 가격 안정과 임금 상승률 둔화가 맞물리며 실질 구매력이 향상된 결과로 풀이됩니다. 유럽중앙은행(ECB)은 이러한 지표를 바탕으로 금리 인하 시점을 신중하게 조율하고 있으며, 하반기에는 유로존 전반의 성장률이 플러스권으로 진입할 것이라는 낙관적인 전망이 우세합니다. 그러나 여전히 높은 지정학적 리스크와 제조업 부문의 부진은 회복 속도를 늦추는 요인으로 지적되고 있어, 완전한 경기 정상화까지는 다소 시간이 걸릴 것으로 보입니다.",
+                "insight": "유럽 시장의 회복은 국내 수출 기업들에게 기회가 될 수 있습니다. 유럽 비중이 높은 자동차 및 기계 섹터의 반등 가능성에 주목하십시오.",
+                "readTime": "5분 읽기",
                 "glossary": {
-                    "Fab": "A facility for manufacturing semiconductors",
-                    "Incentives": "Financial rewards offered to encourage specific business activities"
+                    "PMI(구매관리자지수)": "기업의 구매 담당자들을 대상으로 조사한 경기 지표",
+                    "실질 구매력": "물가 변동을 고려한 실제 재화 구매 능력"
+                }
+            }
+        ]
+    },
+    "2026-05-06": {
+        "ko": [
+            {
+                "category": "금융시장",
+                "date": "2026-05-06",
+                "title": "글로벌 채권 시장의 대이동: 안전 자산 선호에서 수익률 추구로",
+                "summary": "인플레이션 공포가 점진적으로 해소됨에 따라 투자자들이 국채와 같은 안전 자산에서 벗어나 회사채 및 신흥국 채권으로 눈을 돌리고 있습니다. 고금리 환경이 장기화될 것이라는 우려보다는 향후 금리 하락 시 시세 차익을 노리는 선제적 자금 유입이 뚜렷하게 나타나고 있습니다. 특히 우량 회사채(Investment Grade)에 대한 수요가 폭발하며 발행 스프레드가 역대 최저 수준으로 좁혀지고 있는 상황입니다. 이는 기업들의 자금 조달 여건을 개선시켜 설비 투자 확대로 이어질 가능성을 시사합니다. 또한 일본의 수익률곡선통제(YCC) 정책 종료 이후 엔캐리 트레이드 자금의 향방이 글로벌 유동성의 핵심 변수로 떠오르며, 일본 자본의 본국 회귀 가능성에 시장은 긴장하며 주시하고 있습니다.",
+                "insight": "채권 시장의 온기는 주식 시장으로 전이될 가능성이 높습니다. 회사채 발행이 활발한 산업재 및 금융 섹터의 투자 기회를 모색해 보십시오.",
+                "readTime": "7분 읽기",
+                "glossary": {
+                    "스프레드": "국채 금리와 회사채 금리 간의 차이",
+                    "엔캐리 트레이드": "저금리인 일본 엔화를 빌려 고수익 자산에 투자하는 것"
+                }
+            },
+            {
+                "category": "기술/산업",
+                "date": "2026-05-06",
+                "title": "자율주행 기술의 임계점 돌파: 레벨 4 상용화 서비스 확대",
+                "summary": "주요 자율주행 기술 기업들이 특정 지역에서 운전자가 개입하지 않는 '레벨 4' 수준의 무인 로보택시 서비스를 본격화하고 있습니다. 하드웨어 센서의 단가 하락과 AI 알고리즘의 고도화가 맞물리며, 사고율이 인간 운전자보다 현저히 낮아졌다는 데이터가 입증되기 시작했습니다. 이는 물류 산업뿐만 아니라 개인용 모빌리티 시장의 근본적인 변화를 예고하며, 완성차 업체들은 이제 하드웨어 제조사에서 '모빌리티 서비스 플랫폼' 기업으로의 대전환을 서두르고 있습니다. 또한 자율주행 인프라를 위한 정밀 지도와 V2X(차량-사물 간 통신) 기술 수요가 급증하며, 관련 통신 장비 및 클라우드 컴퓨팅 기업들의 새로운 성장 모멘텀이 될 전망입니다.",
+                "insight": "자율주행은 단순한 편리함을 넘어 산업의 패러다임을 바꿉니다. 데이터센터와 차량용 OS를 선점한 빅테크 기업들의 지배력은 더욱 강화될 것입니다.",
+                "readTime": "6분 읽기",
+                "glossary": {
+                    "레벨 4 자율주행": "대부분의 상황에서 시스템이 운전을 수행하는 고도 자율주행",
+                    "V2X": "차량이 유무선망을 통해 주변 사물과 정보를 교환하는 기술"
                 }
             }
         ]
