@@ -89,31 +89,27 @@ async function renderNews() {
     updateHeaderDate();
 
     const db = await fetchNews();
-    let allData = [];
-    const availableDates = Object.keys(db).sort().reverse();
     
-    availableDates.forEach(d => {
-        const dailyItems = (db[d] && db[d][state.lang]) || [];
-        allData = allData.concat(dailyItems);
-    });
+    // Get data for the specific selected date
+    let displayData = (db[state.date] && db[state.date][state.lang]) || [];
     
-    // Fallback if no data
-    if (allData.length === 0) {
+    // Fallback if no data for the selected date
+    if (displayData.length === 0) {
         for (let i = 1; i <= 5; i++) {
-            allData.push({
+            displayData.push({
                 category: state.lang === 'ko' ? "거시경제" : "Macro",
                 title: state.lang === 'ko' ? `[분석] 글로벌 시장 심층 보고서 (${i})` : `[Analysis] Global Market Report (${i})`,
-                summary: state.lang === 'ko' ? "데이터를 분석 중입니다." : "Analyzing data...",
+                summary: state.lang === 'ko' ? `${state.date} 일자 데이터를 분석 중입니다.` : `Analyzing data for ${state.date}...`,
                 date: state.date,
                 insight: "..."
             });
         }
     }
 
-    // 1. Render Briefs (Strictly Top 5 latest)
-    const top5 = allData.slice(0, 5);
+    // 1. Render Briefs (Top items for the date)
+    const briefs = displayData.slice(0, 5);
     briefsContainer.innerHTML = '';
-    top5.forEach((news, index) => {
+    briefs.forEach((news, index) => {
         const briefItem = document.createElement('div');
         briefItem.className = 'brief-card';
         briefItem.innerHTML = `
@@ -126,10 +122,9 @@ async function renderNews() {
         briefsContainer.appendChild(briefItem);
     });
 
-    // 2. Render Detailed Analysis (Next items to differentiate)
-    const deepDiveItems = allData.length > 5 ? allData.slice(5, 15) : allData;
+    // 2. Render Detailed Analysis (All items for the date)
     newsContainer.innerHTML = '';
-    deepDiveItems.forEach(news => {
+    displayData.forEach(news => {
         const article = document.createElement('article');
         article.className = 'article-item detailed';
         article.innerHTML = `
