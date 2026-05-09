@@ -4,8 +4,8 @@ import { translations } from './translations.js';
 let newsDatabaseCache = null;
 
 const categoryMap = {
-    ko: { "Macro": "거시경제", "Tech": "기술/산업", "Energy": "에너지/ESG", "Finance": "금융시장", "Trade": "글로벌 무역" },
-    en: { "거시경제": "Macro", "기술/산업": "Tech", "에너지/ESG": "Energy", "금융시장": "Finance", "글로벌 무역": "Trade" }
+    ko: { "Macro": "거시경제", "Tech": "기술/산업", "Energy": "에너지/ESG", "Finance": "금융시장", "Trade": "글로벌 무역", "Stocks": "주식 시장", "RealEstate": "부동산" },
+    en: { "거시경제": "Macro", "기술/산업": "Tech", "에너지/ESG": "Energy", "금융시장": "Finance", "글로벌 무역": "Trade", "주식 시장": "Stocks", "부동산": "RealEstate" }
 };
 
 function getKSTDate() {
@@ -21,7 +21,8 @@ const state = {
     lang: localStorage.getItem('lang') || 'ko',
     date: getKSTDate(),
     category: 'all',
-    theme: localStorage.getItem('theme') || 'dark'
+    theme: localStorage.getItem('theme') || 'dark',
+    searchTerm: ''
 };
 
 async function fetchNews() {
@@ -82,45 +83,63 @@ function updateStaticContent() {
 async function renderNews() {
     const briefsContainer = document.getElementById('briefs-container');
     const newsContainer = document.getElementById('news-container');
-    const dateSelect = document.getElementById('date-select');
+    const sectorHeading = document.querySelector('[data-t="deep-dive-title"]');
     if (!briefsContainer || !newsContainer) return;
     
     newsContainer.innerHTML = `<div class="loading-spinner">${translations[state.lang]['analyzing']}</div>`;
     
     const db = await fetchNews();
-    
-    // 1. Determine which date to display (Fallback logic)
-    const availableDates = Object.keys(db).sort().reverse();
-    let displayDate = state.date;
-    
-    // If selected date has no data, find the latest available date that is <= selected date
-    if (!db[displayDate] || !db[displayDate][state.lang] || db[displayDate][state.lang].length === 0) {
-        const fallbackDate = availableDates.find(d => d <= displayDate) || availableDates[0];
-        if (fallbackDate && fallbackDate !== displayDate) {
-            displayDate = fallbackDate;
-            state.date = fallbackDate; // Sync state to the fallback date
-            if (dateSelect) dateSelect.value = fallbackDate; // Update calendar UI
-        }
-    }
-    
-    updateHeaderDate();
+    let displayData = [];
+    let isSearch = state.searchTerm.length > 0;
 
-    let displayData = (db[displayDate] && db[displayDate][state.lang]) || [];
-    
-    // Fallback if absolutely no data in DB
-    if (displayData.length === 0) {
-        for (let i = 1; i <= 5; i++) {
-            displayData.push({
-                category: state.lang === 'ko' ? "거시경제" : "Macro",
-                title: state.lang === 'ko' ? `[분석] 글로벌 시장 심층 보고서 (${i})` : `[Analysis] Global Market Report (${i})`,
-                summary: state.lang === 'ko' ? `데이터를 분석 중입니다.` : `Analyzing data...`,
-                date: state.date,
-                insight: "..."
+    if (isSearch) {
+        // Search across all data
+        Object.keys(db).forEach(date => {
+            const dayData = db[date][state.lang] || [];
+            dayData.forEach(item => {
+                const title = item.title.toLowerCase();
+                const summary = item.summary.toLowerCase();
+                if (title.includes(state.searchTerm) || summary.includes(state.searchTerm)) {
+                    displayData.push(item);
+                }
+            });
+        });
+        if (sectorHeading) sectorHeading.innerText = translations[state.lang]['search-results'];
+    } else {
+        // Normal date/category flow
+        displayData = (db[state.date] && db[state.date][state.lang]) || [];
+        if (state.category !== 'all') {
+            displayData = displayData.filter(item => {
+                const catInData = item.category;
+                const catInState = categoryMap[state.lang][state.category] || state.category;
+                return catInData === catInState;
             });
         }
+        if (sectorHeading) sectorHeading.innerText = translations[state.lang]['deep-dive-title'];
     }
 
-    // 2. Render Briefs
+    updateHeaderDate();
+
+    // Fallback if no data
+    if (displayData.length === 0) {
+        if (isSearch) {
+            newsContainer.innerHTML = `<div class="no-results">${translations[state.lang]['no-results']}</div>`;
+            briefsContainer.innerHTML = '';
+            return;
+        } else {
+            for (let i = 1; i <= 5; i++) {
+                displayData.push({
+                    category: state.lang === 'ko' ? "거시경제" : "Macro",
+                    title: state.lang === 'ko' ? `[분석] 글로벌 시장 심층 보고서 (${i})` : `[Analysis] Global Market Report (${i})`,
+                    summary: state.lang === 'ko' ? `${state.date} 일자 데이터를 분석 중입니다. 잠시만 기다려 주십시오.` : `Analyzing data for ${state.date}... Please wait.`,
+                    date: state.date,
+                    insight: "..."
+                });
+            }
+        }
+    }
+
+    // 1. Render Briefs (Only if not search, or first 5 results)
     const briefs = displayData.slice(0, 5);
     briefsContainer.innerHTML = '';
     briefs.forEach((news, index) => {
@@ -136,7 +155,7 @@ async function renderNews() {
         briefsContainer.appendChild(briefItem);
     });
 
-    // 3. Render Detailed Analysis
+    // 2. Render Detailed Analysis
     newsContainer.innerHTML = '';
     displayData.forEach(news => {
         const article = document.createElement('article');
@@ -183,32 +202,39 @@ document.getElementById('language-select')?.addEventListener('change', (e) => {
 
 document.getElementById('date-select')?.addEventListener('change', (e) => {
     state.date = e.target.value;
+    state.searchTerm = '';
+    document.getElementById('news-search').value = '';
     renderNews();
 });
 
 // Search functionality
-document.getElementById('news-search')?.addEventListener('input', (e) => {
-    const searchTerm = e.target.value.toLowerCase();
-    const articles = document.querySelectorAll('.article-item');
-    const briefs = document.querySelectorAll('.brief-card');
+const searchWrapper = document.querySelector('.search-wrapper');
+const searchInput = document.getElementById('news-search');
+const searchBtn = document.getElementById('search-btn');
 
-    articles.forEach(article => {
-        const title = article.querySelector('h2').innerText.toLowerCase();
-        const summary = article.querySelector('.article-summary').innerText.toLowerCase();
-        if (title.includes(searchTerm) || summary.includes(searchTerm)) {
-            article.style.display = 'grid';
-        } else {
-            article.style.display = 'none';
-        }
-    });
+searchBtn?.addEventListener('click', () => {
+    searchWrapper.classList.toggle('active');
+    if (searchWrapper.classList.contains('active')) {
+        searchInput.focus();
+    }
+});
 
-    briefs.forEach(brief => {
-        const title = brief.querySelector('h3').innerText.toLowerCase();
-        if (title.includes(searchTerm)) {
-            brief.style.display = 'flex';
-        } else {
-            brief.style.display = 'none';
-        }
+searchInput?.addEventListener('input', (e) => {
+    state.searchTerm = e.target.value.toLowerCase();
+    if (state.searchTerm.length > 2 || state.searchTerm.length === 0) {
+        renderNews();
+    }
+});
+
+// Category Navigation
+document.querySelectorAll('.cat-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        state.category = btn.getAttribute('data-cat');
+        state.searchTerm = '';
+        searchInput.value = '';
+        renderNews();
     });
 });
 

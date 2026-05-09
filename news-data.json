@@ -1,4 +1,58 @@
 {
+    "2026-05-09": {
+        "ko": [
+            {
+                "category": "주식 시장",
+                "date": "2026-05-09",
+                "title": "코스피 3,000 돌파 임박... 외국인·기관 동반 매수세 유입",
+                "summary": "국내 주식 시장이 반도체 수출 호조와 연준의 금리 인하 기대감에 힘입어 강한 상승세를 보이고 있습니다. 특히 외국인 투자자들이 7거래일 연속 순매수를 기록하며 시장을 주도하고 있으며, 시가총액 상위 종목인 삼성전자와 SK하이닉스가 나란히 신고가를 경신했습니다. 증시 전문가들은 하반기 기업 실적 개선이 뚜렷해짐에 따라 코스피 지수가 3,000선을 안정적으로 돌파할 것으로 내다보고 있습니다. 개인 투자자들의 예탁금 또한 다시 증가 추세로 돌아서며 시장의 유동성이 풍부해지고 있는 상황입니다.",
+                "insight": "지수 대형주 중심의 랠리가 지속될 전망입니다. 실적 가시성이 높은 수출주 위주의 포트폴리오 재편을 권고합니다.",
+                "readTime": "5분 읽기",
+                "glossary": {
+                    "순매수": "매수 금액에서 매도 금액을 뺀 순수한 매수 규모",
+                    "신고가": "주가가 일정 기간 중 가장 높은 가격을 기록하는 것"
+                }
+            },
+            {
+                "category": "부동산",
+                "date": "2026-05-09",
+                "title": "수도권 아파트 시장 '훈풍'... 거래량 회복세 뚜렷",
+                "summary": "금리 하향 안정화와 대출 규제 완화 영향으로 수도권 주요 단지를 중심으로 아파트 매수 심리가 살아나고 있습니다. 서울 강남권과 마용성 지역을 중심으로 급매물이 소화된 후 호가가 점진적으로 상승하고 있으며, 경기도 판교와 광교 등 신도시 지역에서도 거래량이 전월 대비 30% 이상 증가했습니다. 전문가들은 전세 가격 상승이 매매 가격을 밀어올리는 양상이 나타나고 있다고 분석하며, 실수요자들은 입지가 우수한 지역을 중심으로 선별적 접근을 할 필요가 있다고 조언합니다.",
+                "insight": "부동산 시장의 양극화가 심화될 것입니다. 공급이 제한적인 서울 도심권 재건축 단지의 장기적 가치에 주목하십시오.",
+                "readTime": "6분 읽기",
+                "glossary": {
+                    "호가": "팔거나 사려고 부르는 가격",
+                    "실수요자": "실제로 거주할 목적으로 주택을 구매하려는 사람"
+                }
+            }
+        ],
+        "en": [
+            {
+                "category": "Stock Market",
+                "date": "2026-05-09",
+                "title": "KOSPI Nears 3,000 Mark as Foreign and Institutional Buying Surges",
+                "summary": "The Korean stock market is showing strong upward momentum, driven by robust semiconductor exports and expectations of a Fed rate cut. Foreign investors have recorded net purchases for seven consecutive trading days, leading the market as top-cap stocks like Samsung Electronics and SK Hynix hit new highs. Market experts predict that the KOSPI will stably break through the 3,000 level as corporate earnings improve in the second half of the year. Retail investor deposits are also on the rise again, increasing market liquidity.",
+                "insight": "The rally centered on large-cap stocks is expected to continue. We recommend rebalancing portfolios toward export-oriented stocks with high earnings visibility.",
+                "readTime": "5 min read",
+                "glossary": {
+                    "Net Purchase": "The scale of buying minus selling in a given period.",
+                    "New High": "When a stock price reaches its highest point over a certain period."
+                }
+            },
+            {
+                "category": "Real Estate",
+                "date": "2026-05-09",
+                "title": "Metropolitan Apartment Market Warms Up as Transaction Volume Recovers",
+                "summary": "Apt buyer sentiment is reviving in major metropolitan areas due to stabilizing interest rates and eased lending regulations. After distressed properties were cleared in Gangnam and the 'Ma-Yong-Seong' areas of Seoul, asking prices have been gradually rising. Transaction volumes in new cities like Pangyo and Gwanggyo in Gyeonggi Province also increased by more than 30% compared to the previous month. Experts analyze that rising charter (jeonse) prices are pushing up sales prices and advise real users to approach selectively, focusing on areas with excellent locations.",
+                "insight": "Polarization in the real estate market will intensify. Focus on the long-term value of reconstruction complexes in downtown Seoul where supply is limited.",
+                "readTime": "6 min read",
+                "glossary": {
+                    "Asking Price": "The price at which a seller is willing to sell.",
+                    "Real User": "A person who intends to purchase a home for the purpose of actually living in it."
+                }
+            }
+        ]
+    },
     "2026-05-08": {
         "ko": [
             {

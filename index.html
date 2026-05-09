@@ -55,7 +55,7 @@
                 <div class="nav-controls">
                     <div class="search-wrapper">
                         <input type="text" id="news-search" placeholder="Search intelligence..." data-t="search-placeholder">
-                        <span class="search-icon">🔍</span>
+                        <button id="search-btn" class="icon-btn search-icon-btn">🔍</button>
                     </div>
                     <button id="theme-toggle" class="icon-btn">🌓</button>
                     <select id="language-select" class="lang-select">
@@ -64,6 +64,19 @@
                     </select>
                 </div>
             </nav>
+        </div>
+        <div class="category-nav">
+            <div class="container">
+                <div class="cat-scroll">
+                    <button class="cat-btn active" data-cat="all" data-t="cat-all">All</button>
+                    <button class="cat-btn" data-cat="Macro" data-t="sector-macro">Macro Economy</button>
+                    <button class="cat-btn" data-cat="Stocks" data-t="sector-stocks">Stock Market</button>
+                    <button class="cat-btn" data-cat="RealEstate" data-t="sector-real-estate">Real Estate</button>
+                    <button class="cat-btn" data-cat="Tech" data-t="sector-ai">AI & Tech</button>
+                    <button class="cat-btn" data-cat="Energy" data-t="sector-energy">Energy & ESG</button>
+                    <button class="cat-btn" data-cat="Trade" data-t="sector-trade">Global Trade</button>
+                </div>
+            </div>
         </div>
         <div class="sub-header">
             <div class="container flex-between">
@@ -172,20 +185,20 @@
                     <h2 class="section-heading" data-t="sectors-title">Trending Intelligence Sectors</h2>
                     <div id="sectors-container" class="sectors-grid">
                         <div class="sector-card">
-                            <span class="sector-icon">💾</span>
-                            <h4 data-t="sector-semi">Semiconductors</h4>
-                        </div>
-                        <div class="sector-card">
-                            <span class="sector-icon">🤖</span>
-                            <h4 data-t="sector-ai">Artificial Intelligence</h4>
-                        </div>
-                        <div class="sector-card">
                             <span class="sector-icon">📈</span>
                             <h4 data-t="sector-macro">Macro Economy</h4>
                         </div>
                         <div class="sector-card">
-                            <span class="sector-icon">⚡</span>
-                            <h4 data-t="sector-energy">Energy & ESG</h4>
+                            <span class="sector-icon">📊</span>
+                            <h4 data-t="sector-stocks">Stock Market</h4>
+                        </div>
+                        <div class="sector-card">
+                            <span class="sector-icon">🏢</span>
+                            <h4 data-t="sector-real-estate">Real Estate</h4>
+                        </div>
+                        <div class="sector-card">
+                            <span class="sector-icon">🤖</span>
+                            <h4 data-t="sector-ai">Artificial Intelligence</h4>
                         </div>
                     </div>
                 </section>
