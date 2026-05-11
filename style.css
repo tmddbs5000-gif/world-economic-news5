@@ -648,7 +648,7 @@ body::before {
 /* Methodology Section */
 .methodology-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-bottom: 4rem;
 }
@@ -658,19 +658,50 @@ body::before {
     background: var(--surface-color);
     border: 1px solid var(--border-color);
     border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .method-card h4 {
     color: var(--accent-color);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    font-weight: 800;
 }
 
 .method-card p {
     font-size: 1rem;
     color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.source-logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: auto;
+}
+
+.source-tag {
+    font-size: 0.65rem;
+    font-weight: 900;
+    color: var(--text-muted);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-color);
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    letter-spacing: 0.1em;
+    transition: var(--transition);
+}
+
+.source-tag:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+    background: var(--accent-glow);
 }
 
 /* Briefs Grid */
