@@ -135,7 +135,7 @@ body::before {
 .text-green { color: var(--green); }
 .text-red { color: var(--red); }
 
-.header-main {
+.header-main, .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -160,7 +160,7 @@ body::before {
     font-weight: 700;
 }
 
-.main-nav { display: flex; align-items: center; gap: 2.5rem; }
+.main-nav, .controls { display: flex; align-items: center; gap: 2.5rem; }
 
 .nav-controls {
     display: flex;
@@ -274,6 +274,19 @@ body::before {
     font-weight: 700;
     cursor: pointer;
 }
+
+.partnership-btn {
+    background: var(--accent-color);
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 100px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 700;
+    transition: var(--transition);
+}
+
+.partnership-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px var(--accent-glow); }
 
 .sub-header {
     padding-block: 0.8rem;
@@ -824,15 +837,77 @@ body::before {
     font-weight: 600;
 }
 
+/* Static Pages Styles */
+.page-content { padding-block: 4rem; }
+.section-title { font-family: var(--font-serif); font-size: 2.5rem; margin-bottom: 3rem; text-align: center; }
+.content-box { background: var(--surface-color); border: 1px solid var(--border-color); padding: 4rem; border-radius: 20px; box-shadow: var(--shadow-md); }
+.content-box h3 { margin-block: 3rem 1.5rem; color: var(--accent-color); }
+.content-box p { margin-bottom: 1.5rem; color: var(--text-secondary); }
+.content-box ul { margin-bottom: 2rem; padding-left: 2rem; color: var(--text-secondary); }
+.content-box li { margin-bottom: 1rem; }
+
+@media (max-width: 1000px) {
+    .editorial-hero { grid-template-columns: 1fr; margin-block: 2rem; }
+    .hero-main, .hero-sidebar { padding: 2.5rem; border: none; }
+    .main-layout { grid-template-columns: 1fr; gap: 3rem; }
+    .article-item { grid-template-columns: 1fr; gap: 1.5rem; padding-bottom: 3rem; }
+    .hero-main h2 { font-size: 2.5rem; }
+    .side-panel { gap: 2rem; }
+    .content-box { padding: 2.5rem; }
+}
+
+@media (max-width: 768px) {
+    .header-main, .header-content { flex-direction: column; gap: 1.5rem; text-align: center; padding-block: 1rem; }
+    .main-nav, .controls { flex-direction: column; gap: 1rem; width: 100%; }
+    .nav-links { justify-content: center; width: 100%; }
+    .nav-controls { width: 100%; justify-content: center; }
+    .search-wrapper.active input { width: 140px; }
+    
+    .hero-main h2 { font-size: 2.2rem; }
+    .hero-footer { flex-direction: column; align-items: flex-start; gap: 1rem; }
+    
+    .section-heading { font-size: 1.5rem; }
+    .section-title { font-size: 2rem; }
+    
+    .article-item.detailed { padding-block: 2rem; }
+    .article-body h2 { font-size: 1.8rem; }
+    
+    .methodology-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; gap: 3rem; text-align: center; }
+    .footer-brand p { margin-inline: auto; }
+}
+
+@media (max-width: 480px) {
+    .container { width: 95%; }
+    .logo h1 { font-size: 1.8rem; }
+    .logo p { font-size: 0.6rem; letter-spacing: 0.2em; }
+    
+    .live-indicator { margin-right: 1rem; font-size: 0.6rem; }
+    .market-ticker { gap: 1.5rem; }
+    
+    .hero-main, .hero-sidebar { padding: 1.5rem; }
+    .hero-main h2 { font-size: 1.8rem; }
+    .hero-main p { font-size: 1rem; }
+    
+    .fear-greed-widget { padding: 1.5rem 1rem; }
+    .gauge-container { width: 160px; height: 80px; }
+    .gauge-bg { width: 160px; height: 160px; }
+    .gauge-needle { height: 60px; }
+    .gauge-labels { font-size: 0.55rem; }
+    
+    .brief-card { padding: 1.5rem; gap: 1rem; }
+    .brief-rank { font-size: 2rem; }
+    .brief-content h3 { font-size: 1rem; }
+    
+    .side-card { padding: 2rem 1.5rem; }
+    
+    .modal-content { padding: 2rem 1.5rem; }
+    .form-row { grid-template-columns: 1fr; }
+    
+    .content-box { padding: 1.5rem; }
+}
+
 @media (max-width: 900px) {
     .market-pulse { display: none; }
     .briefs-grid { grid-template-columns: 1fr; }
-}
-
-@media (max-width: 1000px) {
-    .editorial-hero { grid-template-columns: 1fr; }
-    .hero-main, .hero-sidebar { padding: 3rem; border: none; }
-    .main-layout { grid-template-columns: 1fr; }
-    .article-item { grid-template-columns: 1fr; gap: 2rem; }
-    .hero-main h2 { font-size: 2.8rem; }
 }
