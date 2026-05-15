@@ -7,22 +7,38 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        (function() {
+            const theme = localStorage.getItem('theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
 </head>
 <body>
     <header class="main-header">
-        <div class="container header-content">
+        <div class="container header-main">
             <div class="logo">
-                <a href="/" style="text-decoration: none; color: inherit;">
+                <a href="/">
                     <h1>Global <span>EcoNews</span></h1>
                 </a>
                 <p data-t="tagline">Premium Economic Intelligence</p>
             </div>
-            <nav class="controls">
-                <select id="language-select" class="lang-select">
-                    <option value="ko">KR</option>
-                    <option value="en">EN</option>
-                </select>
-                <a href="/" class="partnership-btn" data-t="back-to-news">Back to News</a>
+            
+            <nav class="main-nav">
+                <div class="nav-links">
+                    <a href="/library.html" data-t="nav-library">Library</a>
+                    <a href="/about.html" data-t="nav-about">About Intelligence</a>
+                    <a href="/privacy.html" data-t="privacy-title">Privacy Policy</a>
+                </div>
+                <div class="divider"></div>
+                <div class="nav-controls">
+                    <button id="theme-toggle" class="icon-btn">🌓</button>
+                    <select id="language-select" class="lang-select">
+                        <option value="ko">KR</option>
+                        <option value="en">EN</option>
+                    </select>
+                    <a href="/" class="partnership-btn" data-t="back-to-news">Back to News</a>
+                </div>
             </nav>
         </div>
     </header>

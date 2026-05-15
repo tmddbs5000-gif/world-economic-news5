@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        (function() {
+            const theme = localStorage.getItem('theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
 </head>
 <body style="display: flex; align-items: center; justify-content: center; min-height: 100vh; background-color: var(--bg-color);">
     <div class="container" style="text-align: center;">
@@ -15,9 +21,6 @@
         <p style="color: var(--text-secondary); margin-bottom: 4rem; max-width: 500px; margin-inline: auto; font-size: 1.1rem;">The financial report or analysis you are looking for has been moved or is currently unavailable in our network.</p>
         <a href="/" class="action-btn" style="display: inline-block; width: auto; padding-inline: 3rem; text-decoration: none;">Return to Intelligence Hub</a>
     </div>
-    <script>
-        const theme = localStorage.getItem('theme') || 'dark';
-        document.documentElement.setAttribute('data-theme', theme);
-    </script>
+    <script src="main.js" type="module"></script>
 </body>
 </html>

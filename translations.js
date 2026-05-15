@@ -106,13 +106,19 @@ export const translations = {
         "about-editorial-p": "우리는 독자들이 압도당하지 않고 정보를 유지할 수 있도록 가장 영향력 있는 상위 5개의 기사만 선택합니다.",
         "about-commitment-title": "우리의 약속",
         "about-commitment-desc": "우리는 편집의 독립성과 사실의 무결성을 약속합니다. 우리의 콘텐츠는 현대 경제 환경의 뉘앙스를 이해하는 글로벌 전문가 팀에 의해 선별됩니다.",
+        "about-policy-title": "편집 정책 및 윤리 강령",
+        "about-policy-desc": "Global EcoNews는 저널리즘의 원칙을 준수합니다. 우리는 모든 보도에서 객관성, 공정성 및 정확성을 유지하기 위해 다음과 같은 정책을 시행합니다.",
+        "about-ethics-title": "윤리 서약",
+        "about-ethics-desc": "당사의 분석가와 편집자들은 어떠한 금융 이해관계로부터 독립적입니다. 우리는 특정 기업이나 정당의 이익을 대변하지 않으며, 오직 데이터에 기반한 진실만을 전달합니다.",
+        "about-correction-title": "정정 보도 정책",
+        "about-correction-desc": "우리는 오류가 발견될 경우 즉시 이를 투명하게 정정합니다. 정정된 내용은 기사 하단에 명시되며, 독자들에게 정확한 정보를 제공하는 것을 최우선으로 합니다.",
         "privacy-title": "개인정보 및 쿠키 정책",
         "privacy-p1": "Global EcoNews는 귀하의 개인 정보를 소중히 여깁니다. 이 정책은 데이터 처리 방식과 방문자로서의 귀하의 권리를 설명합니다.",
         "privacy-h1": "1. 데이터 수집",
         "privacy-desc1": "우리는 뉴스를 검색하는 데 사용자 등록이나 개인 정보 제공을 요구하지 않습니다. 이름 및 이메일 주소와 같은 개인 데이터는 '연락 및 파트너십' 양식을 통해 자발적으로 제출된 경우에만 수집됩니다.",
         "privacy-h2": "2. Google AdSense 및 타사 쿠키",
         "privacy-desc2": "우리는 광고를 제공하기 위해 Google AdSense를 사용합니다. Google은 타사 공급업체로서 쿠키를 사용하여 사용자의 이전 웹사이트 방문을 기반으로 광고를 제공합니다.",
-        "privacy-item1": "Google의 광고 쿠키 사용을 통해 Google 및 파트너는 당사 사이체 및/또는 인터넷상의 다른 사이트 방문을 기반으로 사용자에게 광고를 제공할 수 있습니다.",
+        "privacy-item1": "Google's use of advertising cookies enables it and its partners to serve ads to our users based on their visit to our sites and/or other sites on the Internet.",
         "privacy-item2": "사용자는 <a href='https://www.google.com/settings/ads' target='_blank'>광고 설정</a>을 방문하여 맞춤형 광고를 옵트아웃할 수 있습니다.",
         "privacy-h3": "3. 로그 파일",
         "privacy-desc3": "다른 많은 웹 사이트와 마찬가지로 Global EcoNews는 로그 파일을 사용합니다. 로그 파일 내부의 정보에는 IP 주소, 브라우저 유형, 인터넷 서비스 제공업체(ISP), 날짜/시간 스탬프, 참조/종료 페이지 및 트렌드 분석, 사이트 관리, 사이트 주변의 사용자 움직임 추적, 인구 통계 정보 수집을 위한 클릭 수가 포함됩니다.",
@@ -275,10 +281,6 @@ export const translations = {
         "method-3-title": "Institutional Verification",
         "method-3-desc": "Every intelligence brief undergoes a rigorous three-tier verification protocol: cross-dataset validation, peer-reviewed economic auditing, and algorithmic bias neutralization.",
         "data-sources-label": "Primary Data Intelligence Sources:",
-        "about-title": "About Global EcoNews Network",
-    }
-};
-urces-label": "Primary Data Intelligence Sources:",
-        "about-title": "About Global EcoNews Network",
+        "about-title": "About Global EcoNews Network"
     }
 };
