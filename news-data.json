@@ -1,4 +1,148 @@
 {
+    "2026-05-15": {
+        "ko": [
+            {
+                "category": "거시경제",
+                "date": "2026-05-15",
+                "title": "[심층분석] 2026년 상반기 글로벌 경제 지형도: 연착륙인가, 새로운 균형인가?",
+                "summary": "2026년 2분기에 접어들며 세계 경제는 '고금리 장기화(Higher for Longer)'와 '공급망 재편'이라는 두 가지 거대한 물결 속에서 새로운 균형점을 찾고 있습니다. 미국의 고용 지표는 예상보다 견조하게 유지되고 있으나, 가계의 초과 저축이 고갈되면서 소비 심리는 서서히 냉각되는 조짐을 보이고 있습니다. 연준은 인플레이션의 확실한 하락을 확인하기 전까지는 금리 인하에 신중한 태도를 견지할 것으로 보이며, 이는 시장의 변동성을 지속시키는 요인이 되고 있습니다. 반면, 유럽과 중국은 내수 회복을 위한 정책적 지원을 강화하며 경기 반등을 꾀하고 있어, 지역별 경기 차별화(Divergence) 현상이 뚜렷해지고 있습니다.",
+                "insight": "현재 시장은 방향성을 탐색하는 구간입니다. 금리 민감도가 낮은 대형 우량주와 인프라 섹터에 대한 비중 유지를 권고하며, 환율 변동에 따른 포트폴리오 리밸런싱이 필요한 시점입니다.",
+                "readTime": "8분 읽기",
+                "glossary": {
+                    "연착륙(Soft Landing)": "경기가 급격한 침체 없이 완만하게 안정되는 현상",
+                    "차별화(Divergence)": "국가나 지역별로 경제 성장 속도나 정책 방향이 달라지는 현상"
+                }
+            },
+            {
+                "category": "기술/산업",
+                "date": "2026-05-15",
+                "title": "의료 AI의 진화: 진단을 넘어 개인 맞춤형 치료의 시대로",
+                "summary": "생성형 AI 기술이 의료 분야와 결합하면서, 단순한 질병 진단을 넘어 환자 개개인의 유전체 데이터와 생활 습관을 분석하여 최적의 치료법을 제시하는 '정밀 의료'가 현실화되고 있습니다. 글로벌 빅테크와 제약사들은 AI 기반 신약 개발 플랫폼 구축을 위해 수십억 달러 규모의 파트너십을 체결하고 있으며, 이는 신약 개발 기간을 획기적으로 단축시키고 성공 확률을 높이는 혁신을 가져오고 있습니다. 특히 웨어러블 기기를 통한 실시간 건강 모니터링 데이터가 AI와 실시간으로 연동되면서, 질병의 사후 치료가 아닌 사전 예방 중심의 의료 패러다임 전환이 가속화되고 있습니다.",
+                "insight": "바이오와 IT의 융합은 거스를 수 없는 대세입니다. 독보적인 의료 데이터를 보유한 플랫폼 기업과 AI 신약 개발 원천 기술을 가진 바이오테크 기업에 주목하십시오.",
+                "readTime": "7분 읽기",
+                "glossary": {
+                    "정밀 의료": "개별 환자의 특성에 맞춰 진단하고 치료하는 의료 모델",
+                    "유전체 데이터": "한 생물체가 가진 모든 유전 정보의 집합"
+                }
+            }
+        ],
+        "en": [
+            {
+                "category": "Macro",
+                "date": "2026-05-15",
+                "title": "[Deep Dive] Global Economic Landscape H1 2026: Soft Landing or New Equilibrium?",
+                "summary": "As we enter Q2 2026, the world economy is finding a new equilibrium amidst two giant waves: 'Higher for Longer' interest rates and 'Supply Chain Restructuring'. While US employment remains unexpectedly robust, signs of cooling consumer sentiment are emerging as excess household savings are depleted. The Fed is expected to maintain a cautious stance on rate cuts until a definitive decline in inflation is confirmed, which continues to drive market volatility. Conversely, Europe and China are strengthening policy support to revive domestic demand, leading to a distinct divergence in regional economic performance.",
+                "insight": "The market is currently in a phase of seeking directionality. We recommend maintaining exposure to large-cap quality stocks and the infrastructure sector with low interest rate sensitivity. Portfolio rebalancing based on exchange rate fluctuations is also advised.",
+                "readTime": "8 min read",
+                "glossary": {
+                    "Soft Landing": "A situation where the economy stabilizes without a sharp recession.",
+                    "Divergence": "A phenomenon where economic growth rates or policy directions vary by country or region."
+                }
+            },
+            {
+                "category": "Tech",
+                "date": "2026-05-15",
+                "title": "The Evolution of Medical AI: Moving from Diagnosis to Personalized Treatment",
+                "summary": "Generative AI combined with healthcare is making 'Precision Medicine' a reality, moving beyond simple disease diagnosis to suggesting optimal treatments by analyzing individual genomic data and lifestyle habits. Global big tech and pharmaceutical companies are signing multi-billion dollar partnerships to build AI-driven drug discovery platforms, bringing innovations that drastically shorten development times and increase success rates. Real-time health monitoring data from wearables linked with AI is accelerating a paradigm shift from post-treatment to proactive prevention.",
+                "insight": "The convergence of bio and IT is an unstoppable trend. Pay attention to platform companies with unique medical data and biotech firms with core AI drug development technologies.",
+                "readTime": "7 min read",
+                "glossary": {
+                    "Precision Medicine": "A medical model that customizes diagnosis and treatment for individual patients.",
+                    "Genomic Data": "The complete set of genetic information in an organism."
+                }
+            }
+        ]
+    },
+    "2026-05-14": {
+        "ko": [
+            {
+                "category": "금융시장",
+                "date": "2026-05-14",
+                "title": "중앙은행 디지털 화폐(CBDC) 도입 가속화... 미래 화폐의 주도권은?",
+                "summary": "주요국 중앙은행들이 중앙은행 디지털 화폐(CBDC) 도입을 위한 실증 실험을 마무리하고 본격적인 제도화 단계에 진입하고 있습니다. CBDC는 결제 시스템의 효율성을 높이고 금융 포용성을 확대할 수 있는 혁신적인 수단으로 평가받고 있습니다. 그러나 동시에 개인의 금융 거래 내역이 정부에 노출될 수 있다는 프라이버시 침해 우려와 기존 은행 시스템의 예금 유출 리스크에 대한 논의도 활발하게 진행되고 있습니다. 디지털 화폐 주도권을 선점하기 위한 국가 간 경쟁이 치열해지는 가운데, CBDC의 등장은 민간 가상자산 시장과 기존 금융 인프라에 지대한 영향을 미칠 것으로 보입니다.",
+                "insight": "CBDC의 등장은 핀테크와 보안 산업의 새로운 성장 동력이 될 것입니다. CBDC 인프라 구축 솔루션을 보유한 IT 서비스 기업들의 수혜 여부를 주목하십시오.",
+                "readTime": "6분 읽기",
+                "glossary": {
+                    "CBDC": "중앙은행이 발행하는 디지털 형태의 법정 화폐",
+                    "금융 포용성": "모든 계층이 금융 서비스에 쉽고 편리하게 접근할 수 있는 정도"
+                }
+            }
+        ],
+        "en": [
+            {
+                "category": "Finance",
+                "date": "2026-05-14",
+                "title": "CBDC Adoption Accelerates: Who Will Control the Future of Money?",
+                "summary": "Major central banks are completing pilot tests for Central Bank Digital Currencies (CBDCs) and entering the official institutionalization phase. CBDCs are seen as innovative tools to increase payment system efficiency and expand financial inclusion. However, discussions are active regarding privacy concerns and the risk of deposit outflows from traditional banking systems. As competition between nations to lead in digital currency intensifies, the emergence of CBDCs is expected to profoundly impact private crypto markets and existing financial infrastructure.",
+                "insight": "The rise of CBDCs will be a new growth engine for the fintech and security industries. Watch for benefits to IT service companies with CBDC infrastructure solutions.",
+                "readTime": "6 min read",
+                "glossary": {
+                    "CBDC": "A digital form of fiat currency issued by a central bank.",
+                    "Financial Inclusion": "The extent to which all classes have easy and convenient access to financial services."
+                }
+            }
+        ]
+    },
+    "2026-05-13": {
+        "ko": [
+            {
+                "category": "에너지/ESG",
+                "date": "2026-05-13",
+                "title": "친환경 수소 경제의 도래: 수전해 기술 혁신과 인프라 구축 현황",
+                "summary": "탄소 중립 달성을 위한 핵심 에너지원으로서 수소의 가치가 부각되면서, 물을 전기 분해하여 수소를 생산하는 '수전해' 기술 혁신이 가속화되고 있습니다. 수소는 에너지 밀도가 높고 저장과 운송이 용이하여, 재생 에너지의 간헐성 문제를 해결할 수 있는 최적의 대안으로 꼽힙니다. 현재 대규모 수소 생산 기지와 충전 인프라 구축을 위한 국가 차원의 전략 투자가 이어지고 있으며, 이는 철강, 화학 등 탄소 배출이 많은 산업군의 저탄소 전환을 이끄는 핵심 동력이 되고 있습니다.",
+                "insight": "수소 경제는 긴 호흡의 투자가 필요합니다. 수전해 핵심 소재와 수소 충전소 운영권을 확보한 선도 기업들의 장기 성장성에 투자하십시오.",
+                "readTime": "7분 읽기",
+                "glossary": {
+                    "수전해": "전기를 이용해 물을 수소와 산소로 분해하는 과정",
+                    "에너지 밀도": "단위 부피 또는 무게당 저장된 에너지의 양"
+                }
+            }
+        ],
+        "en": [
+            {
+                "category": "Energy/ESG",
+                "date": "2026-05-13",
+                "title": "The Arrival of the Green Hydrogen Economy: Electrolysis Innovation and Infrastructure",
+                "summary": "As the value of hydrogen as a key energy source for achieving carbon neutrality is highlighted, innovation in 'water electrolysis' technology to produce hydrogen is accelerating. Hydrogen is considered an optimal alternative to solve the intermittency of renewable energy due to its high energy density and ease of storage and transport. Strategic national investments for large-scale production bases and charging infrastructure are ongoing, driving the low-carbon transition of high-emission industries like steel and chemicals.",
+                "insight": "The hydrogen economy requires long-term investment. Invest in leading companies that have secured core electrolysis materials and operation rights for hydrogen charging stations.",
+                "readTime": "7 min read",
+                "glossary": {
+                    "Electrolysis": "The process of using electricity to split water into hydrogen and oxygen.",
+                    "Energy Density": "The amount of energy stored per unit volume or weight."
+                }
+            }
+        ]
+    },
+    "2026-05-12": {
+        "ko": [
+            {
+                "category": "거시경제",
+                "date": "2026-05-12",
+                "title": "신흥국 부채 위기 경보... 고금리와 강달러의 이중고",
+                "summary": "미국 연준의 고금리 기조가 예상보다 길어지면서, 달러 부채 비중이 높은 일부 신흥국들을 중심으로 부채 상환 능력에 대한 우려가 커지고 있습니다. 강달러 현상은 신흥국의 수입 물가를 밀어올려 인플레이션을 자극하고, 외화 유출을 가속화시켜 통화 가치 하락을 유도하고 있습니다. IMF와 세계은행은 취약 국가들에 대한 재정 지원과 부채 재조정 논의를 서두르고 있으나, 글로벌 지정학적 갈등으로 인해 국제적인 공조가 쉽지 않은 상황입니다. 신흥국 시장의 변동성은 글로벌 금융 시스템의 잠재적인 리스크 요인으로 부각되고 있습니다.",
+                "insight": "신흥국 자산에 대한 투자는 선별적인 접근이 필수적입니다. 경상 수지가 양호하고 외환 보유고가 충분한 국가 위주로 리스크 관리를 철저히 해야 합니다.",
+                "readTime": "6분 읽기",
+                "glossary": {
+                    "경상 수지": "한 나라가 다른 나라와 거래한 결과로 얻은 수익과 지출의 차이",
+                    "부채 재조정": "채무자의 상환 부담을 줄여주기 위해 대출 조건을 변경하는 것"
+                }
+            }
+        ],
+        "en": [
+            {
+                "category": "Macro",
+                "date": "2026-05-12",
+                "title": "Emerging Market Debt Crisis Warning: Double Whammy of High Rates and Strong Dollar",
+                "summary": "As the Fed's high-interest rate stance lasts longer than expected, concerns about debt repayment capacity are growing, especially in emerging markets with high dollar-denominated debt. The strong dollar pushes up import prices in these nations, stimulating inflation and accelerating capital outflows, which leads to currency devaluation. While the IMF and World Bank are rushing discussions on financial support and debt restructuring for vulnerable countries, international cooperation is difficult due to global geopolitical conflicts. Volatility in emerging markets is emerging as a potential risk factor for the global financial system.",
+                "insight": "Selective approach to emerging market assets is essential. Strict risk management should be prioritized for countries with healthy current accounts and sufficient foreign exchange reserves.",
+                "readTime": "6 min read",
+                "glossary": {
+                    "Current Account": "The difference between a country's income and expenditure from international transactions.",
+                    "Debt Restructuring": "Changing the terms of a loan to reduce the debtor's repayment burden."
+                }
+            }
+        ]
+    },
     "2026-05-11": {
         "ko": [
             {
