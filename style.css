@@ -519,11 +519,6 @@ body::before {
 
 /* Fear & Greed Widget */
 .fear-greed-widget {
-    margin-block: 3rem;
-    padding: 2.5rem;
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid var(--border-color);
-    border-radius: 20px;
     text-align: center;
 }
 

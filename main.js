@@ -314,6 +314,7 @@ async function updateFearGreedIndex() {
     const needle = document.getElementById('fear-greed-needle');
     const text = document.getElementById('fear-greed-text');
     const num = document.getElementById('fear-greed-num');
+    const widget = document.querySelector('.fear-greed-widget');
     
     if (!needle) return;
 
@@ -358,6 +359,26 @@ async function updateFearGreedIndex() {
     if (translations[state.lang] && translations[state.lang][statusKey]) {
         text.innerText = translations[state.lang][statusKey];
     }
+
+    // Add Last Updated Timestamp
+    let lastUpdated = document.getElementById('fear-greed-updated');
+    if (!lastUpdated && widget) {
+        lastUpdated = document.createElement('div');
+        lastUpdated.id = 'fear-greed-updated';
+        lastUpdated.style.marginTop = '1rem';
+        lastUpdated.style.opacity = '0.5';
+        lastUpdated.style.fontSize = '0.65rem';
+        lastUpdated.style.textAlign = 'center';
+        widget.appendChild(lastUpdated);
+    }
+    
+    if (lastUpdated) {
+        const now = new Date();
+        const timeStr = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+        const syncKey = success ? 'market-data-sync' : 'market-data-snapshot';
+        const syncLabel = (translations[state.lang] && translations[state.lang][syncKey]) || (success ? 'Sync:' : 'Snapshot:');
+        lastUpdated.innerText = `${syncLabel} ${timeStr}`;
+    }
 }
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -368,4 +389,5 @@ window.addEventListener('DOMContentLoaded', () => {
     updateFearGreedIndex();
     updateMarketTicker();
     setInterval(updateMarketTicker, 30000); // Update every 30 seconds
+    setInterval(updateFearGreedIndex, 3600000); // Update Fear & Greed Index every hour
 });
