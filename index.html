@@ -124,45 +124,6 @@
                 </section>
 
                 <section class="feed-section">
-                    <h2 class="section-heading" data-t="sectors-title">Trending Intelligence Sectors</h2>
-                    <div id="sectors-container" class="sectors-grid">
-                        <div class="sector-card">
-                            <span class="sector-icon">📈</span>
-                            <h4 data-t="sector-macro">Macro Economy</h4>
-                        </div>
-                        <div class="sector-card">
-                            <span class="sector-icon">📊</span>
-                            <h4 data-t="sector-stocks">Stock Market</h4>
-                        </div>
-                        <div class="sector-card">
-                            <span class="sector-icon">🏢</span>
-                            <h4 data-t="sector-real-estate">Real Estate</h4>
-                        </div>
-                        <div class="sector-card">
-                            <span class="sector-icon">🤖</span>
-                            <h4 data-t="sector-ai">Artificial Intelligence</h4>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="feed-section knowledge-hub">
-                    <h2 class="section-heading">
-                        <span data-t="nav-library">Economic Intelligence Library</span>
-                        <a href="/library.html" class="archive-link" data-t="view-all">View All Concepts</a>
-                    </h2>
-                    <div class="methodology-grid">
-                        <div class="method-card" style="border-top: 4px solid var(--gold);">
-                            <h4 data-t="lib-concept-1-title">Monetary Policy</h4>
-                            <p data-t="lib-concept-1-desc">Understanding central bank mandates and the impact of interest rate cycles.</p>
-                        </div>
-                        <div class="method-card" style="border-top: 4px solid var(--accent-color);">
-                            <h4 data-t="lib-concept-2-title">Inflation Dynamics</h4>
-                            <p data-t="lib-concept-2-desc">Analyzing the relationship between monetary expansion and purchasing power.</p>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="feed-section">
                     <h2 class="section-heading">
                         <span data-t="deep-dive-title">Sector Deep-Dive Analysis</span>
                         <a href="#" class="archive-link" data-t="view-archive">View Archive</a>
@@ -207,6 +168,25 @@
             </div>
             
             <aside class="side-panel">
+                <div class="side-card fear-greed-widget">
+                    <h3 data-t="fear-greed-title">Fear & Greed Index</h3>
+                    <div class="gauge-container">
+                        <div class="gauge-bg"></div>
+                        <div class="gauge-needle" id="fear-greed-needle" style="transform: rotate(45deg);"></div>
+                        <div class="gauge-center"></div>
+                    </div>
+                    <div class="gauge-labels">
+                        <span data-t="status-extreme-fear">Extreme Fear</span>
+                        <span data-t="status-neutral">Neutral</span>
+                        <span data-t="status-extreme-greed">Extreme Greed</span>
+                    </div>
+                    <div class="gauge-value">
+                        <span data-t="fear-greed-status">Market Sentiment:</span>
+                        <strong id="fear-greed-text" data-t="status-greed">Greed</strong>
+                        <span id="fear-greed-num">(65)</span>
+                    </div>
+                </div>
+
                 <div class="side-card">
                     <h3 data-t="contact-title">Contact & Partnership</h3>
                     <p data-t="contact-desc">Connect with our research team for inquiries or media partnerships.</p>
@@ -259,25 +239,6 @@
                     <div class="flex-between">
                         <span data-t="sentiment-bullish">Bullish (72%)</span>
                         <span data-t="sentiment-bearish">Bearish (28%)</span>
-                    </div>
-                </div>
-
-                <div class="fear-greed-widget">
-                    <h3 data-t="fear-greed-title">Fear & Greed Index</h3>
-                    <div class="gauge-container">
-                        <div class="gauge-bg"></div>
-                        <div class="gauge-needle" id="fear-greed-needle" style="transform: rotate(45deg);"></div>
-                        <div class="gauge-center"></div>
-                    </div>
-                    <div class="gauge-labels">
-                        <span data-t="status-extreme-fear">Extreme Fear</span>
-                        <span data-t="status-neutral">Neutral</span>
-                        <span data-t="status-extreme-greed">Extreme Greed</span>
-                    </div>
-                    <div class="gauge-value">
-                        <span data-t="fear-greed-status">Market Sentiment:</span>
-                        <strong id="fear-greed-text" data-t="status-greed">Greed</strong>
-                        <span id="fear-greed-num">(65)</span>
                     </div>
                 </div>
 
