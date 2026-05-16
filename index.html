@@ -114,7 +114,132 @@
     </header>
 
     <main class="container">
-        <!-- Featured Editorial Section -->
+        <div class="main-layout" style="margin-top: 2rem;">
+            <div class="content-feed">
+                <section class="feed-section">
+                    <h2 class="section-heading" data-t="latest-briefs-title">Daily Top 5 Intelligence Brief</h2>
+                    <div id="briefs-container" class="briefs-grid">
+                        <!-- Top 5 briefs will be injected here -->
+                    </div>
+                </section>
+
+                <section class="feed-section">
+                    <h2 class="section-heading" data-t="sectors-title">Trending Intelligence Sectors</h2>
+                    <div id="sectors-container" class="sectors-grid">
+                        <div class="sector-card">
+                            <span class="sector-icon">📈</span>
+                            <h4 data-t="sector-macro">Macro Economy</h4>
+                        </div>
+                        <div class="sector-card">
+                            <span class="sector-icon">📊</span>
+                            <h4 data-t="sector-stocks">Stock Market</h4>
+                        </div>
+                        <div class="sector-card">
+                            <span class="sector-icon">🏢</span>
+                            <h4 data-t="sector-real-estate">Real Estate</h4>
+                        </div>
+                        <div class="sector-card">
+                            <span class="sector-icon">🤖</span>
+                            <h4 data-t="sector-ai">Artificial Intelligence</h4>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="feed-section knowledge-hub">
+                    <h2 class="section-heading">
+                        <span data-t="nav-library">Economic Intelligence Library</span>
+                        <a href="/library.html" class="archive-link" data-t="view-all">View All Concepts</a>
+                    </h2>
+                    <div class="methodology-grid">
+                        <div class="method-card" style="border-top: 4px solid var(--gold);">
+                            <h4 data-t="lib-concept-1-title">Monetary Policy</h4>
+                            <p data-t="lib-concept-1-desc">Understanding central bank mandates and the impact of interest rate cycles.</p>
+                        </div>
+                        <div class="method-card" style="border-top: 4px solid var(--accent-color);">
+                            <h4 data-t="lib-concept-2-title">Inflation Dynamics</h4>
+                            <p data-t="lib-concept-2-desc">Analyzing the relationship between monetary expansion and purchasing power.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="feed-section">
+                    <h2 class="section-heading">
+                        <span data-t="deep-dive-title">Sector Deep-Dive Analysis</span>
+                        <a href="#" class="archive-link" data-t="view-archive">View Archive</a>
+                    </h2>
+                    <div id="news-container" class="news-feed">
+                        <!-- Detailed news will be injected here -->
+                    </div>
+                </section>
+
+                <!-- High-Value Static Content for AdSense Compliance -->
+                <section class="feed-section methodology-section">
+                    <h2 class="section-heading" data-t="methodology-title">Our Analysis Methodology</h2>
+                    <div class="methodology-grid">
+                        <div class="method-card">
+                            <h4 data-t="method-1-title">Quantitative Data Aggregation</h4>
+                            <p data-t="method-1-desc">We synchronize 1,000+ real-time financial data points daily, from G7 central bank policy mandates and Fed dot plots to IMF global outlooks and OECD economic indicators.</p>
+                            <div class="source-logos">
+                                <span class="source-tag">FED</span>
+                                <span class="source-tag">ECB</span>
+                                <span class="source-tag">IMF</span>
+                                <span class="source-tag">OECD</span>
+                            </div>
+                        </div>
+                        <div class="method-card">
+                            <h4 data-t="method-2-title">Structural Macro Modeling</h4>
+                            <p data-t="method-2-desc">Our proprietary frameworks identify long-term shifts in global supply chains, demographic transitions, and technological paradigms that transcend daily market volatility.</p>
+                        </div>
+                        <div class="method-card">
+                            <h4 data-t="method-3-title">Institutional Verification</h4>
+                            <p data-t="method-3-desc">Every intelligence brief undergoes a rigorous three-tier verification protocol: cross-dataset validation, peer-reviewed economic auditing, and algorithmic bias neutralization.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Additional Value Section -->
+                <section class="feed-section network-info">
+                    <h2 class="section-heading" data-t="network-title">Global Insights Network</h2>
+                    <div class="article-insight">
+                        <p data-t="network-desc">Global EcoNews is part of an independent network of financial researchers. We provide verified, factual reporting without institutional bias. Our goal is to provide the same level of intelligence once reserved for institutional trading floors to every professional.</p>
+                    </div>
+                </section>
+            </div>
+            
+            <aside class="side-panel">
+                <div class="side-card">
+                    <h3 data-t="contact-title">Contact & Partnership</h3>
+                    <p data-t="contact-desc">Connect with our research team for inquiries or media partnerships.</p>
+                    <button id="partnership-btn" class="action-btn" data-t="contact-btn">Open Inquiry Form</button>
+                </div>
+                
+                <div class="side-card newsletter">
+                    <h3 data-t="newsletter-title">Daily Intelligence Brief</h3>
+                    <p data-t="newsletter-desc">Join 50,000+ professionals receiving our morning briefings.</p>
+                    <input type="email" placeholder="email@example.com" data-t="newsletter-placeholder">
+                    <button class="action-btn outline" data-t="newsletter-btn">Subscribe</button>
+                </div>
+
+                <div class="side-card sources-panel">
+                    <h3 data-t="sources-title">Real-time Major Sources</h3>
+                    <ul class="source-list">
+                        <li><a href="https://kr.investing.com/news/economy" target="_blank" data-t="sources-investing">Investing.com</a></li>
+                        <li><a href="https://www.hankyung.com/globalmarket" target="_blank" data-t="sources-hankyung">Hankyung Global Market</a></li>
+                        <li><a href="https://www.bloomberg.com" target="_blank" data-t="sources-bloomberg">Bloomberg</a></li>
+                        <li><a href="https://www.reuters.com/business/economy/" target="_blank" data-t="sources-reuters">Reuters</a></li>
+                    </ul>
+                </div>
+
+                <div class="side-card glossary-preview">
+                    <h3 data-t="glossary-title">Economic Glossary</h3>
+                    <ul id="glossary-list">
+                        <li data-t="glossary-qt"><strong>Quantitative Tightening:</strong> Central bank strategy to reduce money supply.</li>
+                        <li data-t="glossary-pivot"><strong>Fiscal Pivot:</strong> A significant shift in government spending policy.</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+
         <section class="editorial-hero">
             <div class="hero-main">
                 <div class="badge" data-t="hero-badge">Editor's Choice</div>
@@ -177,132 +302,6 @@
                  data-ad-format="auto"
                  data-full-width-responsive="true"></ins>
             <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-        </div>
-
-        <div class="main-layout">
-            <div class="content-feed">
-                <section class="feed-section">
-                    <h2 class="section-heading" data-t="latest-briefs-title">Daily Top 5 Intelligence Brief</h2>
-                    <div id="briefs-container" class="briefs-grid">
-                        <!-- Top 5 briefs will be injected here -->
-                    </div>
-                </section>
-
-                <section class="feed-section">
-                    <h2 class="section-heading" data-t="sectors-title">Trending Intelligence Sectors</h2>
-                    <div id="sectors-container" class="sectors-grid">
-                        <div class="sector-card">
-                            <span class="sector-icon">📈</span>
-                            <h4 data-t="sector-macro">Macro Economy</h4>
-                        </div>
-                        <div class="sector-card">
-                            <span class="sector-icon">📊</span>
-                            <h4 data-t="sector-stocks">Stock Market</h4>
-                        </div>
-                        <div class="sector-card">
-                            <span class="sector-icon">🏢</span>
-                            <h4 data-t="sector-real-estate">Real Estate</h4>
-                        </div>
-                        <div class="sector-card">
-                            <span class="sector-icon">🤖</span>
-                            <h4 data-t="sector-ai">Artificial Intelligence</h4>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- High-Value Static Content for AdSense Compliance -->
-                <section class="feed-section methodology-section">
-                    <h2 class="section-heading" data-t="methodology-title">Our Analysis Methodology</h2>
-                    <div class="methodology-grid">
-                        <div class="method-card">
-                            <h4 data-t="method-1-title">Quantitative Data Aggregation</h4>
-                            <p data-t="method-1-desc">We synchronize 1,000+ real-time financial data points daily, from G7 central bank policy mandates and Fed dot plots to IMF global outlooks and OECD economic indicators.</p>
-                            <div class="source-logos">
-                                <span class="source-tag">FED</span>
-                                <span class="source-tag">ECB</span>
-                                <span class="source-tag">IMF</span>
-                                <span class="source-tag">OECD</span>
-                            </div>
-                        </div>
-                        <div class="method-card">
-                            <h4 data-t="method-2-title">Structural Macro Modeling</h4>
-                            <p data-t="method-2-desc">Our proprietary frameworks identify long-term shifts in global supply chains, demographic transitions, and technological paradigms that transcend daily market volatility.</p>
-                        </div>
-                        <div class="method-card">
-                            <h4 data-t="method-3-title">Institutional Verification</h4>
-                            <p data-t="method-3-desc">Every intelligence brief undergoes a rigorous three-tier verification protocol: cross-dataset validation, peer-reviewed economic auditing, and algorithmic bias neutralization.</p>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="feed-section knowledge-hub">
-                    <h2 class="section-heading">
-                        <span data-t="nav-library">Economic Intelligence Library</span>
-                        <a href="/library.html" class="archive-link" data-t="view-all">View All Concepts</a>
-                    </h2>
-                    <div class="methodology-grid">
-                        <div class="method-card" style="border-top: 4px solid var(--gold);">
-                            <h4 data-t="lib-concept-1-title">Monetary Policy</h4>
-                            <p data-t="lib-concept-1-desc">Understanding central bank mandates and the impact of interest rate cycles.</p>
-                        </div>
-                        <div class="method-card" style="border-top: 4px solid var(--accent-color);">
-                            <h4 data-t="lib-concept-2-title">Inflation Dynamics</h4>
-                            <p data-t="lib-concept-2-desc">Analyzing the relationship between monetary expansion and purchasing power.</p>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="feed-section">
-                    <h2 class="section-heading">
-                        <span data-t="deep-dive-title">Sector Deep-Dive Analysis</span>
-                        <a href="#" class="archive-link" data-t="view-archive">View Archive</a>
-                    </h2>
-                    <div id="news-container" class="news-feed">
-                        <!-- Detailed news will be injected here -->
-                    </div>
-                </section>
-
-                <!-- Additional Value Section -->
-                <section class="feed-section network-info">
-                    <h2 class="section-heading" data-t="network-title">Global Insights Network</h2>
-                    <div class="article-insight">
-                        <p data-t="network-desc">Global EcoNews is part of an independent network of financial researchers. We provide verified, factual reporting without institutional bias. Our goal is to provide the same level of intelligence once reserved for institutional trading floors to every professional.</p>
-                    </div>
-                </section>
-            </div>
-            
-            <aside class="side-panel">
-                <div class="side-card">
-                    <h3 data-t="contact-title">Contact & Partnership</h3>
-                    <p data-t="contact-desc">Connect with our research team for inquiries or media partnerships.</p>
-                    <button id="partnership-btn" class="action-btn" data-t="contact-btn">Open Inquiry Form</button>
-                </div>
-                
-                <div class="side-card newsletter">
-                    <h3 data-t="newsletter-title">Daily Intelligence Brief</h3>
-                    <p data-t="newsletter-desc">Join 50,000+ professionals receiving our morning briefings.</p>
-                    <input type="email" placeholder="email@example.com" data-t="newsletter-placeholder">
-                    <button class="action-btn outline" data-t="newsletter-btn">Subscribe</button>
-                </div>
-
-                <div class="side-card sources-panel">
-                    <h3 data-t="sources-title">Real-time Major Sources</h3>
-                    <ul class="source-list">
-                        <li><a href="https://kr.investing.com/news/economy" target="_blank" data-t="sources-investing">Investing.com</a></li>
-                        <li><a href="https://www.hankyung.com/globalmarket" target="_blank" data-t="sources-hankyung">Hankyung Global Market</a></li>
-                        <li><a href="https://www.bloomberg.com" target="_blank" data-t="sources-bloomberg">Bloomberg</a></li>
-                        <li><a href="https://www.reuters.com/business/economy/" target="_blank" data-t="sources-reuters">Reuters</a></li>
-                    </ul>
-                </div>
-
-                <div class="side-card glossary-preview">
-                    <h3 data-t="glossary-title">Economic Glossary</h3>
-                    <ul id="glossary-list">
-                        <li data-t="glossary-qt"><strong>Quantitative Tightening:</strong> Central bank strategy to reduce money supply.</li>
-                        <li data-t="glossary-pivot"><strong>Fiscal Pivot:</strong> A significant shift in government spending policy.</li>
-                    </ul>
-                </div>
-            </aside>
         </div>
     </main>
 
