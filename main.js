@@ -92,6 +92,16 @@ async function renderNews() {
     let displayData = [];
     let isSearch = state.searchTerm.length > 0;
 
+    // Auto-adjust date if no data for selected date (and not searching)
+    if (!isSearch && (!db[state.date] || !db[state.date][state.lang] || db[state.date][state.lang].length === 0)) {
+        const availableDates = Object.keys(db).filter(d => db[d][state.lang] && db[d][state.lang].length > 0).sort().reverse();
+        if (availableDates.length > 0) {
+            state.date = availableDates[0];
+            const dateInput = document.getElementById('date-select');
+            if (dateInput) dateInput.value = state.date;
+        }
+    }
+
     if (isSearch) {
         // Search across all data
         Object.keys(db).forEach(date => {
