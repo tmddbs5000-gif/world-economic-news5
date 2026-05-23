@@ -1,4 +1,58 @@
 {
+    "2026-05-23": {
+        "ko": [
+            {
+                "category": "거시경제",
+                "date": "2026-05-23",
+                "title": "유엔, 2026년 세계 경제 성장률 전망 2.5%로 하향... 에너지 쇼크 여파",
+                "summary": "유엔(UN)이 2026년 세계 경제 성장률 전망치를 기존 2.7%에서 2.5%로 하향 조정했습니다. 중동 분쟁으로 인한 에너지 가격 급등과 공급망 교란이 주요 원인으로 지목되었으며, 최악의 경우 2.1%까지 추락할 수 있다는 경고가 나왔습니다. 이러한 성장 둔화는 전 세계적인 가계 가용 소득 감소와 소비 위축으로 이어질 우려가 있습니다.",
+                "insight": "성장률 둔화와 인플레이션 압력이 동시에 나타나는 스태그플레이션 리스크가 커지고 있습니다. 에너지 효율이 높고 가격 전가력이 있는 필수 소비재 기업 중심의 보수적 포트폴리오 유지가 필요합니다.",
+                "readTime": "7분 읽기",
+                "glossary": {
+                    "성장률 하향": "경제 성장의 예상치를 낮춰 잡는 것",
+                    "에너지 쇼크": "에너지 가격의 급격한 상승이 경제 전반에 충격을 주는 현상"
+                }
+            },
+            {
+                "category": "부동산/정책",
+                "date": "2026-05-23",
+                "title": "제13회 세계도시포럼 폐막... '바쿠 행동 촉구' 채택으로 주거권 강조",
+                "summary": "아제르바이잔 바쿠에서 열린 제13회 세계도시포럼이 '바쿠 행동 촉구(Baku Call to Action)'를 채택하며 막을 내렸습니다. 이번 선언은 주거를 단순한 시장 상품이 아닌 인간의 기본권이자 핵심 인프라로 다룰 것을 전 세계 정부에 촉구하는 내용을 담고 있습니다. 이는 기후 위기와 불평등 심화에 대응하기 위한 도시 정책의 근본적인 전환을 의미합니다.",
+                "insight": "주거권 강화는 공공 주택 공급 확대와 임대료 규제 강화로 이어질 수 있습니다. 건설 및 부동산업계는 단순 분양 사업을 넘어 공공-민간 협력(PPP) 형태의 사회적 주거 인프라 모델로의 전환을 준비해야 합니다.",
+                "readTime": "6분 읽기",
+                "glossary": {
+                    "세계도시포럼": "도시 문제 해결을 위해 UN-Habitat이 주관하는 국제 회의",
+                    "주거권": "쾌적하고 안정적인 주거 환경에서 살 수 있는 권리"
+                }
+            }
+        ],
+        "en": [
+            {
+                "category": "Macro",
+                "date": "2026-05-23",
+                "title": "UN Lowers 2026 Global Growth Forecast to 2.5% Amid Energy Shock",
+                "summary": "The United Nations has downgraded its 2026 global GDP growth forecast to 2.5%, citing surging energy prices and supply chain disruptions due to the Middle East conflict. In a worst-case scenario, growth could plummet to 2.1%, signaling a significant slowdown in global economic activity.",
+                "insight": "Risks of stagflation, where slowing growth meets high inflation, are intensifying. A conservative portfolio focusing on essential consumer goods with high energy efficiency and pricing power is recommended.",
+                "readTime": "7 min read",
+                "glossary": {
+                    "Growth Downgrade": "Reducing the projected rate of economic expansion.",
+                    "Energy Shock": "A sudden and significant increase in energy prices affecting the economy."
+                }
+            },
+            {
+                "category": "Real Estate/Policy",
+                "date": "2026-05-23",
+                "title": "13th World Urban Forum Closes with 'Baku Call to Action' on Housing Rights",
+                "summary": "The 13th World Urban Forum in Baku, Azerbaijan, concluded with the adoption of the 'Baku Call to Action.' The declaration urges governments to treat housing as a fundamental human right and critical infrastructure rather than just a market commodity, aiming to address climate crises and deepening inequalities.",
+                "insight": "Strengthening housing rights may lead to expanded public housing supply and stricter rent regulations. The construction and real estate sectors should prepare for a shift toward social housing infrastructure models through PPPs.",
+                "readTime": "6 min read",
+                "glossary": {
+                    "World Urban Forum": "A major international conference on urban issues organized by UN-Habitat.",
+                    "Housing Rights": "The right to live in a decent and stable housing environment."
+                }
+            }
+        ]
+    },
     "2026-05-22": {
         "ko": [
             {
