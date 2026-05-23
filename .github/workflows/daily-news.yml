@@ -1,0 +1,36 @@
+name: Daily News Update
+
+on:
+  schedule:
+    - cron: '0 1 * * *' # 10 AM KST (01:00 UTC)
+  workflow_dispatch:
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Generate and Update News
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          # Here we would run a script that fetches news using an LLM
+          # For now, we'll just log that this is where the automation happens.
+          echo "Automated news generation script would run here."
+          # If the user provides a script, we can call it.
+          # python scripts/generate_news.py
+
+      - name: Commit and Push
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add news-data.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "chore: automated daily news update"
+          git push
