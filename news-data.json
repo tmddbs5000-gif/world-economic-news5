@@ -1,4 +1,112 @@
 {
+    "2026-05-22": {
+        "ko": [
+            {
+                "category": "금융시장",
+                "date": "2026-05-22",
+                "title": "美 주간 신규 실업수당 청구 건수 예상치 하회... 노동 시장 여전히 '탄탄'",
+                "summary": "미국 노동부가 발표한 지난주 신규 실업수당 청구 건수가 시장 예상치를 밑도는 21만 건을 기록하며 미국 고용 시장의 견조함을 재확인했습니다. 이는 금리 인하 시점을 늦추려는 연준의 신중론에 힘을 싣는 결과로 해석됩니다. 시장은 이제 고금리 장기화 가능성과 강력한 경제 성장 사이에서 균형점을 찾으려 애쓰고 있으며, 이러한 고용 지표는 미국 경제가 여전히 강력한 펀더멘털을 유지하고 있음을 시사합니다.",
+                "insight": "고용 시장의 견고함은 소비 지출을 뒷받침하지만, 인플레이션 둔화 속도를 늦출 수 있습니다. 금리 인감도가 높은 성장주보다는 실적 우량주 위주의 방어적 전략이 유효할 수 있습니다.",
+                "readTime": "6분 읽기",
+                "glossary": {
+                    "신규 실업수당 청구 건수": "지난 한 주 동안 실업수당을 처음으로 신청한 사람들의 수",
+                    "펀더멘털": "한 나라의 경제 상태를 나타내는 가장 기초적인 경제 지표들"
+                }
+            },
+            {
+                "category": "기술/산업",
+                "date": "2026-05-22",
+                "title": "G7 정상회의, 글로벌 AI 규제 가이드라인 합의... '안전한 AI' 강조",
+                "summary": "이탈리아에서 열린 G7 정상회의에서 주요 7개국 정상들은 인공지능(AI)의 안전하고 투명한 개발을 위한 공통 가이드라인인 '히로시마 AI 프로세스'를 구체화하는 데 합의했습니다. 이번 합의는 AI 개발 기업들에게 강력한 책임감을 요구하며, 허위 정보 확산 방지와 프라이버시 보호를 위한 기술적 조치를 의무화하는 내용을 담고 있습니다. 이는 각국이 개별적으로 진행하던 AI 규제 논의를 국제적인 공조 체제로 전환했다는 데 큰 의미가 있습니다.",
+                "insight": "글로벌 규제 공조는 AI 기업들에게 새로운 비용 부담이 될 수 있으나, 산업 전반의 신뢰를 높여 중장기적인 성장을 도울 것입니다. 규제 준수 역량이 뛰어난 빅테크 기업들의 우위가 지속될 전망입니다.",
+                "readTime": "7분 읽기",
+                "glossary": {
+                    "히로시마 AI 프로세스": "G7이 추진하는 생성형 AI에 대한 국제적인 가이드라인 및 규제 논의",
+                    "프라이버시": "개인의 사생활이나 개인 정보가 보호받을 수 있는 상태"
+                }
+            }
+        ],
+        "en": [
+            {
+                "category": "Finance",
+                "date": "2026-05-22",
+                "title": "US Weekly Jobless Claims Fall Below Expectations... Labor Market Remains 'Solid'",
+                "summary": "Weekly jobless claims reported by the US Labor Department came in at 210,000, below market expectations, reaffirming the resilience of the US labor market. This is interpreted as lending support to the Fed's cautious stance on delaying rate cuts. The market is now struggling to find a balance between the possibility of 'higher for longer' rates and robust economic growth, with these employment figures suggesting that the US economy still maintains strong fundamentals.",
+                "insight": "While a solid labor market supports consumer spending, it may slow the pace of disinflation. A defensive strategy focusing on quality stocks with strong earnings rather than rate-sensitive growth stocks may be effective.",
+                "readTime": "6 min read",
+                "glossary": {
+                    "Jobless Claims": "The number of people who applied for unemployment benefits for the first time in the past week.",
+                    "Fundamentals": "Basic economic indicators that represent the economic state of a country."
+                }
+            },
+            {
+                "category": "Tech",
+                "date": "2026-05-22",
+                "title": "G7 Summit Agrees on Global AI Regulation Guidelines... Emphasizing 'Safe AI'",
+                "summary": "At the G7 summit held in Italy, leaders of the seven major nations agreed to concrete common guidelines for the safe and transparent development of Artificial Intelligence (AI), building on the 'Hiroshima AI Process'. The agreement calls for strong accountability from AI development firms and mandates technical measures to prevent the spread of misinformation and protect privacy. This marks a significant shift from individual national discussions to an international coordination framework for AI regulation.",
+                "insight": "While international regulatory coordination may pose new cost burdens for AI firms, it will help long-term growth by enhancing trust across the industry. Big Tech firms with superior compliance capabilities are expected to maintain their dominance.",
+                "readTime": "7 min read",
+                "glossary": {
+                    "Hiroshima AI Process": "International discussions on guidelines and regulations for generative AI led by the G7.",
+                    "Privacy": "The state of being protected from intrusion into one's private life or personal information."
+                }
+            }
+        ]
+    },
+    "2026-05-21": {
+        "ko": [
+            {
+                "category": "기술/산업",
+                "date": "2026-05-21",
+                "title": "[실적 발표] 엔비디아, 1분기 어닝 서프라이즈 기록... AI 칩 수요 폭증 지속",
+                "summary": "엔비디아가 2026년 1분기 실적 발표에서 시장의 높은 기대치를 다시 한번 뛰어넘는 어닝 서프라이즈를 달성했습니다. 데이터센터 부문 매출이 전년 동기 대비 세 자릿수 성장을 기록하며 전체 실적을 견인했습니다. 젠슨 황 CEO는 차세대 AI 가속기의 공급 부족 현상이 당분간 지속될 것이라며 강한 자신감을 내비쳤습니다. 이번 실적은 AI 산업의 성장이 여전히 초기 단계에 머물러 있음을 시사하며, 관련 하드웨어 인프라에 대한 투자가 지속될 것임을 방증합니다.",
+                "insight": "엔비디아의 실적은 단순한 한 기업의 성공을 넘어 AI 생태계 전체의 확장성을 확인시켜 주었습니다. HBM 공급망에 속한 국내 반도체 기업들의 실적 개선세도 가팔라질 것으로 기대됩니다.",
+                "readTime": "7분 읽기",
+                "glossary": {
+                    "어닝 서프라이즈": "실적이 시장의 예상치를 훨씬 초과하는 것",
+                    "HBM(고대역폭 메모리)": "AI 가속기에 필수적인 고성능 메모리 반도체"
+                }
+            },
+            {
+                "category": "거시경제",
+                "date": "2026-05-21",
+                "title": "유럽중앙은행(ECB), 6월 금리 인하 강력 시사... 유로존 물가 안정세 확인",
+                "summary": "유럽중앙은행(ECB) 주요 인사들이 6월 통화정책회의에서 금리 인하를 단행할 가능성을 강력하게 시사했습니다. 최근 유로존의 인플레이션 지표가 목표치인 2%에 근접하며 안정적인 하향 곡선을 그리고 있다는 판단에 따른 것입니다. 이는 미국 연준보다 앞선 금리 인하 행보로, 유로화 약세 압력을 높이는 요인이 될 수 있습니다. 유럽 증시는 경기 부양에 대한 기대감으로 일제히 상승세를 보였으며, 부동산 및 건설 섹터의 회복 기대감도 커지고 있습니다.",
+                "insight": "ECB의 선제적 금리 인하는 유로존 경기 회복의 신호탄이 될 수 있습니다. 유럽 시장 비중이 큰 수출형 제조 기업들에 대한 긍정적인 접근이 유효해 보입니다.",
+                "readTime": "6분 읽기",
+                "glossary": {
+                    "통화정책회의": "중앙은행이 금리 등 통화 정책을 결정하기 위해 여는 회의",
+                    "인플레이션": "물가가 지속적으로 상승하는 현상"
+                }
+            }
+        ],
+        "en": [
+            {
+                "category": "Tech",
+                "date": "2026-05-21",
+                "title": "[Earnings] NVIDIA Records Q1 Earnings Surprise... AI Chip Demand Continues to Explode",
+                "summary": "NVIDIA once again exceeded high market expectations in its Q1 2026 earnings release, achieving an earnings surprise. Revenue in the data center division grew triple digits year-over-year, driving overall performance. CEO Jensen Huang expressed strong confidence, stating that the supply shortage for next-gen AI accelerators will persist for the time being. This result suggests that AI industry growth is still in its early stages and confirms continued investment in related hardware infrastructure.",
+                "insight": "NVIDIA's results confirm the scalability of the entire AI ecosystem beyond just one company's success. Earnings improvement for Korean semiconductor firms in the HBM supply chain is also expected to accelerate.",
+                "readTime": "7 min read",
+                "glossary": {
+                    "Earnings Surprise": "When earnings significantly exceed market expectations.",
+                    "HBM (High Bandwidth Memory)": "High-performance memory semiconductors essential for AI accelerators."
+                }
+            },
+            {
+                "category": "Macro",
+                "date": "2026-05-21",
+                "title": "ECB Strongly Hints at June Rate Cut... Eurozone Inflation Stability Confirmed",
+                "summary": "Key officials at the European Central Bank (ECB) strongly hinted at the possibility of a rate cut at the June monetary policy meeting. This follows a judgment that Eurozone inflation is trending stably toward the 2% target. This move, ahead of the US Fed, could increase downward pressure on the Euro. European stock markets rose on expectations of economic stimulus, with growing hopes for recovery in the real estate and construction sectors.",
+                "insight": "The ECB's preemptive rate cut could signal a recovery for the Eurozone economy. A positive approach to export-oriented manufacturing firms with high exposure to the European market seems valid.",
+                "readTime": "6 min read",
+                "glossary": {
+                    "Monetary Policy Meeting": "A meeting held by a central bank to decide on interest rates and other policies.",
+                    "Inflation": "A sustained increase in general price levels."
+                }
+            }
+        ]
+    },
     "2026-05-20": {
         "ko": [
             {
