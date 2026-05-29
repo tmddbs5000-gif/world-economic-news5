@@ -47,10 +47,10 @@ def generate_news():
                     "readTime": "X min read",
                     "glossary": {{ "term": "definition" }}
                 }},
-                ... (provide 1-2 items)
+                ... (provide exactly 3 items)
             ],
             "en": [
-                ... (same items in English)
+                ... (same 3 items in English)
             ]
         }}
     }}

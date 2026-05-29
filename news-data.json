@@ -5,12 +5,33 @@
                 "category": "글로벌 무역",
                 "date": "2026-05-29",
                 "title": "G20 재무장관 회의 폐막... 디지털 무역 표준화 및 탄소세 공조 합의",
-                "summary": "오늘 이탈리아에서 폐막한 G20 재무장관 및 중앙은행 총재 회의에서 주요국들은 디지털 경제 활성화를 위한 무역 표준화와 탄소 배출권 거래제 공조 방안에 합의했습니다. 이번 합의는 국가 간 상이한 디지털 규제를 일원화하여 글로벌 공급망의 효율성을 높이고, 기후 위기 대응을 위한 경제적 유인책을 강화하는 내용을 담고 있습니다. 특히 개발도상국들의 친환경 전환을 지원하기 위한 공동 기금 조성 방안도 구체화되었습니다.",
-                "insight": "글로벌 표준화는 수출 기업들의 규제 대응 비용을 낮추는 긍정적인 요인입니다. 국제 표준을 선점하는 기술 중심 기업들의 수혜가 예상됩니다.",
+                "summary": "오늘 이탈리아에서 폐막한 G20 재무장관 및 중앙은행 총재 회의에서 주요국들은 디지털 경제 활성화를 위한 무역 표준화와 탄소 배출권 거래제 공조 방안에 합의했습니다. 이번 합의는 국가 간 상이한 디지털 규제를 일원화하여 글로벌 공급망의 효율성을 높이고, 기후 위기 대응을 위한 경제적 유인책을 강화하는 내용을 담고 있습니다.",
+                "insight": "글로벌 표준화는 수출 기업들의 규제 대응 비용을 낮추는 긍정적인 요인입니다.",
                 "readTime": "6분 읽기",
                 "glossary": {
-                    "탄소세": "이산화탄소를 배출하는 행위에 부과하는 세금",
-                    "공급망": "제품 생산부터 최종 소비자에게 전달되기까지의 전 과정"
+                    "탄소세": "이산화탄소 배출에 부과하는 세금"
+                }
+            },
+            {
+                "category": "금융시장",
+                "date": "2026-05-29",
+                "title": "미국 국채 금리 급등... 인플레이션 우려 재점화에 금융시장 요동",
+                "summary": "미국 10년물 국채 금리가 심리적 저항선인 4.5%를 돌파하며 글로벌 금융시장에 충격을 주고 있습니다. 예상보다 강력한 고용 지표와 에너지 가격 상승이 인플레이션 우려를 자극하며 연준의 금리 인하 시점이 늦춰질 것이라는 전망이 힘을 얻고 있습니다.",
+                "insight": "고금리 환경이 지속됨에 따라 현금 흐름이 우수한 우량주 중심의 방어적 포트폴리오가 필요합니다.",
+                "readTime": "5분 읽기",
+                "glossary": {
+                    "국채 금리": "정부가 발행한 채권의 이자율"
+                }
+            },
+            {
+                "category": "기술/산업",
+                "date": "2026-05-29",
+                "title": "자율주행 레벨 4 상용화 박차... 주요 도시 무인 로보택시 서비스 확대",
+                "summary": "구글 웨이모와 테슬라 등 주요 자율주행 기업들이 샌프란시스코와 상하이에 이어 도쿄에서도 레벨 4 무인 로보택시 서비스를 시작했습니다. 사고율이 인간 운전자의 1/10 수준으로 감소했다는 데이터가 발표되면서 규제 당국의 승인이 가속화되고 있습니다.",
+                "insight": "모빌리티 생태계의 변화는 데이터센터와 통신 인프라 수요를 폭발적으로 증가시킬 것입니다.",
+                "readTime": "7분 읽기",
+                "glossary": {
+                    "레벨 4 자율주행": "운전자 개입 없이 시스템이 운전하는 단계"
                 }
             }
         ],
@@ -18,13 +39,34 @@
             {
                 "category": "Global Trade",
                 "date": "2026-05-29",
-                "title": "G20 Finance Ministers Conclude Meeting with Agreements on Digital Trade Standards and Carbon Tax Coordination",
-                "summary": "At the conclusion of today's G20 meeting in Italy, major economies agreed on trade standardization for the digital economy and coordination of carbon emission trading systems. The agreement aims to unify disparate national digital regulations to enhance global supply chain efficiency and strengthen economic incentives for climate action. Notably, plans for a joint fund to support the green transition in developing nations were also formalized.",
-                "insight": "Global standardization is a positive for exporters as it lowers compliance costs. Tech-driven firms that lead in international standards are expected to benefit.",
+                "title": "G20 Finance Ministers Agree on Digital Trade Standards and Carbon Tax Coordination",
+                "summary": "The G20 meeting in Italy concluded with agreements on digital trade standardization and carbon tax coordination to enhance supply chain efficiency and climate action.",
+                "insight": "Global standardization reduces compliance costs for exporters.",
                 "readTime": "6 min read",
                 "glossary": {
-                    "Carbon Tax": "A tax imposed on activities that emit carbon dioxide.",
-                    "Supply Chain": "The entire process from product manufacturing to final delivery to consumers."
+                    "Carbon Tax": "A tax on carbon dioxide emissions."
+                }
+            },
+            {
+                "category": "Finance",
+                "date": "2026-05-29",
+                "title": "US Treasury Yields Surge Amid Renewed Inflation Fears",
+                "summary": "The US 10-year Treasury yield broke 4.5%, shocking global markets as strong jobs data and rising energy prices delay expectations for Fed rate cuts.",
+                "insight": "A defensive strategy focusing on quality stocks with strong cash flow is recommended.",
+                "readTime": "5 min read",
+                "glossary": {
+                    "Treasury Yield": "The interest rate on government-issued bonds."
+                }
+            },
+            {
+                "category": "Tech",
+                "date": "2026-05-29",
+                "title": "Autonomous Driving Level 4 Commercialization Expands Globally",
+                "summary": "Major players like Waymo and Tesla have launched Level 4 robotaxi services in Tokyo, following successes in San Francisco and Shanghai, as data shows safety significantly outperforming human drivers.",
+                "insight": "The shift in mobility will drive explosive demand for data centers and telecom infrastructure.",
+                "readTime": "7 min read",
+                "glossary": {
+                    "Level 4 Autonomous Driving": "High automation where the system drives without intervention."
                 }
             }
         ]
