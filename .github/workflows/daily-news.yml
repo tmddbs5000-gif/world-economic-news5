@@ -21,11 +21,8 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
-          # Here we would run a script that fetches news using an LLM
-          # For now, we'll just log that this is where the automation happens.
-          echo "Automated news generation script would run here."
-          # If the user provides a script, we can call it.
-          # python scripts/generate_news.py
+          pip install google-generativeai
+          python scripts/generate_news.py
 
       - name: Commit and Push
         run: |
