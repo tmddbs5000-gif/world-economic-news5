@@ -19,56 +19,50 @@ def generate_news():
     with open('news-data.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
     
-    if today in data:
-        print(f"News for {today} already exists. Skipping.")
-        return
-
     # Prepare prompt
-    recent_dates = sorted(data.keys(), reverse=True)[:3]
+    recent_dates = sorted(data.keys(), reverse=True)[:5]
     recent_context = {date: data[date] for date in recent_dates}
     
     prompt = f"""
-    You are an expert economic journalist and financial analyst with 20+ years of experience. 
-    Generate world economic news for {today} in both Korean ('ko') and English ('en').
-    The news should be realistic for the year 2026, following the narrative of the recent news provided below.
+    You are a Lead Economic Strategist and Chief Editor for 'Global EcoNews', a premium financial intelligence platform.
+    Generate 3 highly sophisticated world economic news reports for {today} in both Korean ('ko') and English ('en').
     
-    CRITICAL QUALITY GUIDELINES:
-    1. Provide 3 distinct news items.
-    2. Each summary MUST be at least 250 characters long, providing deep context and specific (hypothetical 2026) data points.
-    3. The 'insight' MUST be a professional expert commentary that explains the 'so what' for institutional investors.
-    4. Each item MUST have a 2-term glossary.
+    THESE REPORTS MUST EXCEED STANDARD NEWS AGGREGATION QUALITY.
     
-    Recent news context:
+    CRITICAL CONTENT REQUIREMENTS:
+    1. SUMMARY: Minimum 350-400 characters. Must include specific (hypothetical 2026) metrics, percentages, and institutional names (e.g., 'The ECB's Governing Council', 'NVIDIA's Blackwell-2 roadmap').
+    2. EXPERT INSIGHT: This is NOT a summary. It is a 'Strategic Alpha' commentary. Explain the structural implications, potential second-order effects on global liquidity, and specific sector rotations for portfolio managers.
+    3. MARKET IMPACT: Assign a score from 1-10 for 'Volatility Potential' and a 'Directional Bias' (Bullish/Bearish/Neutral).
+    4. GLOSSARY: Provide 2 advanced financial terms with rigorous definitions.
+    
+    Context of recent events:
     {json.dumps(recent_context, ensure_ascii=False, indent=2)}
     
-    Output format must be a JSON object for the single date {today} only, like this:
+    Output format: JSON object for {today} only.
     {{
         "{today}": {{
             "ko": [
                 {{
-                    "category": "category_name",
+                    "category": "Macro|Tech|Energy|Finance|Trade|Stocks|RealEstate",
                     "date": "{today}",
-                    "title": "title",
-                    "summary": "long_detailed_summary",
-                    "insight": "expert_commentary",
-                    "readTime": "X min read",
-                    "glossary": {{ "term": "definition" }}
+                    "title": "Sophisticated Headline",
+                    "summary": "Deep contextual summary...",
+                    "insight": "High-level strategic analysis...",
+                    "impact": {{ "score": 8, "bias": "Bearish", "label": "Volatility Alert" }},
+                    "readTime": "8 min read",
+                    "glossary": {{ "Term": "Advanced Definition" }}
                 }},
-                ... (provide exactly 3 items)
+                ... (exactly 3 items)
             ],
-            "en": [
-                ... (same 3 items in English)
-            ]
+            "en": [ ... same 3 items ... ]
         }}
     }}
     
-    Categories: 거시경제(Macro), 기술/산업(Tech), 에너지/ESG(Energy), 금융시장(Finance), 글로벌 무역(Trade), 주식 시장(Stocks), 부동산(Real Estate).
     Return ONLY the raw JSON object.
     """
     
     response = model.generate_content(prompt)
     try:
-        # Clean response text in case it includes markdown backticks
         json_text = response.text.strip()
         if json_text.startswith("```json"):
             json_text = json_text[7:-3].strip()
@@ -77,16 +71,19 @@ def generate_news():
             
         new_entry = json.loads(json_text)
         
-        # Merge data (Prepend today's news)
-        updated_data = {**new_entry, **data}
+        # Merge data (Overwrite today's entry to ensure high quality)
+        data.update(new_entry)
+        
+        # Sort by date descending
+        sorted_data = dict(sorted(data.items(), key=lambda x: x[0], reverse=True))
         
         with open('news-data.json', 'w', encoding='utf-8') as f:
-            json.dump(updated_data, f, ensure_ascii=False, indent=4)
+            json.dump(sorted_data, f, ensure_ascii=False, indent=4)
             
-        print(f"Successfully updated news for {today}")
+        print(f"Successfully generated high-value intelligence for {today}")
         
     except Exception as e:
-        print(f"Error parsing or saving news: {e}")
+        print(f"Error: {e}")
         print("Response was:", response.text)
 
 if __name__ == "__main__":
