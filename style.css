@@ -712,12 +712,63 @@ body::before {
     background: var(--accent-glow);
 }
 
-/* Briefs Grid */
-.briefs-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 2rem;
-    margin-bottom: 4rem;
+/* Market Impact Badge */
+.market-impact-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--border-color);
+}
+
+.market-impact-badge.bullish { background: rgba(63, 185, 80, 0.1); color: var(--green); border-color: rgba(63, 185, 80, 0.2); }
+.market-impact-badge.bearish { background: rgba(248, 81, 73, 0.1); color: var(--red); border-color: rgba(248, 81, 73, 0.2); }
+.market-impact-badge.neutral { background: var(--surface-hover); color: var(--text-secondary); }
+
+.impact-label { text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.8; }
+.impact-score { background: rgba(255,255,255,0.05); padding: 0.2rem 0.5rem; border-radius: 4px; }
+.impact-bias { text-transform: uppercase; }
+
+.author-tag {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    margin-top: 1.5rem;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.author-tag::before {
+    content: "✍️";
+    font-style: normal;
+}
+
+.article-item.detailed {
+    position: relative;
+}
+
+.article-item.detailed::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, var(--border-color), transparent);
+}
+
+/* Methodology Section Adjustments */
+.methodology-section {
+    padding: 4rem;
+    background: var(--surface-color);
+    border-radius: 24px;
+    border: 1px solid var(--border-color);
+    margin-top: 6rem;
 }
 
 /* Trending Sectors Grid */
