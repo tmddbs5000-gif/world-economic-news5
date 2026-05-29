@@ -28,8 +28,15 @@ def generate_news():
     recent_context = {date: data[date] for date in recent_dates}
     
     prompt = f"""
-    You are an expert economic journalist. Generate world economic news for {today} in both Korean ('ko') and English ('en').
+    You are an expert economic journalist and financial analyst with 20+ years of experience. 
+    Generate world economic news for {today} in both Korean ('ko') and English ('en').
     The news should be realistic for the year 2026, following the narrative of the recent news provided below.
+    
+    CRITICAL QUALITY GUIDELINES:
+    1. Provide 3 distinct news items.
+    2. Each summary MUST be at least 250 characters long, providing deep context and specific (hypothetical 2026) data points.
+    3. The 'insight' MUST be a professional expert commentary that explains the 'so what' for institutional investors.
+    4. Each item MUST have a 2-term glossary.
     
     Recent news context:
     {json.dumps(recent_context, ensure_ascii=False, indent=2)}
@@ -42,8 +49,8 @@ def generate_news():
                     "category": "category_name",
                     "date": "{today}",
                     "title": "title",
-                    "summary": "summary",
-                    "insight": "strategic_insight",
+                    "summary": "long_detailed_summary",
+                    "insight": "expert_commentary",
                     "readTime": "X min read",
                     "glossary": {{ "term": "definition" }}
                 }},
@@ -56,7 +63,6 @@ def generate_news():
     }}
     
     Categories: 거시경제(Macro), 기술/산업(Tech), 에너지/ESG(Energy), 금융시장(Finance), 글로벌 무역(Trade), 주식 시장(Stocks), 부동산(Real Estate).
-    Ensure the latest news is relevant and insightful.
     Return ONLY the raw JSON object.
     """
     
