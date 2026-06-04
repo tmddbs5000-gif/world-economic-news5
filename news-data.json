@@ -1,112 +1,36 @@
 {
-    "2026-06-04": {
-        "ko": [
-            {
-                "category": "Tech",
-                "date": "2026-06-04",
-                "title": "엔비디아 '블랙웰-2' 아키텍처 공식 발표... 글로벌 데이터센터 전력 효율성 40% 향상",
-                "summary": "엔비디아가 오늘 차세대 AI 가속기인 '블랙웰-2' 아키텍처를 공식 발표했습니다. 이번 아키텍처는 이전 세대 대비 추론 성능이 3배 이상 향상되었으며, 특히 액체 냉각 기술의 최적화를 통해 데이터센터의 총 소유 비용(TCO)을 획기적으로 낮출 것으로 기대됩니다. 주요 클라우드 서비스 제공업체(CSP)들은 이미 대규모 선주문에 돌입한 것으로 알려졌습니다.",
-                "insight": "AI 인프라 경쟁이 '성능'에서 '효율'과 '에너지 공급'으로 전이되고 있습니다. 블랙웰-2의 확산은 전력 관리 반도체(PMIC) 및 냉각 솔루션 분야의 구조적 성장을 견인할 것으로 보입니다. 투자자들은 하이퍼스케일러들의 설비투자(CAPEX) 지속 가능성을 주목해야 합니다.",
-                "impact": {
-                    "score": 9,
-                    "bias": "Bullish",
-                    "label": "Technology Leadership"
-                },
-                "readTime": "8 min read",
-                "glossary": {
-                    "TCO (Total Cost of Ownership)": "자산의 구매 비용뿐만 아니라 운영 및 유지보수에 드는 모든 비용을 합산한 총 소유 비용",
-                    "PMIC": "기기 내 각 부품에 필요한 전력을 효율적으로 관리하는 전력 관리 통합 회로"
-                }
+    "2026-06-04": [
+        {
+            "title": {
+                "en": "Global Central Banks Maintain Cautious Stance as Inflation Persists",
+                "ko": "글로벌 중앙은행, 지속되는 인플레이션 속 신중한 입장 유지"
             },
-            {
-                "category": "Macro",
-                "date": "2026-06-04",
-                "title": "ECB, 기준금리 25bp 인하 단행... 인플레이션 둔화세 확인에 따른 정책 전환",
-                "summary": "유럽중앙은행(ECB)이 오늘 열린 통화정책회의에서 기준금리를 연 4.25%에서 4.00%로 25bp 인하했습니다. 라가르드 총재는 기자회견에서 인플레이션 전망치가 목표치인 2%에 수렴하고 있다는 확신이 커졌다고 밝혔습니다. 이는 2024년 이후 지속된 긴축 기조에서 벗어나 본격적인 금리 인하 사이클에 진입했음을 시사합니다.",
-                "insight": "유로존의 금리 인하는 글로벌 유동성 공급의 마중물 역할을 할 수 있습니다. 미국 연준(Fed)보다 한발 앞선 움직임은 유로화 약세를 유도하여 유럽 수출 기업들의 경쟁력을 강화할 것이나, 수입 물가 상승에 따른 인플레이션 반등 리스크는 상존합니다.",
-                "impact": {
-                    "score": 7,
-                    "bias": "Neutral",
-                    "label": "Monetary Pivot"
-                },
-                "readTime": "6 min read",
-                "glossary": {
-                    "25bp": "0.25%포인트를 나타내는 단위 (1bp = 0.01%)",
-                    "통화정책 수렴": "인플레이션이나 경제 성장률이 정책 목표 수준으로 다가가는 현상"
-                }
-            },
-            {
-                "category": "Finance",
-                "date": "2026-06-04",
-                "title": "실물 자산(RWA) 토큰화 시장 10조 달러 돌파... 제도권 금융의 블록체인 채택 가속화",
-                "summary": "부동산, 국채, 예술품 등 실물 자산을 블록체인 기반의 토큰으로 발행하는 RWA(Real World Asset) 시장 규모가 오늘 10조 달러를 돌파했습니다. JP모건과 블랙록 등 월스트리트의 거대 금융사들이 자사 플랫폼을 통해 국채 토큰 발행을 본격화하면서 시장의 신뢰도가 급상승했습니다. 이는 전통 금융 시스템의 정산 및 결제 효율성을 비약적으로 높일 것으로 평가됩니다.",
-                "insight": "자본 시장의 디지털화는 중개 비용을 절감하고 24시간 거래 가능한 유동성을 제공합니다. 특히 소액 투자자들의 고가 자산 접근성이 확대되면서 자산 관리 시장의 지형도가 변화하고 있습니다. 규제 샌드박스를 넘어선 정식 제도권 편입 여부가 향후 성장의 핵심 변수입니다.",
-                "impact": {
-                    "score": 8,
-                    "bias": "Bullish",
-                    "label": "Financial Innovation"
-                },
-                "readTime": "7 min read",
-                "glossary": {
-                    "RWA (Real World Asset)": "금, 부동산, 국채 등 현실에 존재하는 자산을 블록체인 상에서 토큰화한 것",
-                    "규제 샌드박스": "새로운 제품이나 서비스가 출시될 때 일정 기간 동안 기존 규제를 면제해주는 제도"
-                }
+            "content": {
+                "en": "Major central banks, including the US Federal Reserve and the European Central Bank, reiterated their commitment to a data-dependent approach regarding interest rate adjustments. While inflation has shown signs of moderating from peak levels, underlying price pressures remain a concern, particularly in services. This cautious stance suggests that rapid rate cuts are unlikely in the near term, leading analysts to revise down global growth forecasts slightly for the latter half of 2026. Market reactions were mixed, with equity indices showing slight declines as bond yields stabilized.",
+                "ko": "미국 연방준비제도(Fed)와 유럽중앙은행(ECB)을 포함한 주요 중앙은행들은 금리 조정과 관련하여 데이터에 기반한 접근 방식을 유지할 것이라고 재차 강조했습니다. 인플레이션이 최고 수준에서 완화되는 조짐을 보였음에도 불구하고, 특히 서비스 부문에서 근원 물가 압력이 여전히 우려스러운 수준입니다. 이러한 신중한 입장은 단기 내 빠른 금리 인하 가능성이 낮음을 시사하며, 분석가들은 2026년 하반기 글로벌 성장률 전망치를 소폭 하향 조정했습니다. 시장 반응은 엇갈렸고, 주식 시장은 소폭 하락했으며 채권 수익률은 안정세를 보였습니다."
             }
-        ],
-        "en": [
-            {
-                "category": "Tech",
-                "date": "2026-06-04",
-                "title": "NVIDIA Officially Unveils 'Blackwell-2' Architecture, Boosting Global Data Center Power Efficiency by 40%",
-                "summary": "NVIDIA has officially announced its next-generation AI accelerator architecture, Blackwell-2. Delivering over 3x inference performance compared to its predecessor, it features optimized liquid cooling technology to significantly lower Total Cost of Ownership (TCO). Major Cloud Service Providers (CSPs) have already begun massive pre-orders.",
-                "insight": "The AI infrastructure race is shifting from pure performance to efficiency and power supply. Blackwell-2's adoption will drive structural growth in Power Management IC (PMIC) and cooling solutions. Investors should monitor the sustainability of hyperscalers' CAPEX.",
-                "impact": {
-                    "score": 9,
-                    "bias": "Bullish",
-                    "label": "Technology Leadership"
-                },
-                "readTime": "8 min read",
-                "glossary": {
-                    "TCO (Total Cost of Ownership)": "The total of all costs incurred over the life of an asset, including purchase, operation, and maintenance.",
-                    "PMIC": "An integrated circuit used to manage the power requirements of various components within a device efficiently."
-                }
+        },
+        {
+            "title": {
+                "en": "AI Adoption Fuels Productivity Surge, Sparks Labor Market Debate",
+                "ko": "AI 도입, 생산성 급증 견인... 노동 시장 논쟁 촉발"
             },
-            {
-                "category": "Macro",
-                "date": "2026-06-04",
-                "title": "ECB Cuts Rates by 25bp, Signalling Policy Shift as Inflation Slows",
-                "summary": "The European Central Bank (ECB) lowered its key interest rate by 25 basis points to 4.00% today. President Christine Lagarde stated confidence that inflation is converging toward the 2% target. This marks the beginning of a rate-cutting cycle, ending the tight monetary policy maintained since 2024.",
-                "insight": "The ECB's rate cut could act as a catalyst for global liquidity. Moving ahead of the US Fed might weaken the Euro, boosting European exporters' competitiveness, though risks of inflation rebounding due to higher import prices remain.",
-                "impact": {
-                    "score": 7,
-                    "bias": "Neutral",
-                    "label": "Monetary Pivot"
-                },
-                "readTime": "6 min read",
-                "glossary": {
-                    "25bp": "A unit equal to 0.25% (1bp = 0.01%).",
-                    "Policy Convergence": "The process of economic indicators like inflation moving toward policy targets."
-                }
-            },
-            {
-                "category": "Finance",
-                "date": "2026-06-04",
-                "title": "Real World Asset (RWA) Tokenization Market Surpasses $10 Trillion, Accelerating Blockchain Adoption in Finance",
-                "summary": "The market for tokenizing real-world assets such as real estate, treasuries, and art on the blockchain has surpassed $10 trillion today. Wall Street giants like JPMorgan and BlackRock are scaling up treasury token issuance, boosting market confidence. This transition is expected to drastically improve settlement and clearing efficiency in traditional finance.",
-                "insight": "Capital market digitalization reduces intermediary costs and provides 24/7 liquidity. Increased accessibility for retail investors to high-value assets is reshaping the wealth management landscape. Formal regulatory integration beyond sandboxes is the key variable for future growth.",
-                "impact": {
-                    "score": 8,
-                    "bias": "Bullish",
-                    "label": "Financial Innovation"
-                },
-                "readTime": "7 min read",
-                "glossary": {
-                    "RWA (Real World Asset)": "Real-world physical assets like gold or real estate that are tokenized on a blockchain.",
-                    "Regulatory Sandbox": "A framework that allows fintech startups to test their offerings in a controlled environment with regulatory oversight."
-                }
+            "content": {
+                "en": "A new report from the World Economic Forum on June 4th highlighted a significant acceleration in productivity gains across various sectors, primarily driven by the widespread adoption of Artificial Intelligence (AI) technologies. Companies leveraging AI for automation and data analysis reported efficiency improvements of up to 20% in specific operations. However, the report also warned of potential disruptions to labor markets, forecasting increased demand for AI-literate professionals alongside displacement in routine-heavy roles. Policy discussions are intensifying globally on reskilling initiatives and social safety nets.",
+                "ko": "6월 4일 세계경제포럼(WEF)의 새로운 보고서는 인공지능(AI) 기술의 광범위한 채택에 힘입어 다양한 부문에서 생산성 향상이 크게 가속화되고 있음을 강조했습니다. 자동화 및 데이터 분석에 AI를 활용하는 기업들은 특정 작업에서 최대 20%의 효율성 개선을 보고했습니다. 그러나 이 보고서는 또한 노동 시장의 잠재적 혼란을 경고하며, AI 전문가에 대한 수요 증가와 함께 반복적인 업무를 수행하는 역할에서의 일자리 감소를 예측했습니다. 재교육 이니셔티브 및 사회 안전망에 대한 정책 논의가 전 세계적으로 심화되고 있습니다."
             }
-        ]
-    },
+        },
+        {
+            "title": {
+                "en": "Global Supply Chains Show Resilience Amidst Geopolitical Volatility",
+                "ko": "지정학적 불안정 속 글로벌 공급망 회복 탄력성 보여"
+            },
+            "content": {
+                "en": "Despite persistent geopolitical friction in key trade corridors, global supply chains are demonstrating unexpected resilience, according to an analysis released today by a leading logistics firm. Diversification of sourcing strategies, increased nearshoring investments, and advanced predictive analytics have allowed companies to mitigate disruptions, preventing the widespread economic shocks seen in earlier periods of instability. While shipping costs remain elevated in some regions, overall manufacturing output has shown stable growth, signaling a maturing adaptation to a more volatile global environment.",
+                "ko": "오늘 한 주요 물류 기업이 발표한 분석에 따르면, 주요 무역 통로에서의 지속적인 지정학적 마찰에도 불구하고 글로벌 공급망이 예상 밖의 회복 탄력성을 보여주고 있습니다. 공급원 다변화 전략, 근해 생산 투자 증가, 그리고 첨단 예측 분석 기술 덕분에 기업들은 혼란을 완화하여 이전 불안정 시기에 목격되었던 광범위한 경제적 충격을 방지할 수 있었습니다. 일부 지역에서는 운송 비용이 여전히 높은 수준을 유지하고 있지만, 전반적인 제조업 생산량은 꾸준한 성장을 보여주며 더욱 변동성이 큰 글로벌 환경에 대한 적응이 성숙해지고 있음을 시사합니다."
+            }
+        }
+    ],
     "2026-06-03": {
         "ko": [
             {
