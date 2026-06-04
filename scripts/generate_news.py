@@ -61,8 +61,12 @@ def generate_news():
         print(f"Successfully generated news for {today}")
         
     except Exception as e:
-        print(f"Error during news generation: {e}")
-        if hasattr(e, 'message'): print(e.message)
+        import traceback
+        print("--- ERROR DETAIL START ---")
+        print(f"Error Type: {type(e).__name__}")
+        print(f"Error Message: {e}")
+        traceback.print_exc()
+        print("--- ERROR DETAIL END ---")
         exit(1)
 
 if __name__ == "__main__":
