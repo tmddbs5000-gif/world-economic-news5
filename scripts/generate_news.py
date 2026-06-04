@@ -32,8 +32,36 @@ def generate_news():
     recent_context = {date: data[date] for date in recent_dates}
     
     prompt = f"""
-    Generate 3 world economic news reports for {today} in both Korean ('ko') and English ('en').
-    Output format: JSON object for {today} only.
+    You are a Lead Economic Strategist and Chief Editor for 'Global EcoNews'.
+    Generate exactly 3 highly sophisticated world economic news reports for {today} in both Korean ('ko') and English ('en').
+    
+    CRITICAL CONTENT REQUIREMENTS:
+    1. SUMMARY: Minimum 350-400 characters.
+    2. EXPERT INSIGHT: Strategic Alpha commentary explaining structural implications.
+    3. MARKET IMPACT: Score (1-10), Directional Bias, and Label.
+    4. GLOSSARY: 2 advanced financial terms with definitions.
+    
+    Context: {json.dumps(recent_context, ensure_ascii=False)}
+    
+    Output format:
+    {{
+        "{today}": {{
+            "ko": [
+                {{
+                    "category": "Macro|Tech|Energy|Finance|Trade|Stocks|RealEstate",
+                    "date": "{today}",
+                    "title": "Headline",
+                    "summary": "Deep summary...",
+                    "insight": "Strategic analysis...",
+                    "impact": {{ "score": 8, "bias": "Bearish", "label": "Volatility Alert" }},
+                    "readTime": "8 min read",
+                    "glossary": {{ "Term": "Definition" }}
+                }},
+                ... (exactly 3 items)
+            ],
+            "en": [ ... same 3 items ... ]
+        }}
+    }}
     Return ONLY the raw JSON object.
     """
     
