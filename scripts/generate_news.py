@@ -10,8 +10,6 @@ if not api_key:
     exit(1)
 
 genai.configure(api_key=api_key)
-# Use gemini-1.5-flash for better availability and speed
-model = genai.GenerativeModel('gemini-1.5-flash')
 
 def get_kst_today():
     # Return date in YYYY-MM-DD format for KST
@@ -39,12 +37,29 @@ def generate_news():
     Return ONLY the raw JSON object.
     """
     
-    try:
-        response = model.generate_content(prompt)
-        if not response.text:
-            print("Error: Empty response from Gemini API.")
-            exit(1)
+    # Try different models in case one is not available
+    models_to_try = ['gemini-1.5-flash', 'gemini-1.5-pro', 'gemini-pro']
+    response = None
+    success_model = None
+    
+    for model_name in models_to_try:
+        try:
+            print(f"Attempting with model: {model_name}...")
+            model = genai.GenerativeModel(model_name)
+            response = model.generate_content(prompt)
+            if response and response.text:
+                success_model = model_name
+                break
+        except Exception as e:
+            print(f"Model {model_name} failed or not found. Trying next...")
+            continue
             
+    if not response or not success_model:
+        print("Error: All attempted models failed. Please check your API key permissions.")
+        exit(1)
+
+    try:
+        print(f"Successfully generated news using {success_model}")
         json_text = response.text.strip()
         if json_text.startswith("```json"):
             json_text = json_text[7:-3].strip()
