@@ -1,4 +1,272 @@
 {
+    "2026-06-04": {
+        "ko": [
+            {
+                "category": "Tech",
+                "date": "2026-06-04",
+                "title": "엔비디아 '블랙웰-2' 아키텍처 공식 발표... 글로벌 데이터센터 전력 효율성 40% 향상",
+                "summary": "엔비디아가 오늘 차세대 AI 가속기인 '블랙웰-2' 아키텍처를 공식 발표했습니다. 이번 아키텍처는 이전 세대 대비 추론 성능이 3배 이상 향상되었으며, 특히 액체 냉각 기술의 최적화를 통해 데이터센터의 총 소유 비용(TCO)을 획기적으로 낮출 것으로 기대됩니다. 주요 클라우드 서비스 제공업체(CSP)들은 이미 대규모 선주문에 돌입한 것으로 알려졌습니다.",
+                "insight": "AI 인프라 경쟁이 '성능'에서 '효율'과 '에너지 공급'으로 전이되고 있습니다. 블랙웰-2의 확산은 전력 관리 반도체(PMIC) 및 냉각 솔루션 분야의 구조적 성장을 견인할 것으로 보입니다. 투자자들은 하이퍼스케일러들의 설비투자(CAPEX) 지속 가능성을 주목해야 합니다.",
+                "impact": {
+                    "score": 9,
+                    "bias": "Bullish",
+                    "label": "Technology Leadership"
+                },
+                "readTime": "8 min read",
+                "glossary": {
+                    "TCO (Total Cost of Ownership)": "자산의 구매 비용뿐만 아니라 운영 및 유지보수에 드는 모든 비용을 합산한 총 소유 비용",
+                    "PMIC": "기기 내 각 부품에 필요한 전력을 효율적으로 관리하는 전력 관리 통합 회로"
+                }
+            },
+            {
+                "category": "Macro",
+                "date": "2026-06-04",
+                "title": "ECB, 기준금리 25bp 인하 단행... 인플레이션 둔화세 확인에 따른 정책 전환",
+                "summary": "유럽중앙은행(ECB)이 오늘 열린 통화정책회의에서 기준금리를 연 4.25%에서 4.00%로 25bp 인하했습니다. 라가르드 총재는 기자회견에서 인플레이션 전망치가 목표치인 2%에 수렴하고 있다는 확신이 커졌다고 밝혔습니다. 이는 2024년 이후 지속된 긴축 기조에서 벗어나 본격적인 금리 인하 사이클에 진입했음을 시사합니다.",
+                "insight": "유로존의 금리 인하는 글로벌 유동성 공급의 마중물 역할을 할 수 있습니다. 미국 연준(Fed)보다 한발 앞선 움직임은 유로화 약세를 유도하여 유럽 수출 기업들의 경쟁력을 강화할 것이나, 수입 물가 상승에 따른 인플레이션 반등 리스크는 상존합니다.",
+                "impact": {
+                    "score": 7,
+                    "bias": "Neutral",
+                    "label": "Monetary Pivot"
+                },
+                "readTime": "6 min read",
+                "glossary": {
+                    "25bp": "0.25%포인트를 나타내는 단위 (1bp = 0.01%)",
+                    "통화정책 수렴": "인플레이션이나 경제 성장률이 정책 목표 수준으로 다가가는 현상"
+                }
+            },
+            {
+                "category": "Finance",
+                "date": "2026-06-04",
+                "title": "실물 자산(RWA) 토큰화 시장 10조 달러 돌파... 제도권 금융의 블록체인 채택 가속화",
+                "summary": "부동산, 국채, 예술품 등 실물 자산을 블록체인 기반의 토큰으로 발행하는 RWA(Real World Asset) 시장 규모가 오늘 10조 달러를 돌파했습니다. JP모건과 블랙록 등 월스트리트의 거대 금융사들이 자사 플랫폼을 통해 국채 토큰 발행을 본격화하면서 시장의 신뢰도가 급상승했습니다. 이는 전통 금융 시스템의 정산 및 결제 효율성을 비약적으로 높일 것으로 평가됩니다.",
+                "insight": "자본 시장의 디지털화는 중개 비용을 절감하고 24시간 거래 가능한 유동성을 제공합니다. 특히 소액 투자자들의 고가 자산 접근성이 확대되면서 자산 관리 시장의 지형도가 변화하고 있습니다. 규제 샌드박스를 넘어선 정식 제도권 편입 여부가 향후 성장의 핵심 변수입니다.",
+                "impact": {
+                    "score": 8,
+                    "bias": "Bullish",
+                    "label": "Financial Innovation"
+                },
+                "readTime": "7 min read",
+                "glossary": {
+                    "RWA (Real World Asset)": "금, 부동산, 국채 등 현실에 존재하는 자산을 블록체인 상에서 토큰화한 것",
+                    "규제 샌드박스": "새로운 제품이나 서비스가 출시될 때 일정 기간 동안 기존 규제를 면제해주는 제도"
+                }
+            }
+        ],
+        "en": [
+            {
+                "category": "Tech",
+                "date": "2026-06-04",
+                "title": "NVIDIA Officially Unveils 'Blackwell-2' Architecture, Boosting Global Data Center Power Efficiency by 40%",
+                "summary": "NVIDIA has officially announced its next-generation AI accelerator architecture, Blackwell-2. Delivering over 3x inference performance compared to its predecessor, it features optimized liquid cooling technology to significantly lower Total Cost of Ownership (TCO). Major Cloud Service Providers (CSPs) have already begun massive pre-orders.",
+                "insight": "The AI infrastructure race is shifting from pure performance to efficiency and power supply. Blackwell-2's adoption will drive structural growth in Power Management IC (PMIC) and cooling solutions. Investors should monitor the sustainability of hyperscalers' CAPEX.",
+                "impact": {
+                    "score": 9,
+                    "bias": "Bullish",
+                    "label": "Technology Leadership"
+                },
+                "readTime": "8 min read",
+                "glossary": {
+                    "TCO (Total Cost of Ownership)": "The total of all costs incurred over the life of an asset, including purchase, operation, and maintenance.",
+                    "PMIC": "An integrated circuit used to manage the power requirements of various components within a device efficiently."
+                }
+            },
+            {
+                "category": "Macro",
+                "date": "2026-06-04",
+                "title": "ECB Cuts Rates by 25bp, Signalling Policy Shift as Inflation Slows",
+                "summary": "The European Central Bank (ECB) lowered its key interest rate by 25 basis points to 4.00% today. President Christine Lagarde stated confidence that inflation is converging toward the 2% target. This marks the beginning of a rate-cutting cycle, ending the tight monetary policy maintained since 2024.",
+                "insight": "The ECB's rate cut could act as a catalyst for global liquidity. Moving ahead of the US Fed might weaken the Euro, boosting European exporters' competitiveness, though risks of inflation rebounding due to higher import prices remain.",
+                "impact": {
+                    "score": 7,
+                    "bias": "Neutral",
+                    "label": "Monetary Pivot"
+                },
+                "readTime": "6 min read",
+                "glossary": {
+                    "25bp": "A unit equal to 0.25% (1bp = 0.01%).",
+                    "Policy Convergence": "The process of economic indicators like inflation moving toward policy targets."
+                }
+            },
+            {
+                "category": "Finance",
+                "date": "2026-06-04",
+                "title": "Real World Asset (RWA) Tokenization Market Surpasses $10 Trillion, Accelerating Blockchain Adoption in Finance",
+                "summary": "The market for tokenizing real-world assets such as real estate, treasuries, and art on the blockchain has surpassed $10 trillion today. Wall Street giants like JPMorgan and BlackRock are scaling up treasury token issuance, boosting market confidence. This transition is expected to drastically improve settlement and clearing efficiency in traditional finance.",
+                "insight": "Capital market digitalization reduces intermediary costs and provides 24/7 liquidity. Increased accessibility for retail investors to high-value assets is reshaping the wealth management landscape. Formal regulatory integration beyond sandboxes is the key variable for future growth.",
+                "impact": {
+                    "score": 8,
+                    "bias": "Bullish",
+                    "label": "Financial Innovation"
+                },
+                "readTime": "7 min read",
+                "glossary": {
+                    "RWA (Real World Asset)": "Real-world physical assets like gold or real estate that are tokenized on a blockchain.",
+                    "Regulatory Sandbox": "A framework that allows fintech startups to test their offerings in a controlled environment with regulatory oversight."
+                }
+            }
+        ]
+    },
+    "2026-06-03": {
+        "ko": [
+            {
+                "category": "Stocks",
+                "date": "2026-06-03",
+                "title": "코스피, 외국인 매수세에 2,900선 회복... 반도체·자동차 동반 강세",
+                "summary": "코스피 지수가 외국인과 기관의 동반 매수세에 힘입어 전일 대비 1.5% 상승한 2,912.45로 마감했습니다. 특히 엔비디아의 실적 기대감과 현대차의 역대급 수출 실적이 호재로 작용하며 시가총액 상위 종목들이 일제히 강세를 보였습니다.",
+                "insight": "원/달러 환율 안정이 외국인 수급 개선으로 이어지고 있습니다.",
+                "impact": {
+                    "score": 8,
+                    "bias": "Bullish",
+                    "label": "Market Recovery"
+                },
+                "readTime": "5 min read"
+            }
+        ],
+        "en": [
+            {
+                "category": "Stocks",
+                "date": "2026-06-03",
+                "title": "KOSPI Reclaims 2,900 Level on Foreign Buying Spree",
+                "summary": "The KOSPI rose 1.5% to close at 2,912.45, driven by foreign and institutional buying. Optimism over NVIDIA's earnings and Hyundai's record exports boosted major caps.",
+                "insight": "Stable KRW/USD exchange rates are improving foreign capital inflows.",
+                "impact": {
+                    "score": 8,
+                    "bias": "Bullish",
+                    "label": "Market Recovery"
+                },
+                "readTime": "5 min read"
+            }
+        ]
+    },
+    "2026-06-02": {
+        "ko": [
+            {
+                "category": "Energy",
+                "date": "2026-06-02",
+                "title": "사우디, 대규모 태양광 프로젝트 발표... '포스트 오일' 시대 가속화",
+                "summary": "사우디아라비아가 50GW 규모의 새로운 태양광 발전 단지 조성 계획을 발표했습니다. 이는 비전 2030의 일환으로, 석유 의존도를 낮추고 재생 에너지 비중을 50%까지 확대하겠다는 의지를 보여줍니다.",
+                "insight": "중동의 에너지 전환은 글로벌 에너지 공급망의 근본적인 변화를 예고합니다.",
+                "impact": {
+                    "score": 7,
+                    "bias": "Neutral",
+                    "label": "Energy Transition"
+                },
+                "readTime": "6 min read"
+            }
+        ],
+        "en": [
+            {
+                "category": "Energy",
+                "date": "2026-06-02",
+                "title": "Saudi Arabia Unveils Massive Solar Project, Accelerating 'Post-Oil' Era",
+                "summary": "Saudi Arabia announced a 50GW solar farm project as part of Vision 2030, aiming to reduce oil dependency and increase renewable energy to 50%.",
+                "insight": "The Middle East's energy shift signals a fundamental change in global supply chains.",
+                "impact": {
+                    "score": 7,
+                    "bias": "Neutral",
+                    "label": "Energy Transition"
+                },
+                "readTime": "6 min read"
+            }
+        ]
+    },
+    "2026-06-01": {
+        "ko": [
+            {
+                "category": "RealEstate",
+                "date": "2026-06-01",
+                "title": "서울 아파트 전세가 1년째 상승... 공급 부족 우려에 실수요자 '울상'",
+                "summary": "서울 지역 아파트 전세 가격이 52주 연속 상승세를 이어가고 있습니다. 신규 입주 물량 감소와 금리 인하 기대감이 맞물리며 전세 매물 부족 현상이 심화되고 있는 것으로 분석됩니다.",
+                "insight": "전세가 상승은 매매가 지지 요인으로 작용할 가능성이 큽니다.",
+                "impact": {
+                    "score": 6,
+                    "bias": "Bearish",
+                    "label": "Housing Pressure"
+                },
+                "readTime": "5 min read"
+            }
+        ],
+        "en": [
+            {
+                "category": "RealEstate",
+                "date": "2026-06-01",
+                "title": "Seoul Apartment Jeonse Prices Rise for 52 Consecutive Weeks",
+                "summary": "Jeonse (lump-sum deposit) prices in Seoul have risen for a full year due to supply shortages and rate cut expectations, increasing pressure on tenants.",
+                "insight": "Rising Jeonse prices are likely to support overall property values.",
+                "impact": {
+                    "score": 6,
+                    "bias": "Bearish",
+                    "label": "Housing Pressure"
+                },
+                "readTime": "5 min read"
+            }
+        ]
+    },
+    "2026-05-31": {
+        "ko": [
+            {
+                "category": "Trade",
+                "date": "2026-05-31",
+                "title": "한-미-일 상무장관 회동... 반도체 공급망 조기경보시스템 구축 합의",
+                "summary": "한국, 미국, 일본의 상무장관들이 워싱턴에서 만나 반도체 등 핵심 품목의 공급망 안정을 위한 조기경보시스템(EWS) 공동 운영에 합의했습니다.",
+                "insight": "지정학적 리스크 관리가 기업 경영의 핵심 요소가 되었습니다.",
+                "impact": {
+                    "score": 7,
+                    "bias": "Bullish",
+                    "label": "Supply Chain Stability"
+                },
+                "readTime": "4 min read"
+            }
+        ],
+        "en": [
+            {
+                "category": "Trade",
+                "date": "2026-05-31",
+                "title": "Korea, US, Japan Agree on Semiconductor Supply Chain Early Warning System",
+                "summary": "Commerce ministers from Korea, the US, and Japan met in Washington to agree on a joint Early Warning System (EWS) for key items like semiconductors.",
+                "insight": "Geopolitical risk management has become a core element of corporate strategy.",
+                "impact": {
+                    "score": 7,
+                    "bias": "Bullish",
+                    "label": "Supply Chain Stability"
+                },
+                "readTime": "4 min read"
+            }
+        ]
+    },
+    "2026-05-30": {
+        "ko": [
+            {
+                "category": "Macro",
+                "date": "2026-05-30",
+                "title": "미국 1분기 GDP 성장률 수정치 1.3% 발표... 경기 둔화 우려 가중",
+                "summary": "미국 상무부는 1분기 국내총생산(GDP) 성장률 수정치가 연율 1.3%로 집계되었다고 발표했습니다. 이는 잠정치(1.6%)보다 하향 조정된 것으로, 소비 지출 둔화가 주요 원인으로 꼽힙니다.",
+                "insight": "성장률 하향은 연준의 금리 인하 명분을 강화할 수 있습니다.",
+                "impact": {
+                    "score": 5,
+                    "bias": "Bearish",
+                    "label": "Economic Slowdown"
+                },
+                "readTime": "6 min read"
+            }
+        ],
+        "en": [
+            {
+                "category": "Macro",
+                "date": "2026-05-30",
+                "title": "US Q1 GDP Growth Revised Down to 1.3%, Raising Growth Concerns",
+                "summary": "The US Commerce Department revised Q1 GDP growth down to 1.3% from 1.6%, primarily due to slower-than-expected consumer spending.",
+                "insight": "Slower growth may give the Fed more reason to consider rate cuts.",
+                "impact": {
+                    "score": 5,
+                    "bias": "Bearish",
+                    "label": "Economic Slowdown"
+                },
+                "readTime": "6 min read"
+            }
+        ]
+    },
     "2026-05-29": {
         "ko": [
             {
