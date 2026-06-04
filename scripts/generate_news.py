@@ -37,8 +37,22 @@ def generate_news():
     Return ONLY the raw JSON object.
     """
     
-    # Try different models in case one is not available
-    models_to_try = ['gemini-1.5-flash', 'gemini-1.5-pro', 'gemini-pro']
+    # Diagnostic: List available models
+    print("--- DIAGNOSTIC: AVAILABLE MODELS START ---")
+    try:
+        available_models = []
+        for m in genai.list_models():
+            if 'generateContent' in m.supported_generation_methods:
+                print(f"Available: {m.name}")
+                available_models.append(m.name.replace('models/', ''))
+        
+        # If our list is empty, let's use what we found
+        if available_models:
+            models_to_try = available_models
+    except Exception as diag_e:
+        print(f"Could not list models: {diag_e}")
+    print("--- DIAGNOSTIC: AVAILABLE MODELS END ---")
+    
     response = None
     success_model = None
     
