@@ -1,4 +1,112 @@
 {
+    "2026-06-07": {
+        "ko": [
+            {
+                "category": "Trade",
+                "date": "2026-06-07",
+                "title": "글로벌 제조 대기업 '프로테라 코퍼레이션', 급진적 공급망 위험 분산 전략 공개... '글로벌 공장' 모델 종말 신호",
+                "summary": "세계적인 다각화 제조 기업인 프로테라 코퍼레이션은 지속적인 지정학적 분열, 무역 보호주의 심화, 그리고 물류 비용의 돌이킬 수 없는 변화를 이유로 오늘 전 세계 생산 및 소싱 전략에 대한 대대적인 개편을 발표했습니다. 수년간에 걸쳐 진행될 이 계획은 아시아의 여러 단일 실패 지점 생산 허브에서 벗어나 북미, 유럽, 아세안 전역에 최소 3개의 지역 자급자족 제조 생태계를 구축하는 것을 포함합니다. 향후 5년간 약 300억 달러의 설비 투자가 필요할 것으로 예상되는 이번 조치는 홍해 항로 영구 우회, 미중 핵심 광물 통제, 그리고 역내 무역 블록 가속화라는 일련의 사태에 대한 직접적인 대응입니다. 프로테라 측은 비록 현지 생산 비용 증가를 수반하더라도 공급망 탄력성을 강화하고, 핵심 투입물의 보안을 확보하며, 미래 지정학적 충격을 완화하는 것을 목표로 한다고 밝혔습니다. 분석가들은 이를 다른 다국적 기업들에게 중요한 신호탄으로 간주하며, 수십 년간 지속된 순수한 글로벌 비용 최적화 추구가 끝나고 중복성 및 지역화를 우선시하는 시대로의 결정적인 전환을 알리는 것으로 보고 있습니다.",
+                "insight": "프로테라의 발표는 지정학적 위험 프리미엄이 고조됨에 따라 기업 수준에서 나타나는 '탈세계화'의 전형적인 사례입니다. 구조적으로 이는 비용 최적화된 단일 허브가 아닌, 탄력적이고 지역적으로 다각화된 생산 능력으로 글로벌 자본 흐름이 강제적으로 재조정됨을 의미합니다. 이는 효율성이 보안에 밀려나면서 필연적으로 더 높지만 더 안정적인 운영 비용과 지속적인 '공급망 인플레이션'으로 이어질 것입니다. 투자자들은 이러한 자본 집약적인 재편을 감당할 수 있는 견고한 대차대조표를 가진 기업, 강력한 정부 파트너십(프렌드쇼어링)을 가진 기업, 그리고 다각화되고 안전한 역내 공급망 네트워크 내에서 운영되는 기업들을 우선적으로 고려해야 합니다. 또한, 이는 과거 글로벌 차익거래에 최적화되었으나 이제 취약한 지역에서 상당한 좌초 자산 위험에 직면한 기업들의 기업 가치 재평가를 예고합니다.",
+                "impact": {
+                    "score": 9,
+                    "bias": "Bearish",
+                    "label": "Structural Deglobalization"
+                },
+                "readTime": "9 min read",
+                "glossary": {
+                    "지정학적 위험 프리미엄(Geopolitical Risk Premium)": "특정 지역의 정치적 불안정, 분쟁 또는 무역 긴장으로 인해 자산, 투자 또는 상품에 적용되는 추가 비용 또는 할인.",
+                    "지역 자급자족(Regional Self-Sufficiency)": "안보와 탄력성을 위해 필수 상품과 서비스의 대부분을 내부적으로 생산하여 외부 공급망에 대한 의존도를 줄이는 경제 전략."
+                }
+            },
+            {
+                "category": "Tech",
+                "date": "2026-06-07",
+                "title": "글로벌 금융 메시징 네트워크 SWIFT, 2028년까지 양자 안전 전환 약속... 500억 달러 인프라 업그레이드 공개",
+                "summary": "전 세계 11,000개 이상의 금융 기관을 연결하는 주요 보안 금융 메시징 네트워크인 SWIFT(국제은행간통신협회)는 오늘 2028년 말까지 전체 글로벌 인프라를 포스트 양자 암호화(PQC)로 전환하는 야심찬 계획을 발표했습니다. 하드웨어, 소프트웨어 및 교육에 500억 달러 이상이 소요될 것으로 예상되는 이 기념비적인 사업은 현재 암호화 표준의 취약성을 입증한 최근의 양자 컴퓨팅 획기적인 발전에 대한 직접적이고 긴급한 대응입니다. SWIFT는 매일 수조 달러에 달하는 금융 거래의 무결성과 기밀성을 잠재적인 양자 공격으로부터 보호해야 하는 시급성을 강조했습니다. 이 이니셔티브에는 모든 회원 기관에 PQC 채택 의무화, 새로운 양자 내성 프로토콜 개발, 그리고 글로벌 PQC 테스트베드 구축이 포함됩니다. 이러한 움직임은 양자 보안 비상사태의 중대성을 강조하며, 글로벌 금융 시스템의 미래를 보호하기 위한 대규모의 산업 전반에 걸친 자본 재배치를 의미합니다.",
+                "insight": "SWIFT의 공격적인 PQC 전환 계획은 전 세계 중요 디지털 인프라의 구조적 재구축을 알리는 선구자적 역할을 합니다. 이는 단순한 IT 업그레이드가 아니라, 사이버보안 위험의 근본적인 재평가로, 금융 부문 및 그 이상에서 대규모의 비재량적 설비투자(CAPEX) 사이클로 이어질 것입니다. 이러한 변화는 PQC 솔루션 제공업체, 전문 사이버보안 기업, 그리고 양자 안전 하드웨어 제조업체에게 엄청난 호황을 가져올 것입니다. 그러나 이는 또한 상호 운용성 보장, 레거시 시스템 관리, 잠재적 기술 격차 해소 등 상당한 구현 과제를 안겨줍니다. 금융 기관의 경우, 규정 준수 실패는 시스템적 위험 노출과 글로벌 금융 흐름에 대한 접근성 상실을 의미할 수 있습니다. 이러한 구조적 imperative는 사이버보안 분야의 통합을 촉진하고 양자 안전 준수에 대한 규제 명령을 가속화하여, 기술 및 금융 산업 내에 새로운 고도로 전문화된 부문을 창출할 가능성이 높습니다.",
+                "impact": {
+                    "score": 10,
+                    "bias": "Volatile",
+                    "label": "Digital Infrastructure Overhaul"
+                },
+                "readTime": "10 min read",
+                "glossary": {
+                    "암호화 민첩성(Cryptographic Agility)": "IT 시스템 또는 네트워크가 주요 중단 없이 암호화 알고리즘 및 프로토콜을 쉽게 업데이트하거나 교체할 수 있는 능력으로, 양자 컴퓨팅과 같은 새로운 위협에 적응하는 데 필수적이다.",
+                    "상호 운용성(Interoperability)": "서로 다른 컴퓨터 시스템, 장치, 애플리케이션 또는 제품이 최종 사용자의 특별한 노력 없이도 조정된 방식으로 연결되고 통신할 수 있는 능력."
+                }
+            },
+            {
+                "category": "Energy",
+                "date": "2026-06-07",
+                "title": "주요 철강 기업들, 글로벌 탄소 가격 책정 프레임워크에 힘입어 수조 달러 규모 탈탄소화 협약 발표",
+                "summary": "기후 변화에 대처하고 임박한 글로벌 탄소 가격 책정 프레임워크에 보조를 맞추기 위한 역사적인 약속으로, 아르셀로미탈, 바오우 그룹, 일본제철을 포함한 세계 최대 철강 생산자 컨소시엄은 오늘 향후 10년간 운영 탈탄소화에 전례 없는 2조 5천억 달러를 투자하는 공동 이니셔티브를 발표했습니다. '그린 스틸 연합'이라 불리는 이 거대한 투자는 수소 기반 직접환원철(DRI) 기술, 탄소 포집 및 저장(CCS) 시스템을 신속하게 배포하고, 전 세계 시설 전반에 걸쳐 100% 재생 에너지원으로 전환하는 것을 목표로 합니다. 이러한 움직임은 탄소 집약적 산업의 경제성을 근본적으로 변화시킬 G20의 글로벌 탄소 가격 책정 프레임워크에 대한 거의 최종적인 합의를 직접적으로 인정한 것입니다. 이 연합은 선제적인 투자가 미래 규제 요건을 충족할 뿐만 아니라, 저탄소 제품을 점점 더 요구하는 시장에서 경쟁 우위를 창출하여 중공업의 미래를 재정의하고 다른 감축이 어려운 부문에 선례를 만들 것으로 예상합니다.",
+                "insight": "주요 철강 기업들의 수조 달러 규모 탈탄소화 협약은 임박한 글로벌 탄소 가격 책정 체제의 직접적인 구조적 결과로, 한때 외부 효과였던 것이 핵심 사업 비용이자 전략적 명령으로 변모하고 있습니다. 이는 녹색 산업 기술에 대한 전례 없는 투자 물결을 촉진하여 수소 생산, 산업용 CCS, 그리고 재생 에너지 제공업체에 대한 완전히 새로운 시장 역학을 창출할 것입니다. 철강 부문에는 사활이 걸린 순간입니다. 조기 투자하는 기업은 경쟁 우위를 확보하는 반면, 뒤처지는 기업은 탄소 부채 증가와 좌초 자산 및 시장 점유율 침식 위험에 직면하게 됩니다. 이는 녹색 기술 분야 내에서 상당한 M&A 활동을 촉진하고 저탄소 산업 제품에 대한 '그린 프리미엄' 개발을 가속화할 것입니다. 투자자들은 탈탄소화 솔루션을 제공하는 기업과 순배출 제로 달성을 위한 명확하고 실행 가능한 경로를 가진 기업에 포지션을 취해야 합니다. 탄소 효율성이 기업 가치의 새로운 척도가 되기 때문입니다.",
+                "impact": {
+                    "score": 8,
+                    "bias": "Neutral",
+                    "label": "Industrial Decarbonization Wave"
+                },
+                "readTime": "9 min read",
+                "glossary": {
+                    "수소 기반 직접환원철(Hydrogen-based Direct Reduced Iron, DRI)": "코크스 대신 수소를 환원제로 사용하여 철을 생산하는 제강 공정으로, 전통적인 고로 방식에 비해 탄소 배출량을 크게 줄인다.",
+                    "탄소 포집 및 저장(Carbon Capture and Storage, CCS)": "산업 원천 및 발전소에서 발생하는 이산화탄소 배출량을 포집하여 대기 중으로 방출되는 것을 막고, 이를 운송하여 영구적으로 지하에 저장하는 기술."
+                }
+            }
+        ],
+        "en": [
+            {
+                "category": "Trade",
+                "date": "2026-06-07",
+                "title": "Global Manufacturing Giant 'Proterra Corp' Unveils Radical Supply Chain De-risking Strategy, Signals End of Global Factory Model",
+                "summary": "Proterra Corporation, a leading global diversified manufacturer, today announced a sweeping overhaul of its global production and sourcing strategy, citing persistent geopolitical fragmentation, increased trade protectionism, and irreversible shifts in logistics costs. The multi-year plan involves divesting from several single-point-of-failure production hubs in Asia and establishing at least three regionally self-sufficient manufacturing ecosystems across North America, Europe, and ASEAN. This move, which will require an estimated $30 billion in capital expenditure over the next five years, is a direct response to the ongoing Red Sea reroutes, US-China critical mineral controls, and the acceleration of regional trade blocs. Proterra stated its aim is to enhance supply chain resilience, ensure security of critical inputs, and mitigate future geopolitical shocks, even if it entails higher localized production costs. Analysts view this as a bellwether for other multinational corporations, signaling a definitive end to the decades-long pursuit of pure global cost optimization in favor of redundancy and regionalization.",
+                "insight": "Proterra's announcement is a quintessential example of \"de-globalization\" manifesting at the corporate level, driven by escalating geopolitical risk premiums. Structurally, it signifies a forced realignment of global capital flows towards resilient, regionally diversified production capabilities, rather than single, cost-optimized hubs. This will invariably lead to higher, but more stable, operational costs and persistent \"supply chain inflation\" as efficiency yields to security. Investors should prioritize companies with strong balance sheets capable of financing such capital-intensive reconfigurations, those with robust government partnerships (friendshoring), and those operating within diversified and secure regional supply networks. Furthermore, it foreshadows a potential re-rating of valuations for companies historically optimized for global arbitrage, now facing significant stranded asset risks in vulnerable regions.",
+                "impact": {
+                    "score": 9,
+                    "bias": "Bearish",
+                    "label": "Structural Deglobalization"
+                },
+                "readTime": "9 min read",
+                "glossary": {
+                    "Geopolitical Risk Premium": "An additional cost or discount applied to assets, investments, or goods due to political instability, conflict, or trade tensions in a particular region.",
+                    "Regional Self-Sufficiency": "An economic strategy where a region aims to produce most of its essential goods and services internally, reducing reliance on external supply chains for security and resilience."
+                }
+            },
+            {
+                "category": "Tech",
+                "date": "2026-06-07",
+                "title": "Global Financial Messaging Network SWIFT Commits to Quantum-Safe Transition by 2028, Unveils $50B Infrastructure Upgrade",
+                "summary": "SWIFT (Society for Worldwide Interbank Financial Telecommunication), the primary secure financial messaging network connecting over 11,000 financial institutions worldwide, today announced an ambitious plan to transition its entire global infrastructure to Post-Quantum Cryptography (PQC) by the end of 2028. This monumental undertaking, estimated to cost over $50 billion in hardware, software, and training, is a direct and urgent response to the recent quantum computing breakthrough that demonstrated the vulnerability of current encryption standards. SWIFT emphasized the imperative to protect the integrity and confidentiality of trillions of dollars in daily financial transactions from potential quantum attacks. The initiative includes mandating PQC adoption for all member institutions, developing new quantum-resistant protocols, and establishing a global PQC testbed. This move underscores the critical nature of the quantum security emergency and signifies a massive, sector-wide capital reallocation to future-proof the global financial system.",
+                "insight": "SWIFT's aggressive PQC transition plan is a bellwether for the structural re-architecture of critical digital infrastructure worldwide. This isn't just an IT upgrade; it's a fundamental re-pricing of cybersecurity risk, leading to a massive, non-discretionary capital expenditure cycle across the financial sector and beyond. The shift will create a boom for PQC solution providers, specialized cybersecurity firms, and quantum-safe hardware manufacturers. However, it also presents significant implementation challenges, including ensuring interoperability, managing legacy systems, and addressing potential skill gaps. For financial institutions, failure to comply will mean systemic risk exposure and potentially losing access to global financial flows. This structural imperative will likely drive consolidation in the cybersecurity space and accelerate regulatory mandates for quantum-safe compliance, creating a new, highly specialized segment within the tech and finance industries.",
+                "impact": {
+                    "score": 10,
+                    "bias": "Volatile",
+                    "label": "Digital Infrastructure Overhaul"
+                },
+                "readTime": "10 min read",
+                "glossary": {
+                    "Cryptographic Agility": "The ability of an IT system or network to easily update or swap out its cryptographic algorithms and protocols without major disruption, crucial for adapting to new threats like quantum computing.",
+                    "Interoperability": "The ability of different computer systems, devices, applications or products to connect and communicate in a coordinated way, without any special effort from the end user."
+                }
+            },
+            {
+                "category": "Energy",
+                "date": "2026-06-07",
+                "title": "Major Steelmakers Announce Multi-Trillion Dollar Decarbonization Pact, Driven by Global Carbon Pricing Framework",
+                "summary": "In a historic commitment to combating climate change and aligning with impending global carbon pricing, a consortium of the world's largest steel producers, including ArcelorMittal, Baowu Group, and Nippon Steel, today unveiled a joint initiative to invest an unprecedented $2.5 trillion over the next decade in decarbonizing their operations. This colossal investment, dubbed the \"Green Steel Alliance,\" aims to rapidly deploy hydrogen-based direct reduced iron (DRI) technology, carbon capture and storage (CCS) systems, and transition to 100% renewable energy sources across their global facilities. The move is a direct acknowledgment of the G20's near-final agreement on a global carbon pricing framework, which will fundamentally alter the economics of carbon-intensive industries. The alliance anticipates that proactive investment will not only meet future regulatory requirements but also create a competitive advantage in a market increasingly demanding low-carbon products, redefining the future of heavy industry and setting a precedent for other hard-to-abate sectors.",
+                "insight": "This multi-trillion-dollar decarbonization pact by major steelmakers is a direct structural consequence of the impending global carbon pricing regime, transforming what was once an externality into a core business cost and strategic imperative. It will catalyze an unprecedented investment wave in green industrial technologies, creating entirely new market dynamics for hydrogen production, industrial CCS, and renewable energy providers. For the steel sector, it's a make-or-break moment: those who invest early will gain a competitive edge, while those who lag face rising carbon liabilities and the risk of stranded assets and market share erosion. This will drive significant M&A activity within the green tech space and accelerate the development of \"green premiums\" for low-carbon industrial goods. Investors should position themselves in companies supplying decarbonization solutions and those with clear, executable pathways to achieving net-zero emissions, as carbon efficiency becomes a new metric for corporate value.",
+                "impact": {
+                    "score": 8,
+                    "bias": "Neutral",
+                    "label": "Industrial Decarbonization Wave"
+                },
+                "readTime": "9 min read",
+                "glossary": {
+                    "Hydrogen-based Direct Reduced Iron (DRI)": "A steelmaking process that uses hydrogen as a reducing agent instead of coke, significantly reducing carbon emissions compared to traditional blast furnace methods.",
+                    "Carbon Capture and Storage (CCS)": "Technologies that capture carbon dioxide emissions from industrial sources and power generation, preventing their release into the atmosphere, and then transport and permanently store them underground."
+                }
+            }
+        ]
+    },
     "2026-06-06": {
         "ko": [
             {
