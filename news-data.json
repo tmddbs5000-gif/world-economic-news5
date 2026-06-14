@@ -1,4 +1,112 @@
 {
+    "2026-06-14": {
+        "ko": [
+            {
+                "category": "Trade",
+                "date": "2026-06-14",
+                "title": "아세안 국가들, G7/EU CBAM에 대응하여 '지속가능한 무역 및 투자 협정(STIP)' 공개, 역내 친환경 공급망 우선시",
+                "summary": "G7/EU 통합 탄소 국경 조정 메커니즘(CBAM)의 즉각적인 전략적 영향에 대응하여, 오늘 싱가포르와 인도네시아가 주도하는 동남아시아 국가 연합(ASEAN) 회원국들이 '지속가능한 무역 및 투자 협정(STIP)'의 서명을 발표했습니다. 이 획기적인 협정은 역내 탄소 회계 표준을 조화시키고, 친환경 산업 개발을 위한 공동 투자를 촉진하며, 주요 친환경 기술 공급망을 프렌드쇼어링하는 것을 목표로 합니다. STIP는 아세안 내 녹색 인프라, 재생 에너지 및 저탄소 제조 프로젝트에 대한 신속한 자본 배치를 위한 전용 기금을 포함하며, 역내 기업들이 새로운 글로벌 무역 질서에서 경쟁력을 유지할 수 있도록 설계된 세금 인센티브 및 규제 간소화 조치를 제공합니다. 이는 글로벌 경제가 다극화된 기후 분할 블록으로 더욱 심화됨에 따라 아세안이 응집력 있는 '녹색 무역 회랑'을 구축하려는 전략적 움직임을 의미하며, '남남 협력'의 새로운 시대를 열 잠재력을 가지고 있습니다.",
+                "insight": "아세안의 STIP 출범은 글로벌 무역 지형의 구조적 재편을 반영하는 중추적인 순간입니다. 이는 G7/EU CBAM이 전 세계적으로 촉매 효과를 일으키고 있음을 보여주며, 국가들이 이제 경쟁 우위를 확보하기 위해 자체적인 '기후 연계 보호주의' 전략을 개발하고 있음을 나타냅니다. 이 이니셔티브는 아세안 역내에서 막대한 녹색 인프라 및 제조 투자 주기를 유발하고, 역내 경제 통합을 강화하며, 기존 글로벌 가치 사슬을 더욱 파편화할 것입니다. 투자자들은 동남아시아의 지속가능성 표준을 준수하고 역내 공급망에 깊이 뿌리내린 기업들에게 상당한 성장 기회를 찾아야 합니다. 동시에, 이로 인해 여러 무역 블록 간에 복잡한 규제 및 물류 마찰이 발생할 가능성이 있으며, 이는 글로벌 무역 흐름에 휘발성을 더할 것입니다.",
+                "impact": {
+                    "score": 9,
+                    "bias": "Volatile",
+                    "label": "역내 녹색 블록 형성"
+                },
+                "readTime": "8 min read",
+                "glossary": {
+                    "원산지 규정 (Rules of Origin, ROO)": "국제 무역에서 제품이 생산된 '국적'을 결정하는 기준 및 법률로, 관세, 수량 제한 및 무역 협정 적용에 필수적이다.",
+                    "탄소 누출 (Carbon Leakage)": "엄격한 기후 정책을 가진 국가의 기업이 탄소 규제가 덜 엄격한 국가로 생산을 이전하여 전 세계 총 배출량이 증가하는 현상."
+                }
+            },
+            {
+                "category": "Tech",
+                "date": "2026-06-14",
+                "title": "UN-GQTIC, '글로벌 양자 준비 지수' 발표, PQC 진행 상황 불균등 및 국경 간 기술 이전 시급성 강조",
+                "summary": "UN이 지원하는 글로벌 양자 위협 정보 센터(UN-GQTIC)가 오늘 '글로벌 양자 준비 지수(GQRI)'의 첫 번째 보고서를 발표하며, 전 세계적으로 포스트 양자 암호화(PQC)로의 전환 진행 상황이 심각하게 불균등하다고 경고했습니다. 보고서는 2028년 양자 보안 상호운용성 프로토콜(QSIP) 준수 기한까지 순조롭게 진행될 것으로 예상되는 국가는 소수에 불과하며, 많은 개발 도상국들이 전문 지식, 인프라 및 자원 부족으로 인해 뒤처지고 있다고 밝혔습니다. UN-GQTIC는 중요 인프라가 양자 공격에 대한 취약성이 커지고 있음을 강조하고, 선진국과 개발 도상국 간의 격차가 벌어지는 '양자 보안 격차'를 완화하기 위해 가속화된 국경 간 기술 이전, 교육 프로그램 및 공동 연구 개발 이니셔티브를 촉구했습니다. 이 보고서는 글로벌 디지털 시스템에 대한 시스템적 위험을 강조하며 국제 사회에 조율된 대응을 촉구합니다.",
+                "insight": "GQRI의 공개는 PQC 채택이 단순한 기술 업그레이드를 넘어 지정학적 필수 과제임을 구조적으로 명확히 합니다. 이는 '양자 보안 격차'가 확대되는 현실을 강조하고, 뒤처진 국가들의 디지털 주권에 대한 실존적 위험을 제기합니다. 이 보고서는 PQC 솔루션에 대한 국제 원조 및 기술 이전 프로그램으로의 상당한 공공 자금 유입을 촉진할 가능성이 높으며, 이는 개발 도상 시장의 PQC 제공업체 및 통합업체에게 새로운 기회를 창출합니다. 또한, 국가들이 자신의 '양자 준비' 지위를 향상시키기 위해 노력함에 따라 국방, 금융 및 기타 중요 부문 전반에 걸쳐 신속한 자본 지출 사이클을 촉발할 것입니다. 투자자들은 선진 양자 안전 기술의 개발뿐만 아니라 글로벌 PQC 배포의 복잡한 물류를 지원하는 교육 및 통합 서비스에 집중하는 기업에 주목해야 합니다.",
+                "impact": {
+                    "score": 8,
+                    "bias": "Volatile",
+                    "label": "양자 준비 격차"
+                },
+                "readTime": "8 min read",
+                "glossary": {
+                    "부채널 공격 (Side-Channel Attack)": "암호화 시스템의 물리적 구현에서 파생된 정보(예: 전력 소비, 시간 타이밍)를 분석하여 민감한 데이터(예: 암호화 키)를 추출하려는 공격으로, 양자 안전 구현에서도 여전히 위험할 수 있다.",
+                    "격자 기반 암호화 (Lattice-based Cryptography)": "격자(수학적 구조)의 계산적 어려움에 기반한 포스트 양자 암호화(PQC) 알고리즘 계열로, 양자 컴퓨터 공격에 저항하는 것으로 알려져 있다."
+                }
+            },
+            {
+                "category": "Finance",
+                "date": "2026-06-14",
+                "title": "JP모건 주도 컨소시엄, '인터뱅크 토큰화 자산 네트워크(ITAN)' 공개, 녹색 채권 및 전략 원자재 우선시",
+                "summary": "글로벌 금융 기관 컨소시엄이 JP모건 체이스가 주도하는 '인터뱅크 토큰화 자산 네트워크(ITAN)'의 공식 출범을 오늘 발표했습니다. 이 블록체인 기반 플랫폼은 특히 토큰화된 녹색 채권, 탄소 크레딧, 그리고 글로벌 전략 광물 토큰화 기금(GSMTF) 및 글로벌 기후 회복력 기금(GCRF)의 영향을 받는 전략 원자재에 대한 기관 투자를 촉진하기 위해 설계되었습니다. ITAN은 이전에 비유동적이었던 실물 자산(RWA)에 전례 없는 투명성, 유동성, 그리고 효율성을 제공하는 것을 목표로 하며, 글로벌 금융 규제 당국이 토큰화된 자산에 대한 통합 프레임워크를 착수한 데 대한 직접적인 대응입니다. 이 플랫폼은 대규모 국경 간 거래에 대한 결제 시간을 대폭 단축하고 마찰 비용을 줄여, 주류 금융에서 블록체인 기술의 역할을 더욱 공고히 하고 있습니다.",
+                "insight": "ITAN의 출범은 실물 자산(RWA) 토큰화가 금융 시장의 변두리에서 제도적 핵심으로 이동하는 데 있어 구조적인 이정표입니다. 이는 규제 당국의 명확성 추진과 TradFi(전통 금융)가 블록체인 기술의 혁신적 잠재력을 수용하는 데 대한 강력한 검증입니다. ITAN은 녹색 금융 및 전략 자원 부문으로의 효율적인 자본 흐름을 위한 강력한 인프라를 구축하여, 이전에 접근하기 어려웠던 투자를 대규모로 유치할 것입니다. 이러한 플랫폼은 상호 운용성 표준을 설정하고 블록체인 기반 시장 내 네트워크 효과를 촉진하며, 궁극적으로 토큰화된 자산 시장의 깊이와 성숙도를 높일 것입니다. 투자자들은 이 새로운 생태계의 핵심 인프라를 제공하는 기술 및 금융 서비스 기업들에게 중대한 기회를 찾아야 합니다.",
+                "impact": {
+                    "score": 9,
+                    "bias": "Bullish",
+                    "label": "TradFi 디지털 자산 통합"
+                },
+                "readTime": "8 min read",
+                "glossary": {
+                    "분산원장기술 (Distributed Ledger Technology, DLT)": "중앙 관리 기관 없이 여러 참여자가 분산된 네트워크에서 거래를 기록하고 공유하는 디지털 시스템으로, 블록체인 기술의 기반이 된다.",
+                    "아토믹 스왑 (Atomic Swap)": "중개자 없이 서로 다른 블록체인 간에 두 가지 암호화폐를 직접 교환할 수 있게 하는 스마트 계약 기술로, 교환이 성공하거나 둘 다 실패하는 '아토믹' 방식으로 이루어진다."
+                }
+            }
+        ],
+        "en": [
+            {
+                "category": "Trade",
+                "date": "2026-06-14",
+                "title": "ASEAN Nations Unveil 'Sustainable Trade & Investment Pact' (STIP) in Response to G7/EU CBAM, Prioritizing Regional Green Supply Chains",
+                "summary": "Responding to the immediate strategic ramifications of the G7/EU joint Carbon Border Adjustment Mechanism (CBAM), member nations of the Association of Southeast Asian Nations (ASEAN), led by Singapore and Indonesia, today announced the signing of the 'Sustainable Trade & Investment Pact (STIP).' This landmark accord aims to harmonize regional carbon accounting standards, foster joint investments in green industrial development, and friendshore critical green technology supply chains within the bloc. The STIP includes a dedicated fund for accelerated capital deployment into green infrastructure, renewable energy, and low-carbon manufacturing projects across ASEAN, offering tax incentives and regulatory streamlining designed to keep regional firms competitive in the new global trade order. This signifies a strategic move by ASEAN to establish a cohesive 'green trade corridor' as the global economy further bifurcates into multi-polar, climate-segmented blocs, with the potential to usher in a new era of South-South cooperation.",
+                "insight": "The launch of ASEAN's STIP marks a pivotal moment, reflecting the structural reconfiguration of the global trade landscape. It demonstrates the catalytic effect of the G7/EU CBAM worldwide, indicating that nations are now developing their own 'climate-aligned protectionism' strategies to secure competitive advantages. This initiative will trigger a massive green infrastructure and manufacturing investment cycle within the ASEAN bloc, strengthening intra-regional economic integration and further fragmenting existing global value chains. Investors should look for significant growth opportunities in companies that align with Southeast Asia's sustainability standards and are deeply embedded in regional supply chains. Concurrently, this could lead to complex regulatory and logistical frictions between various trade blocs, adding volatility to global trade flows.",
+                "impact": {
+                    "score": 9,
+                    "bias": "Volatile",
+                    "label": "Regional Green Bloc Formation"
+                },
+                "readTime": "8 min read",
+                "glossary": {
+                    "Rules of Origin (ROO)": "Criteria and laws that determine the 'nationality' of a product in international trade, essential for applying tariffs, quotas, and trade agreement provisions.",
+                    "Carbon Leakage": "The phenomenon where businesses in countries with stringent climate policies shift production to countries with less strict carbon regulations, leading to an overall increase in global emissions."
+                }
+            },
+            {
+                "category": "Tech",
+                "date": "2026-06-14",
+                "title": "UN-GQTIC Releases 'Global Quantum Readiness Index', Highlighting Uneven PQC Progress and Urgent Need for Cross-Border Tech Transfer",
+                "summary": "The UN-backed Global Quantum Threat Intelligence Center (UN-GQTIC) today unveiled its inaugural 'Global Quantum Readiness Index (GQRI)' report, warning of severely uneven progress in the worldwide transition to Post-Quantum Cryptography (PQC). The report indicates that only a handful of nations are on track to meet the 2028 Quantum-Secure Interoperability Protocol (QSIP) compliance deadline, with many developing nations lagging due to a deficit in expertise, infrastructure, and resources. The UN-GQTIC highlighted the escalating vulnerability of critical infrastructure to quantum attacks and urged accelerated cross-border technology transfer, training programs, and collaborative R&D initiatives to mitigate the widening 'quantum security divide' between advanced and developing economies. The report underscores the systemic risk to global digital systems and calls for a coordinated international response.",
+                "insight": "The release of the GQRI structurally clarifies that PQC adoption is a geopolitical imperative, not merely a technical upgrade. It emphasizes the burgeoning reality of a widening 'quantum security divide,' posing existential risks to the digital sovereignty of lagging nations. This report is likely to catalyze significant public funding into international aid and technology transfer programs for PQC solutions, creating new opportunities for PQC providers and integrators in developing markets. It will also spur a rapid capital expenditure cycle across defense, finance, and other critical sectors as nations strive to improve their 'quantum readiness' standing. Investors should look at companies focused not only on the development of advanced quantum-safe technologies but also on the training and integration services that support the complex logistics of global PQC deployment.",
+                "impact": {
+                    "score": 8,
+                    "bias": "Volatile",
+                    "label": "Quantum Readiness Gap"
+                },
+                "readTime": "8 min read",
+                "glossary": {
+                    "Side-Channel Attack": "An attack that attempts to extract sensitive data (e.g., cryptographic keys) by analyzing information derived from the physical implementation of a cryptosystem, such as power consumption or timing variations, which can still pose risks even for quantum-safe implementations.",
+                    "Lattice-based Cryptography": "A family of Post-Quantum Cryptography (PQC) algorithms based on the computational difficulty of certain problems on mathematical lattices, known to be resistant to attacks from quantum computers."
+                }
+            },
+            {
+                "category": "Finance",
+                "date": "2026-06-14",
+                "title": "JPMorgan-led Consortium Unveils 'Interbank Tokenized Asset Network' (ITAN), Prioritizing Green Bonds and Strategic Commodities",
+                "summary": "A consortium of global financial institutions, spearheaded by JPMorgan Chase, today announced the official launch of the 'Interbank Tokenized Asset Network (ITAN).' This blockchain-based platform is specifically designed to facilitate institutional investment in tokenized green bonds, carbon credits, and strategic commodities, such as those influenced by the Global Strategic Minerals Tokenization Fund (GSMTF) and Global Climate Resilience Fund (GCRF). ITAN aims to provide unprecedented transparency, liquidity, and efficiency for previously illiquid Real World Assets (RWA), serving as a direct response to global financial regulators' initiation of a unified framework for tokenized assets. The platform promises to significantly reduce settlement times and frictional costs for large-scale, cross-border transactions, further cementing blockchain technology's role in mainstream finance.",
+                "insight": "The launch of ITAN represents a structural milestone in the movement of Real World Asset (RWA) tokenization from the periphery to the institutional core of financial markets. It is a robust validation of both the regulatory push for clarity and TradFi's embrace of blockchain technology's transformative potential. ITAN establishes a robust infrastructure for efficient capital flow into green finance and strategic resource sectors, attracting large-scale investment into previously inaccessible assets. Such platforms will set interoperability standards and foster network effects within blockchain-based markets, ultimately increasing the depth and maturity of the tokenized asset market. Investors should identify significant opportunities in technology and financial services firms providing core infrastructure to this nascent ecosystem.",
+                "impact": {
+                    "score": 9,
+                    "bias": "Bullish",
+                    "label": "TradFi Digital Asset Integration"
+                },
+                "readTime": "8 min read",
+                "glossary": {
+                    "Distributed Ledger Technology (DLT)": "A digital system for recording and sharing transactions across a decentralized network of participants without a central administrator, forming the basis of blockchain technology.",
+                    "Atomic Swap": "A smart contract technology that enables the direct exchange of two different cryptocurrencies between separate blockchains without the need for a central intermediary, ensuring the exchange either succeeds or fails for both parties simultaneously."
+                }
+            }
+        ]
+    },
     "2026-06-13": {
         "ko": [
             {
