@@ -1,4 +1,112 @@
 {
+    "2026-07-17": {
+        "ko": [
+            {
+                "category": "Geopolitics|Macro|Tech|Trade|Regulatory",
+                "date": "2026-07-17",
+                "title": "EU, G7-BRICS+ DLT-PQC 분열 연결 위한 '디지털 연결 협약' 공개, 상호 운용성 표준에 1천억 유로 투자 약속",
+                "summary": "글로벌 디지털 파편화 심화를 완화하기 위한 전략적 움직임으로, 유럽연합(EU)은 오늘 야심 찬 '디지털 연결 협약'을 발표했습니다. 이 이니셔티브는 G7 연합 국가(유니티레저/QSSCA)와 BRICS+ 블록(디지털 실크로드 프로토콜)이 채택한 분산원장기술(DLT) 및 포스트 양자 암호화(PQC) 프레임워크를 원활하게 연결할 수 있는 상호 운용성 표준을 개발하고 구현하기 위해 향후 5년간 1천억 유로를 투입할 것을 약속합니다. 이 협약은 디지털 인프라에 대한 '중립적 설계(neutral-by-design)' 접근 방식을 강조하며, 새로운 분할된 디지털 생태계에도 불구하고 지속적인 글로벌 무역, 데이터 교환 및 금융 안정성을 보장하기 위한 공통 기술 게이트웨이 및 규제 샌드박스를 육성합니다. EU 지도자들은 '스플린터넷' 시나리오를 방지하고, 다국적 공급망을 보호하며, 점점 더 복잡해지는 디지털 환경에서 국경 간 경제 관계를 유지하는 것이 필수적임을 강조했습니다. 이 대담한 선언은 EU를 고조되는 디지털 주권 경쟁에서 중요한 중재자로 자리매김합니다.",
+                "insight": "이 '디지털 연결 협약'은 EU가 부상하는 G7-BRICS+ 디지털 분열에 대한 선제적이고 구조적인 대응책입니다. EU는 어느 한쪽 블록에 전적으로 편향하기보다는, 디지털 영역에서 새로운 지정학적 전략인 상호 운용성의 제3의 중재 계층을 만들고자 합니다. 구조적으로 이는 교차 플랫폼 DLT-PQC 솔루션 및 API 개발에 상당한 투자를 유도하여 '중립적' 기술 제공업체에게 새로운 시장 기회를 창출할 것입니다. 이는 조화로운 기술적 연결을 제공함으로써 다국적 기업의 규제 준수 부담을 줄이는 것을 목표로 합니다. 이 협약의 성공은 기술-지정학적 중립성의 선례를 만들 수 있지만, 실패할 경우 EU는 경쟁하는 디지털 표준의 전장이 되거나, 더 나쁘게는 단호한 '스플린터넷'에 대항하여 그 노력이 비효율적이 될 위험이 있습니다. 이 움직임은 상이한 디지털 표준의 불가피성을 인정하면서도, 그 경제적 파급 효과를 관리하고 개방 시장과 규칙 기반 디지털 질서에 대한 EU의 약속을 강화하고자 합니다.",
+                "impact": {
+                    "score": 8,
+                    "bias": "Volatile",
+                    "label": "디지털 다리 건설"
+                },
+                "readTime": "8 min read",
+                "glossary": {
+                    "디지털 연결 협약": "경쟁하는 글로벌 블록이 채택한 이질적인 DLT 및 PQC 프레임워크를 연결하기 위한 상호 운용성 표준을 개발 및 구현하여, 국경 간 원활한 디지털 운영을 촉진하는 것을 목표로 하는 EU 이니셔티브.",
+                    "중립적 설계 인프라": "다수의 잠재적으로 경쟁하는 기술 표준 및 규제 환경과 호환되고 상호 운용 가능하도록 의도적으로 설계된 디지털 시스템 및 프레임워크로, 편향 없는 글로벌 데이터 흐름을 촉진한다."
+                }
+            },
+            {
+                "category": "Tech|Healthcare|Cybersecurity|Regulatory|ESG|Industrial",
+                "date": "2026-07-17",
+                "title": "글로벌 헬스 원장 연합 결성, 2030년까지 환자 데이터 및 제약 공급망에 유니티레저-QSSCA 의무화, 1조 달러 건강 혁신 목표",
+                "summary": "세계 유수의 의료 서비스 제공업체, 제약 대기업, 의료 기기 제조업체 및 공중 보건 기관 연합은 오늘 '글로벌 헬스 원장 연합' 결성을 발표했습니다. 이 기념비적인 이니셔티브는 민감한 환자 건강 기록, 의약품 원산지, 의료 기기 공급망 및 임상 시험 데이터 전반에 걸쳐 프로젝트 유니티레저 DLT 표준과 QSSCA PQC 프로토콜 채택을 2030년까지 의무화합니다. 1조 달러 이상의 건강 혁신 및 효율성 증대를 목표로 하는 연합은 양자 위협에 대한 데이터 보안 강화, 위조 의약품 방지, 필수 의료 용품의 공급망 투명성 개선 및 안전하고 변경 불가능한 데이터 공유를 통한 신약 발견 가속화를 강조합니다. 이 움직임은 금융 및 산업 부문의 성공적인 DLT-PQC 통합을 기반으로 하며, 환자 프라이버시 및 공중 보건 탄력성을 우선시하는 양자 안전하고 글로벌 상호 운용 가능한 디지털 건강 생태계를 구축하고자 합니다. 전 세계 규제 기관들은 지원 가이드라인을 발표할 것으로 예상됩니다.",
+                "insight": "이 '글로벌 헬스 원장 연합'의 설립은 DLT-PQC가 가장 데이터 민감하고 중요한 부문 중 하나인 글로벌 의료 분야로 심오하게 구조적으로 확장됨을 의미합니다. 이 움직임은 양자 위협이 금융 또는 에너지 그리드뿐만 아니라 공중 보건 및 개인 복지의 기반 자체에 실존적 위험을 제기한다는 인식을 나타냅니다. 구조적으로 이는 건강 데이터 관리 시스템의 완전한 재설계를 강제하여 PQC 지원 의료 기기, 보안 DLT 환자 포털 및 감사 가능한 제약 공급망 솔루션에 대한 전례 없는 수요를 창출할 것입니다. 연합이 환자 데이터 기밀성과 공급망 무결성 모두에 초점을 맞추는 것은 DLT-PQC의 이중적인 힘을 강조합니다. 이는 대규모 R&D를 촉진하고, 전문 건강 기술 제공업체를 통합하며, 의료 데이터 보안 및 제약 추적성에 대한 글로벌 표준을 재정의할 것입니다. 이는 국가 및 개인 수준 모두에서 '디지털 건강 주권'에 대한 새로운 벤치마크를 설정하여, 안전한 의료 정보에 대한 접근을 민주화하고 글로벌 규모의 의료 혁신을 가속화할 수 있습니다.",
+                "impact": {
+                    "score": 10,
+                    "bias": "Strongly Bullish",
+                    "label": "의료 디지털 도약"
+                },
+                "readTime": "8 min read",
+                "glossary": {
+                    "글로벌 헬스 원장 연합": "환자 데이터, 제약 공급망을 보호하고 건강 혁신을 촉진하기 위해 글로벌 건강 생태계 전반에 걸쳐 유니티레저 DLT 및 QSSCA PQC 표준을 통합하는 데 전념하는 의료 이해관계자 컨소시엄.",
+                    "양자 안전 디지털 건강 생태계": "미래 양자 컴퓨팅 공격으로부터 민감한 의료 데이터를 보호하고 DLT를 투명성과 무결성을 위해 활용하도록 설계된 포스트 양자 암호화로 보호되는 포괄적이고 글로벌 상호 운용 가능한 의료 정보 및 서비스 네트워크."
+                }
+            },
+            {
+                "category": "Macro|Geopolitics|Finance|Development|Tech|Regulatory",
+                "date": "2026-07-17",
+                "title": "세계은행 보고서, '분할된 디지털 경제' 경고, DLT-PQC 블록 형성 속 상호 운용성 없이는 2035년까지 글로벌 GDP 1.5% 감소 전망",
+                "summary": "세계은행은 오늘 '2026 글로벌 개발 전망: 디지털 격차 탐색' 보고서를 발표하며, '분할된 디지털 경제'의 부상에 대한 심각한 그림을 그렸습니다. 이 보고서는 G7 연합(유니티레저/QSSCA)과 BRICS+ 주도(디지털 실크로드 프로토콜) DLT 및 PQC 표준 간의 새롭게 부상하는 분열이 관리되지 않을 경우, 거래 비용 증가, 규제 준수 복잡성 및 파편화된 디지털 무역 흐름으로 인해 2035년까지 글로벌 GDP에 1.5%의 부담을 줄 수 있다고 경고합니다. DLT-PQC 채택의 혁신 및 보안 이점을 인정하면서도, 은행은 블록 간 상호 운용성 표준의 부족이 개발도상국에 불균형적으로 영향을 미쳐 기존의 '디지털 보안 격차'를 심화시키고 경제적 불평등을 악화시킬 것이라고 강조합니다. 이 보고서는 디지털 전환의 둔화를 방지하고 공평한 경제 성장을 보장하기 위해, 잠재적으로 UN 지원 '글로벌 디지털 상호 운용성 포럼'을 통해 긴급한 국제 협력, 규제 조화 및 기술적 연결 구축을 촉구합니다.",
+                "insight": "이 세계은행 보고서는 진행 중인 '디지털 주권 경쟁'과 관련된 거시경제적 위험을 정량화하는 중요한 구조적 분석을 제시합니다. 구체적인 GDP 감소를 예상함으로써, 이 보고서는 논의를 기술적 선택에서 글로벌 경제 통합 및 발전에 대한 근본적인 위협으로 격상시킵니다. 구조적으로 이 보고서는 세계은행이 일반적인 디지털 채택을 옹호하는 것에서 벗어나 지속 가능한 개발을 위한 디지털 인프라의 '품질 및 상호 운용성'을 최우선으로 강조하고 있음을 시사합니다. 이는 G7과 BRICS+ 블록 모두에게 상호 운용 가능한 솔루션(예: EU가 제안한 '디지털 연결 협약')에 투자하도록 압력을 가하여, 그렇지 않을 경우 각자의 디지털 경제가 고립될 위험을 강조할 것입니다. 이 보고서는 또한 개발도상국을 이러한 지정학적 기술 투쟁의 잠재적인 '디지털 부수적 피해'로 간주하여, DRIF 또는 BRICS+ 디지털 주권 기금을 통해 목표화된 '기술 원조' 및 역량 구축 프로그램의 필요성을 강화하지만, 명시적인 상호 운용성 의무를 수반합니다. 이 보고서는 디지털 파편화를 통해 글로벌 경제 위험을 재정의합니다.",
+                "impact": {
+                    "score": 7,
+                    "bias": "Bearish",
+                    "label": "파편화 경고"
+                },
+                "readTime": "8 min read",
+                "glossary": {
+                    "분할된 디지털 경제": "상이한 기술 표준, 규제 프레임워크 및 지정학적 정렬에 의해 주도되는, 두 개 이상의 별개이고 잠재적으로 호환되지 않는 디지털 생태계로의 분열을 특징으로 하는 글로벌 경제 시스템.",
+                    "글로벌 디지털 상호 운용성 포럼": "상이한 글로벌 디지털 생태계 간의 원활한 통신 및 데이터 교환을 보장하기 위해 대화 촉진, 프로토콜 표준화 및 기술 솔루션 개발을 목표로 하는 제안된 국제 기구 또는 플랫폼."
+                }
+            }
+        ],
+        "en": [
+            {
+                "category": "Geopolitics|Macro|Tech|Trade|Regulatory",
+                "date": "2026-07-17",
+                "title": "EU Unveils 'Digital Connectivity Pact' to Bridge G7-BRICS+ DLT-PQC Divide, Pledges €100B for Interoperability Standards",
+                "summary": "In a strategic move to mitigate the burgeoning global digital fragmentation, the European Union today announced its ambitious 'Digital Connectivity Pact'. This initiative commits €100 billion over the next five years to develop and implement interoperability standards that can seamlessly bridge Distributed Ledger Technology (DLT) and Post-Quantum Cryptography (PQC) frameworks adopted by both G7-aligned nations (UnityLedger/QSSCA) and the BRICS+ bloc (Digital Silk Road Protocol). The Pact emphasizes a \"neutral-by-design\" approach to digital infrastructure, fostering common technical gateways and regulatory sandboxes to ensure continued global trade, data exchange, and financial stability despite emerging bifurcated digital ecosystems. EU leaders underscored the imperative of preventing a 'splinternet' scenario, safeguarding multinational supply chains, and maintaining cross-border economic ties in an increasingly complex digital landscape. This bold declaration positions the EU as a crucial mediator in the escalating digital sovereignty race.",
+                "insight": "The 'Digital Connectivity Pact' is a proactive structural response by the EU to the emergent G7-BRICS+ digital schism. Rather than aligning exclusively with either bloc, the EU aims to create a third, mediating layer of interoperability, which is a novel geopolitical strategy in the digital realm. Structurally, this will drive significant investment into cross-platform DLT-PQC solutions and API development, creating new market opportunities for 'neutral' tech providers. It seeks to reduce compliance burdens for multinational corporations by offering harmonized technical bridges. The Pact's success could establish a precedent for techno-geopolitical neutrality, but failure risks making the EU a battleground for competing digital standards, or worse, rendering its efforts ineffective against a determined 'splinternet'. This move acknowledges the inevitability of differing digital standards but seeks to manage their economic fallout, reinforcing the EU's commitment to open markets and a rules-based digital order.",
+                "impact": {
+                    "score": 8,
+                    "bias": "Volatile",
+                    "label": "Digital Bridge Building"
+                },
+                "readTime": "8 min read",
+                "glossary": {
+                    "Digital Connectivity Pact": "An EU initiative aiming to develop and implement interoperability standards to bridge divergent DLT and PQC frameworks adopted by competing global blocs, fostering seamless cross-border digital operations.",
+                    "Neutral-by-Design Infrastructure": "Digital systems and frameworks intentionally designed to be compatible and interoperable with multiple, potentially competing, technological standards and regulatory environments, promoting unbiased global data flow."
+                }
+            },
+            {
+                "category": "Tech|Healthcare|Cybersecurity|Regulatory|ESG|Industrial",
+                "date": "2026-07-17",
+                "title": "Global Health Ledger Alliance Forms, Mandates UnityLedger-QSSCA for Patient Data & Pharma Supply Chains by 2030, Aims for $1T in Health Innovation",
+                "summary": "A coalition of the world's leading healthcare providers, pharmaceutical giants, medical device manufacturers, and public health organizations today announced the formation of the 'Global Health Ledger Alliance'. This monumental initiative mandates the adoption of Project UnityLedger DLT standards and QSSCA PQC protocols across sensitive patient health records, drug provenance, medical device supply chains, and clinical trial data by 2030. Aiming to unlock over $1 trillion in health innovation and efficiency gains, the Alliance emphasizes enhancing data security against quantum threats, preventing counterfeit pharmaceuticals, improving supply chain transparency for critical medical supplies, and accelerating drug discovery through secure, immutable data sharing. The move builds upon the successful DLT-PQC integrations in finance and industrial sectors, seeking to establish a quantum-safe, globally interoperable digital health ecosystem that prioritizes patient privacy and public health resilience. Regulatory bodies worldwide are expected to issue supporting guidelines.",
+                "insight": "The establishment of the 'Global Health Ledger Alliance' signifies a profound structural expansion of DLT-PQC into one of the most data-sensitive and critical sectors: global healthcare. This move recognizes that quantum threats pose an existential risk not just to financial or energy grids, but to the very foundation of public health and individual well-being. Structurally, it will force a complete re-engineering of health data management systems, creating an unprecedented demand for PQC-enabled medical devices, secure DLT patient portals, and auditable pharmaceutical supply chain solutions. The Alliance's focus on both patient data confidentiality and supply chain integrity highlights the dual power of DLT-PQC. This will spur massive R&D, consolidate specialized health-tech providers, and redefine global standards for medical data security and pharmaceutical traceability. It sets a new benchmark for 'digital health sovereignty' at both national and individual levels, potentially democratizing access to secure healthcare information and accelerating medical breakthroughs on a global scale.",
+                "impact": {
+                    "score": 10,
+                    "bias": "Strongly Bullish",
+                    "label": "Healthcare Digital Leap"
+                },
+                "readTime": "8 min read",
+                "glossary": {
+                    "Global Health Ledger Alliance": "A consortium of healthcare stakeholders committed to integrating UnityLedger DLT and QSSCA PQC standards across the global health ecosystem to secure patient data, pharmaceutical supply chains, and foster health innovation.",
+                    "Quantum-Safe Digital Health Ecosystem": "A comprehensive, globally interoperable network of healthcare information and services, secured by Post-Quantum Cryptography, designed to protect sensitive medical data from future quantum computing attacks while leveraging DLT for transparency and integrity."
+                }
+            },
+            {
+                "category": "Macro|Geopolitics|Finance|Development|Tech|Regulatory",
+                "date": "2026-07-17",
+                "title": "World Bank Report Warns of 'Bifurcated Digital Economy', Projects 1.5% Global GDP Drag by 2035 Without Interoperability Amid DLT-PQC Bloc Formation",
+                "summary": "The World Bank today released its \"2026 Global Development Outlook: Navigating Digital Divides,\" painting a stark picture of a burgeoning 'Bifurcated Digital Economy'. The report warns that the emerging split between G7-aligned (UnityLedger/QSSCA) and BRICS+-led (Digital Silk Road Protocol) DLT and PQC standards, if unmanaged, could lead to a 1.5% drag on global GDP by 2035 due to increased transaction costs, compliance complexities, and fragmented digital trade flows. While acknowledging the innovation and security benefits of DLT-PQC adoption, the Bank emphasizes that the lack of cross-bloc interoperability standards will disproportionately impact developing nations, widening the existing 'Digital Security Gap' and exacerbating economic inequalities. The report calls for urgent international collaboration, potentially through a UN-backed 'Global Digital Interoperability Forum', to harmonize regulatory approaches and foster technical bridges, aiming to prevent a slowdown in digital transformation and ensure equitable economic growth.",
+                "insight": "This World Bank report represents a critical structural analysis that quantifies the macroeconomic risks associated with the unfolding 'digital sovereignty race'. By projecting a tangible GDP drag, it elevates the discussion from technological choice to a fundamental threat to global economic integration and development. Structurally, the report underscores the World Bank's shift from advocating general digital adoption to highlighting the *quality and interoperability* of digital infrastructure as paramount for sustainable development. It will likely intensify pressure on both the G7 and BRICS+ blocs to invest in interoperable solutions (like the EU's proposed 'Digital Connectivity Pact') or risk isolating their respective digital economies. The report also positions developing nations as potential 'digital collateral damage' in this geopolitical tech struggle, reinforcing the need for targeted 'tech-aid' and capacity-building programs, possibly through the DRIF or BRICS+ Digital Sovereignty Fund, but with an explicit interoperability mandate. This report redefines global economic risk through the lens of digital fragmentation.",
+                "impact": {
+                    "score": 7,
+                    "bias": "Bearish",
+                    "label": "Fragmentation Warning"
+                },
+                "readTime": "8 min read",
+                "glossary": {
+                    "Bifurcated Digital Economy": "A global economic system characterized by the division into two or more distinct and potentially incompatible digital ecosystems, driven by differing technological standards, regulatory frameworks, and geopolitical alignments.",
+                    "Global Digital Interoperability Forum": "A proposed international body or platform aimed at facilitating dialogue, standardizing protocols, and developing technical solutions to ensure seamless communication and data exchange between divergent global digital ecosystems."
+                }
+            }
+        ]
+    },
     "2026-07-16": {
         "ko": [
             {
