@@ -1,4 +1,112 @@
 {
+    "2026-07-31": {
+        "ko": [
+            {
+                "category": "Macro|Trade|Regulatory|Finance|SupplyChain|Stocks",
+                "date": "2026-07-31",
+                "title": "주요 자동차 및 전자제품 기업, G7 디지털 관세 및 BRICS+ 맞대응 속 수익 경고 발표",
+                "summary": "G7의 DSRP 비준수 상품에 대한 디지털 수입 관세 부과 및 예상되는 BRICS+의 보복 조치(예: 수출에 대한 DSRP 준수 강화) 발표에 따라, '글로벌 오토콥' 및 '테크이노베이트'를 포함한 여러 다국적 자동차 및 전자제품 기업들이 규정 준수 비용 증가, 공급망 혼란, 잠재적인 시장 접근 제한을 이유로 2026년 3분기 및 4분기 수익 예측을 하향 조정했습니다. 애널리스트들은 업계 전망을 하향 조정하고 있으며, 기업들이 이중 준수 공급망을 구축하거나 한 블록으로 완전히 재편하기 위해 분주히 움직이면서 소비자 물가 전반의 인상과 글로벌 제조 기반의 대규모 재구축을 예측하고 있습니다. 이는 디지털 무역 전쟁의 즉각적인 경제적 여파를 나타내며, 기업 수익성에 직접적인 영향을 미치고 글로벌 경제 성장에 대한 우려를 증폭시키고 있습니다.",
+                "insight": "이는 디지털 무역 전쟁이 기업의 대차대조표에 직접적이고 가시적인 타격을 입히고 있음을 보여줍니다. 강제적인 글로벌 공급망 재구축은 효율성 중심의 세계화에서 회복탄력성과 디지털 주권으로의 심오하고 비용이 많이 드는 구조적 전환을 의미합니다. 기업들은 이제 '파편화 세금'을 내재화하고 있으며, 이는 소비자에게 전가되어 주요 부문의 인플레이션을 부추길 것입니다. 또한 재해안화/프렌드쇼어링 투자 가속화와 호환되지 않는 디지털 준수가 필요한 시장에 대한 비중 축소를 시사합니다. 이처럼 구조적 변화는 장기적으로 글로벌 무역 패턴을 영구적으로 재편할 것입니다.",
+                "impact": {
+                    "score": 10,
+                    "bias": "Strongly Bearish",
+                    "label": "글로벌 기업 수익성 악화"
+                },
+                "readTime": "8 min read",
+                "glossary": {
+                    "이중 준수 공급망": "여러 지정학적 블록(예: G7의 UnityLedger-QSSCA 및 BRICS+의 DSRP)의 상이하고 종종 상충되는 분산원장기술(DLT) 및 양자 내성 암호화(PQC) 표준을 모두 충족하도록 설계된 공급망 인프라 및 프로세스로, 상당한 운영 및 자본 비용이 발생한다.",
+                    "파편화 세금": "지정학적 블록 간 디지털 인프라, 규제 표준 및 무역 프로토콜의 발칸화로 인해 기업과 글로벌 경제에 부과되는 총체적인 경제적 비용으로, 규정 준수 비용 증가, 운영 비효율성, 시장 접근 손실 및 혁신 감소를 포함한다."
+                }
+            },
+            {
+                "category": "Finance|Macro|Tech|Regulatory|Geopolitics",
+                "date": "2026-07-31",
+                "title": "GFSB, 블록 간 DLT 노출 은행에 비상 자본 완충 장치 의무화; 금융 발칸화 가속화",
+                "summary": "'의미론적 드리프트'와 블록 간 거래 실패가 가중되어 발생하는 시스템적 위험을 억제하기 위한 전례 없는 조치로, 글로벌 금융 안정 위원회(GFSB)는 주요 중앙은행과 협력하여 UnityLedger-QSSCA 및 DSRP 생태계에 모두 상당한 노출을 가진 금융 기관에 대한 의무적 비상 자본 완충 장치를 오늘 발표했습니다. 즉시 발효되는 이 조치에 따라, 은행은 수십억 달러의 잠재적 손상차손을 흡수하기 위해 블록 간 파생상품, 무역 금융 및 신디케이트 대출과 관련된 자산에 대해 5~10%의 추가 자본을 보유해야 합니다. 간결한 GFSB 통신문에 명시된 이 지침은 디지털 언어 장벽을 해소하는 데 AI 기반 상호 운용성이 크게 실패했음을 강조합니다. 규제 당국은 또한 블록별 '알고리즘 거버넌스 프레임워크' 구현을 가속화하여 글로벌 금융의 디지털 분할을 효과적으로 공식화하고 블록 간 운영으로부터의 빠른 위험 축소를 강제하고 있습니다.",
+                "insight": "이는 금융 발칸화를 공식화하는 결정적인 규제 개입입니다. 자본 완충 장치를 의무화함으로써 규제 당국은 블록 간 DLT 거래의 내재된 시스템적 위험을 암묵적으로 인정하고, 디지털 격차를 넘어 글로벌 통합을 유지하는 기관에 벌칙을 부과하고 있습니다. 이는 금융 기관이 블록별 운영으로 더욱 후퇴하도록 강제하고, 자본 본국 송환을 가속화하며, 국경 간 금융 비용을 증가시키고, 잠재적으로 글로벌 유동성의 파편화를 초래할 것입니다. 이 움직임은 상호 운용성보다는 디지털 분리를 통해 금융 안정을 달성하는 새로운 시대를 공고히 합니다.",
+                "impact": {
+                    "score": 10,
+                    "bias": "Strongly Bearish",
+                    "label": "금융 분할 심화"
+                },
+                "readTime": "8 min read",
+                "glossary": {
+                    "자본 완충 장치": "금융 기관이 시스템적 위험을 완화하거나 높은 위험 노출로 인한 잠재적 손실을 흡수하거나 새로운 규제 표준 준수를 강제하기 위해 규제 당국이 부과하는 추가 자본 요건.",
+                    "유동성 파편화": "주로 상이한 규제 프레임워크, 기술 표준 또는 지정학적 긴장으로 인해 글로벌 금융 시장이 별개의, 덜 상호 연결된 자본 및 자금 풀로 분할되는 과정으로, 국경을 넘는 자금 및 신용의 효율적인 흐름을 저해한다."
+                }
+            },
+            {
+                "category": "Geopolitics|Tech|Environment|Space|Regulatory|Macro",
+                "date": "2026-07-31",
+                "title": "'디지털 철의 장막', 기후 및 우주 데이터 공유에 지장을 주며 글로벌 과학계 경고; 연구 이니셔티브 정체",
+                "summary": "유엔의 '기후 원장 협정'이 사실상 중단되고 G7과 BRICS+의 기후 및 우주 데이터를 위한 병행 DLT 시스템이 가속화됨에 따라, 국제 과학계는 심각한 우려를 표명하는 공동 성명을 발표했습니다. 주요 기후 연구 컨소시엄과 우주 기관들은 상이한 '기후 조화 원장'(BRICS+) 및 예상되는 '그린테크 주권 원장'(G7) 생태계는 물론 호환되지 않는 '양자 우주 원장'과 QSSCA 우주 자산 표준에서 데이터를 조화시키는 데 심각한 어려움을 겪고 있다고 보고했습니다. 기후 모델링, 소행성 추적 및 양자 통신 프로토콜에 대한 공동 프로젝트는 전례 없는 지연, 데이터 불일치 및 자금 철회에 직면하고 있습니다. 과학자들은 보편적인 데이터 스키마와 안전하고 중립적인 데이터 공유 인프라를 달성하지 못하는 것이 포괄적인 글로벌 연구 역량을 근본적으로 훼손하여 행성 과제 및 미래 우주 탐사에 대한 인류의 공동 대응을 위태롭게 한다고 경고합니다.",
+                "insight": "이 보고서는 디지털 파편화의 비경제적이지만 똑같이 중요한 결과, 즉 글로벌 과학 협력의 저해를 강조합니다. 이는 디지털 철의 장막이 무역과 금융을 넘어 기후 변화와 같은 공유된 과제를 해결하고 안전한 우주 작전을 보장하는 인류의 능력을 직접적으로 저해한다는 것을 보여줍니다. 이러한 구조적 발전은 과학 기관들이 한 블록의 데이터 생태계에 맞춰야만 하도록 강제하여 중복된 연구 노력, 호환되지 않는 연구 결과, 그리고 글로벌 과학 효율성의 상당한 손실을 초래할 것입니다. 이는 공유된 지식보다 우선시되는 디지털 주권이 인간의 발전에 장기적인 심각한 차질을 초래하는 방식을 강조합니다.",
+                "impact": {
+                    "score": 9,
+                    "bias": "Bearish",
+                    "label": "글로벌 과학 디커플링"
+                },
+                "readTime": "8 min read",
+                "glossary": {
+                    "보편적 데이터 스키마": "데이터 요소를 구성, 설명 및 연결하기 위한 표준화된 공통 프레임워크로, 특히 글로벌 과학 협력에 필수적인 다양한 시스템 간의 원활한 상호 운용성과 일관된 해석을 가능하게 한다.",
+                    "과학 디커플링": "지정학적 긴장, 상이한 기술 표준(예: DLT-PQC 생태계) 및 정보의 자유로운 흐름에 대한 제한으로 인해 국제 과학 협력, 연구 및 데이터 공유가 파편화되고 축소되는 과정으로, 고립되고 덜 효율적인 진전을 초래한다."
+                }
+            }
+        ],
+        "en": [
+            {
+                "category": "Macro|Trade|Regulatory|Finance|SupplyChain|Stocks",
+                "date": "2026-07-31",
+                "title": "Major Automakers and Electronics Giants Issue Profit Warnings Amid G7 Digital Tariffs and BRICS+ Countermeasures",
+                "summary": "Following the G7's digital import tariffs on DSRP-non-compliant goods and anticipated BRICS+ retaliatory measures (e.g., tightening DSRP compliance for exports), several multinational automotive and electronics corporations, including \"Global AutoCorp\" and \"TechInnovate Inc.\", have issued revised profit forecasts for Q3 and Q4 2026, citing significant increases in compliance costs, supply chain disruptions, and potential market access restrictions. Analysts are downgrading sector outlooks, predicting widespread price increases for consumers and substantial re-engineering of global manufacturing footprints as companies scramble to establish dual-compliant supply chains or fully re-align with one bloc. This marks the immediate economic fallout of the digital trade war, directly impacting corporate profitability and raising concerns about global economic growth.",
+                "insight": "This demonstrates the direct, tangible hit to corporate balance sheets from the digital trade war. The forced re-engineering of global supply chains signifies a profound and costly structural shift, moving away from efficiency-driven globalization towards resilience and digital sovereignty. Companies are now internalizing the \"tax of fragmentation,\" which will be passed on to consumers, fueling inflation in key sectors. This also suggests a rapid acceleration of reshoring/friend-shoring investments and a de-emphasis on markets requiring incompatible digital compliance. Such structural changes will permanently re-architect global trade patterns long-term.",
+                "impact": {
+                    "score": 10,
+                    "bias": "Strongly Bearish",
+                    "label": "Global Corporate Profitability Erosion"
+                },
+                "readTime": "8 min read",
+                "glossary": {
+                    "Dual-Compliant Supply Chains": "Supply chain infrastructure and processes designed to meet the divergent and often conflicting digital ledger technology (DLT) and post-quantum cryptography (PQC) standards of multiple geopolitical blocs (e.g., G7's UnityLedger-QSSCA and BRICS+'s DSRP), incurring significant operational and capital costs.",
+                    "Fragmentation Tax": "The aggregated economic cost, including increased compliance expenses, operational inefficiencies, lost market access, and reduced innovation, imposed on businesses and the global economy due to the balkanization of digital infrastructure, regulatory standards, and trade protocols across geopolitical blocs."
+                }
+            },
+            {
+                "category": "Finance|Macro|Tech|Regulatory|Geopolitics",
+                "date": "2026-07-31",
+                "title": "GFSB Mandates Emergency Capital Surcharges for Banks with Cross-Bloc DLT Exposure; Financial Balkanization Accelerates",
+                "summary": "In an unprecedented move to contain the systemic risks posed by 'semantic drift' and mounting cross-bloc transactional failures, the Global Financial Stability Board (GFSB), in conjunction with major central banks, today announced mandatory emergency capital surcharges for financial institutions with significant exposure to both UnityLedger-QSSCA and DSRP ecosystems. Effective immediately, banks must hold an additional 5-10% capital against assets tied to cross-bloc derivatives, trade finance, and syndicated loans, aiming to absorb potential multi-billion dollar writedowns. This directive, outlined in a terse GFSB communiqué, underscores the profound failure of AI-driven interoperability to bridge the digital language barrier. Regulators are also accelerating the implementation of bloc-specific 'Algorithmic Governance Frameworks,' effectively formalizing the digital segmentation of global finance and compelling a rapid de-risking from cross-bloc operations.",
+                "insight": "This is a critical regulatory intervention that formalizes financial balkanization. By mandating capital surcharges, regulators are implicitly acknowledging the inherent systemic risk of cross-bloc DLT transactions and penalizing institutions for maintaining global integration across the digital divide. This will force financial institutions to further retreat into bloc-specific operations, accelerating capital repatriation, increasing the cost of cross-border finance, and potentially leading to a fragmentation of global liquidity. The move solidifies a new era where financial stability is achieved through digital separation rather than interoperability.",
+                "impact": {
+                    "score": 10,
+                    "bias": "Strongly Bearish",
+                    "label": "Financial Segmentation Hardened"
+                },
+                "readTime": "8 min read",
+                "glossary": {
+                    "Capital Surcharges": "Additional capital requirements imposed by financial regulators on specific institutions or activities, typically to mitigate systemic risk, absorb potential losses from high-risk exposures, or enforce compliance with new regulatory standards.",
+                    "Liquidity Fragmentation": "The division of global financial markets into separate, less interconnected pools of capital and funding, often due to divergent regulatory frameworks, technological standards, or geopolitical tensions, hindering the efficient flow of money and credit across borders."
+                }
+            },
+            {
+                "category": "Geopolitics|Tech|Environment|Space|Regulatory|Macro",
+                "date": "2026-07-31",
+                "title": "Global Scientific Community Alarms as 'Digital Iron Curtain' Cripples Climate and Space Data Sharing; Research Initiatives Stall",
+                "summary": "Following the definitive stall of the UN's Climate Ledger Accord and the acceleration of G7 and BRICS+ parallel DLT systems for climate and space data, the international scientific community has issued a joint statement expressing grave concerns. Leading climate research consortiums and space agencies report severe difficulties in reconciling data from divergent 'Climate Harmony Ledger' (BRICS+) and anticipated 'GreenTech Sovereignty Ledger' (G7) ecosystems, as well as incompatible 'Quantum Space Ledger' and QSSCA space asset standards. Collaborative projects on climate modeling, asteroid tracking, and quantum communication protocols are facing unprecedented delays, data inconsistencies, and funding withdrawals. Scientists warn that the inability to achieve a universal data schema and secure, neutral data sharing infrastructure fundamentally undermines the capacity for comprehensive global research, jeopardizing humanity's collective response to planetary challenges and future space exploration.",
+                "insight": "This report highlights the non-economic, but equally critical, consequences of digital fragmentation: the hobbling of global scientific collaboration. It demonstrates that the digital iron curtain extends beyond trade and finance, directly impeding humanity's ability to address shared challenges like climate change and ensure safe space operations. This structural development will force scientific institutions to align with one bloc's data ecosystem, leading to redundant research efforts, incompatible findings, and a significant loss of global scientific efficiency. It underlines how digital sovereignty, now prioritized over shared knowledge, creates profound long-term setbacks for human progress.",
+                "impact": {
+                    "score": 9,
+                    "bias": "Bearish",
+                    "label": "Global Scientific Decoupling"
+                },
+                "readTime": "8 min read",
+                "glossary": {
+                    "Universal Data Schema": "A standardized, common framework for organizing, describing, and relating data elements, enabling seamless interoperability and consistent interpretation across diverse systems and organizations, particularly crucial for global scientific collaboration.",
+                    "Scientific Decoupling": "The process by which international scientific collaboration, research, and data sharing become fragmented and reduced due to geopolitical tensions, divergent technological standards (e.g., DLT-PQC ecosystems), and restrictions on the free flow of information, leading to isolated and less efficient progress."
+                }
+            }
+        ]
+    },
     "2026-07-30": {
         "ko": [
             {
