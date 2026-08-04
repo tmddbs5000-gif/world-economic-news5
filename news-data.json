@@ -1,4 +1,112 @@
 {
+    "2026-08-04": {
+        "ko": [
+            {
+                "category": "Geopolitics|Trade|Energy|Commodities|SupplyChain|Stocks|Macro",
+                "date": "2026-08-04",
+                "title": "BRICS+, G7 필수 자원에 '디지털 자원 금수 조치'로 보복; 글로벌 제조 산업 붕괴 직면",
+                "summary": "BRICS+는 오늘 2026년 11월 1일부터 G7 연합 경제를 대상으로 전례 없는 '디지털 자원 금수 조치'를 발표했습니다. G7의 DSRP 미준수 상품에 대한 디지털 수입 관세에 대한 직접적인 보복 조치로, BRICS+ 동맹은 G7의 첨단 제조, 친환경 에너지 전환 및 방위 산업에 필수적인 희토류, 리튬 및 주요 산업 광물을 포함한 15가지 핵심 원자재의 모든 수출을 DSRP 기반 스마트 계약 및 추적성 원장을 통해서만 거래되지 않을 경우 전면 중단할 것이라고 밝혔습니다. 이 조치는 디지털 주권을 더욱 무기화하여 진행 중인 무역 전쟁을 전면적인 자원 분쟁으로 전환시키고 있습니다. 애널리스트들은 G7 제조 공급망에 즉각적이고 심각한 혼란, 상당한 인플레이션 압력, 그리고 전략적 물질 처리의 비용이 많이 들고 장기적인 재해안화 이니셔티브 가속화를 경고하며, 글로벌 경제 분열을 심화시킬 것이라고 예측합니다. 이번 확전은 세계를 두 개의 근본적으로 통합되지 않은 산업 생태계로 몰아넣는 중대한 전환점이 될 것입니다.",
+                "insight": "BRICS+의 이번 금수 조치는 디지털 무역 전쟁의 결정적인 확전 단계를 나타내며, 단순한 무역 장벽을 넘어 자원 통제를 무기화하고 있습니다. 이는 G7 경제가 필수 원자재에 대한 의존도를 긴급하고 비용이 많이 들게 재평가하도록 강제하며, 자급자족을 가속화하고 대체 공급원을 찾도록 할 것입니다. 이러한 구조적 변화는 G7의 제조 능력에 즉각적인 병목 현상을 일으키고, 생산 비용을 급격히 증가시키며, 전 세계적으로 소비재 가격을 상승시킬 것입니다. 이는 지정학적 정렬이 경제적 효율성과 공급망 안정성을 완전히 압도하는 미래를 확정합니다. 장기적인 영향으로는 글로벌 산업 생산의 영구적인 양분화와 국가 안보를 위한 전략적 자원 통제의 최우선 순위화가 포함될 것입니다.",
+                "impact": {
+                    "score": 10,
+                    "bias": "Strongly Bearish",
+                    "label": "글로벌 자원 전쟁"
+                },
+                "readTime": "8 min read",
+                "glossary": {
+                    "디지털 자원 금수 조치 (Digital Resource Embargo)": "지정학적 블록이 상대 블록의 DLT-PQC 표준(예: UnityLedger-QSSCA)을 준수하지 않는 디지털 계약 및 거래 방식을 사용하여 특정 핵심 원자재의 수출을 의도적으로 제한하거나 금지하는 행위.",
+                    "전략적 광물 DLT (Strategic Mineral DLT)": "희토류, 리튬 등 필수 산업 및 방위 부문에 중요한 광물의 채굴부터 가공 및 유통까지의 공급망 전체를 추적, 관리 및 검증하기 위한 블록별 분산원장기술(DLT) 시스템."
+                }
+            },
+            {
+                "category": "Finance|Macro|Regulatory|Tech|Geopolitics|Stocks",
+                "date": "2026-08-04",
+                "title": "주요 투자 은행 '넥서스 캐피탈', 디커플링 속 디지털 파산 선언; GFSB의 BADSF, 전례 없는 상각으로 고군분투",
+                "summary": "글로벌 금융 대기업 '넥서스 캐피탈 그룹'은 오늘 블록 간 DLT 노출로 인한 통제 불가능한 시스템적 위험과 화해 불가능한 손실을 이유로 디지털 파산 절차에 돌입했다고 발표했습니다. 글로벌 금융 안정 위원회(GFSB)가 최근 블록별 디지털 안정화 기금(BADSF)을 설립하고 비상 유동성 조치를 취했음에도 불구하고, 넥서스 캐피탈은 UnityLedger-QSSCA 및 DSRP 생태계 간의 연쇄적인 '의미론적 디폴트'로 인해 분기 누적 750억 달러 이상의 상각을 보고했으며, 이는 광범위한 블록 간 파생상품 및 무역 금융 포트폴리오를 결제 불가능하게 만들었습니다. 이는 디지털 파산을 선언한 최초의 주요 시스템적 금융 기관으로, BADSF의 한계를 드러내고 다른 블록 간 DLT 노출이 큰 기관들 사이에서 광범위한 '자산 전염'에 대한 두려움을 유발하고 있습니다. GFSB는 비상 회의를 소집하고 있지만, 애널리스트들은 이번 사건이 디지털 파편화가 '너무 글로벌해서 실패할 수 없다'는 개념이 '너무 파편화되어 화해할 수 없다'는 개념으로 대체된 금융 환경을 만들었음을 확인시켜 준다고 분석합니다.",
+                "insight": "넥서스 캐피탈의 디지털 파산은 GFSB의 '디지털 분리' 명령이 초래할 실존적 위험에 대한 냉정한 현실 점검입니다. 이는 BADSF 및 기타 비상 조치에도 불구하고 금융 시스템의 구조적 붕괴가 이미 진행 중임을 증명합니다. '자산 전염'은 이제 블록 간 DLT 연결을 유지하는 다른 '이중 블록' 기관을 빠르게 위협할 것이며, 이는 더 많은 디지털 파산, 급격한 자산 매각, 그리고 자본의 블록별 피난처로의 대규모 이동을 촉발할 것입니다. 이번 사건은 규제 기관이 단순히 디지털 분할의 비용을 관리하는 것을 넘어, 한때 통합되었던 글로벌 금융 시장의 실질적인 종말에 대비해야 한다는 점을 강조합니다. 이는 향후 금융 규제, 시장 구조 및 국제 자본 흐름에 대한 엄청난 장기적 영향을 미칠 것입니다.",
+                "impact": {
+                    "score": 10,
+                    "bias": "Strongly Bearish",
+                    "label": "시스템적 금융 실패"
+                },
+                "readTime": "8 min read",
+                "glossary": {
+                    "디지털 파산 (Digital Insolvency)": "기업 또는 금융 기관이 상이한 DLT-PQC 생태계 간의 '의미론적 드리프트' 및 디지털 파편화로 인해 발생하는 블록 간 거래 실패 및 화해 불가능한 부채로 인해 재정적 의무를 이행할 수 없는 상태.",
+                    "자산 전염 (Asset Contagion)": "하나의 금융 기관의 디지털 파산 또는 대규모 손상차손이 다른 기관의 유사한 자산 포트폴리오의 안정성을 약화시켜 잠재적으로 더 광범위한 시스템적 위기로 이어지는 현상으로, 종종 상호 연결된 DLT 노출로 인해 발생한다."
+                }
+            },
+            {
+                "category": "Macro|Tech|Healthcare|Geopolitics|Social|Regulatory",
+                "date": "2026-08-04",
+                "title": "디지털 헬스케어 양분화로 글로벌 팬데믹 대응 심각한 차질; WHO, 블록 간 의료 데이터 공유 긴급 정상회의 소집",
+                "summary": "세계보건기구(WHO)는 오늘 긴급 글로벌 정상회의를 소집하여, G7(UnityLedger-QSSCA)과 BRICS+(DSRP) 블록 간에 급증하는 '디지털 헬스케어 양분화'가 빠르게 확산되는 신종 인플루엔자 변종 'Flu-X27'에 대한 국제적인 공동 대응을 심각하게 저해하고 있다고 엄중히 경고했습니다. 헬스브릿지 코프와 같은 글로벌 제약 대기업의 운영 분할과 상이한 환자 데이터 주권 의무화 이후, 블록 간 역학 데이터 공유, 백신 연구 협력 및 핵심 의료 공급망 물류는 전례 없는 실패와 지연을 겪고 있습니다. 필수 유전체 시퀀싱 데이터는 DLT 간에 화해할 수 없어 변종 추적을 방해하고 있으며, DSRP 준수 및 QSSCA 준수 백신 배치는 호환되지 않는 공급망 원장으로 인해 유통 병목 현상에 직면하고 있습니다. WHO 사무총장은 이 상황을 '글로벌 보건 안보에 대한 자해'라고 표현하며, 디지털 주권 우선순위가 집단적 인간 복지를 압도하면서 예방 가능한 인도주의적 위기를 예측했습니다.",
+                "insight": "이 보고서는 디지털 탈세계화의 가장 비극적인 결과를 강조합니다. 보건 위기 동안 디지털 주권과 블록별 DLT 준수에 대한 우선순위는 인간의 생명과 세계 보건 안보에 직접적인 위협이 됩니다. 이 구조적 파편화는 긴급 의료 대응의 핵심인 국제 협력 및 정보 공유를 불가능하게 만들고 있습니다. 백신 개발자, 의약품 유통업체 및 보건 기관은 이제 비효율적인 이중 규정 준수 또는 제한된 블록별 운영 사이에서 선택해야 하며, 이로 인해 지연이 발생하고 보급이 제한됩니다. Flu-X27 위기는 지정학적 분열이 전 세계 인구에 직접적인 영향을 미치는 방식을 보여주는 가슴 아픈 사례로, 통합된 디지털 인프라가 필수적인 영역에서 '디지털 철의 장막'이 초래할 인도주의적 재앙에 대한 경고입니다.",
+                "impact": {
+                    "score": 9,
+                    "bias": "Strongly Bearish",
+                    "label": "인도주의적 위기 악화"
+                },
+                "readTime": "8 min read",
+                "glossary": {
+                    "디지털 헬스케어 양분화 (Digital Health Bi-segmentation)": "환자 데이터 주권, 의약품 원산지 및 임상 시험 무결성에 대한 상이한 DLT-PQC 표준(예: UnityLedger-QSSCA 및 DSRP)을 준수하기 위해 글로벌 보건 및 제약 인프라가 두 개의 별개의 블록별 생태계로 분리되는 과정.",
+                    "블록 간 건강 데이터 비호환성 (Cross-Bloc Health Data Incompatibility)": "서로 다른 지정학적 블록이 채택한 불일치하는 DLT 표준 및 데이터 스키마로 인해 환자 기록, 역학 정보 및 연구 결과와 같은 디지털 건강 데이터가 블록 간에 공유, 해석 또는 화해될 수 없는 상태."
+                }
+            }
+        ],
+        "en": [
+            {
+                "category": "Geopolitics|Trade|Energy|Commodities|SupplyChain|Stocks|Macro",
+                "date": "2026-08-04",
+                "title": "BRICS+ Retaliates with 'Digital Resource Embargo' on G7-Critical Materials; Global Manufacturing Faces Collapse",
+                "summary": "BRICS+ today announced an unprecedented 'Digital Resource Embargo' targeting G7-aligned economies, effective November 1, 2026. In direct retaliation to G7's digital import tariffs on DSRP-non-compliant goods, the BRICS+ alliance will halt all exports of 15 critical raw materials—including rare earth elements, lithium, and key industrial minerals essential for G7's advanced manufacturing, green energy transition, and defense sectors—unless transactions are exclusively settled via DSRP-based smart contracts and traceability ledgers. This move further weaponizes digital sovereignty, transforming the ongoing trade war into a full-blown resource conflict. Analysts warn of immediate, severe disruptions to G7 manufacturing supply chains, significant inflationary pressures, and a forced acceleration of costly, long-term reshoring initiatives for strategic material processing, deepening the global economic divide. This escalation marks a pivotal moment, pushing the world towards two fundamentally unintegrated industrial ecosystems.",
+                "insight": "This BRICS+ embargo signifies a decisive escalation in the digital trade war, moving beyond mere trade barriers to weaponized resource control. It forces G7 economies to urgently and expensively re-evaluate their reliance on essential raw materials, driving accelerated self-sufficiency and the search for alternative sources. This structural shift will create immediate bottlenecks in G7 manufacturing capabilities, drastically inflate production costs, and ultimately raise consumer prices globally. It cements a future where geopolitical alignment completely overrides economic efficiency and supply chain stability. Long-term implications will include a permanent bifurcation of global industrial production and a heightened prioritization of strategic resource control for national security.",
+                "impact": {
+                    "score": 10,
+                    "bias": "Strongly Bearish",
+                    "label": "Global Resource War"
+                },
+                "readTime": "8 min read",
+                "glossary": {
+                    "Digital Resource Embargo": "The deliberate restriction or prohibition by a geopolitical bloc on the export of specific critical raw materials, using non-compliant digital contract and transaction methods (e.g., UnityLedger-QSSCA) to prevent trade with an opposing bloc.",
+                    "Strategic Mineral DLT": "A bloc-specific Distributed Ledger Technology (DLT) system designed to track, manage, and verify the entire supply chain of minerals critical to essential industrial and defense sectors, such as rare earth elements and lithium, from extraction to processing and distribution."
+                }
+            },
+            {
+                "category": "Finance|Macro|Regulatory|Tech|Geopolitics|Stocks",
+                "date": "2026-08-04",
+                "title": "Major Investment Bank 'Nexus Capital' Declares Digital Insolvency Amidst Decoupling; GFSB's BADSF Strains Under Unprecedented Writedowns",
+                "summary": "Global financial titan 'Nexus Capital Group' today announced it has commenced digital insolvency proceedings, citing unmanageable systemic risks and irreconcilable losses from cross-bloc DLT exposures. Despite the Global Financial Stability Board's (GFSB) recent establishment of the Bloc-Aligned Digital Stability Fund (BADSF) and emergency liquidity measures, Nexus Capital reported over $75 billion in cumulative Q3 writedowns attributable to cascading 'semantic defaults' between UnityLedger-QSSCA and DSRP ecosystems, rendering its extensive cross-bloc derivatives and trade finance portfolios non-settleable. This marks the first major systemic financial institution to declare digital insolvency, exposing the limits of BADSF and triggering fears of widespread 'asset contagion' across other institutions with significant cross-bloc DLT exposure. The GFSB is convening an emergency session, but analysts suggest this event confirms that digital fragmentation has created a financial landscape where 'too global to fail' has been replaced by 'too fragmented to reconcile.'",
+                "insight": "Nexus Capital's digital insolvency is a sobering reality check on the existential risks posed by the GFSB's 'digital decoupling' mandate. It proves that despite BADSF and other emergency measures, the structural disintegration of the financial system is already underway. 'Asset contagion' will now rapidly threaten other 'dual-bloc' institutions maintaining cross-bloc DLT linkages, triggering more digital insolvencies, precipitous asset sales, and a massive flight of capital to bloc-specific havens. This event underscores that regulators must prepare not just to manage the costs of digital segmentation, but for the actual demise of what was once a unified global financial market. It will have immense long-term ramifications for financial regulation, market structure, and international capital flows.",
+                "impact": {
+                    "score": 10,
+                    "bias": "Strongly Bearish",
+                    "label": "Systemic Financial Failure"
+                },
+                "readTime": "8 min read",
+                "glossary": {
+                    "Digital Insolvency": "A state where a corporation or financial institution is unable to meet its financial obligations due to unresolvable cross-bloc transactional failures and irreconcilable liabilities arising from 'semantic drift' and digital fragmentation between distinct DLT-PQC ecosystems.",
+                    "Asset Contagion": "A phenomenon where the digital insolvency or significant writedowns of one financial institution undermine the stability of similar asset portfolios in other institutions, potentially leading to a broader systemic crisis, often exacerbated by interconnected DLT exposures."
+                }
+            },
+            {
+                "category": "Macro|Tech|Healthcare|Geopolitics|Social|Regulatory",
+                "date": "2026-08-04",
+                "title": "Global Pandemic Response Severely Crippled by Digital Health Bi-Segmentation; WHO Calls Emergency Summit on Cross-Bloc Medical Data Sharing",
+                "summary": "The World Health Organization (WHO) today convened an emergency global summit, issuing a dire warning that the burgeoning 'digital health bi-segmentation' between G7 (UnityLedger-QSSCA) and BRICS+ (DSRP) blocs is severely crippling the coordinated international response to a rapidly escalating novel influenza strain, 'Flu-X27'. Following the operational split of global pharmaceutical giants like HealthBridge Corp. and the imposition of divergent patient data sovereignty mandates, cross-bloc epidemiological data sharing, vaccine research collaboration, and critical medical supply chain logistics are experiencing unprecedented failures and delays. Vital genomic sequencing data cannot be reconciled across DLTs, hindering variant tracking, while DSRP-compliant and QSSCA-compliant vaccine batches face distribution bottlenecks due to incompatible supply chain ledgers. The WHO Secretary-General termed the situation 'a self-inflicted wound on global health security,' predicting a preventable humanitarian crisis as digital sovereignty priorities override collective human well-being.",
+                "insight": "This report highlights the most tragic consequence of digital de-globalization. The prioritization of digital sovereignty and bloc-specific DLT compliance during a health crisis directly jeopardizes human lives and global health security. This structural fragmentation is rendering international cooperation and information sharing—the bedrock of emergency medical response—impossible. Vaccine developers, drug distributors, and health agencies are now forced to choose between inefficient dual-compliance or restricted bloc-specific operations, leading to delays and limited reach. The Flu-X27 crisis serves as a poignant example of how geopolitical divisions directly impact global populations, a stark warning of the humanitarian disaster that the 'digital iron curtain' will unleash in areas where unified digital infrastructure is essential.",
+                "impact": {
+                    "score": 9,
+                    "bias": "Strongly Bearish",
+                    "label": "Humanitarian Crisis Worsens"
+                },
+                "readTime": "8 min read",
+                "glossary": {
+                    "Digital Health Bi-segmentation": "The process by which global health and pharmaceutical infrastructure is fragmented into two distinct, bloc-aligned ecosystems to comply with divergent DLT-PQC standards for patient data sovereignty, drug provenance, and clinical trial integrity (e.g., UnityLedger-QSSCA and DSRP).",
+                    "Cross-Bloc Health Data Incompatibility": "A state where digital health data, such as patient records, epidemiological information, and research findings, cannot be shared, interpreted, or reconciled across geopolitical blocs due to conflicting DLT standards and data schemas adopted by different blocs."
+                }
+            }
+        ]
+    },
     "2026-08-03": {
         "ko": [
             {
