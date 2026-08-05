@@ -1,4 +1,112 @@
 {
+    "2026-08-05": {
+        "ko": [
+            {
+                "category": "Finance|Macro|Regulatory|Geopolitics|Stocks",
+                "date": "2026-08-05",
+                "title": "자산 전염, 두 번째 주요 금융 기관 파산; GFSB, 디지털 신뢰 위기 심화 속 BADSF 비상 자본 확충 고려",
+                "summary": "넥서스 캐피탈로 촉발된 디지털 파산의 물결이 오늘 블록 간 무역 금융의 핵심 주자인 '글로벌 트레이드링크 은행'을 또 다른 희생양으로 삼았습니다. 블록 간 DLT 불일치와 BRICS+/G7 연계 파생상품 포트폴리오에서 발생한 연쇄적인 '의미론적 디폴트'를 이유로 글로벌 트레이드링크는 모든 블록 간 지급을 동결한다고 발표했습니다. 이는 글로벌 금융 안정 위원회(GFSB)의 추가 비상 회의를 촉발했으며, 이미 부담이 가중된 기존의 블록별 디지털 안정화 기금(BADSF)은 이제 잠재적으로 불충분하다고 판단되었습니다. 보고서에 따르면 GFSB는 블록 간 금융 시스템의 완전한 붕괴를 막기 위해 새로운 블록별 디지털 준비 자산 발행을 통한 BADSF의 전례 없는 중앙은행 직접 자본 확충을 심의 중입니다. 애널리스트들은 이것이 심각한 '디지털 신뢰 위기'를 의미하며, 모든 블록 간 금융 메커니즘에 대한 신뢰가 침식되어 자본이 블록별로 고립된 생태계로 빠르게 유출되고 글로벌 금융 격차가 심화될 것이라고 경고합니다.",
+                "insight": "글로벌 트레이드링크의 붕괴는 넥서스 캐피탈이 고립된 사건이 아니라 더 광범위한 '자산 전염'의 전조였음을 확인시켜 줍니다. 중앙은행의 BADSF 자본 확충 제안은 시스템적 실패에 대한 인정이며, '디지털 분리' 재앙에 시장 기반 솔루션이 부적절하다는 것을 보여줍니다. 이 조치는 중앙은행을 블록별 안정성의 직접적인 보증인으로 제도화하여 통화 정책과 지정학적 정렬 간의 경계를 모호하게 할 것입니다. 이는 글로벌 금융 시장이 단순히 파편화되는 것을 넘어, 각각 자체 중앙은행이 뒷받침하는 재정적으로 고립된 블록으로 적극적으로 분열되고 있음을 나타내는 중요한 전환점이며, 글로벌 유동성, 신용 가용성, 특히 블록 간 무역에 의존하는 중소기업의 자본 비용에 심각한 장기적 영향을 미칠 것입니다.",
+                "impact": {
+                    "score": 10,
+                    "bias": "Strongly Bearish",
+                    "label": "디지털 금융 멜트다운"
+                },
+                "readTime": "8 min read",
+                "glossary": {
+                    "디지털 신뢰 위기 (Digital Trust Crisis)": "지정학적 블록 간에 걸쳐 있는 디지털 금융 시스템 및 플랫폼의 무결성, 신뢰성 및 상호 운용성에 대한 신뢰가 심각하게 상실되는 상태로, 광범위한 자금 인출과 블록 간 거래 참여에 대한 기피로 이어진다.",
+                    "블록별 디지털 준비 자산 (Bloc-Specific Digital Reserve Assets)": "특정 지정학적 블록 내 중앙은행이 발행하거나 승인한 디지털 통화 또는 원장 기반 수단으로, 해당 블록의 디지털 주권 금융 생태계 내에서만 가치의 주요 저장 수단 및 교환 매개체로 사용될 의도이며, 블록별 안정화 기금의 자본 확충에 사용될 수 있다."
+                }
+            },
+            {
+                "category": "Geopolitics|Trade|Energy|Commodities|SupplyChain|Macro|Stocks",
+                "date": "2026-08-05",
+                "title": "G7, '디지털 자급자족 작전' 공개: BRICS+ 금수 조치 우회 위한 5조 달러 규모의 긴급 재해안화 및 AI 기반 자원 추출 프로그램",
+                "summary": "BRICS+의 '디지털 자원 금수 조치'에 대한 단호한 대응으로, G7 동맹은 오늘 전례 없는 5년, 5조 달러 규모의 비상 이니셔티브인 '디지털 자급자족 작전'을 발표했습니다. 이 기금은 희토류 및 리튬을 포함한 15가지 핵심 원자재의 완전한 디지털 주권 및 자급자족을 G7 연계 지역 내에서 추출, 가공 및 첨단 제조를 신속하게 재해안화함으로써 달성하는 것을 목표로 합니다. 이 프로그램은 대규모 공공 및 민간 투자, 새로운 발견 및 최적화된 재활용을 위한 첨단 AI, 그리고 안전하고 추적 가능한 공급망을 보장하는 전용 'QSSCA 자원 자율 원장'을 활용할 것입니다. 이 조치는 BRICS+의 DSRP 의무 무역을 완전히 우회하고 글로벌 산업 공급망을 전면적으로 개편하도록 설계되었습니다. 애널리스트들은 이러한 공격적인 일정이 비BRICS+ 연계 자원 자산에 대한 전례 없는 경쟁, G7 경제의 상당한 단기 인플레이션 급등, 그리고 영구적으로 깊이 양분된 글로벌 제조 환경으로 이어질 것이라고 예측합니다.",
+                "insight": "'디지털 자급자족 작전'은 G7이 상호 의존성에서 군사적 자급자족으로 결정적인 전환을 했음을 나타냅니다. 이는 단순한 무역 문제가 아니라 국가 안보와 디지털 주권에 의해 주도되는 전면적인 산업 재편 선언입니다. 5조 달러 투자는 글로벌 자본 흐름을 재편하여 BRICS+ 자원 부국에서 G7 연계 추출 및 가공으로 투자를 유도할 것입니다. 장기적인 회복탄력성에 필수적이지만, 단기적인 경제적 비용(인플레이션 압력, 비효율적인 자원 배분, G7 조달 원자재에 대한 '친환경 프리미엄' 가능성 포함)은 상당할 것입니다. 이 이니셔티브는 두 개의 경쟁적인 산업 생태계를 공고히 하여, 예측 가능한 미래 동안 경제적 논리가 지정학적 정렬에 종속될 것임을 확인하며, 잠재적으로 글로벌 원자재 쟁탈전을 촉발하고 핵심 광물 시장을 더욱 파편화할 것입니다.",
+                "impact": {
+                    "score": 9,
+                    "bias": "Volatile",
+                    "label": "자원 자급자족 경쟁"
+                },
+                "readTime": "8 min read",
+                "glossary": {
+                    "디지털 자급자족 (Digital Autarky)": "지정학적 블록이 핵심 디지털 인프라, 기술 및 전략 자원에서 완전한 자급자족을 목표로 하는 경제 정책으로, 필수 상품 및 서비스에 대한 잠재적 적대 블록에 대한 의존도를 제거한다.",
+                    "QSSCA 자원 자율 원장 (QSSCA Resource Autonomy Ledger)": "G7의 UnityLedger-QSSCA 표준을 기반으로 구축된 특수 분산원장기술(DLT) 시스템으로, G7 연계 경제 내에서 전략적 원자재의 전체 공급망을 관리, 추적 및 검증하도록 설계되어 외부 자원 금수 조치에 대한 디지털 주권 및 회복탄력성을 보장한다."
+                }
+            },
+            {
+                "category": "Macro|Tech|Healthcare|Geopolitics|Social|Regulatory",
+                "date": "2026-08-05",
+                "title": "WHO, Flu-X27을 '디지털 분열의 글로벌 재앙'으로 선언; 블록 간 데이터 차단으로 백신 보급 및 변종 추적 중단으로 수백만 명 위험에 처해",
+                "summary": "세계보건기구(WHO)는 오늘 비상 정상회담 이후 암울한 평가를 발표하며, 확산되는 신종 인플루엔자 변종 'Flu-X27' 팬데믹을 '디지털 분열의 글로벌 재앙'으로 선언했습니다. WHO 관계자들은 UnityLedger-QSSCA 및 DSRP 생태계 간의 화해 불가능한 블록 간 건강 데이터 비호환성이 국제 백신 유통 및 변종 추적에 치명적인 실패를 초래하여, 특히 블록 사이에 낀 개발도상국에서 사망자 급증에 직접적으로 기여했다고 확인했습니다. 필수 유전체 시퀀싱 데이터는 전 세계적으로 효과적으로 집계되거나 분석될 수 없어, 업데이트된 백신의 신속한 개발을 방해하고 있습니다. 더욱이, G7 준수 백신 배치는 DSRP 원장 요구 사항으로 인해 BRICS+ 연계 지역에서 병목 현상을 겪고 있으며, 그 반대의 경우도 마찬가지여서 수요를 충족할 수 없는 파편화된 글로벌 공급망을 초래하고 있습니다. WHO 사무총장은 디지털 주권 우선순위가 '전례 없는 규모의 피할 수 있는 인명 피해'로 이어지고 있다고 경고하며, 일시적인 인도주의적 '디지털 데이터 브리지'에 대한 절박한 호소를 발표했습니다.",
+                "insight": "이 보고서는 디지털 탈세계화의 가장 심오하고 윤리적으로 변명할 수 없는 결과, 즉 집단적 인간 복지에 대한 정보 인프라의 직접적인 무기화를 강조합니다. Flu-X27 위기는 진정한 글로벌 위협에 직면했을 때 '디지털 주권'의 치명적인 실패를 드러냅니다. 역학 데이터를 공유하고 생명을 구하는 의약품을 블록 연계 DLT에 걸쳐 배포할 수 없다는 것은 이제 '디지털 철의 장막'이 공중 보건에 대한 실질적인 장벽이자 직접적인 사망 원인을 나타냅니다. 이러한 구조적 파편화는 글로벌 보건 거버넌스를 영구적으로 변경하여, 국가들이 공중 보건 효율성보다 블록 연계를 우선시하도록 강제할 것이며, 의료적 필요성보다는 지정학적 충성도에 따라 치료 및 의약품 접근에 대한 상이한 표준으로 이어질 것입니다. '디지털 데이터 브리지'에 대한 요구는 마지막 노력으로, 통제되지 않은 디지털 발칸화가 초래하는 심각한 인도주의적 비용을 강조합니다.",
+                "impact": {
+                    "score": 10,
+                    "bias": "Strongly Bearish",
+                    "label": "인도주의적 위기 심화"
+                },
+                "readTime": "8 min read",
+                "glossary": {
+                    "인도주의 디지털 데이터 브리지 (Humanitarian Digital Data Bridge)": "디지털 파편화가 조정된 조치를 방해하는 글로벌 위기에 대응하여, 그렇지 않으면 상호 운용되지 않는 DLT-PQC 생태계 간에 중요한 인도주의적 데이터(예: 역학 정보, 환자 기록, 구호품 공급망 물류)의 안전하고 제한적인 공유를 촉진하도록 설계된 임시 비상 메커니즘 또는 프로토콜.",
+                    "디지털 주권 과잉 (Digital Sovereignty Overreach)": "지정학적 블록에 의한 디지털 주권 원칙의 과도하거나 타협하지 않는 적용으로, 블록별 DLT-PQC 표준 및 데이터 의무의 엄격한 시행이 공중 보건, 기후 행동 또는 인도주의적 지원과 같은 공유된 글로벌 문제에 해로운 결과를 초래하여 집단적 인간 복지보다 우선시되는 경우."
+                }
+            }
+        ],
+        "en": [
+            {
+                "category": "Finance|Macro|Regulatory|Geopolitics|Stocks",
+                "date": "2026-08-05",
+                "title": "Asset Contagion Claims Second Major Financial Institution; GFSB Considers Emergency Recapitalization of BADSF Amidst Deepening Digital Trust Crisis",
+                "summary": "The digital insolvency wave, sparked by Nexus Capital, has officially claimed another victim: 'Global TradeLink Bank', a key player in cross-bloc trade finance. Citing irreconcilable DLT discrepancies and a cascade of 'semantic defaults' in its BRICS+/G7-aligned derivatives portfolio, Global TradeLink announced a freeze on all cross-bloc payments. This triggers further emergency meetings at the Global Financial Stability Board (GFSB), where the existing Bloc-Aligned Digital Stability Fund (BADSF), already strained, is now deemed potentially insufficient. Reports indicate the GFSB is deliberating an unprecedented move: direct central bank recapitalization of BADSF, possibly through newly issued bloc-specific digital reserve assets, to avert a complete collapse of what remains of the cross-bloc financial system. Analysts warn this signifies a profound 'digital trust crisis', where confidence in any cross-bloc financial mechanism is eroding, accelerating the flight of capital into bloc-specific, ring-fenced ecosystems and deepening the global financial chasm.",
+                "insight": "The collapse of Global TradeLink confirms that Nexus Capital was not an isolated incident but the vanguard of a broader 'asset contagion'. The proposed recapitalization of BADSF by central banks is an admission of systemic failure, demonstrating that market-based solutions are inadequate for the 'digital decoupling' catastrophe. This move will institutionalize central banks as direct guarantors of bloc-specific stability, blurring lines between monetary policy and geopolitical alignment. It marks a critical turning point where global financial markets are no longer just fragmented, but actively disintegrating into financially isolated blocs, each backed by its own central bank, with severe long-term implications for global liquidity, credit availability, and the cost of capital, especially for small-to-medium enterprises dependent on cross-border trade.",
+                "impact": {
+                    "score": 10,
+                    "bias": "Strongly Bearish",
+                    "label": "Digital Financial Meltdown"
+                },
+                "readTime": "8 min read",
+                "glossary": {
+                    "Digital Trust Crisis": "A severe loss of confidence in the integrity, reliability, and interoperability of digital financial systems and platforms, particularly those spanning different geopolitical blocs, leading to widespread withdrawal of funds and reluctance to engage in cross-bloc transactions.",
+                    "Bloc-Specific Digital Reserve Assets": "Digital currencies or ledger-based instruments issued or endorsed by central banks within a specific geopolitical bloc, intended to serve as a primary store of value and medium of exchange exclusively within that bloc's digitally sovereign financial ecosystem, and potentially used for recapitalizing bloc-aligned stability funds."
+                }
+            },
+            {
+                "category": "Geopolitics|Trade|Energy|Commodities|SupplyChain|Macro|Stocks",
+                "date": "2026-08-05",
+                "title": "G7 Unveils 'Operation Digital Autarky': Emergency $5 Trillion Fund for Strategic Reshoring & AI-Driven Resource Extraction, Bypassing BRICS+ Embargo",
+                "summary": "In a decisive response to BRICS+'s 'Digital Resource Embargo', the G7 alliance today announced 'Operation Digital Autarky', an unprecedented five-year, $5 trillion emergency initiative. The fund aims to achieve full digital sovereignty and self-sufficiency in 15 critical raw materials, including rare earths and lithium, by rapidly reshoring extraction, processing, and advanced manufacturing within G7-aligned territories. The program will leverage massive public and private investment, advanced AI for new discovery and optimized recycling, and a dedicated 'QSSCA Resource Autonomy Ledger' to ensure secure, traceable supply chains. This move is designed to entirely bypass BRICS+ DSRP-mandated trade, forcing a complete overhaul of global industrial supply chains. Analysts predict the aggressive timeline will lead to unprecedented competition for non-BRICS+ aligned resource assets, significant short-term inflationary spikes in G7 economies, and a permanent, deeply bifurcated global manufacturing landscape.",
+                "insight": "'Operation Digital Autarky' represents the G7's definitive pivot from interdependence to militant self-sufficiency. This isn't just about trade; it's a declaration of a full-scale industrial re-architecture, driven by national security and digital sovereignty. The $5 trillion investment will reshape global capital flows, drawing investment away from BRICS+ resource-rich nations and into G7-aligned extraction and processing. While crucial for long-term resilience, the short-term economic costs—including inflationary pressures, inefficient resource allocation, and a likely \"green premium\" for G7-sourced materials—will be substantial. This initiative solidifies the two competing industrial ecosystems, confirming that economic logic will be subordinate to geopolitical alignment for the foreseeable future, potentially triggering a global commodity scramble and further fragmenting critical mineral markets.",
+                "impact": {
+                    "score": 9,
+                    "bias": "Volatile",
+                    "label": "Resource Self-Sufficiency Race"
+                },
+                "readTime": "8 min read",
+                "glossary": {
+                    "Digital Autarky": "The economic policy of a geopolitical bloc aiming for complete self-sufficiency in critical digital infrastructure, technology, and strategic resources, thereby eliminating reliance on external, potentially hostile, blocs for essential goods and services.",
+                    "QSSCA Resource Autonomy Ledger": "A specialized Distributed Ledger Technology (DLT) system built on G7's UnityLedger-QSSCA standards, designed to manage, track, and verify the entire supply chain of strategic raw materials within G7-aligned economies, ensuring digital sovereignty and resilience against external resource embargos."
+                }
+            },
+            {
+                "category": "Macro|Tech|Healthcare|Geopolitics|Social|Regulatory",
+                "date": "2026-08-05",
+                "title": "WHO Declares Flu-X27 a 'Global Catastrophe of Digital Division'; Millions at Risk as Cross-Bloc Data Blockades Halt Vaccine Rollouts and Variant Tracking",
+                "summary": "The World Health Organization (WHO) today released a grim assessment following its emergency summit, declaring the escalating Flu-X27 pandemic a 'Global Catastrophe of Digital Division.' WHO officials confirmed that irreconcilable cross-bloc health data incompatibility between UnityLedger-QSSCA and DSRP ecosystems has led to critical failures in international vaccine distribution and variant tracking, directly contributing to a surging death toll, particularly in developing nations caught between the blocs. Essential genomic sequencing data cannot be effectively aggregated or analyzed globally, hindering the rapid development of updated vaccines. Moreover, G7-compliant vaccine batches are bottlenecked in BRICS+-aligned territories due to DSRP ledger requirements, and vice-versa, creating a fragmented global supply chain unable to meet demand. The WHO Secretary-General issued a desperate plea for a temporary, humanitarian 'digital data bridge', warning that digital sovereignty priorities are leading to an 'avoidable human tragedy of unprecedented scale.'",
+                "insight": "This report underscores the most profound and ethically indefensible consequence of digital de-globalization: the direct weaponization of information infrastructure against collective human well-being. The Flu-X27 crisis exposes the catastrophic failure of \"digital sovereignty\" when confronted with a truly global threat. The inability to share epidemiological data and distribute life-saving medicines across bloc-aligned DLTs means that the \"digital iron curtain\" now represents a tangible barrier to public health and a direct cause of death. This structural fragmentation will permanently alter global health governance, forcing nations to prioritize bloc alignment over public health efficacy, and will lead to divergent standards of care and access to medicine based on geopolitical allegiance rather than medical need. The call for a 'digital data bridge' is a last-ditch effort, highlighting the dire humanitarian cost of unchecked digital balkanization.",
+                "impact": {
+                    "score": 10,
+                    "bias": "Strongly Bearish",
+                    "label": "Humanitarian Crisis Escalation"
+                },
+                "readTime": "8 min read",
+                "glossary": {
+                    "Humanitarian Digital Data Bridge": "A proposed temporary, emergency mechanism or protocol designed to facilitate the secure and limited sharing of critical humanitarian data (e.g., epidemiological information, patient records, supply chain logistics for aid) across otherwise non-interoperable DLT-PQC ecosystems, specifically in response to global crises where digital fragmentation impedes coordinated action.",
+                    "Digital Sovereignty Overreach": "The excessive or uncompromising application of digital sovereignty principles by geopolitical blocs, where the strict enforcement of bloc-specific DLT-PQC standards and data mandates leads to detrimental consequences for shared global challenges, such as public health, climate action, or humanitarian aid, overriding collective human welfare."
+                }
+            }
+        ]
+    },
     "2026-08-04": {
         "ko": [
             {
